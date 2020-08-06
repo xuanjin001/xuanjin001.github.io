@@ -1,25 +1,82 @@
-{{define "main"}}
-{{- partial "hero.html" . -}}
-<section id="posts" class="container mt-4">
-    {{ if .Site.Params.search.enabled }}
-        {{partial "search.html" .}}
-    {{end}}
-	<div class="card-columns mt-3">
-    {{ range first 5 (where site.RegularPages "Type" "in" site.Params.mainSections).ByTitle }}
-				<div class="bg-light card">
-					<div class="card-body">
-					  <h5 class="font-weight-bold card-title">{{.Title}}</h5>
-					  <h6 class="text-monospace card-subtitle mb-2 text-muted">{{ .PublishDate.Format "January 2, 2006" }}</h6>
-					  <small class="card-text text-monospace">{{.Summary}}</small>
-					  <a href="{{.Permalink}}" class="card-link">Read More...</a>
-					</div>
-			  </div>
-			{{end}}
-		</div>
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="description" content='A simple privacy oriented bootstrap hugo blog'>
+	
+		
+		<meta name="keywords" content='index, '>
+	
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.74.3" />
+	<link rel="stylesheet" type="text/css" href='https://themes.gohugo.io/theme/monopriv/css/bootstrap.min.css'>
+	<title>Posts</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+        <a href='/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+        <a href='/about.html'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+        <a href='/post.html'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+        <a href='/tags.html'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+
+<section class="container mt-3">
+        <h2 class="text-center">Posts</h2>
+        
+            <div class="row">
+                    
+                    <div class="col-md-5 m-3">
+                        <h6><a href="/posts/my-first-post/">my first post</a></h6>
+                        
+                        <small class="text-monospace text-secondary">March 11, 2019 | 3 minute read</small>
+                        
+                    </div>
+                    
+                    <div class="col-md-5 m-3">
+                        <h6><a href="https://themes.gohugo.io//theme/monopriv/post/rich-content/">Rich Content</a></h6>
+                        
+                        <small class="text-monospace text-secondary">March 10, 2019 | 1 minute read</small>
+                        
+                    </div>
+                    
+                    <div class="col-md-5 m-3">
+                        <h6><a href="https://themes.gohugo.io//theme/monopriv/post/placeholder-text/">Placeholder Text</a></h6>
+                        
+                        <small class="text-monospace text-secondary">March 9, 2019 | 2 minute read</small>
+                        
+                    </div>
+                    
+                    <div class="col-md-5 m-3">
+                        <h6><a href="https://themes.gohugo.io//theme/monopriv/post/math-typesetting/">Math Typesetting</a></h6>
+                        
+                        <small class="text-monospace text-secondary">March 8, 2019 | 1 minute read</small>
+                        
+                    </div>
+                    
+                    <div class="col-md-5 m-3">
+                        <h6><a href="https://themes.gohugo.io//theme/monopriv/post/emoji-support/">Emoji Support</a></h6>
+                        
+                        <small class="text-monospace text-secondary">March 5, 2019 | 1 minute read</small>
+                        
+                    </div>
+                    
+            </div>
+    
 </section>
-<section class="container text-center mt-2">
-	<a href='https://stallman.org/facebook.html' target="_blank">
-		<img  class="img-responsive" src='{{ "img/no-facebook.png" | absURL }}' width="200px" alt="I'm Not On Faceboook">
-	</a>
-</section>
-{{end}}
+
+<div class="container text-center mt-3">
+    <iframe src="https://duckduckgo.com/search.html?site=https://themes.gohugo.io//theme/monopriv/&prefill=Site%20Search" style="overflow:hidden;margin:0;padding:0;max-width:80%;height:40px;" frameborder="0"></iframe>
+</div>
+
+
+      </div>
+  </body><footer>
+  <!--div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small>Copyright © 2008–2019 Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div-->
+  
+</footer>
+<div>
+</div>
+</html>
