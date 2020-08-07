@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2019</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 00:03:36 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 23:41:42 -0400</lastBuildDate>
     
 	<atom:link href="https://xuanjin001.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://xuanjin001.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 05 Aug 2020 23:41:42 -0400</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/my-first-post/</guid>
+      <description>As my first post, I want to talk about how I created this blog. There were definitely ups and downs. I cannot deny that, also there were frustrations.</description>
+    </item>
     
     <item>
       <title>My Second Post</title>
@@ -19,15 +28,6 @@
       
       <guid>https://xuanjin001.github.io/posts/my-second-post/</guid>
       <description>This is a a draft</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://xuanjin001.github.io/posts/my-first-post/</link>
-      <pubDate>Thu, 30 Jul 2020 23:41:42 -0400</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/my-first-post/</guid>
-      <description>This is a test posts</description>
     </item>
     
   </channel>
