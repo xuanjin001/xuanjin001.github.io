@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+	<meta charset="utf-8">
+	<meta name="description" content='my motto is give me your requirements, I will find a way to make it happen'>
+	
+		<meta name="keywords" content='hugo, simple, minimal, bootstrap, blog'>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Hugo 0.74.3" />
+	<link rel="stylesheet" type="text/css" href='https://xuanjin001.github.io/css/bootstrap.min.css'>
+	<title>Code When There Is A NEED</title>
+</head>
+<body>
+      <div id="content"><nav class="navbar text-center sticky-top bg-white mt-2 mb-5">
+    
+    <a href='https://xuanjin001.github.io/'><span class="btn btn-sm btn-outline-primary">Home</span></a>
+    
+    <a href='/about.html'><span class="btn btn-sm btn-outline-secondary">About</span></a>
+    
+    <a href='/post.html'><span class="btn btn-sm btn-outline-success">Blog</span></a>
+    
+    <a href='/tags.html'><span class="btn btn-sm btn-outline-warning">Tags</span></a>
+</nav>
+<section class="container text-monospace">
+  <div class="container text-center">
+    
+    <img class="rounded-circle" src='https://xuanjin001.github.io/img/logo.png' title="Icon by freepik rom www.flaticon.com" width="200px"/>
+    
+		<h3 class="mt-3">Code When There Is A NEED</h3>
+		<span class='text-secondary'>Shirley&#39;s Blog, where Shirley express her thoughts and what she has learned by far</span>
+		<br><br>
+    <div class="bg-white">
+			<a href="https://github.com/xuanjin001"><span class="badge badge-pill badge-dark">Github</span></a>
+			
+			<a href="mailto:jx63king@gmail.com"><span class="badge badge-pill badge-success">Email</span></a>
+			<a href="https://xuanjin001.github.io/index.xml"><span class="badge badge-pill badge-warning">RSS Feed</span></a>
+
+    </div>
+	</div>
+</section>
+<section id="posts" class="container mt-4">
+    
+        <div class="container text-center mt-3">
+    <iframe src="https://duckduckgo.com/search.html?site=https://xuanjin001.github.io/&prefill=Site%20Search" style="overflow:hidden;margin:0;padding:0;max-width:80%;height:40px;" frameborder="0"></iframe>
+</div>
+    
+	<div class="card-columns mt-3">
+    
+				<div class="bg-light card">
+					<div class="card-body">
+					  <h5 class="font-weight-bold card-title">My First Post</h5>
+					  <h6 class="text-monospace card-subtitle mb-2 text-muted">August 5, 2020</h6>
+					  <small class="card-text text-monospace">As my first post, I want to talk about how I created this blog. There were definitely ups and downs. I cannot deny that, also there were frustrations.</small>
+					  <a href="https://xuanjin001.github.io/posts/my-first-post/" class="card-link">Read More...</a>
+					</div>
+			  </div>
+			
+<<<<<<< HEAD
+=======
+				<div class="bg-light card">
+					<div class="card-body">
+					  <h5 class="font-weight-bold card-title">My Second Post</h5>
+					  <h6 class="text-monospace card-subtitle mb-2 text-muted">July 31, 2020</h6>
+					  <small class="card-text text-monospace">This is a a draft</small>
+					  <a href="https://xuanjin001.github.io/posts/my-second-post/" class="card-link">Read More...</a>
+					</div>
+			  </div>
+			
+>>>>>>> dad00394ab3072005e76c710c0003ab98679b58f
+		</div>
+</section>
+
+
+
+      </div>
+  </body><footer>
+  <div class="container-fluid bg-dark text-white text-monospace text-center mt-2">
+    <small>Copyright © 2008–2019 Theme: <a class='text-warning' href="https://themes.gohugo.io/monopriv">Monopriv</a> | Crafted with <a class='text-warning' href="https://gohugo.io">Hugo</a></small>
+  </div>
+  
+</footer>
+<div>
+</div>
+</html>
