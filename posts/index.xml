@@ -21,17 +21,5 @@
       <description>As my first post, I want to talk about how I created this blog. There were definitely ups and downs. I cannot deny that, also there were frustrations.</description>
     </item>
     
-<<<<<<< HEAD
-=======
-    <item>
-      <title>My Second Post</title>
-      <link>https://xuanjin001.github.io/posts/my-second-post/</link>
-      <pubDate>Fri, 31 Jul 2020 00:03:36 -0400</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/my-second-post/</guid>
-      <description>This is a a draft</description>
-    </item>
-    
->>>>>>> dad00394ab3072005e76c710c0003ab98679b58f
   </channel>
 </rss>
