@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2019</copyright>
-    <lastBuildDate>Wed, 05 Aug 2020 23:41:42 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 12:39:28 -0400</lastBuildDate>
     
 	<atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode</title>
+      <link>https://xuanjin001.github.io/posts/leetcode/</link>
+      <pubDate>Sun, 23 Aug 2020 12:39:28 -0400</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Migration</title>
+      <link>https://xuanjin001.github.io/posts/data_migration/</link>
+      <pubDate>Thu, 20 Aug 2020 01:14:34 -0400</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/data_migration/</guid>
+      <description>So yes, data migration, it is necesary but it is definitely NOT FUN. Is there anything we can help to make that process more smooth?</description>
+    </item>
     
     <item>
       <title>My First Post</title>
