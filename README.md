@@ -5,5 +5,6 @@ Used the following blog as a starting point: https://retrolog.io/blog/creating-a
 Run the Site:
 
 1. `cd example`
-2. `hugo server`
-3. go to `http://localhost:1313/`
+2. `hugo server` for production
+3. `hugo server -D` for development
+4. go to `http://localhost:1313/` to see the in progress website
