@@ -3,6 +3,7 @@ title: "My First Post Example"
 date: 2022-09-11T13:18:32-07:00
 draft: false
 tags: ["foo1", "bar"]
+descriptions: "first example"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
