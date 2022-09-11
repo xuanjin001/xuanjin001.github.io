@@ -19,3 +19,7 @@ title = "My New Hugo Site"
     pre = "tag"
     url = "/tags/"
     weight = 3
+
+
+[params]
+    dateFormat = "Jan 02 2006"

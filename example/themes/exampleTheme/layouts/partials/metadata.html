@@ -1,8 +1,10 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-<!--i data-feather="calendar"></i-->
+<!--{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }} -->
+{{ $dateFormat := .Site.Params.dateFormat }}
+<i data-feather="calendar"></i>
 <!--time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time-->
-{{ partial "social.html" . }}
+<time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+<!--{{ partial "social.html" . }} -->
 {{ with .Params.tags }}
 
 
@@ -10,6 +12,6 @@
 {{ range . }}
 {{ $href := print (absURL "tags/") (urlize .) }}
 <!--a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a-->
-<a class="btn btn-outline-dark font-125" href="{{ $href }}">{{ . }}</a>
+<a class="btn btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
 {{ end }}
 {{ end }}
