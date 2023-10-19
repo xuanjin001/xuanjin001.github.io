@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>October, 2023 on xuanjin</title>
-    <link>http://www.example.com/categories/october-2023/</link>
-    <description>Recent content in October, 2023 on xuanjin</description>
+    <title>projects on xuanjin</title>
+    <link>http://www.example.com/categories/projects/</link>
+    <description>Recent content in projects on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.example.com/categories/october-2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.example.com/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My blog post project</title>
       <link>http://www.example.com/posts/oct_14_2023/</link>
