@@ -121,7 +121,7 @@ category = "categories"
 series = "series"
 tag = "tags"
 author = "authors"
-project = "projects"
+# project = "projects"
 
 [[params.social]]
 name = "Github"

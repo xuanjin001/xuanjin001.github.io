@@ -1,8 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>xuanjin</title><link>https://xuanjin001.github.io/</link><description>Recent content on xuanjin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://xuanjin001.github.io/about/</link><pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate><guid>https://xuanjin001.github.io/about/</guid><description>Hello, my name is Xuan Jin, AKA Shirley.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xuanjin</title>
+    <link>https://xuanjin001.github.io/</link>
+    <description>Recent content on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://xuanjin001.github.io/about/</link>
+      <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/about/</guid>
+      <description>Hello, my name is Xuan Jin, AKA Shirley.
 I have been in the US since 2010, so I have been here for a while.
 While you are reading this, in case you still cannot tell, I love gifs lol.
-Currently, I am working for RSM as an architect. I see myself as a fixer there, wherever they need someone, I would jump in and help where I can. My specialties are:</description></item><item><title>My blog post project</title><link>https://xuanjin001.github.io/posts/oct_14_2023/</link><pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid><description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
-Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description></item><item><title>temas</title><link>https://xuanjin001.github.io/categoria/temas/</link><pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate><guid>https://xuanjin001.github.io/categoria/temas/</guid><description/></item><item><title>sintaxe</title><link>https://xuanjin001.github.io/categoria/sintaxe/</link><pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate><guid>https://xuanjin001.github.io/categoria/sintaxe/</guid><description/></item><item><title>Códigos curtos</title><link>https://xuanjin001.github.io/tags/shortcodes/_index.pt-br/</link><pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate><guid>https://xuanjin001.github.io/tags/shortcodes/_index.pt-br/</guid><description/></item><item><title>About</title><link>https://xuanjin001.github.io/about.cn-ch/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://xuanjin001.github.io/about.cn-ch/</guid><description>Chinese version of about page
+Currently, I am working for RSM as an architect. I see myself as a fixer there, wherever they need someone, I would jump in and help where I can. My specialties are:</description>
+    </item>
+    
+    <item>
+      <title>My blog post project</title>
+      <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
+      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
+      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
+Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
+    </item>
+    
+    <item>
+      <title>temas</title>
+      <link>https://xuanjin001.github.io/categoria/temas/</link>
+      <pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate>
+      
+      <guid>https://xuanjin001.github.io/categoria/temas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sintaxe</title>
+      <link>https://xuanjin001.github.io/categoria/sintaxe/</link>
+      <pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate>
+      
+      <guid>https://xuanjin001.github.io/categoria/sintaxe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Códigos curtos</title>
+      <link>https://xuanjin001.github.io/tags/shortcodes/_index.pt-br/</link>
+      <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
+      
+      <guid>https://xuanjin001.github.io/tags/shortcodes/_index.pt-br/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://xuanjin001.github.io/about.cn-ch/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/about.cn-ch/</guid>
+      <description>Chinese version of about page
 O Hugo faz o uso de vários projetos de código aberto incluíndo:
 https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper O Hugo é ideal para blogs, sites corporativos, protfólio criativos, revistas online, aplicações de página única ou até sites com milhares de páginas.
-O Hugo é para pessoas que querem cuidar do seu próprio site sem se preocupar com a configuração ambientes complicados, dependências e bancos de dados.</description></item><item><title>Contact</title><link>https://xuanjin001.github.io/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuanjin001.github.io/contact/</guid><description>Follow me here.</description></item><item><title>Contato</title><link>https://xuanjin001.github.io/contato/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuanjin001.github.io/contato/</guid><description>中文。。。</description></item><item><title>Projects</title><link>https://xuanjin001.github.io/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xuanjin001.github.io/projects/</guid><description>Nothing to see here&amp;hellip; Move along!</description></item></channel></rss>
+O Hugo é para pessoas que querem cuidar do seu próprio site sem se preocupar com a configuração ambientes complicados, dependências e bancos de dados.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://xuanjin001.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/contact/</guid>
+      <description>Follow me here.</description>
+    </item>
+    
+    <item>
+      <title>Contato</title>
+      <link>https://xuanjin001.github.io/contato/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/contato/</guid>
+      <description>中文。。。</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://xuanjin001.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/projects/</guid>
+      <description>Nothing to see here&amp;hellip; Move along!</description>
+    </item>
+    
+  </channel>
+</rss>
