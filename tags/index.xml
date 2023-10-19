@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xuanjin</title>
-    <link>http://www.xuanjin.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.xuanjin.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>blog</title>
-      <link>http://www.xuanjin.com/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>http://www.xuanjin.com/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>http://www.xuanjin.com/tags/projects/</link>
+      <link>/tags/projects/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>http://www.xuanjin.com/tags/projects/</guid>
+      <guid>/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Códigos curtos</title>
-      <link>http://www.xuanjin.com/tags/shortcodes/_index.pt-br/</link>
+      <link>/tags/shortcodes/_index.pt-br/</link>
       <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
       
-      <guid>http://www.xuanjin.com/tags/shortcodes/_index.pt-br/</guid>
+      <guid>/tags/shortcodes/_index.pt-br/</guid>
       <description></description>
     </item>
     

@@ -2,68 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.xuanjin.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2023-10-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/authors/</loc>
+    <loc>/authors/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/posts/oct_14_2023/</loc>
+    <loc>/posts/oct_14_2023/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/categories/october-2023/</loc>
+    <loc>/categories/october-2023/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/tags/projects/</loc>
+    <loc>/tags/projects/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/series/</loc>
+    <loc>/series/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/series/theme-demo/</loc>
+    <loc>/series/theme-demo/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/authors/xuan-jin/</loc>
+    <loc>/authors/xuan-jin/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/</loc>
+    <loc>/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/authors/hugo-authors/</loc>
+    <loc>/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/categoria/temas/</loc>
+    <loc>/categoria/temas/</loc>
     <lastmod>2023-01-04T23:21:18+01:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/categoria/sintaxe/</loc>
+    <loc>/categoria/sintaxe/</loc>
     <lastmod>2023-01-04T23:21:06+01:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/tags/shortcodes/_index.pt-br/</loc>
+    <loc>/tags/shortcodes/_index.pt-br/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/about.cn-ch/</loc>
+    <loc>/about.cn-ch/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.xuanjin.com/contact/</loc>
+    <loc>/contact/</loc>
   </url><url>
-    <loc>http://www.xuanjin.com/contato/</loc>
+    <loc>/contato/</loc>
   </url><url>
-    <loc>http://www.xuanjin.com/projects/</loc>
+    <loc>/projects/</loc>
   </url><url>
-    <loc>http://www.xuanjin.com/projects/</loc>
+    <loc>/projects/</loc>
   </url><url>
-    <loc>http://www.xuanjin.com/projetos/</loc>
+    <loc>/projetos/</loc>
   </url>
 </urlset>

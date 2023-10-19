@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xuanjin</title>
-    <link>http://www.xuanjin.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.xuanjin.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>October, 2023</title>
-      <link>http://www.xuanjin.com/categories/october-2023/</link>
+      <link>/categories/october-2023/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>http://www.xuanjin.com/categories/october-2023/</guid>
+      <guid>/categories/october-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>temas</title>
-      <link>http://www.xuanjin.com/categoria/temas/</link>
+      <link>/categoria/temas/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate>
       
-      <guid>http://www.xuanjin.com/categoria/temas/</guid>
+      <guid>/categoria/temas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sintaxe</title>
-      <link>http://www.xuanjin.com/categoria/sintaxe/</link>
+      <link>/categoria/sintaxe/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate>
       
-      <guid>http://www.xuanjin.com/categoria/sintaxe/</guid>
+      <guid>/categoria/sintaxe/</guid>
       <description></description>
     </item>
     
