@@ -6,7 +6,18 @@
     <description>Recent content in October, 2023 on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/october-2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 00:13:37 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/october-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deploy to GitHub Pages</title>
+      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
+      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
+      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
+    </item>
+    
     <item>
       <title>My blog post project</title>
       <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
