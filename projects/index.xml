@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on xuanjin</title>
-    <link>/projects/</link>
+    <link>http://www.example.com/projects/</link>
     <description>Recent content in Projects on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://www.example.com/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

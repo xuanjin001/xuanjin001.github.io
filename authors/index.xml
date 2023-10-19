@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on xuanjin</title>
-    <link>/authors/</link>
+    <link>http://www.example.com/authors/</link>
     <description>Recent content in Authors on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.example.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xuan Jin</title>
-      <link>/authors/xuan-jin/</link>
+      <link>http://www.example.com/authors/xuan-jin/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>/authors/xuan-jin/</guid>
+      <guid>http://www.example.com/authors/xuan-jin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Authors of Hugo</title>
-      <link>/authors/hugo-authors/</link>
+      <link>http://www.example.com/authors/hugo-authors/</link>
       <pubDate>Thu, 05 Jan 2023 01:15:29 +0100</pubDate>
       
-      <guid>/authors/hugo-authors/</guid>
+      <guid>http://www.example.com/authors/hugo-authors/</guid>
       <description></description>
     </item>
     

@@ -2,35 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xuanjin</title>
-    <link>/categories/</link>
+    <link>http://www.example.com/categories/</link>
     <description>Recent content in Categories on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.example.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>October, 2023</title>
-      <link>/categories/october-2023/</link>
+      <link>http://www.example.com/categories/october-2023/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>/categories/october-2023/</guid>
+      <guid>http://www.example.com/categories/october-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>http://www.example.com/categories/projects/</link>
+      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
+      
+      <guid>http://www.example.com/categories/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>temas</title>
-      <link>/categoria/temas/</link>
+      <link>http://www.example.com/categoria/temas/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate>
       
-      <guid>/categoria/temas/</guid>
+      <guid>http://www.example.com/categoria/temas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sintaxe</title>
-      <link>/categoria/sintaxe/</link>
+      <link>http://www.example.com/categoria/sintaxe/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate>
       
-      <guid>/categoria/sintaxe/</guid>
+      <guid>http://www.example.com/categoria/sintaxe/</guid>
       <description></description>
     </item>
     

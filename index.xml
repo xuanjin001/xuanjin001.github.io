@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xuanjin</title>
-    <link>/</link>
+    <link>http://www.example.com/</link>
     <description>Recent content on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://www.example.com/about/</link>
       <pubDate>Tue, 17 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://www.example.com/about/</guid>
       <description>Hello, my name is Xuan Jin, AKA Shirley.
 I have been in the US since 2010, so I have been here for a while.
 While you are reading this, in case you still cannot tell, I love gifs lol.
@@ -21,47 +21,47 @@ Currently, I am working for RSM as an architect. I see myself as a fixer there, 
     
     <item>
       <title>My blog post project</title>
-      <link>/posts/oct_14_2023/</link>
+      <link>http://www.example.com/posts/oct_14_2023/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
       
-      <guid>/posts/oct_14_2023/</guid>
+      <guid>http://www.example.com/posts/oct_14_2023/</guid>
       <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
 Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
     </item>
     
     <item>
       <title>temas</title>
-      <link>/categoria/temas/</link>
+      <link>http://www.example.com/categoria/temas/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:18 +0100</pubDate>
       
-      <guid>/categoria/temas/</guid>
+      <guid>http://www.example.com/categoria/temas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sintaxe</title>
-      <link>/categoria/sintaxe/</link>
+      <link>http://www.example.com/categoria/sintaxe/</link>
       <pubDate>Wed, 04 Jan 2023 23:21:06 +0100</pubDate>
       
-      <guid>/categoria/sintaxe/</guid>
+      <guid>http://www.example.com/categoria/sintaxe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Códigos curtos</title>
-      <link>/tags/shortcodes/_index.pt-br/</link>
+      <link>http://www.example.com/tags/shortcodes/_index.pt-br/</link>
       <pubDate>Wed, 04 Jan 2023 11:51:36 +0100</pubDate>
       
-      <guid>/tags/shortcodes/_index.pt-br/</guid>
+      <guid>http://www.example.com/tags/shortcodes/_index.pt-br/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about.cn-ch/</link>
+      <link>http://www.example.com/about.cn-ch/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about.cn-ch/</guid>
+      <guid>http://www.example.com/about.cn-ch/</guid>
       <description>Chinese version of about page
 O Hugo faz o uso de vários projetos de código aberto incluíndo:
 https://github.com/yuin/goldmark https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper O Hugo é ideal para blogs, sites corporativos, protfólio criativos, revistas online, aplicações de página única ou até sites com milhares de páginas.
@@ -70,39 +70,29 @@ O Hugo é para pessoas que querem cuidar do seu próprio site sem se preocupar c
     
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>http://www.example.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>http://www.example.com/contact/</guid>
       <description>Follow me here.</description>
     </item>
     
     <item>
       <title>Contato</title>
-      <link>/contato/</link>
+      <link>http://www.example.com/contato/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contato/</guid>
+      <guid>http://www.example.com/contato/</guid>
       <description>中文。。。</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>/projects/</link>
+      <link>http://www.example.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/</guid>
-      <description>Nothing to see here&amp;hellip; Move along!
-Current blog is my current project Link to heading </description>
-    </item>
-    
-    <item>
-      <title>Projetos</title>
-      <link>/projetos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projetos/</guid>
-      <description>中文版的 project</description>
+      <guid>http://www.example.com/projects/</guid>
+      <description>Nothing to see here&amp;hellip; Move along!</description>
     </item>
     
   </channel>
