@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>Install Jupyter With &#39;pipx&#39; </title>
-      <link>https://xuanjin001.github.io/posts/mar_2_24/</link>
-      <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/mar_2_24/</guid>
-      <description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description>
-    </item>
-    
-    <item>
       <title>Deploy to GitHub Pages</title>
       <link>https://xuanjin001.github.io/posts/10_19_23/</link>
       <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
@@ -34,15 +25,6 @@
       <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
 I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
 First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
-    </item>
-    
-    <item>
-      <title>Migrate Wordpress Part I</title>
-      <link>https://xuanjin001.github.io/posts/10_20_23/</link>
-      <pubDate>Thu, 19 Oct 2023 00:04:59 -0700</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/10_20_23/</guid>
-      <description>I have been writing on wordpress for a long time, a long long long time. LOL. I had all kinds of things on there, it started out as a place I write my diaries, my feelings, the dates that went wrong, then I slowly transferred to professional contents. There are a lot of posts there in wordpress, I will need to export that out and format them to fit for the blog here.</description>
     </item>
     
     <item>
