@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lone Coder on xuanjin</title>
+    <link>https://xuanjin001.github.io/authors/lone-coder/</link>
+    <description>Recent content in Lone Coder on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://xuanjin001.github.io/authors/lone-coder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://xuanjin001.github.io/posts/oct_11_2023/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/oct_11_2023/</guid>
+      <description> This is a test blog post, template, test on stuff in future Link to heading </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://xuanjin001.github.io/posts/test/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/test/</guid>
+      <description> This is a test blog post, template Link to heading </description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://xuanjin001.github.io/posts/rich-content/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several 
+
+
+
+
+
+&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34; 
+	 target=&#34;_blank&#34; rel=&#34;noopener&#34;
+	&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a 
+
+
+
+
+
+&lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34; 
+	 target=&#34;_blank&#34; rel=&#34;noopener&#34;
+	&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://xuanjin001.github.io/posts/emoji-support/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://xuanjin001.github.io/posts/placeholder-text/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

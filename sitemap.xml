@@ -2,11 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xuanjin001.github.io/categories/april-2024/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
     <loc>https://xuanjin001.github.io/authors/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/blog/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/latest-update-apr-24-2024/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/</loc>
+    <lastmod>2024-04-24T15:31:34-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/feburary-2024/</loc>
+    <lastmod>2024-03-02T01:58:35-08:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/mar_2_24/</loc>
+    <lastmod>2024-03-02T01:58:35-08:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/projects/</loc>
+    <lastmod>2024-03-02T01:58:35-08:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/10_19_23/</loc>
     <lastmod>2023-10-19T00:13:37-07:00</lastmod>
@@ -14,17 +41,8 @@
     <loc>https://xuanjin001.github.io/categories/october-2023/</loc>
     <lastmod>2023-10-19T00:13:37-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/projects/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2023-10-19T00:13:37-07:00</lastmod>
+    <loc>https://xuanjin001.github.io/posts/10_20_23/</loc>
+    <lastmod>2023-10-19T00:04:59-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/about/</loc>
     <lastmod>2023-10-17T00:00:00+00:00</lastmod>
@@ -46,6 +64,69 @@
   </url><url>
     <loc>https://xuanjin001.github.io/series/theme-demo/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/css/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/html/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/hugo/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/lone-coder/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/markdown/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/oct_11_2023/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/theme-demo/</loc>
+    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/test/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/test/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/rich-content.cn-br/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/demonstra%C3%A7%C3%A3o-do-tema/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/demonstra%C3%A7%C3%A3o-do-tema/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/programador-solit%C3%A1rio/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/rich-content/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/sintaxe/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/emoji/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/emoji-support/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/emoji-support.cn-br/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/placeholder-text/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/text/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/placeholder-text.cn-br/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
