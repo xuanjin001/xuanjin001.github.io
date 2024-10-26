@@ -56,7 +56,7 @@ if (localStorage.getItem(title)!== null) {
 }
 const submitButton = document.getElementById('secret-submit');
 submitButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Blocking the default form submission behavior
+    //event.preventDefault(); // Blocking the default form submission behavior
     checkPassword();
 });
 
