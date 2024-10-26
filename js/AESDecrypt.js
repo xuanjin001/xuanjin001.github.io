@@ -52,7 +52,9 @@ function hexToBytes(hexString) {
 console.log("js load");
 let title = document.title
 if (localStorage.getItem(title)!== null) {
-    decryption(localStorage.getItem(title))
+    localStorage.clear();
+    //decryption(localStorage.getItem(title))
+    //deleteAllCookies(); 
 }
 const submitButton = document.getElementById('secret-submit');
 submitButton.addEventListener('click', function (event) {
@@ -79,3 +81,12 @@ function decryption(password) {
         console.error("Failed to decrypt",error);
     });
 }
+
+function deleteAllCookies() {
+    document.cookie.split(';').forEach(cookie => {
+        const eqPos = cookie.indexOf('=');
+        const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    });
+}
+
