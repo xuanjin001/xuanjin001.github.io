@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on xuanjin</title>
+    <link>https://xuanjin001.github.io/posts/</link>
+    <description>Recent content in Posts on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Apr 2024 15:31:34 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Latest Update April 24, 2024</title>
+      <link>https://xuanjin001.github.io/posts/latest-update-apr-24-2024-update/</link>
+      <pubDate>Wed, 24 Apr 2024 15:31:34 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/latest-update-apr-24-2024-update/</guid>
+      <description>I have been on this big big big projects for over a year now, it is like that&amp;rsquo;s my only life, nothing else, I felt like I was living under a rock for over a year. This project has been a mess from the start. Letting the client run the whole show was a mistake, and it was a mistake that I cannot reverse by the time I got onto the project.</description>
+    </item>
+    
+    <item>
+      <title>Deploy to GitHub Pages</title>
+      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
+      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
+      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
+    </item>
+    
+    <item>
+      <title>My blog post project</title>
+      <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
+      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
+      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
+Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
+    </item>
+    
+  </channel>
+</rss>
