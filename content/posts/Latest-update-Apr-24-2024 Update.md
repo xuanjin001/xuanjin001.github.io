@@ -1,0 +1,30 @@
++++ 
+draft = true
+date = 2024-04-24T15:31:34-07:00
+title = "Latest Update April 24, 2024"
+description = "My life/work update"
+slug = ""
+authors = ["Xuan Jin"]
+tags = []
+categories = [
+"April, 2024",
+"blog",
+]
+externalLink = ""
+series = []
+
++++
+
+I have been on this big big big projects for over a year now, it is like that's my only life, nothing else, I felt like I was living under a rock for over a year. This project has been a mess from the start. Letting the client run the whole show was a mistake, and it was a mistake that I cannot reverse by the time I got onto the project.
+
+This project can be summarized into 2 words, "Org Migration". The client has a current system, which they would like to move off of, cause it is a bit hard to manage, and they would like to add couple features to enable them to run their business smoothly; plus they would like to remove the dependency, as some of the tasks can only be performed by certain people, and when those people go on vacation, they are basically being left hanging. This is no easy task, we were working with an organization with big amount of tech debt in their existing system, and they have a database since 2000s, so 20 years worth of data. If you are new to this, think about when your windows system was updated from xp to 10, how much fuss it caused. The point being, moving a group from one system to another is never an easy task.
+
+The whole project went for over a year, I have been in charge of data overall, we moved a great amount of data from one system to another, almost everything. It is a challenging task, yet simple one too, the process is mundane though. You take data from one system and put them into another one, and making sure all of the data would fit into the new data structure in the new system, and also making sure the new process would be able to pick up the data and process them, which is the hardest part. Actually, let me correct that, having the client understand this part is hard. The client is a bit hard to work with as well, that added into the challenges overall.
+
+The whole project was off from beginning, the plan was to run table by table, along with that, figuring out the process. I called it out, cause that doesn't make any sense to me, but at the time, the message didn't get across in time. Then it ends in a mess. I had this mistakes before, I was running an app dev back in 2015, and we built the database first before we lined up on exactly what the front end should look like, in other words, we didn't have a good idea on how to properly retrieve the data, or what data we were looking to retrieve, so building a database before understanding how to use the data is just backwards, we ended redo the whole project; and that's exactly what's happening here in this project.
+
+As for me, what I gained out of this project has been a lot. Being part of a big project like this, give me an idea on how a big project is run, and also how a big project SHOULD NOT be run, also how cruicial it is to have a good leader, the ring leader has to be good and know what they are doing, and they need to know when to trust their team members and let the people with true experts come in and do their job. Another perspective I learned out of this project is "communication" as how my boss would like to call it. Effective communication can boost team's productivity, in that way, we can help move the work further. I am a really straightforward person, I call things out as how they are, but I now learned that there are ways you can be straightforward, at the same time being respectful of it. This has been working really well on this project. From the beginning, my message is not getting through at all, people are brushing things off when I raise a red flag, slowly I am able to communicate effectively on what I am seeing and making them understand, and help the group to pull into a right direction. I am an introvert, it did take a lot of practice.
+
+This client I have been working with for over a year are really reactive, they don't have a proper plan, and just take things as they come, when things come up, they just react to whatever comes up, honestly, a lot of things we encounter, if the client would work with us and to have proper plans, those issues would have been mitigated up-front. To work with someone like that, where they are always a hothead, I need to take a step back, a lot of times they just like to throw spaghetti on the wall and see what sticks or if anything sticks, then this is the time to ask, why are you throwing spaghetti onto the wall? Was it to just see if your spathetti is cooked? If so, then there are different ways to achieve that, so have you thought about those methods? If you just would like to throw spaghetti for fun, then we need to direct you to some other ways to "have fun". There are different ways to solve a problem, it is the consultants' job to communicate those solutions, and raise the flag when we see things are at risk, now if they will take it or not is out of our hands.
+
+Overall, I have grown a lot in the past year, I am a better leader now, and through this project, I also learned my own capability, it is more than I am aware of. I need to trust myself, and know that I can always find a way out no matter what. Any hurdle is a chance to learn more about yourself, and a chance to improve.
