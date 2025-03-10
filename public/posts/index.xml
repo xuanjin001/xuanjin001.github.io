@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on xuanjin</title>
+    <link>https://xuanjin001.github.io/posts/</link>
+    <description>Recent content in Posts on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Mar 2025 12:10:32 -0800</lastBuildDate><atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI and What&#39;s Next</title>
+      <link>https://xuanjin001.github.io/posts/mar_7_25/</link>
+      <pubDate>Fri, 07 Mar 2025 12:10:32 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/mar_7_25/</guid>
+      <description>AI has been in the spotlight ever since ChatGPT captured everyone&amp;rsquo;s attention. It evolutioned how we use the internet. For a lot of people, it changed how they write, how they approach to their daily work. The technology is there, so what&amp;rsquo;s next? What does the future hold from here?
+As you start reading this, you may be wondering why we are revisiting this topic. People have been talking about AI and what it can do since 2023, and you might not want to hear about it in 2025 again.</description>
+    </item>
+    
+    <item>
+      <title>The Rise of Artificial Intelligence: Transforming Our World</title>
+      <link>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</link>
+      <pubDate>Mon, 04 Nov 2024 11:16:22 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</guid>
+      <description>Copilot (This article is created by copilot)
+The Rise of Artificial Intelligence: Transforming Our World Artificial Intelligence (AI) has rapidly evolved from a futuristic concept to an integral part of our daily lives. But what exactly is AI, and how is it reshaping various sectors? What is Artificial Intelligence? Artificial Intelligence refers to the development of computer systems capable of performing tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, and identifying patterns.</description>
+    </item>
+    
+    <item>
+      <title>AI...</title>
+      <link>https://xuanjin001.github.io/posts/ai_11-3-2024/</link>
+      <pubDate>Sun, 03 Nov 2024 16:06:30 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/ai_11-3-2024/</guid>
+      <description>AI has been a &amp;ldquo;hot&amp;rdquo; topic for about 2-3 years, ever since ChatGPT broke the internet lol, everything has been wrapped with AI. From couple years ago, there have been things claimed to be with AI, but they are not lol.
+Is AI actually helping us or is it adding more trouble?
+To answer that question, let&amp;rsquo;s go back and dig into what is AI.
+You probably already hear the word AI have been throwing around a lot with machine learning, they go hand in hand.</description>
+    </item>
+    
+    <item>
+      <title>Deploy to GitHub Pages</title>
+      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
+      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
+      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
+    </item>
+    
+    <item>
+      <title>My blog post project</title>
+      <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
+      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
+      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
+Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
+    </item>
+    
+  </channel>
+</rss>
