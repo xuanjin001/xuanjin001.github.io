@@ -52,8 +52,7 @@ function hexToBytes(hexString) {
 console.log("js load");
 let title = document.title
 if (localStorage.getItem(title)!== null) {
-    //decryption(localStorage.getItem(title))
-  localStorage.clear(); 
+    decryption(localStorage.getItem(title))
 }
 const submitButton = document.getElementById('secret-submit');
 submitButton.addEventListener('click', function (event) {
