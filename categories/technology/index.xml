@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on xuanjin</title>
+    <link>https://xuanjin001.github.io/categories/technology/</link>
+    <description>Recent content in Technology on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Mar 2025 12:10:32 -0800</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI and What&#39;s Next</title>
+      <link>https://xuanjin001.github.io/posts/mar_7_25/</link>
+      <pubDate>Fri, 07 Mar 2025 12:10:32 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/mar_7_25/</guid>
+      <description>AI has been in the spotlight ever since ChatGPT captured everyone&amp;rsquo;s attention. It evolutioned how we use the internet. For a lot of people, it changed how they write, how they approach to their daily work. The technology is there, so what&amp;rsquo;s next? What does the future hold from here?
+As you start reading this, you may be wondering why we are revisiting this topic. People have been talking about AI and what it can do since 2023, and you might not want to hear about it in 2025 again.</description>
+    </item>
+    
+    <item>
+      <title>Salesforce&#39;s Agentforce: Revolutionizing Business with Autonomous AI Agents</title>
+      <link>https://xuanjin001.github.io/posts/agentforce/</link>
+      <pubDate>Mon, 04 Nov 2024 19:35:30 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/agentforce/</guid>
+      <description>Salesforce&amp;rsquo;s Agentforce: Revolutionizing Business with Autonomous AI Agents Link to heading Salesforce, a leader in customer relationship management (CRM) software, has recently launched Agentforce, a groundbreaking platform designed to deploy autonomous AI agents across various business functions. This article delves into the features, benefits, and potential drawbacks of Agentforce, providing a comprehensive overview of this innovative product.
+What is Agentforce? Link to heading Agentforce is an advanced AI platform that enables businesses to create and manage autonomous agents capable of performing a wide range of tasks.</description>
+    </item>
+    
+    <item>
+      <title>The Rise of Artificial Intelligence: Transforming Our World</title>
+      <link>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</link>
+      <pubDate>Mon, 04 Nov 2024 11:16:22 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</guid>
+      <description>Copilot (This article is created by copilot)
+The Rise of Artificial Intelligence: Transforming Our World Artificial Intelligence (AI) has rapidly evolved from a futuristic concept to an integral part of our daily lives. But what exactly is AI, and how is it reshaping various sectors? What is Artificial Intelligence? Artificial Intelligence refers to the development of computer systems capable of performing tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, and identifying patterns.</description>
+    </item>
+    
+    <item>
+      <title>AI...</title>
+      <link>https://xuanjin001.github.io/posts/ai_11-3-2024/</link>
+      <pubDate>Sun, 03 Nov 2024 16:06:30 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/ai_11-3-2024/</guid>
+      <description>AI has been a &amp;ldquo;hot&amp;rdquo; topic for about 2-3 years, ever since ChatGPT broke the internet lol, everything has been wrapped with AI. From couple years ago, there have been things claimed to be with AI, but they are not lol.
+Is AI actually helping us or is it adding more trouble?
+To answer that question, let&amp;rsquo;s go back and dig into what is AI.
+You probably already hear the word AI have been throwing around a lot with machine learning, they go hand in hand.</description>
+    </item>
+    
+    <item>
+      <title>Install Jupyter With &#39;pipx&#39; </title>
+      <link>https://xuanjin001.github.io/posts/mar_2_24/</link>
+      <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/mar_2_24/</guid>
+      <description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description>
+    </item>
+    
+    <item>
+      <title>Deploy to GitHub Pages</title>
+      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
+      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
+      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
+    </item>
+    
+  </channel>
+</rss>

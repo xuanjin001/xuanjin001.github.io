@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>projects on xuanjin</title>
+    <title>Projects on xuanjin</title>
     <link>https://xuanjin001.github.io/categories/projects/</link>
-    <description>Recent content in projects on xuanjin</description>
+    <description>Recent content in Projects on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 02 Mar 2024 01:58:35 -0800</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Oct 2024 02:23:43 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install Jupyter With &#39;pipx&#39; </title>
-      <link>https://xuanjin001.github.io/posts/mar_2_24/</link>
-      <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
+      <title>Project-Lists-By-Far</title>
+      <link>https://xuanjin001.github.io/posts/projects_lists_2025/</link>
+      <pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate>
       
-      <guid>https://xuanjin001.github.io/posts/mar_2_24/</guid>
-      <description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description>
-    </item>
-    
-    <item>
-      <title>Deploy to GitHub Pages</title>
-      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
-      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
-      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
-I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
-First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
+      <guid>https://xuanjin001.github.io/posts/projects_lists_2025/</guid>
+      <description></description>
     </item>
     
     <item>
