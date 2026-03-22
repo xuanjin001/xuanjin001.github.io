@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Deploy to GitHub Pages · xuanjin
+  Install Jupyter With &#39;pipx&#39;  · xuanjin
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +13,25 @@
 
 
 <meta name="author" content="Xuan Jin">
-<meta name="description" content="Deploy Hugo pages">
+<meta name="description" content="trying to pick up something I use to know">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Deploy to GitHub Pages"/>
-<meta name="twitter:description" content="Deploy Hugo pages"/>
+<meta name="twitter:title" content="Install Jupyter With &#39;pipx&#39; "/>
+<meta name="twitter:description" content="trying to pick up something I use to know"/>
 
-<meta property="og:title" content="Deploy to GitHub Pages" />
-<meta property="og:description" content="Deploy Hugo pages" />
+<meta property="og:title" content="Install Jupyter With &#39;pipx&#39; " />
+<meta property="og:description" content="trying to pick up something I use to know" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xuanjin001.github.io/posts/10_19_23/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-10-19T00:13:37-07:00" />
-<meta property="article:modified_time" content="2023-10-19T00:13:37-07:00" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/mar_2_24/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-02T01:58:35-08:00" />
+<meta property="article:modified_time" content="2024-03-02T01:58:35-08:00" />
 
 
 
 
 
-<link rel="canonical" href="https://xuanjin001.github.io/posts/10_19_23/">
+<link rel="canonical" href="https://xuanjin001.github.io/posts/mar_2_24/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -150,8 +150,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://xuanjin001.github.io/posts/10_19_23/">
-              Deploy to GitHub Pages
+            <a class="title-link" href="https://xuanjin001.github.io/posts/mar_2_24/">
+              Install Jupyter With &#39;pipx&#39; 
             </a>
           </h1>
         </div>
@@ -159,13 +159,13 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-10-19T00:13:37-07:00">
-                October 19, 2023
+              <time datetime="2024-03-02T01:58:35-08:00">
+                March 2, 2024
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              3-minute read
+              2-minute read
             </span>
           </div>
           <div class="authors">
@@ -174,7 +174,7 @@
 
           <div class="categories">
   <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/october-2023/">October, 2023</a>
+    <a href="/categories/feburary-2024/">Feburary, 2024</a>
       <span class="separator">•</span>
     <a href="/categories/projects/">projects</a></div>
 
@@ -184,27 +184,8 @@
 
       <div class="post-content">
         
-        <p>It took me a while to finish the deployment to &ldquo;production&rdquo; which is my github repo.</p>
-<p>I would like to document what I was doing here so that I can refer to here later when I need to deploy again.</p>
-<p>First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas. Then I noticed that, there is something called <code>[taxonomies]</code>. When I was trying out different ways I can possibly show the projects, I added the project to it, <code>project = &quot;projects&quot;</code>, then I just totally forgot about it. After I commented that out, things seems to be more consistant after that.</p>
-<p>So What is a taxonomy?</p>
-<p>Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.</p>
-<p>You can find more 
-
-
-
-
-
-<a href="https://gohugo.io/content-management/taxonomies/" 
-	 target="_blank" rel="noopener"
-	>here</a>.</p>
-<p>So no wonder, I kept seeing projects as a folder; which I totally don&rsquo;t want that, I just want a page to show the list of projects or things I am working on. For the longest time, it has been always guiding to the stupid folder, lol, now it is finally pointing to the page I want.</p>
-<p>This whole thing tells you that, you need to go back to the documentation provided by the officals always. The answers are always there.</p>
-<p>To successfully deploy, you need to start clean, always keep the deployment folder clean, then remember to build the hugo project, and push the items into prod site, then setup the workflow in github, and push everything out. The workflow on github will automatically run the build and publish. BUT every time, you need to keep everything clean.</p>
-<p>There are times that everything is going to fail, keep going back to the code, and keep in mind you have to have to have to keep the &ldquo;prod&rdquo; section clean at all times.</p>
-<p>It took me about 6 hours to fix the things I wanted to fix. Hopefully, next time, it will be more smooth!</p>
-<p>I have been thinking about this, and working on this for a while, I always wanted to wait for things to be perfect to publish it, but there is honestly no point, right? No product is perfect, even a developed product is not perfect, if waiting for perfections, then nothing will get done, I guess that&rsquo;s why nothing is getting done. Need to change the mindset now.</p>
-<p>There we go. Goodnight!</p>
+        <p>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &ldquo;Is she ready?&rdquo;, I have to say, I am more ready and capable than you know. I now know I am more capable than I and other people know.</p>
+<p>Alrigt, enough chat, I wanted to give the background of where I am at, I am so out of touch that I didn&rsquo;t even know pipx is the new pip now, and Jupyter hasn&rsquo;t updated their documentation yet, hell, that even popped up when I was trying to install pip through brew on my work computer. It was news to me that we need to use <code>pipx</code> now. Then thanks to google, there is a way to install this correctly. I haven&rsquo;t used Jupyter for years, but I think for my side projects, I am going to use Jupyter to clean up the data. Now here is what I found by far.</p>
 
       </div>
 
@@ -213,7 +194,7 @@
         <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
   
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/10_19_23/"
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/mar_2_24/"
      target="_blank"
      rel="noopener noreferrer"
      style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">

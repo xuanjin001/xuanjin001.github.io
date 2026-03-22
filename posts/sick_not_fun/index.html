@@ -3,7 +3,7 @@
 
 <head>
   <title>
-  Deploy to GitHub Pages · xuanjin
+  I have been sick · xuanjin
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +13,28 @@
 
 
 <meta name="author" content="Xuan Jin">
-<meta name="description" content="Deploy Hugo pages">
+<meta name="description" content="Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&rsquo;t want to take any leave.
+I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something.">
 <meta name="keywords" content="blog,developer,personal">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Deploy to GitHub Pages"/>
-<meta name="twitter:description" content="Deploy Hugo pages"/>
+<meta name="twitter:title" content="I have been sick"/>
+<meta name="twitter:description" content="Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&rsquo;t want to take any leave.
+I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something."/>
 
-<meta property="og:title" content="Deploy to GitHub Pages" />
-<meta property="og:description" content="Deploy Hugo pages" />
+<meta property="og:title" content="I have been sick" />
+<meta property="og:description" content="Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&rsquo;t want to take any leave.
+I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xuanjin001.github.io/posts/10_19_23/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-10-19T00:13:37-07:00" />
-<meta property="article:modified_time" content="2023-10-19T00:13:37-07:00" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/sick_not_fun/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-13T12:46:57-08:00" />
+<meta property="article:modified_time" content="2024-11-13T12:46:57-08:00" />
 
 
 
 
 
-<link rel="canonical" href="https://xuanjin001.github.io/posts/10_19_23/">
+<link rel="canonical" href="https://xuanjin001.github.io/posts/sick_not_fun/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -150,8 +153,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://xuanjin001.github.io/posts/10_19_23/">
-              Deploy to GitHub Pages
+            <a class="title-link" href="https://xuanjin001.github.io/posts/sick_not_fun/">
+              I have been sick
             </a>
           </h1>
         </div>
@@ -159,52 +162,30 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-10-19T00:13:37-07:00">
-                October 19, 2023
+              <time datetime="2024-11-13T12:46:57-08:00">
+                November 13, 2024
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              3-minute read
+              2-minute read
             </span>
           </div>
-          <div class="authors">
-  <i class="fa fa-user" aria-hidden="true"></i>
-    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
-
-          <div class="categories">
-  <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/october-2023/">October, 2023</a>
-      <span class="separator">•</span>
-    <a href="/categories/projects/">projects</a></div>
-
+          
+          
           
         </div>
       </header>
 
       <div class="post-content">
         
-        <p>It took me a while to finish the deployment to &ldquo;production&rdquo; which is my github repo.</p>
-<p>I would like to document what I was doing here so that I can refer to here later when I need to deploy again.</p>
-<p>First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas. Then I noticed that, there is something called <code>[taxonomies]</code>. When I was trying out different ways I can possibly show the projects, I added the project to it, <code>project = &quot;projects&quot;</code>, then I just totally forgot about it. After I commented that out, things seems to be more consistant after that.</p>
-<p>So What is a taxonomy?</p>
-<p>Hugo includes support for user-defined groupings of content called taxonomies. Taxonomies are classifications of logical relationships between content.</p>
-<p>You can find more 
-
-
-
-
-
-<a href="https://gohugo.io/content-management/taxonomies/" 
-	 target="_blank" rel="noopener"
-	>here</a>.</p>
-<p>So no wonder, I kept seeing projects as a folder; which I totally don&rsquo;t want that, I just want a page to show the list of projects or things I am working on. For the longest time, it has been always guiding to the stupid folder, lol, now it is finally pointing to the page I want.</p>
-<p>This whole thing tells you that, you need to go back to the documentation provided by the officals always. The answers are always there.</p>
-<p>To successfully deploy, you need to start clean, always keep the deployment folder clean, then remember to build the hugo project, and push the items into prod site, then setup the workflow in github, and push everything out. The workflow on github will automatically run the build and publish. BUT every time, you need to keep everything clean.</p>
-<p>There are times that everything is going to fail, keep going back to the code, and keep in mind you have to have to have to keep the &ldquo;prod&rdquo; section clean at all times.</p>
-<p>It took me about 6 hours to fix the things I wanted to fix. Hopefully, next time, it will be more smooth!</p>
-<p>I have been thinking about this, and working on this for a while, I always wanted to wait for things to be perfect to publish it, but there is honestly no point, right? No product is perfect, even a developed product is not perfect, if waiting for perfections, then nothing will get done, I guess that&rsquo;s why nothing is getting done. Need to change the mindset now.</p>
-<p>There we go. Goodnight!</p>
+        <p>Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&rsquo;t want to take any leave.</p>
+<p>I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something. I was only able to run for 5 minutes and then my chest started to be in a lot of pain. After that run, my heart rate was high in 130-140 for a solid hour. Ever since that, I have been having trouble to lower my heart rate.</p>
+<p>There are also some pressure to have the new accelerator center to be launched as soon as possible, on top of that there are cutover and go live going on for clients.</p>
+<p>So many things going on, but not much energy, is it?</p>
+<p>I am not sure how I did it when I was in my 20s, stayed up until 4am to do go live, and slept for 3 hours, then wake up and jump into other 5 projects at the same time. The more busy I was, the better I also performed. I loved that busy life, whenever I try to solve a problem, I dig really deep into things and understood every single perspective of it. Whenever I am not as busy, I will also have this panic, lol, I think I enjoy to be busy, busy on project drives me to think more and learn more, it brings me happiness.</p>
+<p>OK I might have been working too much back then, but I liked it. I was learning, and I was learning a lot along the way.</p>
+<p>For now though, I think the body is sending me a clear message — slow down, recover properly, and don&rsquo;t rush back before I am ready. The projects will still be there. I will get back to full speed, just not today.</p>
 
       </div>
 
@@ -213,7 +194,7 @@
         <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
   
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/10_19_23/"
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/sick_not_fun/"
      target="_blank"
      rel="noopener noreferrer"
      style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
