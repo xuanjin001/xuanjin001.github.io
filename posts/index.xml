@@ -6,14 +6,33 @@
     <description>Recent content in Posts on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Mar 2026 00:26:17 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2026 00:30:49 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Accounting App — Product Requirements Document</title>
+      <link>https://xuanjin001.github.io/posts/req_doc/</link>
+      <pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/req_doc/</guid>
+      <description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description>
+    </item>
+    
+    <item>
+      <title>Still Figuring It Out — My Honest Take on AI in 2026</title>
+      <link>https://xuanjin001.github.io/posts/ai_2026/</link>
+      <pubDate>Sun, 22 Mar 2026 18:28:26 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/ai_2026/</guid>
+      <description>2026 is really different. Starting with the new year, it is the year of AI. If the past was all about agents and agentic workflows, this year is all about skills for agents and automations.
+People&amp;rsquo;s perspective about AI Link to heading I found people are a bit polarized about AI. Some people love it and fully embrace it, while some people don&amp;rsquo;t think AI can do what they do. There is also another group: they know something about AI and AI agents but still only use AI chatbots.</description>
+    </item>
+    
     <item>
       <title>Personal Accounting -- Receipt Tracker</title>
       <link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link>
       <pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate>
       
       <guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid>
-      <description>I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money.</description>
+      <description>I have been trying to find an app that can record my day-to-day purchases so that I can compare prices between Costco and Target, which can help me evaluate how to spend my money. I tried Mint, but it only has a really generic spending structure. It shows the total amount that you spent at each merchant, and depending on where you are buying things, it will generically tell you how you are spending your money.</description>
     </item>
     
     <item>

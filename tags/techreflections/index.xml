@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TechReflections on xuanjin</title>
+    <link>https://xuanjin001.github.io/tags/techreflections/</link>
+    <description>Recent content in TechReflections on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Mar 2026 18:28:26 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/techreflections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Still Figuring It Out — My Honest Take on AI in 2026</title>
+      <link>https://xuanjin001.github.io/posts/ai_2026/</link>
+      <pubDate>Sun, 22 Mar 2026 18:28:26 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/ai_2026/</guid>
+      <description>2026 is really different. Starting with the new year, it is the year of AI. If the past was all about agents and agentic workflows, this year is all about skills for agents and automations.
+People&amp;rsquo;s perspective about AI Link to heading I found people are a bit polarized about AI. Some people love it and fully embrace it, while some people don&amp;rsquo;t think AI can do what they do. There is also another group: they know something about AI and AI agents but still only use AI chatbots.</description>
+    </item>
+    
+  </channel>
+</rss>

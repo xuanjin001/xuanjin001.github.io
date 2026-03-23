@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on xuanjin</title>
+    <link>https://xuanjin001.github.io/tags/documentation/</link>
+    <description>Recent content in Documentation on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Mar 2026 00:30:49 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Accounting App — Product Requirements Document</title>
+      <link>https://xuanjin001.github.io/posts/req_doc/</link>
+      <pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/req_doc/</guid>
+      <description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description>
+    </item>
+    
+  </channel>
+</rss>
