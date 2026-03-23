@@ -2,40 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xuanjin001.github.io/tags/ai/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/ai/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/aiagents/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/aiagents/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/authors/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/developer/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/developer/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/development/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/development/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/documentation/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/documentation/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/req_doc/</loc>
@@ -44,10 +14,10 @@
     <loc>https://xuanjin001.github.io/posts/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/softwareengineering/</loc>
+    <loc>https://xuanjin001.github.io/tags/projects/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/softwareengineering/</loc>
+    <loc>https://xuanjin001.github.io/categories/projects/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/tags/</loc>
@@ -59,68 +29,20 @@
     <loc>https://xuanjin001.github.io/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/2026tech/</loc>
+    <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
     <lastmod>2026-03-22T18:28:26-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/2026tech/</loc>
+    <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
     <lastmod>2026-03-22T18:28:26-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai_2026/</loc>
     <lastmod>2026-03-22T18:28:26-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/techreflections/</loc>
-    <lastmod>2026-03-22T18:28:26-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/techreflections/</loc>
-    <lastmod>2026-03-22T18:28:26-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/blog/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/blog/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/design/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/design/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/experience/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/experience/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/product-design/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/product-design/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/tools/</loc>
-    <lastmod>2026-03-22T00:26:17-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/tools/</loc>
     <lastmod>2026-03-22T00:26:17-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/mar_7_25/</loc>
     <lastmod>2025-03-07T12:10:32-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/technology/</loc>
-    <lastmod>2025-03-07T12:10:32-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/technology/</loc>
-    <lastmod>2025-03-07T12:10:32-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/health/</loc>
-    <lastmod>2024-11-13T12:46:57-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/health/</loc>
-    <lastmod>2024-11-13T12:46:57-08:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/sick_not_fun/</loc>
     <lastmod>2024-11-13T12:46:57-08:00</lastmod>
@@ -131,12 +53,6 @@
     <loc>https://xuanjin001.github.io/categories/personal/</loc>
     <lastmod>2024-11-13T12:46:57-08:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/salesforce/</loc>
-    <lastmod>2024-11-04T19:35:30-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/salesforce/</loc>
-    <lastmod>2024-11-04T19:35:30-08:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/agentforce/</loc>
     <lastmod>2024-11-04T19:35:30-08:00</lastmod>
   </url><url>
@@ -146,19 +62,25 @@
     <loc>https://xuanjin001.github.io/posts/ai_11-3-2024/</loc>
     <lastmod>2024-11-03T16:06:30-08:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/career/</loc>
+    <loc>https://xuanjin001.github.io/tags/career-personal-growth/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/career/</loc>
+    <loc>https://xuanjin001.github.io/categories/career-personal-growth/</loc>
+    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/career-growth/</loc>
+    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/career-growth/</loc>
+    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/interview/</loc>
+    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/interview/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/projects_lists_2025/</loc>
-    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/projects/</loc>
-    <lastmod>2024-10-26T02:23:43-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/projects/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/resume/</loc>
@@ -170,10 +92,10 @@
     <loc>https://xuanjin001.github.io/posts/mar_2_24/</loc>
     <lastmod>2024-03-02T01:58:35-08:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/tutorial/</loc>
+    <loc>https://xuanjin001.github.io/tags/tutorials/</loc>
     <lastmod>2024-03-02T01:58:35-08:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/tutorial/</loc>
+    <loc>https://xuanjin001.github.io/categories/tutorials/</loc>
     <lastmod>2024-03-02T01:58:35-08:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/10_19_23/</loc>
@@ -191,25 +113,13 @@
     <loc>https://xuanjin001.github.io/series/theme-demo/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/data-engineering/</loc>
-    <lastmod>2023-07-31T07:24:27-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/data-engineering/</loc>
-    <lastmod>2023-07-31T07:24:27-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/data-migration/</loc>
     <lastmod>2023-07-31T07:24:27-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/sfdc/</loc>
+    <loc>https://xuanjin001.github.io/tags/developer/</loc>
     <lastmod>2023-07-31T07:24:27-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/sfdc/</loc>
-    <lastmod>2023-07-31T07:24:27-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/solution-architect/</loc>
-    <lastmod>2023-07-31T07:24:27-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/solution-architect/</loc>
+    <loc>https://xuanjin001.github.io/categories/developer/</loc>
     <lastmod>2023-07-31T07:24:27-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/authors/hugo-authors/</loc>
@@ -245,12 +155,6 @@
     <loc>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</loc>
     <lastmod>2021-04-25T19:29:07-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/10-years/</loc>
-    <lastmod>2021-03-21T22:26:56-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/10-years/</loc>
-    <lastmod>2021-03-21T22:26:56-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/know-me-by-my-name/</loc>
     <lastmod>2021-03-21T22:26:56-07:00</lastmod>
   </url><url>
@@ -263,12 +167,6 @@
     <loc>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</loc>
     <lastmod>2021-03-10T21:51:00-08:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/interview-experience/</loc>
-    <lastmod>2021-03-10T21:51:00-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/interview-experience/</loc>
-    <lastmod>2021-03-10T21:51:00-08:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</loc>
     <lastmod>2021-02-21T17:51:33-08:00</lastmod>
   </url><url>
@@ -276,12 +174,6 @@
     <lastmod>2021-02-21T01:24:42-08:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</loc>
-    <lastmod>2021-01-27T00:06:15-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/short-story/</loc>
-    <lastmod>2021-01-27T00:06:15-08:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/short-story/</loc>
     <lastmod>2021-01-27T00:06:15-08:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</loc>
@@ -302,22 +194,16 @@
     <loc>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</loc>
     <lastmod>2020-04-08T07:59:06-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/coronavirus/</loc>
-    <lastmod>2020-04-04T16:56:06-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/coronavirus/</loc>
-    <lastmod>2020-04-04T16:56:06-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</loc>
     <lastmod>2020-04-04T16:56:06-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/interview/</loc>
-    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/interview/</loc>
-    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</loc>
+    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/salesforce/</loc>
+    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/salesforce/</loc>
     <lastmod>2020-04-01T14:41:21-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</loc>
@@ -326,10 +212,10 @@
     <loc>https://xuanjin001.github.io/posts/family/</loc>
     <lastmod>2019-05-06T21:10:10-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/uncategorized/</loc>
+    <loc>https://xuanjin001.github.io/tags/other/</loc>
     <lastmod>2019-04-13T16:32:58-07:00</lastmod>
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/uncategorized/</loc>
+    <loc>https://xuanjin001.github.io/categories/other/</loc>
     <lastmod>2019-04-13T16:32:58-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</loc>
@@ -413,10 +299,6 @@
     <loc>https://xuanjin001.github.io/contact/</loc>
   </url><url>
     <loc>https://xuanjin001.github.io/contato/</loc>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/leetcode/lintcode/</loc>
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/leetcode/lintcode/</loc>
   </url><url>
     <loc>https://xuanjin001.github.io/projects/</loc>
   </url>

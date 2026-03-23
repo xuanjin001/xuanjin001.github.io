@@ -6,26 +6,7 @@
     <description>Recent content in Developer on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2026 00:30:49 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Personal Accounting App — Product Requirements Document</title>
-      <link>https://xuanjin001.github.io/posts/req_doc/</link>
-      <pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/req_doc/</guid>
-      <description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description>
-    </item>
-    
-    <item>
-      <title>Still Figuring It Out — My Honest Take on AI in 2026</title>
-      <link>https://xuanjin001.github.io/posts/ai_2026/</link>
-      <pubDate>Sun, 22 Mar 2026 18:28:26 -0700</pubDate>
-      
-      <guid>https://xuanjin001.github.io/posts/ai_2026/</guid>
-      <description>2026 is really different. Starting with the new year, it is the year of AI. If the past was all about agents and agentic workflows, this year is all about skills for agents and automations.
-People&amp;rsquo;s perspective about AI Link to heading I found people are a bit polarized about AI. Some people love it and fully embrace it, while some people don&amp;rsquo;t think AI can do what they do. There is also another group: they know something about AI and AI agents but still only use AI chatbots.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 31 Jul 2023 07:24:27 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Migration</title>
       <link>https://xuanjin001.github.io/posts/data-migration/</link>
@@ -37,12 +18,205 @@ Whenever I talk about data migration, I always think about moving. Think about d
     </item>
     
     <item>
+      <title>Design &amp; DEV</title>
+      <link>https://xuanjin001.github.io/posts/design-dev/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/design-dev/</guid>
+      <description>Photo by Andrea Piacquadio from Pexels
+When it comes to design, there are different ways that can be done. The purpose of design is to make sure the solution you are designing will be acceptable by users. Design has so many different perspectives, I personally think they have the following parts:
+Solution Design UI Design User Experience Design First of all, you do need to understand what you are designing, and what it is for, who it is for.</description>
+    </item>
+    
+    <item>
+      <title>Useful SFDC Tools</title>
+      <link>https://xuanjin001.github.io/posts/useful-sfdc-tools/</link>
+      <pubDate>Thu, 29 Jul 2021 22:28:57 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/useful-sfdc-tools/</guid>
+      <description>There are some sites and items that&amp;rsquo;s really helpful on our daily basis while working in SFDC. If you have some tools that you are using, please post that in the comments as well. I will continue update this post if I found more items.
+Websites: https://developer.salesforce.com/
+https://help.salesforce.com
+Trailhead: https://trailhead.salesforce.com/
+Toolkit for SFDC: https://cloudtoolkit.co/
+Click to Create LWC designing tool: https://www.lightningdesignsystem.com/guidelines/builder/click/
+Unofficial SF: https://unofficialsf.com/
+Regex translator: https://regex-generator.olafneumann.org/?sampleText=2020-03-12T13%3A34%3A56.123Z%20INFO%20%20%5Borg.example.Class%5D%3A%20This%20is%20a%20%23simple%20%23logline%20containing%20a%20%27value%27.&amp;amp;flags=i&amp;amp;onlyPatterns=false&amp;amp;matchWholeLine=true&amp;amp;selection=
+Mass Update on mutilple profiles: https://profilepowertools.</description>
+    </item>
+    
+    <item>
+      <title>Dynamically Submit Opp Approval to a Queue</title>
+      <link>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</link>
+      <pubDate>Sat, 22 May 2021 15:36:53 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</guid>
+      <description>I haven&amp;rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+The following solution is inspired by this post.
+Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&amp;rsquo;s related to opp owner&amp;rsquo;s department when condition meets.
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer.</description>
+    </item>
+    
+    <item>
+      <title>Community Cloud Cert Resources</title>
+      <link>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</link>
+      <pubDate>Sun, 24 Jan 2021 19:14:32 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</guid>
+      <description>The following are the resources I have, and those are the resources I am using to get ready for this test. Some of the resources are found by me, a lot of the following resources are from my friend Yi. Hats off to her!
+Photo by Julia M Cameron on Pexels.com
+Resources:
+Fast Path: https://trailhead.salesforce.com/en/users/amanj/trailmixes/community-cloud-fast-path Salesforce Cert Community Cloud Consultant Exam Guide: https://trailhead.salesforce.com/help?article=Salesforce-Certified-Community-Cloud-Consultant-Exam-Guide &amp;ndash;&amp;gt; Found by Yi Outline points related: https://trailhead.</description>
+    </item>
+    
+    <item>
+      <title>Administration Essentials for New Admins</title>
+      <link>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</link>
+      <pubDate>Thu, 21 Jan 2021 00:14:15 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</guid>
+      <description>In Salesforce, there are two major roles, one is Admin and the other one is Developer, everyone will tell you that you should learn how to be an Admin first, then learn to be a Developer. I totally agree, with your Admin skills, you will understand the whole picture a lot better; since as an Admin, you are the heart of your Org.
+A lot of people will have some misunderstandings about Admins in Salesforce.</description>
+    </item>
+    
+    <item>
       <title>My Salesforce Developer Interview Experience</title>
       <link>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</link>
       <pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate>
       
       <guid>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</guid>
       <description>I was over-joyed when I got the call from that company. I really like their company. That is a really young company. As a young company, they move rapidly, and things are truly always changing. As a workaholic that I am, that kind of environment is my favorite. I love working and I definitely miss working a lot. I am the type of person, even you are not going to pay over time, I would stay there and work late, during that time I reflect on what I could improve, even thinking through what my coworker did that I can learn from or how I can improve from their mistakes, etc.</description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>https://xuanjin001.github.io/posts/automation/</link>
+      <pubDate>Mon, 06 Feb 2017 21:39:08 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/automation/</guid>
+      <description>Automation
+Email Administration
+` `
+Create org-wide email addresses ` `
+Setup BCC email for compliance reasons ` `
+Enable email to SFDC that automatically logs email seat from 3rd party email accounts as actives on lead &amp;amp; contact records ` `
+Stop end users from downloading harmful attachments ` `
+Setup default footers for both individual and mass emails Email Templates:
+` `
+Maintain brand consistency ` `
+Save time with several out-of-box email templates Email Templates can be set up for:</description>
+    </item>
+    
+    <item>
+      <title>Reports</title>
+      <link>https://xuanjin001.github.io/posts/reports/</link>
+      <pubDate>Mon, 06 Feb 2017 21:27:22 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/reports/</guid>
+      <description>Reports
+Definition: Reports are lists or summaries that allow you to aggregate and analyze your data in different ways.
+Standard Reports:
+` `
+Build in ` `
+Stored in standard folders ` `
+Can be customized ` `
+Saved as custom reports since they can’t be overwritten Custom Reports:
+` `
+Can be built from scratch ` `
+Can be created by customizing standard reports ` `
+Must be saved in a custom, personal, or unfiled folder Finding reports on the Enhanced Reports Tab</description>
+    </item>
+    
+    <item>
+      <title>Managing Data</title>
+      <link>https://xuanjin001.github.io/posts/managing-data/</link>
+      <pubDate>Mon, 06 Feb 2017 21:25:59 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/managing-data/</guid>
+      <description>Managing Data
+Importing Data: Data Import Wizard
+The data import Wizard provides a unified interface through which you can import data for accounts and contacts, leads, solutions, and custom objects
+` `
+Use the same wizard for all available objects ` `
+Choose what to do with imported data ` `
+Drag &amp;amp; drop import files Setup | Data Management | Data Import Wizard
+Import files:
+` `
+Has value separated by comma ` `</description>
+    </item>
+    
+    <item>
+      <title>Customization Fields</title>
+      <link>https://xuanjin001.github.io/posts/customization-fields/</link>
+      <pubDate>Mon, 06 Feb 2017 21:21:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/customization-fields/</guid>
+      <description>Customization Fields
+Standard Fields:
+` `
+Are predefined in SFDC ` `
+Cannot be deleted ` `
+Can be removed from a page layout ` `
+Can have limited customizations Customizing Standard Fields
+` `
+Changing Labels: setup | Customize |Tab Names &amp;amp; Labels à Rename Tabs &amp;amp; Labels ` `
+Adding Help Text: Setup | Customize | Name of Object | Fields | Edit ` `
+Editing values in Standard Picklist Fields, Setup | Customize | Name of Object | Fields | Name of Field ` `</description>
+    </item>
+    
+    <item>
+      <title>Security and Data Access</title>
+      <link>https://xuanjin001.github.io/posts/security-data-access/</link>
+      <pubDate>Mon, 06 Feb 2017 21:15:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/security-data-access/</guid>
+      <description>Security &amp;amp; Data Access
+User attempts to log in through browser à Has user logged in from this browser or IP address before?
+- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in
+Path: setup | Security controls | Session Management
+Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled.</description>
+    </item>
+    
+    <item>
+      <title>Getting your org ready for users</title>
+      <link>https://xuanjin001.github.io/posts/68/</link>
+      <pubDate>Mon, 06 Feb 2017 20:48:35 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/68/</guid>
+      <description>Getting your org ready for users
+Org. Level:
+So the company profiles is the top security control tool, and UI Setting is the second…
+Company profile: A collection of information about your organization, mostly captured at contractual signup.
+Company info:
+` `
+Name and address ` `
+Primary contact ` `
+Default locale ` `
+Default company ` `
+Storage used ` `
+Licenses available Financial Information: FY, Currencies
+Support Information: Business hours, holidays</description>
+    </item>
+    
+    <item>
+      <title>Overview on SFDC</title>
+      <link>https://xuanjin001.github.io/posts/overview-on-sfdc/</link>
+      <pubDate>Mon, 06 Feb 2017 20:43:44 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/overview-on-sfdc/</guid>
+      <description>Standard objects from Salesforce:
+Accounts
+` `
+Organizations that you need to track, such as customers ` `
+Have related contacts, opportunities and cases ` `
+Accounts to other objects: one to many relationships Contacts
+` `
+Individuals associated with your accounts ` `
+Have related cases Opportunities
+` `
+Potential sales associated with your accounts ` `
+Make up your pipeline and forecasts ` `
+Associated with contacts Cases</description>
     </item>
     
   </channel>
