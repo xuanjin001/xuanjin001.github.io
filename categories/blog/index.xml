@@ -6,7 +6,16 @@
     <description>Recent content in Blog on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Mar 2026 00:26:17 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Accounting -- Receipt Tracker</title>
+      <link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link>
+      <pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid>
+      <description>I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money.</description>
+    </item>
+    
     <item>
       <title>My blog post project</title>
       <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
@@ -15,6 +24,216 @@
       <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
       <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
 Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
+    </item>
+    
+    <item>
+      <title>Data Migration</title>
+      <link>https://xuanjin001.github.io/posts/data-migration/</link>
+      <pubDate>Mon, 31 Jul 2023 07:24:27 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/data-migration/</guid>
+      <description>What is &amp;ldquo;Data Migration&amp;rdquo;?
+Whenever I talk about data migration, I always think about moving. Think about data migration in a moving situation, what will you do if you are moving into a new place? Moving data is the same way, what you will do is moving the data from one system and put them into another, just like moving. You will pack everything up in your old house and move into the new one.</description>
+    </item>
+    
+    <item>
+      <title>Uncharted Review</title>
+      <link>https://xuanjin001.github.io/posts/uncharted-review/</link>
+      <pubDate>Sun, 20 Mar 2022 11:01:26 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/uncharted-review/</guid>
+      <description>Contains spoiler alert, I think it counts as spoiler alert.
+Uncharted had American writing all over the place in that movie. I watch a lot of movies, and I can tell there are so much the director wants to do, different audience he wants to satisfy. Basically, he showed his interest in trying to make the original gamer happy, however, judging by the comments from the gamers, they are not too happy about what they saw.</description>
+    </item>
+    
+    <item>
+      <title>LeedCode List</title>
+      <link>https://xuanjin001.github.io/posts/leedcode-list/</link>
+      <pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/leedcode-list/</guid>
+      <description>The following are my list of the items that I will be working on. I changed my strategy a little bit. I use to go over the &amp;ldquo;Explore&amp;rdquo; list, and doing the problem on the side. The following is my organized list. When I do couple problems, I will post on this insta account. :) As the whole world is my witness, and please keep pushing me to my own limits.</description>
+    </item>
+    
+    <item>
+      <title>Design &amp; DEV</title>
+      <link>https://xuanjin001.github.io/posts/design-dev/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/design-dev/</guid>
+      <description>Photo by Andrea Piacquadio from Pexels
+When it comes to design, there are different ways that can be done. The purpose of design is to make sure the solution you are designing will be acceptable by users. Design has so many different perspectives, I personally think they have the following parts:
+Solution Design UI Design User Experience Design First of all, you do need to understand what you are designing, and what it is for, who it is for.</description>
+    </item>
+    
+    <item>
+      <title>Postman API</title>
+      <link>https://xuanjin001.github.io/posts/postman-api/</link>
+      <pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/postman-api/</guid>
+      <description>What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&amp;rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.</description>
+    </item>
+    
+    <item>
+      <title>Useful SFDC Tools</title>
+      <link>https://xuanjin001.github.io/posts/useful-sfdc-tools/</link>
+      <pubDate>Thu, 29 Jul 2021 22:28:57 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/useful-sfdc-tools/</guid>
+      <description>There are some sites and items that&amp;rsquo;s really helpful on our daily basis while working in SFDC. If you have some tools that you are using, please post that in the comments as well. I will continue update this post if I found more items.
+Websites: https://developer.salesforce.com/
+https://help.salesforce.com
+Trailhead: https://trailhead.salesforce.com/
+Toolkit for SFDC: https://cloudtoolkit.co/
+Click to Create LWC designing tool: https://www.lightningdesignsystem.com/guidelines/builder/click/
+Unofficial SF: https://unofficialsf.com/
+Regex translator: https://regex-generator.olafneumann.org/?sampleText=2020-03-12T13%3A34%3A56.123Z%20INFO%20%20%5Borg.example.Class%5D%3A%20This%20is%20a%20%23simple%20%23logline%20containing%20a%20%27value%27.&amp;amp;flags=i&amp;amp;onlyPatterns=false&amp;amp;matchWholeLine=true&amp;amp;selection=
+Mass Update on mutilple profiles: https://profilepowertools.</description>
+    </item>
+    
+    <item>
+      <title>Dynamically Submit Opp Approval to a Queue</title>
+      <link>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</link>
+      <pubDate>Sat, 22 May 2021 15:36:53 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</guid>
+      <description>I haven&amp;rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+The following solution is inspired by this post.
+Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&amp;rsquo;s related to opp owner&amp;rsquo;s department when condition meets.
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer.</description>
+    </item>
+    
+    <item>
+      <title>The Road to Locate Shirls</title>
+      <link>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</link>
+      <pubDate>Sun, 25 Apr 2021 19:29:07 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</guid>
+      <description>Week 4/18 &amp;ndash; 4/24 Starting Point Link to heading I have been sleeping on my couch for about a week now, kinda of lost the sense of what a bed is. Ironically, I was trying to sleep in my bed, I couldn&amp;rsquo;t sleep, kept dreaming about someone cutting someone&amp;rsquo;s head off&amp;hellip;but I don&amp;rsquo;t have nightmares when I sleep on my couch.
+I have always wanted to start with coding on something, but I always got pushed back by myself, I was worried that the idea I had is not good enough, or maybe someone is already doing it and doing it better, or I don&amp;rsquo;t think it is interesting enough.</description>
+    </item>
+    
+    <item>
+      <title>Know me by my name</title>
+      <link>https://xuanjin001.github.io/posts/know-me-by-my-name/</link>
+      <pubDate>Sun, 21 Mar 2021 22:26:56 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/know-me-by-my-name/</guid>
+      <description>Name is interesting, isn&amp;rsquo;t it? In English, each name comes from Greek tale, or Bible or the changing form of it. Name is interesting, some people say Name is just a label, it is just a name. However, I don&amp;rsquo;t agree, name is more than just a label, there is a reason we don&amp;rsquo;t call people NO.123456789, you know, there is a reason why inmates in the prison is only labeled with numbers.</description>
+    </item>
+    
+    <item>
+      <title>The Last Blockbuster</title>
+      <link>https://xuanjin001.github.io/posts/the-last-blockbuster/</link>
+      <pubDate>Mon, 15 Mar 2021 22:39:27 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/the-last-blockbuster/</guid>
+      <description>Photo by Poranimm Athithawatthee on Pexels.com
+I was taking a break after work, the break between my work and my night study, but all of my plans got distracted when I saw &amp;ldquo;The Last Blockbuster&amp;rdquo; on Netflix. I almost burst out into tears. I miss that place so much!
+I was not born in the era of VHS, but I know what that is. My parents&amp;rsquo; wedding ceremony, the whole thing was shot and saved on VHS.</description>
+    </item>
+    
+    <item>
+      <title>Insecurity, Don&#39;t we all have it?</title>
+      <link>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</link>
+      <pubDate>Mon, 15 Mar 2021 01:24:08 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</guid>
+      <description>I am a super insecure person. My look, my personality, the way I move. I feel like the whole world is looking at me all the time, but the fact is no one is actually looking. I love to coop up inside a lot, just so I don&amp;rsquo;t have to worry about what other people think about me. That whole process is just too much work. I don&amp;rsquo;t know, haha.</description>
+    </item>
+    
+    <item>
+      <title>It doesn&#39;t take a lot to hold on. It takes a lot of strength to let go.</title>
+      <link>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</link>
+      <pubDate>Sun, 21 Feb 2021 17:51:33 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</guid>
+      <description>It doesn&amp;rsquo;t take a lot to hold on. It takes a lot of strength to let go. &amp;ndash; J.C. Watts
+I had a trigger point today, I hated it, I saw a guy in Costco, who awfully looks like Grayson, I think that&amp;rsquo;s him, I almost lost control. It is pretty bad. I don&amp;rsquo;t know how to handle feelings like that, it is pretty annoying. The first thing came into my mind was, &amp;ldquo;oh Grayson is till alive, so nothing bad happened to you?</description>
+    </item>
+    
+    <item>
+      <title>Unsolved, Unknown</title>
+      <link>https://xuanjin001.github.io/posts/unsolved-unknown/</link>
+      <pubDate>Sun, 21 Feb 2021 01:24:42 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unsolved-unknown/</guid>
+      <description>There are few things haunts us, the dark at night can cover a lot of things, at the same time, it can also discover a lot of beauty, the beauty of the night light from a city, the terror under those lights. You don&amp;rsquo;t know what&amp;rsquo;s happening there.
+Couple years ago, I met a guy at a train station in Denver, the train was not there yet, we had about 30 minutes to kill.</description>
+    </item>
+    
+    <item>
+      <title>Murder? Murder! Murder? Maybe - Part I</title>
+      <link>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</link>
+      <pubDate>Wed, 27 Jan 2021 00:06:15 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</guid>
+      <description>Photo by Rojan Maguyon on Pexels.com
+Story starts here&amp;hellip; (If you prefer listening, please scroll all the way down)
+The plan was good and simple, he had it all planned out, it was just suppose to be a fake death, so that he doesn&amp;rsquo;t need to live the life he doesn&amp;rsquo;t want, and start over. His best friend would assist him. He would still watch his family from far away and send money to them once in a while to help out, that&amp;rsquo;s all he wanted to do; making everyone in the town thinks he is dead, then life moves on.</description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>https://xuanjin001.github.io/posts/english/</link>
+      <pubDate>Mon, 16 Nov 2020 23:19:58 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/english/</guid>
+      <description>I was thinking about writing a short story, but for days, I don&amp;rsquo;t know what to write about. I cannot even start a story with a short story prompt, then why not start writing something about me?
+English is one of my favorite languages, I mean, Chinese is my other favorite, and don&amp;rsquo;t get me wrong, I do love my own culture and Chinese is a beautiful language, especially when you write things out.</description>
+    </item>
+    
+    <item>
+      <title>Product Design - Design a Spice Rack for Blind</title>
+      <link>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</link>
+      <pubDate>Sat, 11 Apr 2020 12:09:21 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</guid>
+      <description>During my quarantine time, I am still in process of doing interviews. The positions I am interviewing ranged from Salesforce Admin, Salesforce Developer to Developer in general. Once in a while, I will get a product design question just so that they can see the way I am thinking. Product design type of questions are my favorite! It is extremely hard to get APM type of jobs, most of the time they would never even give you an interview.</description>
+    </item>
+    
+    <item>
+      <title>Finding a Job during Pandemic is Impossible</title>
+      <link>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</link>
+      <pubDate>Wed, 08 Apr 2020 07:59:06 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</guid>
+      <description>This time just straight up sucks. I don’t know what to do for most of the time, I have been applying to jobs, but I got nothing back. I was hoping that I can find a job by now. Yet, my bank account is running low, I don’t know what to do for the most of the time. My visa is going to expire in May. I will have about 90 days to stay in the US on OPT unemployed, by now, it is close to be 60 days now.</description>
+    </item>
+    
+    <item>
+      <title>Coronavirus and Discriminations</title>
+      <link>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</link>
+      <pubDate>Sat, 04 Apr 2020 16:56:06 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</guid>
+      <description>Photo by Polina Tankilevitch on Pexels.com
+Coronavirus has created a lot of chaos in all of our life, and it also showed different sides from different people. I had a mentor, he is great professionally, and I did learn a lot from him during my internship last year. Every single conversation I had with him is like a huge lesson both in life and at work. I always took notes whenever I was talking to him.</description>
+    </item>
+    
+    <item>
+      <title>Treasure you found when you dig through your old files</title>
+      <link>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</link>
+      <pubDate>Sun, 19 May 2019 19:04:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</guid>
+      <description>Going through my old files, I found the following, I apparently always have the inspiration notes handy:
+&amp;lsquo;Stick to the fight when you&amp;rsquo;re hardest hit- It&amp;rsquo;s when things seem worst that you must not quit.&amp;rsquo; Life is about appreciating what we have and have the courage to face what we have in the future. The journey is more important than the destination. This is the purpose of us living on this world.</description>
+    </item>
+    
+    <item>
+      <title>Family</title>
+      <link>https://xuanjin001.github.io/posts/family/</link>
+      <pubDate>Mon, 06 May 2019 21:10:10 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/family/</guid>
+      <description>I totally forgot how crazy everything is with my family, how stubborn my grandparents are, and how much my mom loves to talk. Being really far away from my family does make you forgot about certain things. I do miss that thpugh.
+My mom sometimes complains to me about what my grandma did, then in back of my mind, it goes, &amp;ldquo;Mom, you did the exact same thing about 10 minutes ago&amp;rdquo;.</description>
     </item>
     
   </channel>

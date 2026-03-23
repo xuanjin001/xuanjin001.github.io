@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Security and Data Access · xuanjin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xuan Jin">
+<meta name="description" content="Security &amp; Data Access
+User attempts to log in through browser à Has user logged in from this browser or IP address before?
+- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in
+Path: setup | Security controls | Session Management
+Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Security and Data Access"/>
+<meta name="twitter:description" content="Security &amp; Data Access
+User attempts to log in through browser à Has user logged in from this browser or IP address before?
+- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in
+Path: setup | Security controls | Session Management
+Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled."/>
+
+<meta property="og:title" content="Security and Data Access" />
+<meta property="og:description" content="Security &amp; Data Access
+User attempts to log in through browser à Has user logged in from this browser or IP address before?
+- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in
+Path: setup | Security controls | Session Management
+Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/security-data-access/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-02-06T21:15:10-08:00" />
+<meta property="article:modified_time" content="2017-02-06T21:15:10-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/posts/security-data-access/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.1446457755d8ec6ec4dd6d74ce5a05cfa24c8fdb8a43d94a09b28514db9996d3.css" integrity="sha256-FEZFd1XY7G7E3W10zloFz6JMj9uKQ9lKCbKFFNuZltM=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      xuanjin
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/projects/">Projects</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/contact/">Contact me</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/posts/security-data-access/">
+              Security and Data Access
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2017-02-06T21:15:10-08:00">
+                February 6, 2017
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/sfdc/">SFDC</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/sfdc/">SFDC</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p><strong>Security &amp; Data Access</strong></p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/cbf70-levelofaccess.jpg" alt="levelofaccess"></p>
+<p>User attempts to log in through browser à Has user logged in from this browser or IP address before?</p>
+<p>- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in</p>
+<p>Path: setup | Security controls | Session Management</p>
+<p>Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled.</p>
+<p>Trusted IP address &amp; Restricted access</p>
+<p>Path: Setup | Customize | User Interface</p>
+<p>Object Permissions determine the kinds of records users can view, create, edit or delete, not the individual records themselves</p>
+<p>Enhanced profile list views make it easier to work with multiple profiles at the same time</p>
+<p>` `</p>
+<ul>
+<li>Mass update profile permissions</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>View and compare settings &amp; permissions for multiple profiles</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Load up to 200 profiles in a single list view</li>
+</ul>
+<p>Path: Setup | Manage Users | Permission Sets</p>
+<p>` `</p>
+<ul>
+<li>Create up to 1000 permission sets</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Assign multiple permissions sets to a user</li>
+</ul>
+<p>Permission sets only grant permissions not deny them</p>
+<p>Record Access: Record access determines which individual records users can view &amp; edit in each object they have access to on their profile</p>
+<p>Data Access Models:</p>
+<p>` `</p>
+<ul>
+<li>Public: No Restriction</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Private: Only access the record on their own</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Hybrid: records they &amp; records of other users that are necessary for their job function</li>
+</ul>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/e7848-dataaccessmodels.jpg" alt="dataaccessmodels"></p>
+<p>Org-wide sharing defaults:</p>
+<p>` `</p>
+<ul>
+<li>Private</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Public Read Only</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Public Read/Write</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Public Read/Write/Transfer</li>
+</ul>
+<p>Role Hierarchy</p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/4701c-rolehierarchy.jpg" alt="rolehierarchy"></p>
+<p>Sharing Rules</p>
+<p>Path: Setup | Security Controls | Sharing Settings</p>
+<p>Sharing rules grant additional records access to defined groups of users on an object-by-object basis</p>
+<p>Share with records?</p>
+<p>` `</p>
+<ul>
+<li>Owned by certain users</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Meeting certain criteria</li>
+</ul>
+<p>With which users?</p>
+<p>` `</p>
+<ul>
+<li>Public group</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Roles</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Roles &amp; subordinates</li>
+</ul>
+<p>Level of access</p>
+<p>` `</p>
+<ul>
+<li>Read-only</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Read/Write</li>
+</ul>
+<p>Types of Sharing Rules</p>
+<p>Account sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Based on who owns the account, or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for accounts &amp; their associated cases, contests, and opportunity</li>
+</ul>
+<p>Contact sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the contact (must be associated with an account), or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual contacts and their accounts</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Cannot use with Territory Management &amp; B2I (Person Account) enabled orgs</li>
+</ul>
+<p>Opportunity Sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in Enterprise, Performance, and unlimited edition</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the opportunity, or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual opportunity and their accounts</li>
+</ul>
+<p>Case Sharing Rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in Enterprise, Performance, and Unlimited Edition</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the case or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual cases &amp; associated accounts</li>
+</ul>
+<p>Lead Sharing Rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in Enterprise, Performance, and Unlimited Editions</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the lead or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual leads</li>
+</ul>
+<p>Campaign sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in Enterprise, Performance, and Unlimited</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the campaign, or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual campaigns</li>
+</ul>
+<p>Custom Object sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in Enterprise, Performance, and Unlimited</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on who owns the custom object or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual custom object records</li>
+</ul>
+<p>User sharing rule:</p>
+<p>` `</p>
+<ul>
+<li>Is available in All 3 edition &amp; developer edition</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>For orgs that enabled user sharing</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Is based on group membership or on selected criteria</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allows you to set default sharing access for individual user records</li>
+</ul>
+<p>Criteria-Based Sharing rules:</p>
+<p>` `</p>
+<ul>
+<li>Determine which records to share based on field values in records</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Are ideal for companies with complex sharing requirements</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Can be used for accounts, opportunities, cases, contacts, and custom objects</li>
+</ul>
+<p>Text &amp; Text Area fields are case-sensitive in sharing rules</p>
+<p>` `</p>
+<ul>
+<li>A public group is an administrator-defined grouping of users that you can use to simplify the creation of sharing rules involving many users</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>A public group can comprise any combination of:</li>
+</ul>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/a86f0-groups.jpg" alt="groups"></p>
+<p>Manager Groups:</p>
+<p>` `</p>
+<ul>
+<li>Allow users to share records up or down their management chain</li>
+</ul>
+<p>Users can share records through:</p>
+<p>` `</p>
+<ul>
+<li>Manual sharing</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Sharing rules</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Apex managed sharing</li>
+</ul>
+<p>Manager Groups option needs to be enabled in orgs</p>
+<p>Path: Setup | Security controls | Sharing Settings |Edit</p>
+<p>Manager Groups:</p>
+<p>` `</p>
+<ul>
+<li>Cannot be added to other groups</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Do not include portal users</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Contain only Standard &amp; Chatter only users</li>
+</ul>
+<p>Data Exceptions:</p>
+<p>Account Teams:</p>
+<p>` `</p>
+<ul>
+<li>Share roles with the sales teams</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Are used for collaborative account management</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Are used for sharing &amp; reporting purposes</li>
+</ul>
+<p>Opportunity Team Selling</p>
+<p>Sales teams:</p>
+<p>` `</p>
+<ul>
+<li>Support collaborative selling &amp; transport reporting</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Can be added by opportunity owners, their managers in the role hierarchy &amp; administrators</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allow opportunity owners to grant access to each team member they select</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Allow users to select a default team for each opportunity they own</li>
+</ul>
+<p>Process of setting up Account Teams and Opp Team Selling:</p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/e8eb1-processsettingupaccountteamsoppteamselling1.jpg" alt=""></p>
+<p>Path:</p>
+<p>Setup |Customize | Accounts | Account Teams</p>
+<p>Setup | Customize | Opportunity | Opportunity Teams | Settings</p>
+<p>Manual Sharing:</p>
+<p>` `</p>
+<ul>
+<li>Is used to grant access on a one-off basis</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Can be granted by the owner, any role above the owner, or the administrator</li>
+</ul>
+<p>Personal Calendars: Setup | Security Controls | Sharing Setting</p>
+<p>` `</p>
+<ul>
+<li>Every user has a personal calendar</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>The administrator sets the organization-wide level of access to personal calendars, in security controls</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Individual users then grant access to specific users</li>
+</ul>
+<p>Public Calendars: Setup | Customize | Activities | Public Calendars &amp; Resources</p>
+<p>` `</p>
+<ul>
+<li>Administrator &amp; users with the “Customized Application” permission can create public calendars</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Public calendars can be shared with public groups, roles, and users</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>These specified users can choose to view the public I calendar from any calendar view</li>
+</ul>
+<p>Organization-wide defaults VS. Role Hierarchy VS. Sharing Models</p>
+<p>If OWDs restrict objects to Private or Public Read-Only:Organization-wide defaults VS. Role Hierarchy VS. Sharing Models</p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/f4a6d-org_wide.jpg" alt="org_wide"></p>
+<p>Determining How to Set OWD for an Object</p>
+<p>` `</p>
+<ol start="3">
+<li>Who is the most restrict user of this object? &ndash;&gt; User?</li>
+</ol>
+<p>` `</p>
+<ol start="6">
+<li>
+<p>Is there ever going to be an insurance of this object that this user shouldn’t be allowed to see?</p>
+<p>` `</p>
+<ol start="3">
+<li>If yes, sharing model = private</li>
+</ol>
+<p>` `</p>
+<ol start="6">
+<li>If no, go to #3</li>
+</ol>
+</li>
+</ol>
+<p>` `</p>
+<ol start="9">
+<li>
+<p>Is there ever going to be an instance of this object that this user shouldn’t be allowed to edit?</p>
+<p>` `</p>
+<ol start="3">
+<li>If yes, sharing model = public read-only</li>
+</ol>
+<p>` `</p>
+<ol start="6">
+<li>If no, sharing model = public read/write</li>
+</ol>
+</li>
+</ol>
+<p>` `</p>
+<ul>
+<li>
+<p>Field-Level Security:</p>
+<p>` `</p>
+<ul>
+<li>Defines user ability to view and edit fields in SFDC</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Help enforce data security</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Help ensure that users view only relevant data</li>
+</ul>
+</li>
+</ul>
+<p>Using the field-level security to hide a field from user also hides the field from list views, search results, and reports</p>
+<p>The most restrictive security settings always apply</p>
+<p>Viewing and setting Field-Level Security:</p>
+<p>` `</p>
+<ul>
+<li>
+<p>Access field-level security settings through the field or the profit</p>
+<p>` `</p>
+<ul>
+<li>Set a field’s security for multiple profiles</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>Set a profile’s access to multiple fields</li>
+</ul>
+</li>
+</ul>
+<p>Path: setup | Security Controls | Field Accessibility</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/security-data-access/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2026
+     Xuan Jin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

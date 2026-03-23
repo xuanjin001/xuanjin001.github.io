@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Postman API · xuanjin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xuan Jin">
+<meta name="description" content="What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Postman API"/>
+<meta name="twitter:description" content="What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there."/>
+
+<meta property="og:title" content="Postman API" />
+<meta property="og:description" content="What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/postman-api/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-23T23:58:44-07:00" />
+<meta property="article:modified_time" content="2021-10-23T23:58:44-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/posts/postman-api/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.1446457755d8ec6ec4dd6d74ce5a05cfa24c8fdb8a43d94a09b28514db9996d3.css" integrity="sha256-FEZFd1XY7G7E3W10zloFz6JMj9uKQ9lKCbKFFNuZltM=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      xuanjin
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/projects/">Projects</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/contact/">Contact me</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/posts/postman-api/">
+              Postman API
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-10-23T23:58:44-07:00">
+                October 23, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="/categories/development/">Development</a>
+      <span class="separator">•</span>
+    <a href="/categories/sfdc/">SFDC</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/blog/">Blog</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/development/">Development</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/sfdc/">SFDC</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="what-is-postman">
+  What is Postman?
+  <a class="heading-link" href="#what-is-postman">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Well, postman is the person who delivers mail to your house. OK. This is a bad joke.</p>
+<p>I am taking the following from Postman&rsquo;s website, they explained it perfectly.</p>
+<blockquote>
+<p>Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.</p>
+<p>
+
+
+
+
+
+<a href="https://www.postman.com/" 
+	 target="_blank" rel="noopener"
+	>https://www.postman.com/</a></p>
+</blockquote>
+<p>I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there. I extremely appreciate it.</p>
+<p>Postman is a great way to test on your API, have a sneak peak of your data, Postman is definitely your best options. The great thing about Postman is, you don&rsquo;t need to setup really complicated process, front-end or backend, but you can just test the part that you want to test.</p>
+<p>I like solving problems, and Postman allows you to only focus on the problem on hand without worrying about other parts. While you are working on the API, your coworkers can work on front-end design, which can make your team work more efficiently.</p>
+<p>My use cases with Postman is mainly for testing on my database structure, when I am in process of designing database structure. I use Postman to test the following:</p>
+<ul>
+<li>How do my data structure look?</li>
+<li>Can I get the data easily?</li>
+<li>Is the relationship of my databased developed correctly?</li>
+<li>etc&hellip;..</li>
+</ul>
+<h2 id="different-parts-of-postman">
+  Different parts of Postman
+  <a class="heading-link" href="#different-parts-of-postman">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>There are different parts of Postman that you can take advantage of which will definitely make your life easier. The following are just my way of using Postman, they don&rsquo;t mean the best practice, but by using Postman this way, it is making my life easier.</p>
+<h3 id="workspaces">
+  Workspaces
+  <a class="heading-link" href="#workspaces">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Workspaces can be used to organize your projects, for example, you have object A, B, C; then you can add your team member in each workspace, so you guys can collaborate that easily. That also helps you to change to a different space when you are on each projects, just keep everything organized.</p>
+<h3 id="collections">
+  Collections
+  <a class="heading-link" href="#collections">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>I see collections as folders, you organize your files on your laptop with folders, it is the same case here. You can add APIs in each collections, for each collection, you can add your notes and documentations as well; so that when someone else taking over the projects, they know exactly what&rsquo;s going on. You also have the option to share a collection. Keep it organized like that!</p>
+<h3 id="variables">
+  Variables
+  <a class="heading-link" href="#variables">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Have you seen people do a Postman screenshot with blackouts? Because they don&rsquo;t want you see their username and password, or secrets. Now the next time, you see that, you can suggest them to use variables! You can use variables to solve that problem along with increasing the security, variables can also help you keep everything organized. Variables can be used locally, as per collection, in that way, you only need to change the variable once! Just like in coding when you use the variables once, everywhere it is reference, the value will be synced.</p>
+<h3 id="documentation">
+  Documentation
+  <a class="heading-link" href="#documentation">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>You can add comments on anything in your interface, and you can document as you go while you are developing. I love using those when I am collaborate with others, they can understand better on why I am doing it this way, and what does each variable used for. Naming should be straightforward that they can be understand easily.</p>
+<h2 id="training">
+  Training
+  <a class="heading-link" href="#training">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I am the type that I learn as I go and I only learn the part that I need. However, each person learn things differently. Postman also offer a tons of materials for you to train and get use to the platform. Here is an example: 
+
+
+
+
+
+<a href="https://www.postman.com/postman/workspace/30-days-of-postman-for-developers/overview" 
+	 target="_blank" rel="noopener"
+	>30-days-of-postman-for-developers</a></p>
+<h2 id="postman-and-salesforce">
+  Postman and Salesforce
+  <a class="heading-link" href="#postman-and-salesforce">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You can also get Salesforce data to Postman for testing purposes. The How-To part, I will refer you to 
+
+
+
+
+
+<a href="https://www.sfdcstop.com/2019/01/how-to-connect-to-salesforce-with.html" 
+	 target="_blank" rel="noopener"
+	>this article</a> here. Rahul here did a great job of explaining each step and guiding you on how to set it up.</p>
+<h2 id="other-items">
+  Other Items
+  <a class="heading-link" href="#other-items">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I see people have questions about the access token, and sometimes people wonder if they can get an unexpired access token, but I think we need to get one thing straight, what is an access token? Access token is used at a lot of places now, and there are different types of Access Token. I think of them like &ldquo;Keys&rdquo; to get access to an app, portal, page, etc. All of those happens in the backend, so you probably never notice as user. Access token can expire depends on how they were setup by the developers, they are depends on how long your page or app&rsquo;s sessions are, when the session is out, you will be forced to login again to gain access. That&rsquo;s why sometimes, when you logged in through a social login (Facebook, Twitter, Google, etc.), and you have been idle on the app for a while, they will ask you to login again, that&rsquo;s when your session is timed out. The purpose for Access Token is to gain access, at the same time, we also want to be secure. There are bad people out there could use the same portal to gain information they are not suppose to get, which is a long way of explaining the action of &ldquo;hacking&rdquo;. Haha. For Salesforce, when you setup the connected app, you will get the access token automatically when you first gain access, and you can get the access token from Salesforce when you pull the api from Postman initially. When the session is expired, you will have to retrieve the access token again and query your data accordingly. Now that&rsquo;s the case when you are accessing it through Postman, someone might wonder if they need to provide an access token to their app constantly, well, no&hellip;.they are intelligent enough to deal with all of that in the backend. You can find out more 
+
+
+
+
+
+<a href="https://help.salesforce.com/s/articleView?id=sf.connected_app_manage_oauth.htm&amp;type=5" 
+	 target="_blank" rel="noopener"
+	>here</a>.</p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Postman is awesome!!!! lol</p>
+<p>If I wrote anything wrong here please point out, and if you are using postman, and having any tricks you learned along the way, please reach out, I like to talking to you more on that.</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/postman-api/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2026
+     Xuan Jin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

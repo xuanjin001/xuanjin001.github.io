@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Personal Accounting -- Receipt Tracker · xuanjin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xuan Jin">
+<meta name="description" content="I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Personal Accounting -- Receipt Tracker"/>
+<meta name="twitter:description" content="I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money."/>
+
+<meta property="og:title" content="Personal Accounting -- Receipt Tracker" />
+<meta property="og:description" content="I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-03-22T00:26:17-07:00" />
+<meta property="article:modified_time" content="2026-03-22T00:26:17-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.1446457755d8ec6ec4dd6d74ce5a05cfa24c8fdb8a43d94a09b28514db9996d3.css" integrity="sha256-FEZFd1XY7G7E3W10zloFz6JMj9uKQ9lKCbKFFNuZltM=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      xuanjin
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/projects/">Projects</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/contact/">Contact me</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/">
+              Personal Accounting -- Receipt Tracker
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-03-22T00:26:17-07:00">
+                March 22, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="/categories/design/">design</a>
+      <span class="separator">•</span>
+    <a href="/categories/development/">Development</a>
+      <span class="separator">•</span>
+    <a href="/categories/experience/">experience</a>
+      <span class="separator">•</span>
+    <a href="/categories/product-design/">Product Design</a>
+      <span class="separator">•</span>
+    <a href="/categories/tools/">Tools</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/blog/">Blog</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/design/">design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/development/">Development</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/experience/">experience</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/product-design/">Product Design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/tools/">Tools</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money. However, I want it to be more specific.</p>
+<p>Back in 2020, that&rsquo;s when I first started on budgeting, I did the whole budgeting thing when I got my very first job in 2016 to 2018, back then I used excel and I will manually typing in how much I spend in FoodMaxx, winco, etc. In that way, I can see how i can properly pay off my credit card and also manage all other costs. I didnt do line by line booking back then, only because it is too much work. LOL. Then in 2020, with pandemic, I feel like I need to do budgeting again so that in that time, I can make sure I truly only spend money on the things I need. That kind of tool doesn&rsquo;t really exist. Or, you have to pay a lot to get an app, and those app still require a lot manual entries and setup. You can connect things with bank for those apps, like quicken simplifi, rocket money, etc, those app/services are sometimes good at one area, not the whole thing.</p>
+<p>I want to have an app which can record line by line costs, and eventually can match the costs to what shows up on my credit card bill. I couldn&rsquo;t find one that fits my needs, so I started manually doing it, organize receipts and checking my bank accounts, etc. It was a lot of manual work, 2 receipts, it will take me about 40 minutes, I need to draw lines on a notebook and do the math to add everything up. I think I did that for 3 weeks, and then just stopped. During pandemic, there are too much going on, and I was staying indoors a lot, with anxiety and everything, I don&rsquo;t find doing budgets relaxing at the time. I was thinking, hey, were there a better way to do this? What if I take a picture of the receipt and have a program to translate it?? Then I found tesseract OCR to extract from photo, I tried with couple receipt, but it still would miss some of the lines, which is a bit no no, cause that means, I need to manually add the lines, and the correction effort is actually quite bit, not only sometimes it missed couple lines from receipt, it also lined up the item and cost off, meaning, it would line first item with the price for the second item on the receipt, which is something we don&rsquo;t want at all. At the time, that&rsquo;s what I was working with, sometimes, some mom-and-pop kind of receipt doesn&rsquo;t even work, so I was doing those manually. Soon, I give up again. LOL.</p>
+<p>Now, finally, we have AI!!!!!</p>
+<p>I introduce you &ldquo;Receipt Tracker&rdquo;! This is in beta still, and there are a lot of things I still need to refine, but I am pretty happy with the current version of it!</p>
+<p>Dashboard page:
+<img src="/images/personal_accounting/Dashboard.png" alt="Dashboard"></p>
+<p>When you click on &ldquo;Add receipt&rdquo;, it will direct user to the Dashboard page, and user would have the options to &ldquo;Upload File&rdquo;, &ldquo;Camera&rdquo;, &ldquo;Paste Text&rdquo;, &ldquo;Manual Entry&rdquo;. Each tab/function is pretty obvious, once anything is uploaded, I am using LLM api to channel the AI LLM somewhere in the universe lol, and have LLM to help process the data/image I uploaded, and match with the columns.
+<img src="/images/personal_accounting/upload-receipt.png" alt="upload-receipt"></p>
+<p>Once saved, it will have everything listed in transaction.
+<img src="/images/personal_accounting/transaction.png" alt="transaction"></p>
+<p>This program can also do data analysis as well.
+<img src="/images/personal_accounting/analysis.png" alt="analysis"></p>
+<p>There are still couple improvements I need to do with this, but this version is great! With this, it can help with budgeting later on, and also with tax, those are all itemized for each transaction.</p>
+<p>For this project, I used Gemini&rsquo;s models. Gemini&rsquo;s model can not only read the image or text and translate them into database compatible data; Gemini can also process data for analysis purposes.</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2026
+     Xuan Jin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

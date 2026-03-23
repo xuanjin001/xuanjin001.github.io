@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>experience on xuanjin</title>
+    <link>https://xuanjin001.github.io/tags/experience/</link>
+    <description>Recent content in experience on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Mar 2026 00:26:17 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal Accounting -- Receipt Tracker</title>
+      <link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link>
+      <pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid>
+      <description>I have been trying to find an app where it can record my day to day purchases, so that I can compare the price from costco vs target, which can help me evaluate how to spend my money. I tried with mint, it only has a really generic spending structure, and the total amount that you spent from each merchandise, and depends on where you are buying things, it will generically tell you how you are spending your money.</description>
+    </item>
+    
+    <item>
+      <title>Data Migration</title>
+      <link>https://xuanjin001.github.io/posts/data-migration/</link>
+      <pubDate>Mon, 31 Jul 2023 07:24:27 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/data-migration/</guid>
+      <description>What is &amp;ldquo;Data Migration&amp;rdquo;?
+Whenever I talk about data migration, I always think about moving. Think about data migration in a moving situation, what will you do if you are moving into a new place? Moving data is the same way, what you will do is moving the data from one system and put them into another, just like moving. You will pack everything up in your old house and move into the new one.</description>
+    </item>
+    
+    <item>
+      <title>Design &amp; DEV</title>
+      <link>https://xuanjin001.github.io/posts/design-dev/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/design-dev/</guid>
+      <description>Photo by Andrea Piacquadio from Pexels
+When it comes to design, there are different ways that can be done. The purpose of design is to make sure the solution you are designing will be acceptable by users. Design has so many different perspectives, I personally think they have the following parts:
+Solution Design UI Design User Experience Design First of all, you do need to understand what you are designing, and what it is for, who it is for.</description>
+    </item>
+    
+  </channel>
+</rss>

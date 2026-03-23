@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Build an Event Booking App (Practice) · xuanjin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xuan Jin">
+<meta name="description" content="I heard a question today &mdash;- &ldquo;How would you build an Event Booking App?&rdquo;
+Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.
+- Who: who is this app is for?
+- What: what is the app about?">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build an Event Booking App (Practice)"/>
+<meta name="twitter:description" content="I heard a question today &mdash;- &ldquo;How would you build an Event Booking App?&rdquo;
+Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.
+- Who: who is this app is for?
+- What: what is the app about?"/>
+
+<meta property="og:title" content="Build an Event Booking App (Practice)" />
+<meta property="og:description" content="I heard a question today &mdash;- &ldquo;How would you build an Event Booking App?&rdquo;
+Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.
+- Who: who is this app is for?
+- What: what is the app about?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-10T21:51:00-08:00" />
+<meta property="article:modified_time" content="2021-03-10T21:51:00-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.1446457755d8ec6ec4dd6d74ce5a05cfa24c8fdb8a43d94a09b28514db9996d3.css" integrity="sha256-FEZFd1XY7G7E3W10zloFz6JMj9uKQ9lKCbKFFNuZltM=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      xuanjin
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/projects/">Projects</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/contact/">Contact me</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/">
+              Build an Event Booking App (Practice)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-03-10T21:51:00-08:00">
+                March 10, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/interview-experience/">Interview Experience</a>
+      <span class="separator">•</span>
+    <a href="/categories/product-design/">Product Design</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/interview-experience/">Interview Experience</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/product-design/">Product Design</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>I heard a question today &mdash;- &ldquo;How would you build an Event Booking App?&rdquo;</p>
+<p>Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.<br>
+- Who: who is this app is for?<br>
+- What: what is the app about? event booking app<br>
+- When: when is the event? or you can ask, when this app should be launched, timeline or urgency?<br>
+- How: how are you going to build it?<br>
+- Why: why do you need this app?</p>
+<p>Now what we need to do is to layout some groundwork to help answer the above questions. Instead of focusing on all of the perspectives, try to focus on one perspective and anchor it as the starting point to develop your solutions. Remember, you can always add more features later on.</p>
+<p>I created the following diagram to help with the thought process:</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg" 
+	 target="_blank" rel="noopener"
+	><img src="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg?w=690" alt=""></a></p>
+<p>Once the groundwork is done, we can try to answer the questions listed above:<br>
+- Who: who is this app is for? &ndash;&gt; there could be a lot of audiences, since there are a lot of stakeholders, you can always add based on the above, the stakeholders that&rsquo;s directly related to the event, should just be event organizer and attendees, you may argue that a venue should be considered as well, but at this stage, I just want to keep things simple.<br>
+- What: what is the app about? event booking app &ndash;&gt; rhetorical question here<br>
+- When: when is the event? or you can ask, when this app should be launched, timeline or urgency? &ndash;&gt; this will be based on case by case basis<br>
+- How: how are you going to build it? &ndash;&gt; What the interface should look like? What user experience are you looking to provide? (define 3-word design principal) Are there existing api out there that we can utilize?<br>
+- Why: why do you need this app? &ndash;&gt; can be linked with the 3-word design principal</p>
+<p>With the above foundation, you can expand your answer/thought based on it. For example, if the question is &ldquo;How can Uber, the app, help with events?&rdquo; You can think about different angles, such as, Uber can promote ride share with event organizer, have an operator or create an algorithm specific for similar events to guide drivers to that area, etc. Or you can think from attendee&rsquo;s standpoint, when getting to the event, you can order a ride ahead of time, and have a ride to be ready when the event is about to end, etc. Provide convenience would be the key, and how to shorten the waiting time for a ride, taxi use to have a designated waiting area, then for the event, we can create another space for Uber/Lyft, at the same time utilize taxi as well. In order to get people as many as possible out of the event location, we can ask whoever is ordering the ride to gather 4-5 people ahead of time, in that way, 1) event attendees who are waiting for the ride can have conversations, so the waiting time won&rsquo;t be so boring; 2) it is saving time for the Uber driver to get to different places and pick up additional customers; 3) get more people out of the event at once to increase the efficiency. On the app, when user put in the pick up location, we can add one more question to suggest ride users to gather 4-5 people in order to take the ride, and offer a small discount as an encouragement. In order to identify if currently there is an event going on at a specific location, we can implement calendar function integration with the rider share app.</p>
+<p>There are a lot of angles you can take from the diagram above. This is just how I would lay the ground work. I am not saying this is the best approach, but this is the approach that makes most sense for me.</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2026
+     Xuan Jin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

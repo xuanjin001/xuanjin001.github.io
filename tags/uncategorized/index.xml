@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on xuanjin</title>
+    <link>https://xuanjin001.github.io/tags/uncategorized/</link>
+    <description>Recent content in Uncategorized on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unit 12 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</link>
+      <pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</guid>
+      <description>I found the context of personalize search really interesting. From the user&amp;rsquo;s standpoint, it is definitely helping the user out without any doubt. with each browser knowing and keep track of what a user&amp;rsquo;s preference is. That&amp;rsquo;s also my question, each user will have different habit of using a search, how can you as a developer cooperate that into the design and while developing a tool, like, how would you know which function would be more preferred by the users or not?</description>
+    </item>
+    
+    <item>
+      <title>Unit 9 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</link>
+      <pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</guid>
+      <description>In the slides, it seems like the definition of the Link Analysis is following &amp;ldquo;Used for crawling, ranking, computing the geographic scope of a web page, finding mirrored hosts , computing statistics of web pages and search engines, web page categorization&amp;rdquo;. However, I a little not sure still on how does the link analysis works, is it just by using web crawling, ranking to computing the geographic of the web page?</description>
+    </item>
+    
+    <item>
+      <title>Unit 8 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</link>
+      <pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</guid>
+      <description>For leading longer queries, I know we didn&amp;rsquo;t go deep in this concept, but when doing the search, should all words to be matched? I also don&amp;rsquo;t understand the color change, the purpose of color change is to ask users to input a whole sentence in order to have a better search result? How would the color change leading users to input more words? I don&amp;rsquo;t understand the relation in between the two here.</description>
+    </item>
+    
+    <item>
+      <title>Unit 7 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</link>
+      <pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</guid>
+      <description>I am still not sure if I understand normalized DCG, I understand that it is better normalized compare to fixed range value. However, I don&amp;rsquo;t think I understand the concept correctly, so that&amp;rsquo;s why I am struggling. Would you mind explain it again? Thanks.</description>
+    </item>
+    
+    <item>
+      <title>Unit 6 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</link>
+      <pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</guid>
+      <description>I am still not understanding the following concept, how would you decide what constant you need to add though, I guess that&amp;rsquo;s depending on the words? Also the constant will change when you have a different word, right? Does that mean we need to calculate the probability for each one until? I am not sure how this works.</description>
+    </item>
+    
+    <item>
+      <title>Unit 5 muddiest points</title>
+      <link>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</link>
+      <pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</guid>
+      <description>The language model idea is still not really clear to me. When user is searching in the doc, they would use something like a sql query to search within collection, and that&amp;rsquo;s how they get the end result, right? I am confused on what is the query referring to?</description>
+    </item>
+    
+    <item>
+      <title>Unit 4 muddiest point</title>
+      <link>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</link>
+      <pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</guid>
+      <description>I am still confused on the distance, my understanding is the distance is used to determine the relavence, right? I am confused on why using the angle would better compare to using distance.</description>
+    </item>
+    
+    <item>
+      <title>Unit 3 muddiest point</title>
+      <link>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</link>
+      <pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</guid>
+      <description>When constructing a B-tree in order to improve the efficiency of search, my understanding is to have the index constructed in a way so that it will be in the tree structure, is that correct?
+The reason why we need to compress index is still unclear to me. I am wondering what is the reason behind that.</description>
+    </item>
+    
+    <item>
+      <title>Unit 2 Muddiest Points</title>
+      <link>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</link>
+      <pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</guid>
+      <description>With the alogirithm mentioned in the reading, I am wondering in order to develop a good information retrival engine, are we combining all of the alogrithm? What would be the most effective way to use all of those alogrithms?</description>
+    </item>
+    
+    <item>
+      <title>Unit 2 Reading</title>
+      <link>https://xuanjin001.github.io/posts/unit-2-reading/</link>
+      <pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-2-reading/</guid>
+      <description>IIR 1.2 A first take at building an inverted index
+Major steps:
+Collect the documents to be indexed
+Tokenize the text, turning each document into a list of tokens
+Do linguistic preprocessing, producing a list of normalized tokens, which are the indexing term
+Index the doc that each term occurs in by creating an inverted index, consisting of a dictionary and postings
+The dictionary also records some staticistics, such as the number of doc which contain each term</description>
+    </item>
+    
+    <item>
+      <title>Unit 1 Reading</title>
+      <link>https://xuanjin001.github.io/posts/unit-1-reading/</link>
+      <pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/unit-1-reading/</guid>
+      <description>Unit 1 Reading stuff will be here
+FOA section 1.1 Finding Out About - a cognitive activity
+The primary argument advaced is that progress requires that we appreciate the cognitive foundation we bring to this task as academics, as language users, and even as adaptive organisms. Evolved a wide range of strategies fro seeking useful information about our environment. Making initial guesses about good paths, using complex sets of features to decide if we seem to be on the right path, and proceeding forward.</description>
+    </item>
+    
+    <item>
+      <title>Snack: Bake your peanuts!!!</title>
+      <link>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</link>
+      <pubDate>Wed, 11 Nov 2015 03:19:15 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</guid>
+      <description>Our Snack is Peanuts!!!!!!
+So we all have those times, when we really want to have something as snacks. Here I am going to introduce a quick snack where you can finish in 7 minutes.
+HERE WE GO!
+Material
+1 cup of raw shelled peanuts
+Oil spray
+Salt
+Prep:
+Preheat oven to 375F Cooking steps: (time expected 7 minutes in total)
+Put 1 cup of raw shelled peanuts on the bake pan, spray oil (I like to use pan oil spray a lot) on those, then spray salt on the peanuts (depends on if you like salty stuff or not)</description>
+    </item>
+    
+    <item>
+      <title>Easy Chicken Soup! It is EASY!</title>
+      <link>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</link>
+      <pubDate>Sun, 08 Nov 2015 22:34:22 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</guid>
+      <description>Chicken soup is the best when you are sick, it is also the best for the cold winter weather! Now let&amp;rsquo;s see what do we need to make it!
+Material
+24 oz hen or chicken
+1 bunch of green onion
+1 oz ginger
+Mushroom (you can put as many as possible)
+Black pepper
+Salt
+Prep: (time expected 5 to 10 minutes)
+Cut the chicken apart to the size when you think you are comfortable to bite with, don’t cut it too small btw.</description>
+    </item>
+    
+    <item>
+      <title>FISH!!! Salmon Fish!!!</title>
+      <link>https://xuanjin001.github.io/posts/fish-salmon-fish/</link>
+      <pubDate>Sat, 07 Nov 2015 23:52:49 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/fish-salmon-fish/</guid>
+      <description>` `
+Material:
+` `
+Salmon fish ` `
+Salt ` `
+Garlic salt ` `
+Red pepper ` `
+Ground cumin ` `
+Black pepper ` `
+Parsley flake ` `
+Half lemon ` `
+Soy sauce ` `
+Prep: (time expected 15 to 20 minutes)
+` `
+Cut Salmon fish in a long size slice so that it is easy to cook ` `
+Spray salt, garlic salt, on the fish both sides, only few, don’t put too much on it, massage the fish for couple seconds ` `</description>
+    </item>
+    
+    <item>
+      <title>The quick way to cook STEAK!!!</title>
+      <link>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</link>
+      <pubDate>Sat, 07 Nov 2015 23:43:27 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</guid>
+      <description>My way of quick STEAK!!!
+It is quick, and it doesn&amp;rsquo;t taste bad at all either!
+Here we go!
+` `
+Material
+` `
+Thin steak ` `
+Salt ` `
+Ground cumin ` `
+Black pepper ` `
+Red pepper ` `
+Olive oil ` `
+Beer or rice wine (rice wine preferred) ` `
+` `
+Prep: (time expected 5 to 10 minutes)
+` `
+Put salt, ground cumin (don’t put too much, don’t put too little), black pepper, red pepper (black pepper and red pepper amount can be adjusted, depends on the person like spicy flavor or not) on steak, massage on both sides ` `</description>
+    </item>
+    
+    <item>
+      <title>Learn How To Code In a Different Way</title>
+      <link>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</link>
+      <pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</guid>
+      <description>Have you tried to learn a new web programming language with all those crazy syntax in codeacademy where most of the time you are just doing copy and paste, but doesn’t really even know what’s actually going on? I want to introduce you a new way of learning, by playing games.
+There is a hacking game online that&amp;rsquo;s made in JavaScript, it is called &amp;ldquo;Untrusted&amp;rdquo;. ( https://alexnisnevich.github.io/untrusted/) The user will have to navigate the player around the interface with simple VIM commands, and the user has to modify the JavaScript code on the interface to make changes to the maps and eventually help the player to get out of the maze.</description>
+    </item>
+    
+    <item>
+      <title>SQLPLUS on Mac OS</title>
+      <link>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</link>
+      <pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</guid>
+      <description>I don&amp;rsquo;t know if you have experienced this before. You have a Mac but you want to use SQLPLUS, however, SQLPLUS is not working on your Mac. Let me tell you step by step how to make it work.
+1. Go to Oracle website, download Oracle Instantclient package for your Mac. Make sure you download the correct bit version. There are two folders you need to download. One is the basic file (looks like &amp;quot; instantclient-basiclite-macos.</description>
+    </item>
+    
+    <item>
+      <title>Spinning beach ball with a really slow Mac</title>
+      <link>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</link>
+      <pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</guid>
+      <description>Recently I was suffering from a really slow Mac. Everything will be stuck whenever I clicked on something. This could be really frustrating especially when I am trying to program. I checked my software to see if they needed any updates or anything. However, everything looks fine. I also monitored all the activities that was going on on my Mac, everything seems normal, except my RAM was being used 3.85 GB out of 4 GB.</description>
+    </item>
+    
+  </channel>
+</rss>
