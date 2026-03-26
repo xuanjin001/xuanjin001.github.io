@@ -2,6 +2,113 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/ai-tech/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/ai-tech/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/authors/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/posts/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/authors/xuan-jin/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/about/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -15,32 +122,6 @@
                 href="https://xuanjin001.github.io/about/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/authors/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/authors/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/"
-                />
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/req_doc/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
     <xhtml:link
@@ -52,19 +133,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/posts/req_doc/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/posts/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/tags/projects/</loc>
@@ -91,71 +159,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/categories/projects/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/authors/xuan-jin/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
-    <lastmod>2026-03-22T18:28:26-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/ai-tech/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
-    <lastmod>2026-03-22T18:28:26-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/ai-tech/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai_2026/</loc>

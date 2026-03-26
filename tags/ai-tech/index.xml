@@ -6,7 +6,17 @@
     <description>Recent content in AI &amp; Tech on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Mar 2026 18:28:26 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/ai-tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Mar 2026 12:25:31 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/ai-tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Openclaw SF Data Pipeline Part I Source Data Extraction</title>
+      <link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</link>
+      <pubDate>Thu, 26 Mar 2026 12:25:31 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</guid>
+      <description>So I have been playing with openclaw a lot, like actually a lot! To the point that when I sleep, I think about what else can I do to make it better.
+If you break down what OpenClaw is, it is basically a Linux environment + LLM, where LLM can do a lot of the things a system admin use to do in terminal, now you need to talk to it and provide more guidelines for the &amp;ldquo;Agent&amp;rdquo; to do it.</description>
+    </item>
+    
     <item>
       <title>Still Figuring It Out — My Honest Take on AI in 2026</title>
       <link>https://xuanjin001.github.io/posts/ai_2026/</link>
