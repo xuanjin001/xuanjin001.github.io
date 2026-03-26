@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  寻找 Shirls 之路 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+第 4 周 4/18 &ndash; 4/24 起点 链接到标题 我已经在沙发上睡了大约一周了，有点忘记了床是什么感觉。讽刺的是，我试着去床上睡觉，却睡不着，一直梦见有人砍别人的头……但睡在沙发上就不会做噩梦。
+我一直想开始写点代码做点什么，但总是被自己打退堂鼓——担心自己的想法不够好，或者已经有人在做而且做得更好，或者觉得不够有趣。然后我干脆说&quot;管它呢&quot;，先开始做点什么再说。
+我正计划从匹兹堡搬到加利福尼亚，目前就是加州某个地方。我可能会开车过去，如果开车的话，我会在路上停靠，可以在地图上标记我去过的地方，这样就能展示出我走过的路线。这将是一个记录旅途的好方式——上次和我妈妈一起开车旅行时我没有记录，我们玩得非常开心，这次我肯定要把它记录下来。我知道市面上有实现这个功能的应用，但我想让它按我的方式来，下面是我打算怎么实现的。
+我下定决心，停止不安全感，就从这里开始，看看自己还能不能做到。就这样开始了。我用的是 Vue，上一次用 Vue 大概是两年前了，很多东西都生疏了。既然是&quot;旅行&quot;主题，肯定需要地图，所以我选择使用 Mapbox，仅仅是因为之前用过。
+目前技术栈：Vue JS &#43; Mapbox JS
+为了快速看到效果，我用简单的 HTML 单页面来展示我想要的样子，大概花了几个小时。基本上就是一个可以缩放到当前位置的交互式地图，这是第一步。从小处着手，再逐步扩展到想要的样子。
+然后第一步是让地图在 Vue 技术栈里跑起来，这花了我不少时间……
+每个人首先都会想到用现有的插件，但没有一个对我有用……盯着一堆红色报错信息，地图还是没有出现，我很沮丧，感觉自己做不下去了。然后我继续深挖，也就是更多地搜索，只要搜索得足够多，什么问题都能解决，除非你有关于死亡的问题——那没有答案……改天再聊。然后我偶然发现了这篇文档： Leaflet 矢量地图示例。当然了，最终还是要回到源头。Mapbox 是基于 Leaflet 构建的，所以得回到原始来源进行集成。那篇文档帮我搞清楚了一切。我做了类似的事情，只是用的是&quot;mapbox-gl&quot;而不是&quot;maplibre-gl&quot;。
+安装 mapbox-gl
+npm i mapbox-gl 可以这样使用 mapbox-gl：
+import mapboxgl from &#34;mapbox-gl&#34;; 现在我有地图了！！！接下来呢？？？？
+在本地跑通了，现在需要让它在网上也能用，这样其他人也能看到。为此我选择了 Heroku。我也考虑过 AWS，但 AWS 只有一年的免费期，不过我确实注册了 Amplify，所以 React 也在我的考虑范围内，这个改天再说。Heroku，从哪里说起呢？这是我迄今为止遇到的最令人沮丧的事情。别误会，我喜欢 Heroku，它是免费的，非常适合快速演示或概念验证，但让它正常运行需要花些时间，错误信息也说明不了太多，想弄清楚怎么修复就像在追踪某个东西，但你不知道自己在追什么。不过这个过程中我学到了很多。让托管正常工作的正确方法如下：
+确保你没有配置了自定义端口的 vue.config.js 文件，Heroku 有自己专用的端口，如果你自己设置了端口，Heroku 可能无法识别，从而导致&quot;App crashed&quot;（应用崩溃） 确保在 Heroku 设置中配置了你的环境变量 对你的 Web 应用进行构建 只把构建后的文件上传到 Heroku 为 Heroku 创建一个 Procfile，内容需要是 serve -s，这个命令可以启动服务 仔细阅读 Heroku 文档，同时注意你的文件夹结构，确保在正确的文件夹下进行上传 登录 Heroku 控制台查看更多日志，安装缺失的包，还可以核实所有内容是否正确安装，日志都在 Heroku 服务器上 常用 Heroku 命令： heroku restart //重启服务器 heroku local //在本地测试代码 heroku open //打开生产环境页面 heroku init heroku git:remote -a &lt;你的应用名称&gt; git pull heroku master 搞定了！">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="寻找 Shirls 之路"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+第 4 周 4/18 &ndash; 4/24 起点 链接到标题 我已经在沙发上睡了大约一周了，有点忘记了床是什么感觉。讽刺的是，我试着去床上睡觉，却睡不着，一直梦见有人砍别人的头……但睡在沙发上就不会做噩梦。
+我一直想开始写点代码做点什么，但总是被自己打退堂鼓——担心自己的想法不够好，或者已经有人在做而且做得更好，或者觉得不够有趣。然后我干脆说&quot;管它呢&quot;，先开始做点什么再说。
+我正计划从匹兹堡搬到加利福尼亚，目前就是加州某个地方。我可能会开车过去，如果开车的话，我会在路上停靠，可以在地图上标记我去过的地方，这样就能展示出我走过的路线。这将是一个记录旅途的好方式——上次和我妈妈一起开车旅行时我没有记录，我们玩得非常开心，这次我肯定要把它记录下来。我知道市面上有实现这个功能的应用，但我想让它按我的方式来，下面是我打算怎么实现的。
+我下定决心，停止不安全感，就从这里开始，看看自己还能不能做到。就这样开始了。我用的是 Vue，上一次用 Vue 大概是两年前了，很多东西都生疏了。既然是&quot;旅行&quot;主题，肯定需要地图，所以我选择使用 Mapbox，仅仅是因为之前用过。
+目前技术栈：Vue JS &#43; Mapbox JS
+为了快速看到效果，我用简单的 HTML 单页面来展示我想要的样子，大概花了几个小时。基本上就是一个可以缩放到当前位置的交互式地图，这是第一步。从小处着手，再逐步扩展到想要的样子。
+然后第一步是让地图在 Vue 技术栈里跑起来，这花了我不少时间……
+每个人首先都会想到用现有的插件，但没有一个对我有用……盯着一堆红色报错信息，地图还是没有出现，我很沮丧，感觉自己做不下去了。然后我继续深挖，也就是更多地搜索，只要搜索得足够多，什么问题都能解决，除非你有关于死亡的问题——那没有答案……改天再聊。然后我偶然发现了这篇文档： Leaflet 矢量地图示例。当然了，最终还是要回到源头。Mapbox 是基于 Leaflet 构建的，所以得回到原始来源进行集成。那篇文档帮我搞清楚了一切。我做了类似的事情，只是用的是&quot;mapbox-gl&quot;而不是&quot;maplibre-gl&quot;。
+安装 mapbox-gl
+npm i mapbox-gl 可以这样使用 mapbox-gl：
+import mapboxgl from &#34;mapbox-gl&#34;; 现在我有地图了！！！接下来呢？？？？
+在本地跑通了，现在需要让它在网上也能用，这样其他人也能看到。为此我选择了 Heroku。我也考虑过 AWS，但 AWS 只有一年的免费期，不过我确实注册了 Amplify，所以 React 也在我的考虑范围内，这个改天再说。Heroku，从哪里说起呢？这是我迄今为止遇到的最令人沮丧的事情。别误会，我喜欢 Heroku，它是免费的，非常适合快速演示或概念验证，但让它正常运行需要花些时间，错误信息也说明不了太多，想弄清楚怎么修复就像在追踪某个东西，但你不知道自己在追什么。不过这个过程中我学到了很多。让托管正常工作的正确方法如下：
+确保你没有配置了自定义端口的 vue.config.js 文件，Heroku 有自己专用的端口，如果你自己设置了端口，Heroku 可能无法识别，从而导致&quot;App crashed&quot;（应用崩溃） 确保在 Heroku 设置中配置了你的环境变量 对你的 Web 应用进行构建 只把构建后的文件上传到 Heroku 为 Heroku 创建一个 Procfile，内容需要是 serve -s，这个命令可以启动服务 仔细阅读 Heroku 文档，同时注意你的文件夹结构，确保在正确的文件夹下进行上传 登录 Heroku 控制台查看更多日志，安装缺失的包，还可以核实所有内容是否正确安装，日志都在 Heroku 服务器上 常用 Heroku 命令： heroku restart //重启服务器 heroku local //在本地测试代码 heroku open //打开生产环境页面 heroku init heroku git:remote -a &lt;你的应用名称&gt; git pull heroku master 搞定了！"/>
+
+<meta property="og:title" content="寻找 Shirls 之路" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+第 4 周 4/18 &ndash; 4/24 起点 链接到标题 我已经在沙发上睡了大约一周了，有点忘记了床是什么感觉。讽刺的是，我试着去床上睡觉，却睡不着，一直梦见有人砍别人的头……但睡在沙发上就不会做噩梦。
+我一直想开始写点代码做点什么，但总是被自己打退堂鼓——担心自己的想法不够好，或者已经有人在做而且做得更好，或者觉得不够有趣。然后我干脆说&quot;管它呢&quot;，先开始做点什么再说。
+我正计划从匹兹堡搬到加利福尼亚，目前就是加州某个地方。我可能会开车过去，如果开车的话，我会在路上停靠，可以在地图上标记我去过的地方，这样就能展示出我走过的路线。这将是一个记录旅途的好方式——上次和我妈妈一起开车旅行时我没有记录，我们玩得非常开心，这次我肯定要把它记录下来。我知道市面上有实现这个功能的应用，但我想让它按我的方式来，下面是我打算怎么实现的。
+我下定决心，停止不安全感，就从这里开始，看看自己还能不能做到。就这样开始了。我用的是 Vue，上一次用 Vue 大概是两年前了，很多东西都生疏了。既然是&quot;旅行&quot;主题，肯定需要地图，所以我选择使用 Mapbox，仅仅是因为之前用过。
+目前技术栈：Vue JS &#43; Mapbox JS
+为了快速看到效果，我用简单的 HTML 单页面来展示我想要的样子，大概花了几个小时。基本上就是一个可以缩放到当前位置的交互式地图，这是第一步。从小处着手，再逐步扩展到想要的样子。
+然后第一步是让地图在 Vue 技术栈里跑起来，这花了我不少时间……
+每个人首先都会想到用现有的插件，但没有一个对我有用……盯着一堆红色报错信息，地图还是没有出现，我很沮丧，感觉自己做不下去了。然后我继续深挖，也就是更多地搜索，只要搜索得足够多，什么问题都能解决，除非你有关于死亡的问题——那没有答案……改天再聊。然后我偶然发现了这篇文档： Leaflet 矢量地图示例。当然了，最终还是要回到源头。Mapbox 是基于 Leaflet 构建的，所以得回到原始来源进行集成。那篇文档帮我搞清楚了一切。我做了类似的事情，只是用的是&quot;mapbox-gl&quot;而不是&quot;maplibre-gl&quot;。
+安装 mapbox-gl
+npm i mapbox-gl 可以这样使用 mapbox-gl：
+import mapboxgl from &#34;mapbox-gl&#34;; 现在我有地图了！！！接下来呢？？？？
+在本地跑通了，现在需要让它在网上也能用，这样其他人也能看到。为此我选择了 Heroku。我也考虑过 AWS，但 AWS 只有一年的免费期，不过我确实注册了 Amplify，所以 React 也在我的考虑范围内，这个改天再说。Heroku，从哪里说起呢？这是我迄今为止遇到的最令人沮丧的事情。别误会，我喜欢 Heroku，它是免费的，非常适合快速演示或概念验证，但让它正常运行需要花些时间，错误信息也说明不了太多，想弄清楚怎么修复就像在追踪某个东西，但你不知道自己在追什么。不过这个过程中我学到了很多。让托管正常工作的正确方法如下：
+确保你没有配置了自定义端口的 vue.config.js 文件，Heroku 有自己专用的端口，如果你自己设置了端口，Heroku 可能无法识别，从而导致&quot;App crashed&quot;（应用崩溃） 确保在 Heroku 设置中配置了你的环境变量 对你的 Web 应用进行构建 只把构建后的文件上传到 Heroku 为 Heroku 创建一个 Procfile，内容需要是 serve -s，这个命令可以启动服务 仔细阅读 Heroku 文档，同时注意你的文件夹结构，确保在正确的文件夹下进行上传 登录 Heroku 控制台查看更多日志，安装缺失的包，还可以核实所有内容是否正确安装，日志都在 Heroku 服务器上 常用 Heroku 命令： heroku restart //重启服务器 heroku local //在本地测试代码 heroku open //打开生产环境页面 heroku init heroku git:remote -a &lt;你的应用名称&gt; git pull heroku master 搞定了！" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/the-road-to-locate-shirls/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-04-25T19:29:07-07:00" />
+<meta property="article:modified_time" content="2021-04-25T19:29:07-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/the-road-to-locate-shirls/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/the-road-to-locate-shirls/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/the-road-to-locate-shirls/">
+              寻找 Shirls 之路
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-04-25T19:29:07-07:00">
+                April 25, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/projects/">Projects</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/projects/">Projects</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<h2 id="第-4-周-418----424-起点">
+  第 4 周 4/18 &ndash; 4/24 起点
+  <a class="heading-link" href="#%e7%ac%ac-4-%e5%91%a8-418----424-%e8%b5%b7%e7%82%b9">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>我已经在沙发上睡了大约一周了，有点忘记了床是什么感觉。讽刺的是，我试着去床上睡觉，却睡不着，一直梦见有人砍别人的头……但睡在沙发上就不会做噩梦。</p>
+<p>我一直想开始写点代码做点什么，但总是被自己打退堂鼓——担心自己的想法不够好，或者已经有人在做而且做得更好，或者觉得不够有趣。然后我干脆说&quot;管它呢&quot;，先开始做点什么再说。</p>
+<p>我正计划从匹兹堡搬到加利福尼亚，目前就是加州某个地方。我可能会开车过去，如果开车的话，我会在路上停靠，可以在地图上标记我去过的地方，这样就能展示出我走过的路线。这将是一个记录旅途的好方式——上次和我妈妈一起开车旅行时我没有记录，我们玩得非常开心，这次我肯定要把它记录下来。我知道市面上有实现这个功能的应用，但我想让它按我的方式来，下面是我打算怎么实现的。</p>
+<p>我下定决心，停止不安全感，就从这里开始，看看自己还能不能做到。就这样开始了。我用的是 Vue，上一次用 Vue 大概是两年前了，很多东西都生疏了。既然是&quot;旅行&quot;主题，肯定需要地图，所以我选择使用 Mapbox，仅仅是因为之前用过。</p>
+<p>目前技术栈：Vue JS + Mapbox JS</p>
+<p>为了快速看到效果，我用简单的 HTML 单页面来展示我想要的样子，大概花了几个小时。基本上就是一个可以缩放到当前位置的交互式地图，这是第一步。从小处着手，再逐步扩展到想要的样子。</p>
+<p>然后第一步是让地图在 Vue 技术栈里跑起来，这花了我不少时间……</p>
+<p>每个人首先都会想到用现有的插件，但没有一个对我有用……盯着一堆红色报错信息，地图还是没有出现，我很沮丧，感觉自己做不下去了。然后我继续深挖，也就是更多地搜索，只要搜索得足够多，什么问题都能解决，除非你有关于死亡的问题——那没有答案……改天再聊。然后我偶然发现了这篇文档：
+
+
+
+
+
+<a href="https://apidocs.geoapify.com/samples/maps/js-leaflet/" 
+	 target="_blank" rel="noopener"
+	>Leaflet 矢量地图示例</a>。当然了，最终还是要回到源头。Mapbox 是基于 Leaflet 构建的，所以得回到原始来源进行集成。那篇文档帮我搞清楚了一切。我做了类似的事情，只是用的是&quot;mapbox-gl&quot;而不是&quot;maplibre-gl&quot;。</p>
+<p>安装 mapbox-gl</p>
+<pre tabindex="0"><code>npm i mapbox-gl
+</code></pre><p>可以这样使用 mapbox-gl：</p>
+<pre tabindex="0"><code>import mapboxgl from &#34;mapbox-gl&#34;;
+</code></pre><p>现在我有地图了！！！接下来呢？？？？</p>
+<p>在本地跑通了，现在需要让它在网上也能用，这样其他人也能看到。为此我选择了 Heroku。我也考虑过 AWS，但 AWS 只有一年的免费期，不过我确实注册了 Amplify，所以 React 也在我的考虑范围内，这个改天再说。Heroku，从哪里说起呢？这是我迄今为止遇到的最令人沮丧的事情。别误会，我喜欢 Heroku，它是免费的，非常适合快速演示或概念验证，但让它正常运行需要花些时间，错误信息也说明不了太多，想弄清楚怎么修复就像在追踪某个东西，但你不知道自己在追什么。不过这个过程中我学到了很多。让托管正常工作的正确方法如下：</p>
+<ol>
+<li>确保你没有配置了自定义端口的 vue.config.js 文件，Heroku 有自己专用的端口，如果你自己设置了端口，Heroku 可能无法识别，从而导致&quot;App crashed&quot;（应用崩溃）</li>
+<li>确保在 Heroku 设置中配置了你的环境变量</li>
+<li>对你的 Web 应用进行构建</li>
+<li>只把构建后的文件上传到 Heroku</li>
+<li>为 Heroku 创建一个 Procfile，内容需要是 <code>serve -s</code>，这个命令可以启动服务</li>
+<li>仔细阅读 Heroku 文档，同时注意你的文件夹结构，确保在正确的文件夹下进行上传</li>
+<li>登录 Heroku 控制台查看更多日志，安装缺失的包，还可以核实所有内容是否正确安装，日志都在 Heroku 服务器上</li>
+<li>常用 Heroku 命令：</li>
+</ol>
+<pre tabindex="0"><code>heroku restart //重启服务器
+
+heroku local //在本地测试代码
+
+heroku open //打开生产环境页面
+
+heroku init
+
+heroku git:remote -a &lt;你的应用名称&gt;
+
+git pull heroku master
+</code></pre><p>搞定了！</p>
+<p>
+
+
+
+
+
+<a href="https://test-shirls.herokuapp.com/" 
+	 target="_blank" rel="noopener"
+	>Heroku 应用</a></p>
+<p>打开上面的页面，你会看到地图上有一个红色标记，点击它可以展开查看每个标记的更多信息。</p>
+<p>附注：</p>
+<p>我一边打这篇文章，一边在看 Cody Ko 的&quot;The Most Insane House Tour&quot;，视频里那个房子的开发者整个人乱成一团，这让我想到：无论是做什么还是设计什么，每次专注于一个功能，如果做得太多、太快、太乱，用户就会迷失。看，任何事情都能让你学到点什么。</p>
+<p>那么下一步是什么？我们有了地图，而且我可以找到自己的位置，对于用户来说，创建一个前端会很有趣。功能应该如下：</p>
+<ol>
+<li>作为用户，当我进入这个网页时，应该飞入到 Shirls 当前所在的位置（第 1 点）</li>
+<li>作为用户，当我进入这个网页并点击图钉时，应该能看到关于该标记位置的说明</li>
+<li>作为用户，当我进入这个网页时，会有一个&quot;我离它有多远&quot;的按钮，用来计算你当前位置到我最后标记的位置的距离 &ndash;&gt; 最后再做（第 3 点）&ndash;&gt; 这个想法很蠢，不做了</li>
+</ol>
+<h2 id="日期425">
+  日期：4/25
+  <a class="heading-link" href="#%e6%97%a5%e6%9c%9f425">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>说实话，一旦上面的基础搭建好了，后面的事情就容易多了。</p>
+<p>新增以下功能：</p>
+<ul>
+<li>根据地理位置数据添加图标</li>
+<li>添加标记并显示标记所在位置的经纬度 &ndash;&gt; 仅用于管理员目的</li>
+<li>&ldquo;飞入&quot;功能做不出来……快把我逼疯了</li>
+</ul>
+<p>备注：</p>
+<ul>
+<li>
+<p>上面的第 1 点已更改 -&gt; 作为用户，当我进入这个网页时，应该能看到我去过的地方，上面有红色标记，点击标记后可以看到描述，如有可能还能看到图片，标记还应包含日期</p>
+</li>
+<li>
+<p>删除第 3 点</p>
+</li>
+<li>
+<p>上述所有功能基本已完成，但我在考虑新的功能：</p>
+<ul>
+<li>加入我的家乡，当有人搜索时，会跳转到我的家乡！我会给出描述</li>
+</ul>
+</li>
+<li>
+<p>地图可能需要改进</p>
+</li>
+</ul>
+<p>我的收获：</p>
+<ul>
+<li>vectornator 可以编辑 SVG 文件并制作图标！！！太棒了！！！</li>
+<li>地图组件应该放在一起</li>
+<li>Vue 非常适合快速开发，而且容易上手，但一旦变得复杂，可能就力不从心了，如果逻辑比较复杂，还是用 React 更好</li>
+<li>在 Mapbox 中，你需要基本上把地图&quot;画&quot;出来，才能设置图层、各项元素的展示方式等</li>
+</ul>
+<p>我必须停止想这件事了，想得越多，冒出的想法越多……我不喜欢这样</p>
+<p>想法：</p>
+<ul>
+<li>管理员页面：输入描述或图片
+<ul>
+<li>缩放到我当前所在的位置</li>
+<li>然后放置图钉</li>
+<li>使用弹出框添加信息</li>
+<li>保存到 JSON 文件还是数据库？？？还在考虑这个，参见&quot;待思考&quot;部分</li>
+</ul>
+</li>
+<li>限制图钉功能，只能放置 1 个图钉 &ndash;&gt; 已完成</li>
+<li>设置一组按钮或菜单，列出用户/访客可以进行的操作
+<ul>
+<li>出发地</li>
+<li>最后目的地</li>
+</ul>
+</li>
+<li>为用户添加描述 &ndash;&gt; 最重要！！！一个欢迎页面，解释这是什么以及他们可以在这里做什么</li>
+</ul>
+<p>待思考：目前没有关联数据库，我需要数据库吗？</p>
+<hr>
+<p>如有更多变化，将继续更新。不确定我是否还想继续做这个项目。我真的需要多出去走走了。</p>
+<h2 id="426-日-官方发布公告于-427">
+  4/26 日 官方发布公告于 4/27
+  <a class="heading-link" href="#426-%e6%97%a5-%e5%ae%98%e6%96%b9%e5%8f%91%e5%b8%83%e5%85%ac%e5%91%8a%e4%ba%8e-427">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>就是今天！我把它上线了。好吧，我觉得不会有人注意到这个，但我真的很兴奋。</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/the-road-to-locate-shirls/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

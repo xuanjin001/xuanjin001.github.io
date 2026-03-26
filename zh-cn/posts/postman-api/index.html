@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  Postman API · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+什么是 Postman？ 链接到标题 好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。
+以下内容摘自 Postman 官网，他们解释得非常到位：
+Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。
+https://www.postman.com/
+我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。
+Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。
+我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。
+我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：
+我的数据结构是什么样的？ 数据能否方便地获取？ 数据库的关联关系是否正确建立？ 等等…… Postman 的各个组成部分 链接到标题 Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。
+工作区（Workspaces） 链接到标题 工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。
+集合（Collections） 链接到标题 我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！
+变量（Variables） 链接到标题 你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。
+文档（Documentation） 链接到标题 你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。
+培训 链接到标题 我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子： 30-days-of-postman-for-developers
+Postman 与 Salesforce 链接到标题 你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考 这篇文章。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Postman API"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+什么是 Postman？ 链接到标题 好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。
+以下内容摘自 Postman 官网，他们解释得非常到位：
+Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。
+https://www.postman.com/
+我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。
+Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。
+我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。
+我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：
+我的数据结构是什么样的？ 数据能否方便地获取？ 数据库的关联关系是否正确建立？ 等等…… Postman 的各个组成部分 链接到标题 Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。
+工作区（Workspaces） 链接到标题 工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。
+集合（Collections） 链接到标题 我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！
+变量（Variables） 链接到标题 你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。
+文档（Documentation） 链接到标题 你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。
+培训 链接到标题 我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子： 30-days-of-postman-for-developers
+Postman 与 Salesforce 链接到标题 你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考 这篇文章。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。"/>
+
+<meta property="og:title" content="Postman API" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+什么是 Postman？ 链接到标题 好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。
+以下内容摘自 Postman 官网，他们解释得非常到位：
+Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。
+https://www.postman.com/
+我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。
+Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。
+我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。
+我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：
+我的数据结构是什么样的？ 数据能否方便地获取？ 数据库的关联关系是否正确建立？ 等等…… Postman 的各个组成部分 链接到标题 Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。
+工作区（Workspaces） 链接到标题 工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。
+集合（Collections） 链接到标题 我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！
+变量（Variables） 链接到标题 你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。
+文档（Documentation） 链接到标题 你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。
+培训 链接到标题 我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子： 30-days-of-postman-for-developers
+Postman 与 Salesforce 链接到标题 你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考 这篇文章。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/postman-api/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-10-23T23:58:44-07:00" />
+<meta property="article:modified_time" content="2021-10-23T23:58:44-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/postman-api/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/postman-api/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/postman-api/">
+              Postman API
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-10-23T23:58:44-07:00">
+                October 23, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/tutorials/">Tutorials</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/tutorials/">Tutorials</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<h2 id="什么是-postman">
+  什么是 Postman？
+  <a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-postman">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。</p>
+<p>以下内容摘自 Postman 官网，他们解释得非常到位：</p>
+<blockquote>
+<p>Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。</p>
+<p>
+
+
+
+
+
+<a href="https://www.postman.com/" 
+	 target="_blank" rel="noopener"
+	>https://www.postman.com/</a></p>
+</blockquote>
+<p>我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。</p>
+<p>Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。</p>
+<p>我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。</p>
+<p>我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：</p>
+<ul>
+<li>我的数据结构是什么样的？</li>
+<li>数据能否方便地获取？</li>
+<li>数据库的关联关系是否正确建立？</li>
+<li>等等……</li>
+</ul>
+<h2 id="postman-的各个组成部分">
+  Postman 的各个组成部分
+  <a class="heading-link" href="#postman-%e7%9a%84%e5%90%84%e4%b8%aa%e7%bb%84%e6%88%90%e9%83%a8%e5%88%86">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。</p>
+<h3 id="工作区workspaces">
+  工作区（Workspaces）
+  <a class="heading-link" href="#%e5%b7%a5%e4%bd%9c%e5%8c%baworkspaces">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。</p>
+<h3 id="集合collections">
+  集合（Collections）
+  <a class="heading-link" href="#%e9%9b%86%e5%90%88collections">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！</p>
+<h3 id="变量variables">
+  变量（Variables）
+  <a class="heading-link" href="#%e5%8f%98%e9%87%8fvariables">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。</p>
+<h3 id="文档documentation">
+  文档（Documentation）
+  <a class="heading-link" href="#%e6%96%87%e6%a1%a3documentation">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。</p>
+<h2 id="培训">
+  培训
+  <a class="heading-link" href="#%e5%9f%b9%e8%ae%ad">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子：
+
+
+
+
+
+<a href="https://www.postman.com/postman/workspace/30-days-of-postman-for-developers/overview" 
+	 target="_blank" rel="noopener"
+	>30-days-of-postman-for-developers</a></p>
+<h2 id="postman-与-salesforce">
+  Postman 与 Salesforce
+  <a class="heading-link" href="#postman-%e4%b8%8e-salesforce">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考
+
+
+
+
+
+<a href="https://www.sfdcstop.com/2019/01/how-to-connect-to-salesforce-with.html" 
+	 target="_blank" rel="noopener"
+	>这篇文章</a>。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。</p>
+<h2 id="其他说明">
+  其他说明
+  <a class="heading-link" href="#%e5%85%b6%e4%bb%96%e8%af%b4%e6%98%8e">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>我看到很多人对访问令牌（access token）有疑问，有时候还会想知道能否获取一个永不过期的访问令牌。但我认为我们需要先搞清楚一件事——什么是访问令牌？访问令牌现在被广泛使用，而且有很多不同类型。我把它们理解为进入某个应用、门户或页面的&quot;钥匙&quot;。这些操作都发生在后端，作为用户你可能从未注意到。访问令牌是否过期，取决于开发者的设置方式，与你所在页面或应用的会话时长有关——当会话超时，你将被迫重新登录以获得访问权限。这就是为什么有时候你通过社交账号登录（Facebook、Twitter、Google 等）后，在应用上闲置一段时间后，会被要求重新登录——那就是你的会话超时了。访问令牌的目的是授予访问权限，同时我们也需要保证安全性。外面有心怀不轨的人，可能利用同一个入口获取他们不该获取的信息——这就是&quot;黑客攻击&quot;这个词的一种冗长解释，哈哈。对于 Salesforce 来说，当你设置好关联应用（Connected App）后，第一次获取访问权限时会自动获得访问令牌；你也可以在通过 Postman 初次调用 API 时从 Salesforce 获取访问令牌。当会话过期后，你需要重新获取访问令牌并相应地查询数据。这是通过 Postman 访问时的情况。也许有人会问，他们的应用是否需要不断向用户提供访问令牌——当然不用……应用本身足够智能，会在后台自动处理这一切。更多内容请参考
+
+
+
+
+
+<a href="https://help.salesforce.com/s/articleView?id=sf.connected_app_manage_oauth.htm&amp;type=5" 
+	 target="_blank" rel="noopener"
+	>这里</a>。</p>
+<h2 id="总结">
+  总结
+  <a class="heading-link" href="#%e6%80%bb%e7%bb%93">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>Postman 超棒！！！！哈哈</p>
+<p>如果我在文中有任何错误，欢迎指出。如果你在使用 Postman 的过程中积累了一些小技巧，也欢迎联系我，我很乐意和你深入交流。</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/postman-api/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

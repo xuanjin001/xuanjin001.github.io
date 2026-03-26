@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme Demo on 金萱</title>
+    <link>https://xuanjin001.github.io/zh-cn/series/theme-demo/</link>
+    <description>Recent content in Theme Demo on 金萱</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 14 Oct 2023 22:39:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/series/theme-demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的博客项目</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/oct_14_2023/</link>
+      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/oct_14_2023/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我的博客项目 链接到标题 我在 WordPress 上写博客已经有一段时间了，断断续续地，大概用了 15 年。那边的内容我还需要迁移过来，不过我不想等到一切都整理好才开始行动，我要先把事情推进起来。
+WordPress 很好用，我可以专注于内容创作，但有些地方我不喜欢。因为我用的不是付费升级版，如果没有广告拦截器，会看到很多广告。不仅如此，自从 WordPress 升级了博客编辑工具之后，发布文章变得麻烦多了，你需要一段一段地复制内容。当然，新工具在格式排版方面功能更多，但复制内容这件事也变得越来越烦人。
+我希望拥有一个能满足以下需求的地方：
+专注于写作 博客支持深色模式 按日期顺序排列博文 干净清爽的博客界面 保留博客的所有基本功能 能够在博客上展示我的作品 我之前用过 Hugo，Hugo 是用 Go 语言驱动的。但我当时不知为何不太喜欢它的构建方式，可能是没找到合适的主题。这次我打算再试一次。我找到了一个新主题叫做 Coder，正是我想要的风格。目前大部分自定义设置还没做，我保留了主题，只是更新了链接之类的内容，还有很多东西需要完善，我正在进行中。我一直用 GitHub 来管理这个项目和潜在的功能需求。
+在我看来，我打算把这个博客项目当作一个产品来对待，而我就是想要打造这个产品的客户。
+第一步：我列出了这个博客/产品所需要的功能。
+第二步：我优先列出了&amp;quot;第一天&amp;quot;必须具备的功能，从这些功能开始着手。
+以下是我想要的功能：
+深色模式切换 简洁的主页 给文章打标签 多种文章组织方式 搜索功能 密码保护内容 项目列表 数据统计追踪 以下是&amp;quot;第一天&amp;quot;必须具备的功能：
+深色模式切换 简洁的主页 给文章打标签 多种文章组织方式 项目列表 有了新的优先级列表，我开始寻找最合适的 Hugo 主题，这就是我最终选定 Coder 主题的过程。
+至于其余的功能，我把它们作为待办事项添加到了 GitHub 的项目看板中，方便追踪进度。接下来，我会用 GitHub 项目来记录下一步该做什么。当我准备好着手某个功能时，我会将其转化为一个 Issue 并分配给自己来处理。在开发过程中，如果遇到什么问题，我会将其记录为 Issue 并在问题日志中标注为 Bug。
+现在基本上可以在 GitHub 里管理整个项目，我真的很喜欢这个功能！！！
+不过有一点我想吐槽一下：从仓库导航到项目非常容易，但从项目返回到仓库就很难了，哈哈，也许是我用法不对……</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer on 金萱</title>
+    <link>https://xuanjin001.github.io/zh-cn/categories/developer/</link>
+    <description>Recent content in Developer on 金萱</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 31 Jul 2023 07:24:27 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据迁移</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/data-migration/</link>
+      <pubDate>Mon, 31 Jul 2023 07:24:27 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/data-migration/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+什么是&amp;quot;数据迁移&amp;quot;？
+每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？
+到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。
+在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的&amp;quot;直接迁移&amp;quot;（lift and shift）。
+在两个相似但大小不同的系统之间迁移 链接到标题 这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。
+这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。
+有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。
+在两个不同系统之间迁移 链接到标题 这才是真正棘手的情况。就像你从公寓搬到房子，或者从房子搬到公寓一样，整个平面布局都不一样，你需要重新规划空间，想清楚每样东西该放在哪里。数据迁移也是同样的道理。当你把数据从一个系统迁移到另一个完全不同的系统时，你不仅需要考虑数据本身，还需要考虑功能需求。
+所有这些都指向业务流程、业务流程、业务流程——重要的事情说三遍。人们不一定清楚自己想要保留哪些功能，他们会告诉你想要一切跟以前一样，而我也有责任提醒他们：&amp;ldquo;如果我们可以做得更好，为什么不呢？你们的痛点是什么？&amp;ldquo;解决方案可以留到后面再想。我始终相信，关键在于获取需求、理解什么才是真正能帮助他们的，然后我们才能思考解决方案。解决问题的方式有很多，只要你知道问题是什么。:)
+在所有这些复杂情况中，数据是任何系统的核心——数据支撑着你的流程，数据呈现在你的前端网页上，总而言之，没有数据，系统只是一个空壳。这里最关键的是，当数据来自不同系统时，你如何管理它们。在旧系统中，数据支撑着一套不同的业务流程，并因此而存在。在新系统中，我们有一套全新的流程需要支撑，因此数据结构/数据模型当然也需要相应调整。新的数据模型不仅需要能够承载来自旧系统的数据，还需要在新系统中有意义。这绝非易事。你会不断发现自己要处理旧系统中 4 到 5 张需要合并成新系统中 1 张表的情况，或者需要将旧系统的 2 张表合并后再拆分成新系统中 3 张不同的表。这要求你彻底理解旧系统的每一个细节，同时清楚地预见新系统未来的走向。作为数据架构师，你需要让数据愿景与项目的方方面面保持一致。
+在两个不同且存储容量不同的系统之间迁移 链接到标题 正如前面提到的，在两个不同系统之间迁移已经不容易了，如果再加上不同的存储容量，你就真的需要从杂草中挑出面包和黄油了。我总是对人们说，想想那些你不可或缺的东西。虽然把所有东西都打包带走更省事，但如果你要从三居室的房子搬到公寓，想把所有东西都带过去几乎是不可能的——除非你有一个大储藏室。带上你的必需品！
+总结 链接到标题 数据模型和数据库的全部意义在于帮助你在未来更轻松地检索数据，并以更高效的方式保存数据。根据你在前端如何展示数据，或者你希望如何检索数据，你会相应地决定如何在后端存储数据。换个方式来说，当你看《怦然心动的人生整理魔法》时，你会注意到近藤麻理惠以一种便于检索、清晰可见的方式整理物品。老实说，现在想想，整个系统迁移基本上就是用近藤麻理惠的方法整理你的家。最终，你将拥有一个令你心动的系统！
+我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。
+结语 链接到标题 总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。
+架构愉快！
+关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。</description>
+    </item>
+    
+    <item>
+      <title>设计与开发</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/design-dev/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/design-dev/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+照片来自 Pexels 的 Andrea Piacquadio
+说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：
+解决方案设计 UI 设计 用户体验设计 首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。
+解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有&amp;quot;用户故事&amp;quot;这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
+根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在&amp;quot;设计解决方案&amp;quot;阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
+在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。</description>
+    </item>
+    
+    <item>
+      <title>实用的 SFDC 工具</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/useful-sfdc-tools/</link>
+      <pubDate>Thu, 29 Jul 2021 22:28:57 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/useful-sfdc-tools/</guid>
+      <description> 本文由 Gideon（AI）翻译自英文原版。
+以下是一些在日常 SFDC 工作中非常有帮助的网站和工具。如果你也在使用某些工具，欢迎在评论区分享。如果我发现了更多好用的内容，我会持续更新这篇文章。
+网站：
+https://developer.salesforce.com/
+https://help.salesforce.com
+Trailhead： https://trailhead.salesforce.com/
+SFDC 工具集： https://cloudtoolkit.co/
+Click to Create LWC 设计工具： https://www.lightningdesignsystem.com/guidelines/builder/click/
+Unofficial SF： https://unofficialsf.com/
+正则表达式生成工具： https://regex-generator.olafneumann.org/?sampleText=2020-03-12T13%3A34%3A56.123Z%20INFO%20%20%5Borg.example.Class%5D%3A%20This%20is%20a%20%23simple%20%23logline%20containing%20a%20%27value%27.&amp;amp;flags=i&amp;amp;onlyPatterns=false&amp;amp;matchWholeLine=true&amp;amp;selection=
+批量更新多个配置文件： https://profilepowertools.com
+SFDC 精选资源大全： https://github.com/mailtoharshit/awesome-salesforce
+浏览器扩展：
+SFDC Advanced Code Searcher：在整个 org 中搜索所有代码 Color Favicons：区分沙盒和生产环境，避免在两个环境之间误操作（哈哈） Inspector：查看所有数据，通过查询导出数据 Mass Editor：在列表视图中批量编辑 Show API Name：无需介绍，顾名思义 </description>
+    </item>
+    
+    <item>
+      <title>动态将商机审批提交至队列</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/dynamically-submit-opp-approval-to-a-queue/</link>
+      <pubDate>Sat, 22 May 2021 15:36:53 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/dynamically-submit-opp-approval-to-a-queue/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我到目前为止已经大约 36 个小时没有睡觉了，请多包涵。
+以下解决方案受到了 这篇文章的启发。
+使用场景 链接到标题 用户希望能够自动将用户动态分配到队列，同时希望在满足条件时，根据商机所有者所在部门，动态将商机提交给相关队列进行审批。
+拆解问题 链接到标题 我从算法学习中学到的一件事，就是拆解问题，分而治之。
+在我们的使用场景中，主要有 2 个问题：
+动态将用户分配到队列 动态将商机提交给队列 一旦将问题拆解成这两个部分，解决方案就清晰了。
+动态将用户分配到队列：使用触发器动态添加/移除用户 动态将商机提交给队列：使用流程在满足特定条件时提交审批 动手实践 链接到标题 我们需要：
+自定义对象：审批矩阵（Approval Matrix） 用于映射商机记录与应提交至哪个队列 将该对象的&amp;quot;所有者&amp;quot;字段作为审批人，这将帮助我们解决 2 个问题： 商机队列（此功能将在 2022 年版本中推出，如果我没记错的话） 查找至队列的自定义字段不存在 审批流程 流程触发器：在创建商机记录时创建&amp;quot;审批矩阵&amp;quot;记录，在商机更新时更新&amp;quot;审批矩阵&amp;quot;记录所有者（使用触发器代码可能比流程更简单） 流程触发器：在满足特定条件时提交审批；在本例中，我做了简化，当商机阶段 = &amp;ldquo;需求分析&amp;quot;时，自动提交审批 自定义元数据类型：我仅用它来映射部门和队列名称，但你可以添加更复杂的条件，例如，如果用户属于某个特定客户，则应被分配到特定队列。你也可以将这类逻辑放在这里。 用户触发器：将用户添加/移除到适当的队列（也可以使用流程，只是对我来说，触发器更容易操作，有时候我就是不想拖拖拽拽……） 请注意，我的流程完全没有做批量化处理……你应该始终这样做，我只是需要一个概念验证。
+自定义对象 链接到标题 这只是一个简单的记录，用于映射商机和审批人队列
+注意这里的&amp;quot;所有者&amp;quot;字段，它将作为审批人使用。在我的流程中，当新的商机记录创建时，审批矩阵记录的所有者字段会自动分配给&amp;quot;空队列&amp;rdquo;（一个没有任何用户的队列）。在实际操作中，你应该优化此流程，自动分配到正确的队列，除非找不到合适的队列。我这里只是偷了个懒。
+审批流程 链接到标题 你的审批流程设置如下
+审批流程
+注意&amp;quot;指定审批人&amp;quot;设置为&amp;quot;相关用户：所有者&amp;quot;
+邮件模板将是一个 VF 邮件模板，你可以在其中查询相关记录
+邮件模板示例
+流程触发器：创建&amp;quot;审批矩阵&amp;quot;记录 链接到标题 我构建的流程截图
+正如我之前所说，你应该优化以下内容：
+批量化处理 创建记录时也设置队列 &amp;ndash;&amp;gt; 这将改善用户体验 流程触发器：提交审批 链接到标题 当阶段变更为&amp;quot;需求分析&amp;quot;时，将提交审批
+流程截图
+用户触发器： 自定义元数据类型 链接到标题 以下是我的自定义元数据类型设置</description>
+    </item>
+    
+    <item>
+      <title>Community Cloud 认证备考资源</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/community-cloud-cert-resources/</link>
+      <pubDate>Sun, 24 Jan 2021 19:14:32 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/community-cloud-cert-resources/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+以下是我目前拥有的备考资源，也是我正在使用的资源。其中一些是我自己找到的，很多是我的朋友 Yi 提供的，在此向她致敬！
+照片来自 Pexels.com 的 Julia M Cameron
+备考资源：
+快速路径： https://trailhead.salesforce.com/en/users/amanj/trailmixes/community-cloud-fast-path Salesforce 认证 Community Cloud 顾问考试指南： https://trailhead.salesforce.com/help?article=Salesforce-Certified-Community-Cloud-Consultant-Exam-Guide &amp;ndash;&amp;gt; Yi 提供 考试大纲相关内容： https://trailhead.salesforce.com/en/academy/classes/adx271-get-started-with-communities-in-lightning-experience/ Quizlet 闪卡： https://quizlet.com/182007595/salesforce-community-cloud-consultant-exam-flash-cards &amp;ndash;&amp;gt; Yi 提供 备考博客： https://www.testpreptraining.com/blog/how-to-prepare-for-the-salesforce-community-cloud-consultant-exam/ &amp;ndash;&amp;gt; Yi 提供 全套信息： http://www.salesforcechris.com/community-cloud-consultant-resource-guide/ &amp;ndash;&amp;gt; Yi 提供 练习题： https://www.testpreptraining.com/salesforce-community-cloud-consultant-free-practice-test 学习计划：
+完成 Trailhead：SFDC 快速路径 通过社区拓展影响力： https://trailhead.salesforce.com/content/learn/trails/communities 自定义： https://trailhead.salesforce.com/content/learn/trails/customize-your-community 社区 + Lightning： https://trailhead.salesforce.com/en/users/jglossop/trailmixes/communities-lightning-components Focus On Force 考试大纲：
+实施 22% 共享与安全 20% 社区设置 18% Experience Builder 12% 社区管理 11% 内容 9% 模板与使用场景 8% 所需技能：</description>
+    </item>
+    
+    <item>
+      <title>新管理员必备基础知识</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/administration-essentials-for-new-admins/</link>
+      <pubDate>Thu, 21 Jan 2021 00:14:15 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/administration-essentials-for-new-admins/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+在 Salesforce 中，有两个主要角色，一个是管理员（Admin），另一个是开发人员（Developer）。大家都会告诉你，应该先学习如何成为一名管理员，再学习成为开发人员。我完全赞同这一点——拥有管理员的技能，你会对整个系统有更全面的理解；因为作为管理员，你是整个组织的核心。
+很多人对 Salesforce 管理员存在一些误解，认为管理员只负责处理用户访问权限问题，但其实远不止于此。当然，我们需要管控安全权限，但同时，我们也会参与不涉及编码的开发工作，比如根据终端用户的需求创建字段、为管理层创建报表，有时还需要清理数据。作为管理员，你不仅要思考如何解决问题，还要思考如何简化用户的工作流程，以及如何从长远角度帮助他们。尽管我热爱编程，但随着我对管理员工作了解的深入，我越来越清楚地认识到 Salesforce 管理员的重要性。管理员对系统了如指掌，他们清楚哪种方式能最高效地解决用户问题，并与用户密切合作，以提供最优方案。从这些角度来看，我非常钦佩管理员这一角色。成为一名优秀的管理员，是成为一名出色开发人员的第一步。
+资源 链接到标题 Trailhead：这永远是开始管理员学习之旅的最佳途径。
+帮助与培训课程：要访问帮助与培训，你需要有一个可用的 Salesforce 生产环境。（路径：你的名字 | 帮助与培训 | 使用生产凭据登录 | 查找课程）。我非常喜欢其中详细的视频内容，结合动手练习，能获得大量宝贵的实践经验。不过，此功能仅限于生产组织访问。我在学习这些课程时做了笔记，有机会的话会整理后发布在这里。
+以下是我在学习&amp;quot;新管理员必备基础知识&amp;quot;课程时所做的笔记，该课程涵盖以下内容：
+另一个相关主题是 自动化
+尝试寻找志愿服务机会，通过帮助他人来积累实践经验。我曾使用 VolunteerMatch 寻找志愿机会。请同时积极与本地社区建立联系，这样不仅能扩展人脉，还能积累更多经验。
+开发者文档：文档中包含概念、基础架构、最佳实践、案例研究等内容，对我来说非常有价值。
+如果你有更多有价值的资源，请与大家分享，这样我们才能作为管理员共同进步。
+如有任何疑问，欢迎随时联系我。
+谢谢。</description>
+    </item>
+    
+    <item>
+      <title>我的 Salesforce 开发者面试经历</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/</link>
+      <pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&amp;ldquo;努力工作，尽情玩乐&amp;quot;这种模式，至少这是我对他们公司的感受。
+话不多说，开始正题。
+那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。
+第一题：SOQL 链接到标题 题目是：&amp;ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&amp;rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。
+我们来分析一下这道题。&amp;ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&amp;rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&amp;quot;方法&amp;rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
+需要返回客户 ID 条件是：&amp;ldquo;商机和案例处于开放状态&amp;rdquo;——这是一个可以向面试官追问的问题，如何判定&amp;quot;开放&amp;quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&amp;quot;阶段&amp;quot;字段，因此我将以此作为判断&amp;quot;开放&amp;quot;的依据。案例有&amp;quot;状态&amp;quot;字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
+现在来写代码：
+// 方法定义 public static List&amp;lt;sobject&amp;gt; getAccountId() { list&amp;lt;opportunity&amp;gt; oppList = new list&amp;lt;opportunity&amp;gt;(); list&amp;lt;case&amp;gt; caseList = new list&amp;lt;case&amp;gt;(); list&amp;lt;account&amp;gt; accountList = new list&amp;lt;account&amp;gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &amp;#39;Open&amp;#39;\]; caseList = \[Select AccountId from Case where Status = &amp;#39;Open&amp;#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&amp;quot;未关闭&amp;quot;而不是&amp;quot;状态/阶段 = 开放&amp;quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。</description>
+    </item>
+    
+    <item>
+      <title>自动化</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/automation/</link>
+      <pubDate>Mon, 06 Feb 2017 21:39:08 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/automation/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+自动化
+邮件管理
+` `
+创建组织级电子邮件地址 ` `
+为合规原因设置密送（BCC）邮件 ` `
+启用&amp;quot;发送至 SFDC&amp;quot;功能，将第三方邮件账户中的电子邮件自动作为活动记录在潜在客户和联系人记录中 ` `
+阻止终端用户下载有害附件 ` `
+为个人邮件和群发邮件设置默认页脚 邮件模板：
+` `
+保持品牌一致性 ` `
+使用多种开箱即用的邮件模板节省时间 邮件模板可用于以下场景：
+` `
+Web 转潜在客户（Web-to-lead） ` `
+Web 转案例（Web-to-case） ` `
+邮件转案例（Email-to-case） ` `
+分配规则 ` `
+升级规则 ` `
+自动回复规则 ` `
+工作流 ` `
+流程 邮件模板类型：
+` `
+文本 ` `
+HTML ` `
+自定义 ` `
+Visualforce 邮件模板文件夹：我的设置 | 电子邮件 | 邮件模板 设置 | 通讯模板 | 邮件模板</description>
+    </item>
+    
+    <item>
+      <title>报表</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/reports/</link>
+      <pubDate>Mon, 06 Feb 2017 21:27:22 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/reports/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+报表
+定义：报表是列表或摘要，让您可以通过不同方式汇总和分析数据。
+标准报表：
+内置 存储在标准文件夹中 可进行自定义 由于无法覆盖，需另存为自定义报表 自定义报表：
+可从头开始创建 可通过自定义标准报表来创建 必须保存在自定义、个人或未归档的文件夹中 在增强报表选项卡上查找报表
+报表与仪表板文件夹共享：传统模式 — 对报表和仪表板的访问通过&amp;quot;报表&amp;quot;选项卡上的文件夹进行管控
+传统上，所有有权访问该文件夹的用户拥有相同的访问级别
+访问权限可以是只读或读/写 文件夹可以向所有用户开放、对所有用户隐藏，或通过公共群组或规则进行共享 对文件夹的访问权限不会在角色层级中向上汇总
+报表与仪表板文件夹共享：增强模式
+增强的文件夹共享让用户对报表和仪表板的共享方式拥有更精细的控制权。
+可以向不同用户群组授予对同一文件夹的不同访问权限
+注意：启用增强文件夹共享可能会根据用户权限的不同，改变对报表和仪表板的现有访问权限
+使用报表选项进行快速自定义：
+始终显示在每份报表的顶部 选项取决于所报告数据的类型 只需几次点击即可进行更改，然后另存为新报表 报表格式：汇总报表
+记录按组排序并带有小计 浮动报表表头
+设置 | 自定义 | 报表与仪表板 | UI
+矩阵报表
+按水平和垂直条件在网格中汇总数据 提供行和列的合计 按日期字段分组
+在按日期字段对报表进行分组时，从分组菜单中选择&amp;quot;按以下时间分组日期&amp;quot;来指定分组的时间范围 报表筛选器与筛选器逻辑：
+在报表中最多可添加 20 个额外筛选器，直接在&amp;quot;筛选器&amp;quot;面板中使用&amp;quot;添加&amp;quot;按钮或从预览面板拖入字段即可添加。此外，还可以使用筛选器逻辑：
+使用&amp;quot;AND&amp;quot;、&amp;ldquo;OR&amp;rdquo;、&amp;ldquo;NOT&amp;quot;运算符链接多个筛选器，以创建复杂的条件 使用括号和嵌套括号来设置优先级条件 报表与仪表板（续）
+使用筛选器中的相对日期值为报表创建动态日期范围 额外灵活性：可以在相对日期值中使用变量来表示天、季度和年 向报表添加自定义汇总公式
+每份报表最多五个 不能引用其他汇总公式 可以引用数据中的公式字段 仅显示在汇总行上，不显示在明细（记录）行上 使用&amp;quot;突出显示异常值&amp;quot;功能让关键字段中的重要数据更加醒目
+条件高亮显示 使用图表以可视化方式呈现汇总行中的数据
+条形图
+每个条形代表一个分组的数据 使用水平条形图比较多个分组 使用垂直条形图比较较少分组，或按日期字段分组时使用 折线图
+每个点代表一个分组的数据 在按日期字段分组时使用 非常适合显示随时间变化的趋势 饼图/环形图</description>
+    </item>
+    
+    <item>
+      <title>数据管理</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/managing-data/</link>
+      <pubDate>Mon, 06 Feb 2017 21:25:59 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/managing-data/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+数据管理
+导入数据：数据导入向导
+数据导入向导提供统一的操作界面，可用于导入客户与联系人、潜在客户、解决方案以及自定义对象的数据。
+对所有可用对象使用同一个向导 选择如何处理导入的数据 拖放方式导入文件 设置 | 数据管理 | 数据导入向导
+导入文件格式：
+数值之间以逗号分隔 在文本文档和电子表格中显示方式有所不同 准备导入文件：
+&amp;lt;清理数据&amp;gt;
+检查数据是否满足系统和自定义数据验证要求 处理重复记录 删除空白项和多余空格 运行拼写检查 将列标题重命名为与 Salesforce 字段名称一致 统一数据格式标准 其他导入文件注意事项
+注意事项
+数据导入向导
+数据验证
+导入的值须满足数据验证规则
+必填字段（新建记录）
+未映射的必填字段将产生错误
+所有者字段（新建记录）
+若为空，则导入用户将被设为所有者
+货币字段（新建记录）
+未映射的货币字段将产生错误
+选择列表值
+任何选择列表字段中的所有值都必须在 Salesforce 中存在
+匹配字段与重复项
+将新信息与现有记录匹配
+需确保使用 Salesforce 记录 ID 将现有记录与正确的新信息进行匹配 该 ID 是 SFDC 在创建新记录时生成的唯一标识符 SFDC 记录 ID 可从以下途径获取：
+记录 URL 报表 数据加载器导出文件 数据导入向导
+Apex 数据加载器
+&amp;lt; 5万条记录
+&amp;gt;5万条记录
+防止重复
+对象如产品或商机</description>
+    </item>
+    
+    <item>
+      <title>自定义字段</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/customization-fields/</link>
+      <pubDate>Mon, 06 Feb 2017 21:21:00 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/customization-fields/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+自定义字段
+标准字段：
+` `
+在 SFDC 中预定义 ` `
+无法删除 ` `
+可以从页面布局中移除 ` `
+只能进行有限的自定义 自定义标准字段
+` `
+更改标签：设置 | 自定义 | 选项卡名称和标签 → 重命名选项卡和标签 ` `
+添加帮助文本：设置 | 自定义 | 对象名称 | 字段 | 编辑 ` `
+编辑标准选择列表字段的值：设置 | 自定义 | 对象名称 | 字段 | 字段名称 ` `
+编辑查找过滤器：设置 | 自定义 | 对象名称 | 字段 | 字段名称 ` `
+设置字段历史跟踪：设置 | 自定义 | 对象名称 | 字段 | 设置历史跟踪 ` `</description>
+    </item>
+    
+    <item>
+      <title>安全性与数据访问</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/security-data-access/</link>
+      <pubDate>Mon, 06 Feb 2017 21:15:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/security-data-access/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+安全性与数据访问
+用户尝试通过浏览器登录 → 该用户是否曾从此浏览器或 IP 地址登录过？
+- 如果是，则用户直接登录；如果否，则提示用户激活计算机 → 用户通过所选优先级最高的方式获取验证码 → 用户提交验证码 → 用户登录
+路径：设置 | 安全控件 | 会话管理
+&amp;ldquo;启用 SMS 身份验证方式&amp;quot;设置一旦启用便无法关闭。
+受信任 IP 地址与受限访问
+路径：设置 | 自定义 | 用户界面
+对象权限决定用户可以查看、创建、编辑或删除哪些类型的记录，而非具体的某条记录本身
+增强型配置文件列表视图使同时处理多个配置文件变得更加方便
+批量更新配置文件权限 查看并比较多个配置文件的设置和权限 在单个列表视图中最多加载 200 个配置文件 路径：设置 | 管理用户 | 权限集
+最多可创建 1000 个权限集 可为一个用户分配多个权限集 权限集只授予权限，不拒绝权限
+记录访问：记录访问决定用户在其配置文件中有权访问的每个对象下，可以查看和编辑哪些具体记录
+数据访问模型：
+公开：无限制 私有：仅能访问自己的记录 混合：可访问自己的记录以及其他用户中工作职能所需的记录 组织级共享默认值：
+私有 公开只读 公开读/写 公开读/写/转移 角色层级
+共享规则
+路径：设置 | 安全控件 | 共享设置
+共享规则在逐个对象的基础上，向指定用户群组授予额外的记录访问权限
+与哪些记录共享？
+由特定用户拥有的记录 满足特定条件的记录 与哪些用户共享？</description>
+    </item>
+    
+    <item>
+      <title>为用户准备好你的组织</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/68/</link>
+      <pubDate>Mon, 06 Feb 2017 20:48:35 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/68/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+为用户准备好你的组织
+组织级别：
+公司配置文件是顶层安全控制工具，UI 设置是第二层……
+公司配置文件：关于你的组织的信息集合，主要在签约时捕获。
+公司信息：
+` `
+名称和地址 ` `
+主要联系人 ` `
+默认区域设置 ` `
+默认公司 ` `
+已使用存储空间 ` `
+可用许可证 财务信息：财年、货币
+支持信息：营业时间、节假日
+区域设置：
+` `
+区域设置：（也影响地址格式）决定日期、时间、数字和姓名的显示方式 ` `
+语言：决定用户界面及帮助与培训中使用的语言 ` `
+时区：用于事件开始和结束时间以及日期/时间字段的时区 每位用户都有自己的个人用户记录设置
+多货币：
+默认情况下，多货币每种货币只允许一个汇率！
+货币不支持内联编辑。
+为频繁执行的搜索创建列表视图
+` `
+保存列表视图供以后使用 ` `
+按特定字段进行筛选 ` `
+指定哪些用户组可以访问该列表视图 ` `
+打印列表视图 ` `
+在列表视图中编辑记录 ` `
+关注记录并查看相关 Chatter 动态 用户需要拥有创建和自定义列表视图的权限才能执行此操作（默认情况下应具有此功能，但可以被移除）
+Chatter：安全且遵循 SFDC 组织中的所有安全和权限设置。
+已启用 Chatter 的对象：客户、案例、Chatter 群组、联系人、潜在客户、商机、话题、用户</description>
+    </item>
+    
+    <item>
+      <title>SFDC 概览</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/overview-on-sfdc/</link>
+      <pubDate>Mon, 06 Feb 2017 20:43:44 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/overview-on-sfdc/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+Salesforce 标准对象：
+客户（Accounts）
+需要跟踪的组织，例如客户公司 拥有关联的联系人、商机和案例 客户与其他对象的关系：一对多关系 联系人（Contacts）
+与您的客户关联的个人 拥有关联的案例 商机（Opportunities）
+与您的客户关联的潜在销售 构成您的销售管道和预测 与联系人关联 案例（Cases）
+客户的反馈、问题或疑问 与客户和联系人关联 用于解决问题 解决方案（Solutions）
+客户问题及解决方案的描述 与案例关联 市场活动（Campaigns）
+营销项目 关联的潜在客户和联系人显示为市场活动成员 拥有关联的商机 潜在客户（Leads）
+对您的产品或服务感兴趣的个人 与一个或多个客户关联 可转化为客户、联系人和商机 SFDC 对象与关系
+客户与联系人、商机和案例关联 父记录上的相关列表，关联记录上的查找字段
+为用户开启 Lightning 体验：
+启用推荐功能（相关文件、备注、重复数据管理和潜在客户转化功能）→ 为 Lightning 体验设置用户（正确的权限）→ 开启 Lightning 体验
+使用同一开关可在经典视图和 Lightning 视图之间切换</description>
+    </item>
+    
+  </channel>
+</rss>

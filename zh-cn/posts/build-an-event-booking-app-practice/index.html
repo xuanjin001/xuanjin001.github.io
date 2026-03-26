@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  构建活动预订应用（练习） · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+今天我听到了一个问题——&ldquo;你会如何构建一个活动预订应用？&rdquo;
+就是这么简单的一句话，含糊得很。其实上周我也听到了类似的问题。于是我迅速整理了一下思路，画出了一个流程图。这只是一个框架，我们可以在此基础上提出很多细节问题，比如： - 用户是谁（Who）：这个应用是为谁设计的？ - 内容是什么（What）：这个应用是关于什么的？活动预订应用 - 时间是什么（When）：活动是什么时候？或者你可以问，这个应用应该何时上线，有没有时间线或紧迫性要求？ - 如何实现（How）：你打算怎么构建它？ - 为什么需要（Why）：为什么需要这个应用？
+现在我们需要做的是打好基础，帮助解答上述问题。与其从所有角度出发，不如专注于某一个角度，将其作为起点来发展你的解决方案。记住，功能总是可以在后续继续添加的。
+我创建了以下图表来辅助思考过程：
+基础框架建立之后，我们可以尝试回答上面列出的问题： - 用户是谁（Who）：这个应用是为谁设计的？ &ndash;&gt; 受众可能很广泛，利益相关者有很多，但你可以在上面的框架基础上不断扩充。与活动直接相关的利益相关者应该是活动组织者和参与者；你或许认为场馆方也应该被纳入考虑，但在这个阶段，我只是想保持简单。 - 内容是什么（What）：这个应用是关于什么的？活动预订应用 &ndash;&gt; 这是一个自问自答的问题 - 时间是什么（When）：活动是什么时候？或者应用何时上线，有没有时间线或紧迫性要求？ &ndash;&gt; 这将根据具体情况而定 - 如何实现（How）：你打算怎么构建它？ &ndash;&gt; 界面应该是什么样的？你希望提供什么样的用户体验？（定义三词设计原则）是否有现成的 API 可以利用？ - 为什么需要（Why）：为什么需要这个应用？ &ndash;&gt; 可以与三词设计原则相呼应
+有了以上基础，你可以在此之上扩展你的回答和思路。例如，如果问题是&quot;Uber 这款应用如何为活动提供帮助？&ldquo;你可以从不同角度思考：Uber 可以与活动组织者合作推广拼车服务，为类似活动专门安排一名运营人员或创建专属算法，引导司机前往该区域等。或者从参与者的角度思考，在前往活动现场时，可以提前预约乘车，并在活动即将结束时安排好回程，等等。提供便利是关键，如何缩短等车时间也至关重要。出租车过去有专属等候区，那么对于活动，我们可以为 Uber/Lyft 划出专属区域，同时也利用出租车资源。为了让尽可能多的人尽快离开活动现场，我们可以要求叫车用户提前组织 4-5 人拼车，这样：1) 等车的活动参与者可以互相交流，等待时间就不会那么无聊；2) 可以节省 Uber 司机前往不同地点接载额外乘客的时间；3) 一次性将更多人送离活动现场，提升效率。在应用中，当用户输入上车地点时，可以额外添加一个问题，建议拼车用户提前组织 4-5 人同乘，并提供小额折扣作为激励。为了识别某一特定地点是否正在举行活动，可以在乘车应用中集成日历功能。
+从上面的图表中可以延伸出很多角度。这只是我梳理基础框架的方式。我不是说这是最好的方法，但这是对我来说最合理的方法。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="构建活动预订应用（练习）"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+今天我听到了一个问题——&ldquo;你会如何构建一个活动预订应用？&rdquo;
+就是这么简单的一句话，含糊得很。其实上周我也听到了类似的问题。于是我迅速整理了一下思路，画出了一个流程图。这只是一个框架，我们可以在此基础上提出很多细节问题，比如： - 用户是谁（Who）：这个应用是为谁设计的？ - 内容是什么（What）：这个应用是关于什么的？活动预订应用 - 时间是什么（When）：活动是什么时候？或者你可以问，这个应用应该何时上线，有没有时间线或紧迫性要求？ - 如何实现（How）：你打算怎么构建它？ - 为什么需要（Why）：为什么需要这个应用？
+现在我们需要做的是打好基础，帮助解答上述问题。与其从所有角度出发，不如专注于某一个角度，将其作为起点来发展你的解决方案。记住，功能总是可以在后续继续添加的。
+我创建了以下图表来辅助思考过程：
+基础框架建立之后，我们可以尝试回答上面列出的问题： - 用户是谁（Who）：这个应用是为谁设计的？ &ndash;&gt; 受众可能很广泛，利益相关者有很多，但你可以在上面的框架基础上不断扩充。与活动直接相关的利益相关者应该是活动组织者和参与者；你或许认为场馆方也应该被纳入考虑，但在这个阶段，我只是想保持简单。 - 内容是什么（What）：这个应用是关于什么的？活动预订应用 &ndash;&gt; 这是一个自问自答的问题 - 时间是什么（When）：活动是什么时候？或者应用何时上线，有没有时间线或紧迫性要求？ &ndash;&gt; 这将根据具体情况而定 - 如何实现（How）：你打算怎么构建它？ &ndash;&gt; 界面应该是什么样的？你希望提供什么样的用户体验？（定义三词设计原则）是否有现成的 API 可以利用？ - 为什么需要（Why）：为什么需要这个应用？ &ndash;&gt; 可以与三词设计原则相呼应
+有了以上基础，你可以在此之上扩展你的回答和思路。例如，如果问题是&quot;Uber 这款应用如何为活动提供帮助？&ldquo;你可以从不同角度思考：Uber 可以与活动组织者合作推广拼车服务，为类似活动专门安排一名运营人员或创建专属算法，引导司机前往该区域等。或者从参与者的角度思考，在前往活动现场时，可以提前预约乘车，并在活动即将结束时安排好回程，等等。提供便利是关键，如何缩短等车时间也至关重要。出租车过去有专属等候区，那么对于活动，我们可以为 Uber/Lyft 划出专属区域，同时也利用出租车资源。为了让尽可能多的人尽快离开活动现场，我们可以要求叫车用户提前组织 4-5 人拼车，这样：1) 等车的活动参与者可以互相交流，等待时间就不会那么无聊；2) 可以节省 Uber 司机前往不同地点接载额外乘客的时间；3) 一次性将更多人送离活动现场，提升效率。在应用中，当用户输入上车地点时，可以额外添加一个问题，建议拼车用户提前组织 4-5 人同乘，并提供小额折扣作为激励。为了识别某一特定地点是否正在举行活动，可以在乘车应用中集成日历功能。
+从上面的图表中可以延伸出很多角度。这只是我梳理基础框架的方式。我不是说这是最好的方法，但这是对我来说最合理的方法。"/>
+
+<meta property="og:title" content="构建活动预订应用（练习）" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+今天我听到了一个问题——&ldquo;你会如何构建一个活动预订应用？&rdquo;
+就是这么简单的一句话，含糊得很。其实上周我也听到了类似的问题。于是我迅速整理了一下思路，画出了一个流程图。这只是一个框架，我们可以在此基础上提出很多细节问题，比如： - 用户是谁（Who）：这个应用是为谁设计的？ - 内容是什么（What）：这个应用是关于什么的？活动预订应用 - 时间是什么（When）：活动是什么时候？或者你可以问，这个应用应该何时上线，有没有时间线或紧迫性要求？ - 如何实现（How）：你打算怎么构建它？ - 为什么需要（Why）：为什么需要这个应用？
+现在我们需要做的是打好基础，帮助解答上述问题。与其从所有角度出发，不如专注于某一个角度，将其作为起点来发展你的解决方案。记住，功能总是可以在后续继续添加的。
+我创建了以下图表来辅助思考过程：
+基础框架建立之后，我们可以尝试回答上面列出的问题： - 用户是谁（Who）：这个应用是为谁设计的？ &ndash;&gt; 受众可能很广泛，利益相关者有很多，但你可以在上面的框架基础上不断扩充。与活动直接相关的利益相关者应该是活动组织者和参与者；你或许认为场馆方也应该被纳入考虑，但在这个阶段，我只是想保持简单。 - 内容是什么（What）：这个应用是关于什么的？活动预订应用 &ndash;&gt; 这是一个自问自答的问题 - 时间是什么（When）：活动是什么时候？或者应用何时上线，有没有时间线或紧迫性要求？ &ndash;&gt; 这将根据具体情况而定 - 如何实现（How）：你打算怎么构建它？ &ndash;&gt; 界面应该是什么样的？你希望提供什么样的用户体验？（定义三词设计原则）是否有现成的 API 可以利用？ - 为什么需要（Why）：为什么需要这个应用？ &ndash;&gt; 可以与三词设计原则相呼应
+有了以上基础，你可以在此之上扩展你的回答和思路。例如，如果问题是&quot;Uber 这款应用如何为活动提供帮助？&ldquo;你可以从不同角度思考：Uber 可以与活动组织者合作推广拼车服务，为类似活动专门安排一名运营人员或创建专属算法，引导司机前往该区域等。或者从参与者的角度思考，在前往活动现场时，可以提前预约乘车，并在活动即将结束时安排好回程，等等。提供便利是关键，如何缩短等车时间也至关重要。出租车过去有专属等候区，那么对于活动，我们可以为 Uber/Lyft 划出专属区域，同时也利用出租车资源。为了让尽可能多的人尽快离开活动现场，我们可以要求叫车用户提前组织 4-5 人拼车，这样：1) 等车的活动参与者可以互相交流，等待时间就不会那么无聊；2) 可以节省 Uber 司机前往不同地点接载额外乘客的时间；3) 一次性将更多人送离活动现场，提升效率。在应用中，当用户输入上车地点时，可以额外添加一个问题，建议拼车用户提前组织 4-5 人同乘，并提供小额折扣作为激励。为了识别某一特定地点是否正在举行活动，可以在乘车应用中集成日历功能。
+从上面的图表中可以延伸出很多角度。这只是我梳理基础框架的方式。我不是说这是最好的方法，但这是对我来说最合理的方法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/build-an-event-booking-app-practice/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-10T21:51:00-08:00" />
+<meta property="article:modified_time" content="2021-03-10T21:51:00-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/build-an-event-booking-app-practice/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/build-an-event-booking-app-practice/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/build-an-event-booking-app-practice/">
+              构建活动预订应用（练习）
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-03-10T21:51:00-08:00">
+                March 10, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/projects/">Projects</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/projects/">Projects</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p>今天我听到了一个问题——&ldquo;你会如何构建一个活动预订应用？&rdquo;</p>
+<p>就是这么简单的一句话，含糊得很。其实上周我也听到了类似的问题。于是我迅速整理了一下思路，画出了一个流程图。这只是一个框架，我们可以在此基础上提出很多细节问题，比如：
+- 用户是谁（Who）：这个应用是为谁设计的？
+- 内容是什么（What）：这个应用是关于什么的？活动预订应用
+- 时间是什么（When）：活动是什么时候？或者你可以问，这个应用应该何时上线，有没有时间线或紧迫性要求？
+- 如何实现（How）：你打算怎么构建它？
+- 为什么需要（Why）：为什么需要这个应用？</p>
+<p>现在我们需要做的是打好基础，帮助解答上述问题。与其从所有角度出发，不如专注于某一个角度，将其作为起点来发展你的解决方案。记住，功能总是可以在后续继续添加的。</p>
+<p>我创建了以下图表来辅助思考过程：</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg" 
+	 target="_blank" rel="noopener"
+	><img src="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg?w=690" alt=""></a></p>
+<p>基础框架建立之后，我们可以尝试回答上面列出的问题：
+- 用户是谁（Who）：这个应用是为谁设计的？ &ndash;&gt; 受众可能很广泛，利益相关者有很多，但你可以在上面的框架基础上不断扩充。与活动直接相关的利益相关者应该是活动组织者和参与者；你或许认为场馆方也应该被纳入考虑，但在这个阶段，我只是想保持简单。
+- 内容是什么（What）：这个应用是关于什么的？活动预订应用 &ndash;&gt; 这是一个自问自答的问题
+- 时间是什么（When）：活动是什么时候？或者应用何时上线，有没有时间线或紧迫性要求？ &ndash;&gt; 这将根据具体情况而定
+- 如何实现（How）：你打算怎么构建它？ &ndash;&gt; 界面应该是什么样的？你希望提供什么样的用户体验？（定义三词设计原则）是否有现成的 API 可以利用？
+- 为什么需要（Why）：为什么需要这个应用？ &ndash;&gt; 可以与三词设计原则相呼应</p>
+<p>有了以上基础，你可以在此之上扩展你的回答和思路。例如，如果问题是&quot;Uber 这款应用如何为活动提供帮助？&ldquo;你可以从不同角度思考：Uber 可以与活动组织者合作推广拼车服务，为类似活动专门安排一名运营人员或创建专属算法，引导司机前往该区域等。或者从参与者的角度思考，在前往活动现场时，可以提前预约乘车，并在活动即将结束时安排好回程，等等。提供便利是关键，如何缩短等车时间也至关重要。出租车过去有专属等候区，那么对于活动，我们可以为 Uber/Lyft 划出专属区域，同时也利用出租车资源。为了让尽可能多的人尽快离开活动现场，我们可以要求叫车用户提前组织 4-5 人拼车，这样：1) 等车的活动参与者可以互相交流，等待时间就不会那么无聊；2) 可以节省 Uber 司机前往不同地点接载额外乘客的时间；3) 一次性将更多人送离活动现场，提升效率。在应用中，当用户输入上车地点时，可以额外添加一个问题，建议拼车用户提前组织 4-5 人同乘，并提供小额折扣作为激励。为了识别某一特定地点是否正在举行活动，可以在乘车应用中集成日历功能。</p>
+<p>从上面的图表中可以延伸出很多角度。这只是我梳理基础框架的方式。我不是说这是最好的方法，但这是对我来说最合理的方法。</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/build-an-event-booking-app-practice/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

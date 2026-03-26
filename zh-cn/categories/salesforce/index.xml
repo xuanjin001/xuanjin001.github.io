@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Salesforce on 金萱</title>
+    <link>https://xuanjin001.github.io/zh-cn/categories/salesforce/</link>
+    <description>Recent content in Salesforce on 金萱</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Apr 2020 14:41:21 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/categories/salesforce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的 Salesforce 开发者面试经历</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/</link>
+      <pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&amp;ldquo;努力工作，尽情玩乐&amp;quot;这种模式，至少这是我对他们公司的感受。
+话不多说，开始正题。
+那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。
+第一题：SOQL 链接到标题 题目是：&amp;ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&amp;rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。
+我们来分析一下这道题。&amp;ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&amp;rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&amp;quot;方法&amp;rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
+需要返回客户 ID 条件是：&amp;ldquo;商机和案例处于开放状态&amp;rdquo;——这是一个可以向面试官追问的问题，如何判定&amp;quot;开放&amp;quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&amp;quot;阶段&amp;quot;字段，因此我将以此作为判断&amp;quot;开放&amp;quot;的依据。案例有&amp;quot;状态&amp;quot;字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
+现在来写代码：
+// 方法定义 public static List&amp;lt;sobject&amp;gt; getAccountId() { list&amp;lt;opportunity&amp;gt; oppList = new list&amp;lt;opportunity&amp;gt;(); list&amp;lt;case&amp;gt; caseList = new list&amp;lt;case&amp;gt;(); list&amp;lt;account&amp;gt; accountList = new list&amp;lt;account&amp;gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &amp;#39;Open&amp;#39;\]; caseList = \[Select AccountId from Case where Status = &amp;#39;Open&amp;#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&amp;quot;未关闭&amp;quot;而不是&amp;quot;状态/阶段 = 开放&amp;quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。</description>
+    </item>
+    
+  </channel>
+</rss>

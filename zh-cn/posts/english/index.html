@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  英语 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+我一直想写一篇短篇故事，但好几天了，我不知道该写什么。连一个简单的写作提示都无从下笔，那何不就写写我自己呢？
+英语是我最喜欢的语言之一。当然，中文是我的另一个最爱——请不要误会，我真的热爱自己的文化，中文是一门美丽的语言，尤其是用文字书写出来的时候。但英语有着属于它自己的魅力。
+我至今还记得，我第一次接触英语是通过电影台词。在中国有一个教育频道，每天晚上七点十分到七点半有一档节目，专门从电影台词中摘取英语俚语并加以解释。那时候我完全听不懂，但仍然会坐下来认真记笔记。这个习惯坚持了大约五年，我用了大约八本笔记本记下那些笔记，可即便如此，我还是一句英语也说不出口。
+后来，我的父母终于同意让我正式学英语。一切从 A、B、C、D 开始……我的英语老师来自英国，刚开始学英语时，老师的夸奖让我又惊又喜，英语从此成了我最喜欢的科目。我的语文成绩不好，因为要学那些笔画繁复的汉字，还要学会读音和含义——相信我，真的很难。我的数学也一塌糊涂，每次被叫起来回答问题，我都会僵在原地。我从小就有注意力不集中的问题，到现在也还是这样，不太清楚为什么会这样。英语是唯一让我出类拔萃的科目，我的成绩大概是这样的：语文 75，数学 80，英语 98，自然 78。所有人都笑话我，说我在学一门没用的东西，因为我们生活在中国，人人都说中文，根本不会有机会用到英语。我开始把英语当作一种防御机制，会用英语在背后说别人的坏话，因为他们听不懂。我就是那个在课堂上用英语小声嘀咕、没人能听懂的倔强小孩。
+说到英语，我看的第一部美国电影——请不要笑——是《美国派》。在中国有个频道叫 CCTV-6，是电影频道，大概也是唯一一个不太需要在意审查的频道。21 世纪初，《美国派》就出现在那里，配了中文配音，但内容非常大胆露骨。一个对那些事情还一知半解的青少年，竟然挺喜欢那部电影的。后来又看了《蜥蜴女孩》（Lizzie McGuire），我童年最大的暗恋对象是里面的 Gordon。这让我萌生了去找英文原版的念头。家里只有一台电脑，大家共用，那台好老的 Windows 98，爸爸总会站在我身后看我打了什么。但就是靠着这台电脑，我找到了带中文字幕的英文版《蜥蜴女孩》。我不得不一行一行地停下来看字幕，因为我读字幕读得很慢——一集大约 20 分钟，但我要花上 40 到 50 分钟才能看完，因为理解起来总是要花更长时间。也许正是因为看了那么多西方电影和电视剧，我的价值观与电影里的内容越来越契合，也正因为如此，我成了一个格格不入的人。
+说到英语，它的大多数单词只要知道发音就能拼写出来，这与中文几乎完全相反，这也是我对英语产生兴趣的原因之一。英语表达一个想法可以直白明了，也可以借助语境层层铺垫，区别就在于你需要读懂言外之意。我至今还不能说完全理解英语这门语言，随着时光流逝，仍有太多东西值得学习。我白天用英语交流，日记用中文书写，这样我就不会失去自己的根。
+在两种文化之间寻找平衡很难，我至今仍在努力寻找属于自己的那个平衡点。
+附言：
+从当初的我到现在的我，有些人说我在英语上很有天赋，说正是因为天赋，我才能学得这么快。他们不知道的是，背后是无止境的记忆与背诵；是把同一部电影反复看了二三十遍，直到几乎能背出每一句台词；是把英语课本抄了十多遍来打磨语法。不仅如此，我的父母为此投入的金钱和给予我的支持是巨大的，所有这些，才造就了今天的我。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="英语"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+我一直想写一篇短篇故事，但好几天了，我不知道该写什么。连一个简单的写作提示都无从下笔，那何不就写写我自己呢？
+英语是我最喜欢的语言之一。当然，中文是我的另一个最爱——请不要误会，我真的热爱自己的文化，中文是一门美丽的语言，尤其是用文字书写出来的时候。但英语有着属于它自己的魅力。
+我至今还记得，我第一次接触英语是通过电影台词。在中国有一个教育频道，每天晚上七点十分到七点半有一档节目，专门从电影台词中摘取英语俚语并加以解释。那时候我完全听不懂，但仍然会坐下来认真记笔记。这个习惯坚持了大约五年，我用了大约八本笔记本记下那些笔记，可即便如此，我还是一句英语也说不出口。
+后来，我的父母终于同意让我正式学英语。一切从 A、B、C、D 开始……我的英语老师来自英国，刚开始学英语时，老师的夸奖让我又惊又喜，英语从此成了我最喜欢的科目。我的语文成绩不好，因为要学那些笔画繁复的汉字，还要学会读音和含义——相信我，真的很难。我的数学也一塌糊涂，每次被叫起来回答问题，我都会僵在原地。我从小就有注意力不集中的问题，到现在也还是这样，不太清楚为什么会这样。英语是唯一让我出类拔萃的科目，我的成绩大概是这样的：语文 75，数学 80，英语 98，自然 78。所有人都笑话我，说我在学一门没用的东西，因为我们生活在中国，人人都说中文，根本不会有机会用到英语。我开始把英语当作一种防御机制，会用英语在背后说别人的坏话，因为他们听不懂。我就是那个在课堂上用英语小声嘀咕、没人能听懂的倔强小孩。
+说到英语，我看的第一部美国电影——请不要笑——是《美国派》。在中国有个频道叫 CCTV-6，是电影频道，大概也是唯一一个不太需要在意审查的频道。21 世纪初，《美国派》就出现在那里，配了中文配音，但内容非常大胆露骨。一个对那些事情还一知半解的青少年，竟然挺喜欢那部电影的。后来又看了《蜥蜴女孩》（Lizzie McGuire），我童年最大的暗恋对象是里面的 Gordon。这让我萌生了去找英文原版的念头。家里只有一台电脑，大家共用，那台好老的 Windows 98，爸爸总会站在我身后看我打了什么。但就是靠着这台电脑，我找到了带中文字幕的英文版《蜥蜴女孩》。我不得不一行一行地停下来看字幕，因为我读字幕读得很慢——一集大约 20 分钟，但我要花上 40 到 50 分钟才能看完，因为理解起来总是要花更长时间。也许正是因为看了那么多西方电影和电视剧，我的价值观与电影里的内容越来越契合，也正因为如此，我成了一个格格不入的人。
+说到英语，它的大多数单词只要知道发音就能拼写出来，这与中文几乎完全相反，这也是我对英语产生兴趣的原因之一。英语表达一个想法可以直白明了，也可以借助语境层层铺垫，区别就在于你需要读懂言外之意。我至今还不能说完全理解英语这门语言，随着时光流逝，仍有太多东西值得学习。我白天用英语交流，日记用中文书写，这样我就不会失去自己的根。
+在两种文化之间寻找平衡很难，我至今仍在努力寻找属于自己的那个平衡点。
+附言：
+从当初的我到现在的我，有些人说我在英语上很有天赋，说正是因为天赋，我才能学得这么快。他们不知道的是，背后是无止境的记忆与背诵；是把同一部电影反复看了二三十遍，直到几乎能背出每一句台词；是把英语课本抄了十多遍来打磨语法。不仅如此，我的父母为此投入的金钱和给予我的支持是巨大的，所有这些，才造就了今天的我。"/>
+
+<meta property="og:title" content="英语" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+我一直想写一篇短篇故事，但好几天了，我不知道该写什么。连一个简单的写作提示都无从下笔，那何不就写写我自己呢？
+英语是我最喜欢的语言之一。当然，中文是我的另一个最爱——请不要误会，我真的热爱自己的文化，中文是一门美丽的语言，尤其是用文字书写出来的时候。但英语有着属于它自己的魅力。
+我至今还记得，我第一次接触英语是通过电影台词。在中国有一个教育频道，每天晚上七点十分到七点半有一档节目，专门从电影台词中摘取英语俚语并加以解释。那时候我完全听不懂，但仍然会坐下来认真记笔记。这个习惯坚持了大约五年，我用了大约八本笔记本记下那些笔记，可即便如此，我还是一句英语也说不出口。
+后来，我的父母终于同意让我正式学英语。一切从 A、B、C、D 开始……我的英语老师来自英国，刚开始学英语时，老师的夸奖让我又惊又喜，英语从此成了我最喜欢的科目。我的语文成绩不好，因为要学那些笔画繁复的汉字，还要学会读音和含义——相信我，真的很难。我的数学也一塌糊涂，每次被叫起来回答问题，我都会僵在原地。我从小就有注意力不集中的问题，到现在也还是这样，不太清楚为什么会这样。英语是唯一让我出类拔萃的科目，我的成绩大概是这样的：语文 75，数学 80，英语 98，自然 78。所有人都笑话我，说我在学一门没用的东西，因为我们生活在中国，人人都说中文，根本不会有机会用到英语。我开始把英语当作一种防御机制，会用英语在背后说别人的坏话，因为他们听不懂。我就是那个在课堂上用英语小声嘀咕、没人能听懂的倔强小孩。
+说到英语，我看的第一部美国电影——请不要笑——是《美国派》。在中国有个频道叫 CCTV-6，是电影频道，大概也是唯一一个不太需要在意审查的频道。21 世纪初，《美国派》就出现在那里，配了中文配音，但内容非常大胆露骨。一个对那些事情还一知半解的青少年，竟然挺喜欢那部电影的。后来又看了《蜥蜴女孩》（Lizzie McGuire），我童年最大的暗恋对象是里面的 Gordon。这让我萌生了去找英文原版的念头。家里只有一台电脑，大家共用，那台好老的 Windows 98，爸爸总会站在我身后看我打了什么。但就是靠着这台电脑，我找到了带中文字幕的英文版《蜥蜴女孩》。我不得不一行一行地停下来看字幕，因为我读字幕读得很慢——一集大约 20 分钟，但我要花上 40 到 50 分钟才能看完，因为理解起来总是要花更长时间。也许正是因为看了那么多西方电影和电视剧，我的价值观与电影里的内容越来越契合，也正因为如此，我成了一个格格不入的人。
+说到英语，它的大多数单词只要知道发音就能拼写出来，这与中文几乎完全相反，这也是我对英语产生兴趣的原因之一。英语表达一个想法可以直白明了，也可以借助语境层层铺垫，区别就在于你需要读懂言外之意。我至今还不能说完全理解英语这门语言，随着时光流逝，仍有太多东西值得学习。我白天用英语交流，日记用中文书写，这样我就不会失去自己的根。
+在两种文化之间寻找平衡很难，我至今仍在努力寻找属于自己的那个平衡点。
+附言：
+从当初的我到现在的我，有些人说我在英语上很有天赋，说正是因为天赋，我才能学得这么快。他们不知道的是，背后是无止境的记忆与背诵；是把同一部电影反复看了二三十遍，直到几乎能背出每一句台词；是把英语课本抄了十多遍来打磨语法。不仅如此，我的父母为此投入的金钱和给予我的支持是巨大的，所有这些，才造就了今天的我。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/english/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-16T23:19:58-08:00" />
+<meta property="article:modified_time" content="2020-11-16T23:19:58-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/english/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/english/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/english/">
+              英语
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-11-16T23:19:58-08:00">
+                November 16, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/personal/">Personal</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/personal/">Personal</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p>我一直想写一篇短篇故事，但好几天了，我不知道该写什么。连一个简单的写作提示都无从下笔，那何不就写写我自己呢？</p>
+<p>英语是我最喜欢的语言之一。当然，中文是我的另一个最爱——请不要误会，我真的热爱自己的文化，中文是一门美丽的语言，尤其是用文字书写出来的时候。但英语有着属于它自己的魅力。</p>
+<p>我至今还记得，我第一次接触英语是通过电影台词。在中国有一个教育频道，每天晚上七点十分到七点半有一档节目，专门从电影台词中摘取英语俚语并加以解释。那时候我完全听不懂，但仍然会坐下来认真记笔记。这个习惯坚持了大约五年，我用了大约八本笔记本记下那些笔记，可即便如此，我还是一句英语也说不出口。</p>
+<p>后来，我的父母终于同意让我正式学英语。一切从 A、B、C、D 开始……我的英语老师来自英国，刚开始学英语时，老师的夸奖让我又惊又喜，英语从此成了我最喜欢的科目。我的语文成绩不好，因为要学那些笔画繁复的汉字，还要学会读音和含义——相信我，真的很难。我的数学也一塌糊涂，每次被叫起来回答问题，我都会僵在原地。我从小就有注意力不集中的问题，到现在也还是这样，不太清楚为什么会这样。英语是唯一让我出类拔萃的科目，我的成绩大概是这样的：语文 75，数学 80，英语 98，自然 78。所有人都笑话我，说我在学一门没用的东西，因为我们生活在中国，人人都说中文，根本不会有机会用到英语。我开始把英语当作一种防御机制，会用英语在背后说别人的坏话，因为他们听不懂。我就是那个在课堂上用英语小声嘀咕、没人能听懂的倔强小孩。</p>
+<p>说到英语，我看的第一部美国电影——请不要笑——是《美国派》。在中国有个频道叫 CCTV-6，是电影频道，大概也是唯一一个不太需要在意审查的频道。21 世纪初，《美国派》就出现在那里，配了中文配音，但内容非常大胆露骨。一个对那些事情还一知半解的青少年，竟然挺喜欢那部电影的。后来又看了《蜥蜴女孩》（Lizzie McGuire），我童年最大的暗恋对象是里面的 Gordon。这让我萌生了去找英文原版的念头。家里只有一台电脑，大家共用，那台好老的 Windows 98，爸爸总会站在我身后看我打了什么。但就是靠着这台电脑，我找到了带中文字幕的英文版《蜥蜴女孩》。我不得不一行一行地停下来看字幕，因为我读字幕读得很慢——一集大约 20 分钟，但我要花上 40 到 50 分钟才能看完，因为理解起来总是要花更长时间。也许正是因为看了那么多西方电影和电视剧，我的价值观与电影里的内容越来越契合，也正因为如此，我成了一个格格不入的人。</p>
+<p>说到英语，它的大多数单词只要知道发音就能拼写出来，这与中文几乎完全相反，这也是我对英语产生兴趣的原因之一。英语表达一个想法可以直白明了，也可以借助语境层层铺垫，区别就在于你需要读懂言外之意。我至今还不能说完全理解英语这门语言，随着时光流逝，仍有太多东西值得学习。我白天用英语交流，日记用中文书写，这样我就不会失去自己的根。</p>
+<p>在两种文化之间寻找平衡很难，我至今仍在努力寻找属于自己的那个平衡点。</p>
+<p>附言：</p>
+<p>从当初的我到现在的我，有些人说我在英语上很有天赋，说正是因为天赋，我才能学得这么快。他们不知道的是，背后是无止境的记忆与背诵；是把同一部电影反复看了二三十遍，直到几乎能背出每一句台词；是把英语课本抄了十多遍来打磨语法。不仅如此，我的父母为此投入的金钱和给予我的支持是巨大的，所有这些，才造就了今天的我。</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/english/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

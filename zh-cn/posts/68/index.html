@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  为用户准备好你的组织 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+为用户准备好你的组织
+组织级别：
+公司配置文件是顶层安全控制工具，UI 设置是第二层……
+公司配置文件：关于你的组织的信息集合，主要在签约时捕获。
+公司信息：
+` `
+名称和地址 ` `
+主要联系人 ` `
+默认区域设置 ` `
+默认公司 ` `
+已使用存储空间 ` `
+可用许可证 财务信息：财年、货币
+支持信息：营业时间、节假日
+区域设置：
+` `
+区域设置：（也影响地址格式）决定日期、时间、数字和姓名的显示方式 ` `
+语言：决定用户界面及帮助与培训中使用的语言 ` `
+时区：用于事件开始和结束时间以及日期/时间字段的时区 每位用户都有自己的个人用户记录设置
+多货币：
+默认情况下，多货币每种货币只允许一个汇率！
+货币不支持内联编辑。
+为频繁执行的搜索创建列表视图
+` `
+保存列表视图供以后使用 ` `
+按特定字段进行筛选 ` `
+指定哪些用户组可以访问该列表视图 ` `
+打印列表视图 ` `
+在列表视图中编辑记录 ` `
+关注记录并查看相关 Chatter 动态 用户需要拥有创建和自定义列表视图的权限才能执行此操作（默认情况下应具有此功能，但可以被移除）
+Chatter：安全且遵循 SFDC 组织中的所有安全和权限设置。
+已启用 Chatter 的对象：客户、案例、Chatter 群组、联系人、潜在客户、商机、话题、用户">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="为用户准备好你的组织"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+为用户准备好你的组织
+组织级别：
+公司配置文件是顶层安全控制工具，UI 设置是第二层……
+公司配置文件：关于你的组织的信息集合，主要在签约时捕获。
+公司信息：
+` `
+名称和地址 ` `
+主要联系人 ` `
+默认区域设置 ` `
+默认公司 ` `
+已使用存储空间 ` `
+可用许可证 财务信息：财年、货币
+支持信息：营业时间、节假日
+区域设置：
+` `
+区域设置：（也影响地址格式）决定日期、时间、数字和姓名的显示方式 ` `
+语言：决定用户界面及帮助与培训中使用的语言 ` `
+时区：用于事件开始和结束时间以及日期/时间字段的时区 每位用户都有自己的个人用户记录设置
+多货币：
+默认情况下，多货币每种货币只允许一个汇率！
+货币不支持内联编辑。
+为频繁执行的搜索创建列表视图
+` `
+保存列表视图供以后使用 ` `
+按特定字段进行筛选 ` `
+指定哪些用户组可以访问该列表视图 ` `
+打印列表视图 ` `
+在列表视图中编辑记录 ` `
+关注记录并查看相关 Chatter 动态 用户需要拥有创建和自定义列表视图的权限才能执行此操作（默认情况下应具有此功能，但可以被移除）
+Chatter：安全且遵循 SFDC 组织中的所有安全和权限设置。
+已启用 Chatter 的对象：客户、案例、Chatter 群组、联系人、潜在客户、商机、话题、用户"/>
+
+<meta property="og:title" content="为用户准备好你的组织" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+为用户准备好你的组织
+组织级别：
+公司配置文件是顶层安全控制工具，UI 设置是第二层……
+公司配置文件：关于你的组织的信息集合，主要在签约时捕获。
+公司信息：
+` `
+名称和地址 ` `
+主要联系人 ` `
+默认区域设置 ` `
+默认公司 ` `
+已使用存储空间 ` `
+可用许可证 财务信息：财年、货币
+支持信息：营业时间、节假日
+区域设置：
+` `
+区域设置：（也影响地址格式）决定日期、时间、数字和姓名的显示方式 ` `
+语言：决定用户界面及帮助与培训中使用的语言 ` `
+时区：用于事件开始和结束时间以及日期/时间字段的时区 每位用户都有自己的个人用户记录设置
+多货币：
+默认情况下，多货币每种货币只允许一个汇率！
+货币不支持内联编辑。
+为频繁执行的搜索创建列表视图
+` `
+保存列表视图供以后使用 ` `
+按特定字段进行筛选 ` `
+指定哪些用户组可以访问该列表视图 ` `
+打印列表视图 ` `
+在列表视图中编辑记录 ` `
+关注记录并查看相关 Chatter 动态 用户需要拥有创建和自定义列表视图的权限才能执行此操作（默认情况下应具有此功能，但可以被移除）
+Chatter：安全且遵循 SFDC 组织中的所有安全和权限设置。
+已启用 Chatter 的对象：客户、案例、Chatter 群组、联系人、潜在客户、商机、话题、用户" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/68/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2017-02-06T20:48:35-08:00" />
+<meta property="article:modified_time" content="2017-02-06T20:48:35-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/68/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/68/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/68/">
+              为用户准备好你的组织
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2017-02-06T20:48:35-08:00">
+                February 6, 2017
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 2 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/developer/">Developer</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/developer/">Developer</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p><strong>为用户准备好你的组织</strong></p>
+<p>组织级别：</p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/5f0b6-orglevel.jpg" alt="orglevel"></p>
+<p>公司配置文件是顶层安全控制工具，UI 设置是第二层……</p>
+<p>公司配置文件：关于你的组织的信息集合，主要在签约时捕获。</p>
+<p>公司信息：</p>
+<p>` `</p>
+<ul>
+<li>名称和地址</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>主要联系人</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>默认区域设置</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>默认公司</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>已使用存储空间</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>可用许可证</li>
+</ul>
+<p>财务信息：财年、货币</p>
+<p>支持信息：营业时间、节假日</p>
+<p>区域设置：</p>
+<p>` `</p>
+<ul>
+<li>区域设置：（也影响地址格式）决定日期、时间、数字和姓名的显示方式</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>语言：决定用户界面及帮助与培训中使用的语言</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>时区：用于事件开始和结束时间以及日期/时间字段的时区</li>
+</ul>
+<p>每位用户都有自己的个人用户记录设置</p>
+<p>多货币：</p>
+<p><img src="https://xjin2.files.wordpress.com/2021/01/57330-multi-currenties.jpg" alt="multi-currenties"></p>
+<p>默认情况下，多货币每种货币只允许一个汇率！</p>
+<p>货币不支持内联编辑。</p>
+<p>为频繁执行的搜索创建列表视图</p>
+<p>` `</p>
+<ul>
+<li>保存列表视图供以后使用</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>按特定字段进行筛选</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>指定哪些用户组可以访问该列表视图</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>打印列表视图</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>在列表视图中编辑记录</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>关注记录并查看相关 Chatter 动态</li>
+</ul>
+<p>用户需要拥有创建和自定义列表视图的权限才能执行此操作（默认情况下应具有此功能，但可以被移除）</p>
+<p>Chatter：安全且遵循 SFDC 组织中的所有安全和权限设置。</p>
+<p>已启用 Chatter 的对象：客户、案例、Chatter 群组、联系人、潜在客户、商机、话题、用户</p>
+<p>Chatter 群组：</p>
+<p>` `</p>
+<ul>
+<li>用户可以创建群组</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>群组可以是公开、私密或未列出</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>群组可以设置为&quot;仅广播&quot;模式</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>一个群组只有 1 位所有者和若干管理员</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>群组选项卡列出所有群组</li>
+</ul>
+<p>注意：</p>
+<p>` `</p>
+<ul>
+<li>用户界面和搜索设置是影响所有用户的全局设置</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>默认区域设置、语言和货币在公司配置文件中设置，但可以为个别用户修改</li>
+</ul>
+<p><strong>设置和管理用户</strong></p>
+<p>配置文件：决定用户在用户界面中可以看到什么以及可以执行什么操作的设置和权限集合</p>
+<p>设置（用户可以看到什么）：</p>
+<p>` `</p>
+<ul>
+<li>应用</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>选项卡</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>记录类型</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>页面布局</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>字段</li>
+</ul>
+<p>权限（用户可以做什么）：</p>
+<p>` `</p>
+<ul>
+<li>管理权限</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>通用用户权限</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>标准对象权限</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>自定义对象权限</li>
+</ul>
+<p>配置文件与对象权限（配置文件 = 权限）：</p>
+<p>` `</p>
+<ul>
+<li>创建</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>读取</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>编辑</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>删除</li>
+</ul>
+<p>选项卡设置：定义用户登录后可访问的选项卡</p>
+<p>选项卡隐藏：允许你隐藏一个选项卡，用户无法将其重新显示</p>
+<p>默认开启：允许默认显示一个选项卡。</p>
+<p>默认关闭：允许默认隐藏一个选项卡。但是，分配了该配置文件的任何用户都可以在需要时将其显示出来。</p>
+<p>标准配置文件</p>
+<p>` `</p>
+<ul>
+<li>所有 Salesforce 版本都有标准配置文件</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>标准配置文件无法编辑和删除</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>克隆</li>
+</ul>
+<p>系统管理员：查看和修改所有数据，自定义应用</p>
+<p>标准用户：查看和编辑可访问的记录，并可删除自己的记录</p>
+<p>解决方案经理：标准用户 + 管理已发布的解决方案</p>
+<p>营销用户：标准用户 + 导入潜在客户</p>
+<p>合同经理：标准用户 + 管理合同</p>
+<p>只读：仅查看可访问的记录。</p>
+<p>标准 Chatter 配置文件</p>
+<p>` `</p>
+<ul>
+<li>基于 Chatter 免费版或 Chatter 外部用户许可证提供</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>允许用户仅登录 Chatter</li>
+</ul>
+<p>Chatter 免费用户：访问所有标准 Chatter 人员、配置文件、群组和文件</p>
+<p>Chatter 版主用户：</p>
+<p>` `</p>
+<ul>
+<li>访问与 Chatter 免费用户相同的数据</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>激活/停用其他 Chatter 免费用户/版主</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>授予/撤销版主权限</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>删除他们可以看到的帖子和评论</li>
+</ul>
+<p>Chatter 外部用户：访问被邀请加入的群组，并与这些群组的成员互动</p>
+<p>用户：拥有 Salesforce 组织登录权限的人员，持有许可证，并有一条包含个人、安全和区域设置信息的用户记录。</p>
+<p>` `</p>
+<ul>
+<li>个人信息：姓名、别名、电子邮件、电话/地址、职位</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>安全与访问：用户名、许可证、配置文件、角色、登录历史</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>区域设置：时区、区域设置、语言、货币</li>
+</ul>
+<p>Chatter 免费许可证</p>
+<p>` `</p>
+<ul>
+<li>
+<p>用户可以访问人员、配置文件、群组和文件，</p>
+<p>` `</p>
+<ul>
+<li>发布帖子</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>查看评论</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>上传和查看文件</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>加入群组</li>
+</ul>
+</li>
+</ul>
+<p>Chatter 外部许可证</p>
+<p>` `</p>
+<ul>
+<li>允许公司外部人员（如客户）加入 Chatter 社区中的私密群组</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>
+<p>Chatter 外部用户可以：</p>
+<p>` `</p>
+<ul>
+<li>查看他们所属的群组，以及这些群组成员的配置文件</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>共享他们所属群组中的文件</li>
+</ul>
+</li>
+</ul>
+<p>注意：Chatter 免费用户出于安全原因无法访问任何 Salesforce 数据</p>
+<p>Chatter 客户体验：</p>
+<p>` `</p>
+<ul>
+<li>Chatter 客户只能被邀请加入私密 Chatter 群组</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>
+<p>他们可以看到：</p>
+<p>` `</p>
+<ul>
+<li>他们所属群组的信息及群组成员的配置文件</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>共享到他们所属群组的文件</li>
+</ul>
+</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>
+<p>他们不能：</p>
+<p>` `</p>
+<ul>
+<li>发布到他人配置文件</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>查看记录或其他 Salesforce 信息，即使在搜索结果中也不行</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>被他人关注。此外，客户也不能关注他人或文件</li>
+</ul>
+</li>
+</ul>
+<p>` `</p>
+<p>排查登录问题的步骤：</p>
+<p>` `</p>
+<ul>
+<li>查看用户的登录历史：设置 | 管理用户 | 用户 | 用户姓名 → 显示密码状态</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>处理无效密码：用户 | 检查用户 | 重置密码</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>设置 | 安全控制 | 密码策略  确认安全设置</li>
+</ul>
+<p>SalesforceA 可以：</p>
+<p>` `</p>
+<ul>
+<li>冻结用户</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>停用用户</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>解锁用户</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>重置用户密码</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>查看和编辑用户信息</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>分配权限集</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>查看系统状态</li>
+</ul>
+<p>` `</p>
+<ul>
+<li>在多个组织中的账户之间切换</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/68/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

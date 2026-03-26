@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  第一单元阅读笔记 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+第一单元阅读内容整理如下。
+FOA 第 1.1 节：Finding Out About（认知活动）
+本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。
+作为人类，语言是我们最主要的信息搜索媒介。
+口头语言——说与听
+如何获得我们想要的东西 书面记录重要事实
+与我们的搜索目标相关
+WWW &ndash;&gt; 信息量过于庞大
+FOA 的核心关注点：
+含义：涉及词语、句子、问题和文档的语义
+理解文档与主题的语义 &ndash;&gt; &ldquo;关于性&rdquo;（aboutness），这一概念在图书馆学传统中最为典型
+良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献
+电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义
+FOA 过程中，浏览者的阅读过程可以分为三个阶段：
+提出问题
+用户会有疑问
+用户的信息需求构成了其认知状态
+查询 &ndash;&gt; 查询语言
+问题往往表述模糊
+将内部认知状态转化为对问题的外部表达
+构建答案
+需要考虑以下几点：
+能否将用户模糊的问题转化为更清晰的表述？
+是否自身知道答案？
+是否能够将答案用语言表达出来？
+能否用用户能够理解的方式表达答案？
+能否为用户提供理解答案所需的背景知识？
+问答：搜索引擎
+每个段落视为一个&quot;文档&quot;
+所有文档的集合 &ndash;&gt; 语料库
+当语料库较大时，检索相关信息较为困难
+当文档集合较小时，检索效率更高
+评估答案
+就像用户排队等待向教授提问
+提问者与回答者之间&quot;闭环&quot;的形成
+用户对所获答案的相关性作出评估
+FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点
+提问者与回答者交换段落内容
+在 IR 传统框架内工作
+IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域
+IR 大量借鉴了语言学领域的成果，尤其是计算语言学
+能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场
+&ldquo;搜索引擎&quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型
+搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配
+IES 第 1.1 节和第 1.">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="第一单元阅读笔记"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+第一单元阅读内容整理如下。
+FOA 第 1.1 节：Finding Out About（认知活动）
+本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。
+作为人类，语言是我们最主要的信息搜索媒介。
+口头语言——说与听
+如何获得我们想要的东西 书面记录重要事实
+与我们的搜索目标相关
+WWW &ndash;&gt; 信息量过于庞大
+FOA 的核心关注点：
+含义：涉及词语、句子、问题和文档的语义
+理解文档与主题的语义 &ndash;&gt; &ldquo;关于性&rdquo;（aboutness），这一概念在图书馆学传统中最为典型
+良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献
+电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义
+FOA 过程中，浏览者的阅读过程可以分为三个阶段：
+提出问题
+用户会有疑问
+用户的信息需求构成了其认知状态
+查询 &ndash;&gt; 查询语言
+问题往往表述模糊
+将内部认知状态转化为对问题的外部表达
+构建答案
+需要考虑以下几点：
+能否将用户模糊的问题转化为更清晰的表述？
+是否自身知道答案？
+是否能够将答案用语言表达出来？
+能否用用户能够理解的方式表达答案？
+能否为用户提供理解答案所需的背景知识？
+问答：搜索引擎
+每个段落视为一个&quot;文档&quot;
+所有文档的集合 &ndash;&gt; 语料库
+当语料库较大时，检索相关信息较为困难
+当文档集合较小时，检索效率更高
+评估答案
+就像用户排队等待向教授提问
+提问者与回答者之间&quot;闭环&quot;的形成
+用户对所获答案的相关性作出评估
+FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点
+提问者与回答者交换段落内容
+在 IR 传统框架内工作
+IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域
+IR 大量借鉴了语言学领域的成果，尤其是计算语言学
+能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场
+&ldquo;搜索引擎&quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型
+搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配
+IES 第 1.1 节和第 1."/>
+
+<meta property="og:title" content="第一单元阅读笔记" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+第一单元阅读内容整理如下。
+FOA 第 1.1 节：Finding Out About（认知活动）
+本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。
+作为人类，语言是我们最主要的信息搜索媒介。
+口头语言——说与听
+如何获得我们想要的东西 书面记录重要事实
+与我们的搜索目标相关
+WWW &ndash;&gt; 信息量过于庞大
+FOA 的核心关注点：
+含义：涉及词语、句子、问题和文档的语义
+理解文档与主题的语义 &ndash;&gt; &ldquo;关于性&rdquo;（aboutness），这一概念在图书馆学传统中最为典型
+良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献
+电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义
+FOA 过程中，浏览者的阅读过程可以分为三个阶段：
+提出问题
+用户会有疑问
+用户的信息需求构成了其认知状态
+查询 &ndash;&gt; 查询语言
+问题往往表述模糊
+将内部认知状态转化为对问题的外部表达
+构建答案
+需要考虑以下几点：
+能否将用户模糊的问题转化为更清晰的表述？
+是否自身知道答案？
+是否能够将答案用语言表达出来？
+能否用用户能够理解的方式表达答案？
+能否为用户提供理解答案所需的背景知识？
+问答：搜索引擎
+每个段落视为一个&quot;文档&quot;
+所有文档的集合 &ndash;&gt; 语料库
+当语料库较大时，检索相关信息较为困难
+当文档集合较小时，检索效率更高
+评估答案
+就像用户排队等待向教授提问
+提问者与回答者之间&quot;闭环&quot;的形成
+用户对所获答案的相关性作出评估
+FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点
+提问者与回答者交换段落内容
+在 IR 传统框架内工作
+IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域
+IR 大量借鉴了语言学领域的成果，尤其是计算语言学
+能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场
+&ldquo;搜索引擎&quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型
+搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配
+IES 第 1.1 节和第 1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-01-10T08:03:21-08:00" />
+<meta property="article:modified_time" content="2019-01-10T08:03:21-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/unit-1-reading/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/">
+              第一单元阅读笔记
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-01-10T08:03:21-08:00">
+                January 10, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/other/">Other</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/other/">Other</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p>第一单元阅读内容整理如下。</p>
+<p><strong>FOA 第 1.1 节：Finding Out About（认知活动）</strong></p>
+<p>本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。</p>
+<ul>
+<li>
+<p>作为人类，语言是我们最主要的信息搜索媒介。</p>
+<ul>
+<li>
+<p>口头语言——说与听</p>
+<ul>
+<li>如何获得我们想要的东西</li>
+</ul>
+</li>
+<li>
+<p>书面记录重要事实</p>
+</li>
+</ul>
+</li>
+<li>
+<p>与我们的搜索目标相关</p>
+</li>
+<li>
+<p>WWW &ndash;&gt; 信息量过于庞大</p>
+</li>
+<li>
+<p>FOA 的核心关注点：</p>
+<ul>
+<li>
+<p>含义：涉及词语、句子、问题和文档的语义</p>
+</li>
+<li>
+<p>理解文档与主题的语义 &ndash;&gt; &ldquo;关于性&rdquo;（aboutness），这一概念在图书馆学传统中最为典型</p>
+</li>
+</ul>
+</li>
+<li>
+<p>良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献</p>
+</li>
+<li>
+<p>电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义</p>
+</li>
+<li>
+<p>FOA 过程中，浏览者的阅读过程可以分为三个阶段：</p>
+<ul>
+<li>
+<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-14.50.56.png" alt="Screenshot 2019-01-11 14.50.56.png"></p>
+</li>
+<li>
+<p>提出问题</p>
+<ul>
+<li>
+<p>用户会有疑问</p>
+</li>
+<li>
+<p>用户的信息需求构成了其认知状态</p>
+</li>
+<li>
+<p>查询 &ndash;&gt; 查询语言</p>
+</li>
+<li>
+<p>问题往往表述模糊</p>
+</li>
+<li>
+<p>将内部认知状态转化为对问题的外部表达</p>
+</li>
+</ul>
+</li>
+<li>
+<p>构建答案</p>
+<ul>
+<li>
+<p>需要考虑以下几点：</p>
+<ul>
+<li>
+<p>能否将用户模糊的问题转化为更清晰的表述？</p>
+</li>
+<li>
+<p>是否自身知道答案？</p>
+</li>
+<li>
+<p>是否能够将答案用语言表达出来？</p>
+</li>
+<li>
+<p>能否用用户能够理解的方式表达答案？</p>
+</li>
+<li>
+<p>能否为用户提供理解答案所需的背景知识？</p>
+</li>
+</ul>
+</li>
+<li>
+<p>问答：搜索引擎</p>
+</li>
+<li>
+<p>每个段落视为一个&quot;文档&quot;</p>
+</li>
+<li>
+<p>所有文档的集合 &ndash;&gt; 语料库</p>
+</li>
+<li>
+<p>当语料库较大时，检索相关信息较为困难</p>
+</li>
+<li>
+<p>当文档集合较小时，检索效率更高</p>
+</li>
+<li>
+<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-15.04.00.png" alt="Screenshot 2019-01-11 15.04.00.png"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>评估答案</p>
+<ul>
+<li>
+<p>就像用户排队等待向教授提问</p>
+</li>
+<li>
+<p>提问者与回答者之间&quot;闭环&quot;的形成</p>
+</li>
+<li>
+<p>用户对所获答案的相关性作出评估</p>
+</li>
+<li>
+<p>FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点</p>
+</li>
+<li>
+<p>提问者与回答者交换段落内容</p>
+</li>
+<li>
+<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.05.25.png" alt="Screenshot 2019-01-12 16.05.25.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>在 IR 传统框架内工作</p>
+<ul>
+<li>
+<p>IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域</p>
+</li>
+<li>
+<p>IR 大量借鉴了语言学领域的成果，尤其是计算语言学</p>
+</li>
+<li>
+<p>能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场</p>
+</li>
+<li>
+<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.19.35.png" alt="Screenshot 2019-01-12 16.19.35.png"></p>
+</li>
+<li>
+<p>&ldquo;搜索引擎&quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型</p>
+</li>
+<li>
+<p>搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>IES 第 1.1 节和第 1.2 节</strong></p>
+<p>1.1 什么是信息检索</p>
+<p>信息检索关注的是对大型电子文本集合及其他人类语言数据的表示、搜索与处理。</p>
+<p>1.1.1 网络搜索</p>
+<p>机器识别出包含查询词的一组网页，为每个网页计算相关性得分，消除重复和冗余页面，生成剩余页面的摘要，最后将摘要和链接返回给用户浏览。</p>
+<p>这一快照必须由网络爬虫持续采集和更新，爬虫同样运行在数百乃至数千台机器组成的集群上，定期（例如每周一次）下载每个页面的最新副本。</p>
+<p>考虑包含&quot;信息&quot;和&quot;检索&quot;这两个词的数百万网页——其中许多与信息检索这一主题相关，但其范围远不如排名前十的页面广泛。</p>
+<p>在各种情境和需求下高效实现并评估相关性排名算法，是信息检索的核心问题，也是本书的中心议题。</p>
+<p>1.1.2 其他搜索应用</p>
+<p>桌面和文件系统搜索是另一个广泛使用的 IR 应用示例。桌面搜索引擎为本地硬盘及可能通过局域网连接的磁盘上存储的文件提供搜索和浏览功能。</p>
+<p>1.1.3 其他 IR 应用</p>
+<ul>
+<li>
+<p>文档路由、过滤与选择性分发是对典型 IR 流程的反转</p>
+</li>
+<li>
+<p>文本聚类与分类系统根据共同属性对文档进行分组</p>
+</li>
+<li>
+<p>摘要系统将文档压缩为少数关键段落、句子或短语以描述其内容</p>
+</li>
+<li>
+<p>信息抽取系统识别地点、日期等命名实体，并将这些信息整合为描述实体间关系的结构化记录</p>
+</li>
+<li>
+<p>话题检测与跟踪系统识别新闻文章流等信息源中的事件，并随事件演变持续追踪</p>
+</li>
+<li>
+<p>专家搜索系统识别组织中在特定领域具有专业知识的成员</p>
+</li>
+<li>
+<p>问答系统整合多个来源的信息，为具体问题提供简洁答案</p>
+</li>
+<li>
+<p>多媒体信息检索系统将相关性排名及其他 IR 技术扩展到图像、视频、音乐和语音领域</p>
+</li>
+</ul>
+<p><strong>信息检索系统</strong></p>
+<p>1.2.1 基本 IR 系统架构</p>
+<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-18.31.07.png" alt="Screenshot 2019-01-12 18.31.07.png"></p>
+<p>相关性排名的基本目标通常以概率排名原则（PRP）来表达，其表述如下：</p>
+<p>如果 IR 系统对每个查询的响应是按相关概率递减顺序对文档集合进行排名，那么系统对用户的整体效果将达到最大化。</p>
+<p>该原则忽略了实践中必须考虑的相关性的重要方面。</p>
+<p>在处理不同情境时，我们不仅需要应对不同类型的文档格式。</p>
+<p><strong>MIR 第 1.1–1.4 节</strong></p>
+<p>本节主要介绍了 IR 的发展历史以及 IR 多年来的演变。在万维网出现之前，获取信息的主要途径是图书馆。随着 WWW 的出现，一切迅速发生了变化。</p>
+<p>信息的相关性仍然取决于每个人自身的判断。</p>
+<p>IR 系统仍然遵循基于用户查询的信息检索和排名流程。</p>
+<p>全新形式的百科全书将会出现，预先编织好联想索引的网络，随时可以放入 Memex 中并在那里得到扩充 [303]</p>
+<p>由于网络的出现，信息搜索方式发生了变化：</p>
+<ul>
+<li>
+<p>文档集合本身的特性</p>
+</li>
+<li>
+<p>集合的规模以及每日提交的用户查询量</p>
+</li>
+<li>
+<p>文档集合的庞大规模</p>
+</li>
+<li>
+<p>网络不仅是文档和数据的存储库，也是开展商业活动的媒介</p>
+</li>
+<li>
+<p>网络搜索源于网络广告及其他经济利益驱动</p>
+</li>
+</ul>
+<p>安全、隐私、版权和专利权、扫描光学字符识别以及跨语言检索，都是网络上的现实问题。</p>
+<p><strong>最难懂的知识点：</strong></p>
+<ul>
+<li>我们都知道，如今我们从各种渠道获取的信息越来越多，如何有效地获取所需信息是关键所在。从阅读材料来看，它向我们介绍了过滤数据、获取所需信息的过程。作为人类，我们可以通过阅读内容来筛选出相关信息，但要教会机器做到类似的事情，最有效的方法是什么？</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
