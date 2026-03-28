@@ -77,6 +77,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -323,9 +357,23 @@
   </a>
 </h5>
 <p>The more I use it, the more I feel like AI is like another co-worker. When I test a function and it doesn&rsquo;t work, I work with AI to debug and try to figure out the problem together by talking to it. I still get moments like this:</p>
-<p><img src="https://media1.tenor.com/m/32LEtADcrNoAAAAd/monkey.gif" alt=""></p>
+<p><img
+  src="https://media1.tenor.com/m/32LEtADcrNoAAAAd/monkey.gif"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Or if you caught me talking to my computer screen loudly, you can guess why.
-<img src="https://media1.tenor.com/m/NiBD3Jj07AYAAAAd/monkey-laptop.gif" alt=""></p>
+<img
+  src="https://media1.tenor.com/m/NiBD3Jj07AYAAAAd/monkey-laptop.gif"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>I have to say though, the tone, the personality, all of it feels more and more human; you can even define how you would like your AI to sound like and what kind of personality it needs to be. That&rsquo;s kind of wild, isn&rsquo;t it?</p>
 <p>We, as human beings, also need to think through what we are allowing AI to do for us; human beings are still the ones responsible in the end. If we rely too much on AI, then we are also taking the fun out of solving a problem. The brain is also like a machine; it needs exercise from time to time.</p>
 <p>With all of that being said, as real human beings, we need to go out and have contact with other human beings or feel the world around us even more in this world nowadays.
@@ -443,6 +491,37 @@ Otherwise, &ldquo;Are You Living in a Computer Simulation?&rdquo; (by Nick Bostr
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

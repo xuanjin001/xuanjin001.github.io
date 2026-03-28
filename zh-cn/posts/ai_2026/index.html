@@ -77,6 +77,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -318,9 +352,23 @@
   </a>
 </h5>
 <p>用得越多，我越觉得 AI 就像另一位同事。当我测试一个功能发现它不工作时，我会和 AI 一起调试，通过对话来共同找出问题所在。我偶尔还是会有这种时刻：</p>
-<p><img src="https://media1.tenor.com/m/32LEtADcrNoAAAAd/monkey.gif" alt=""></p>
+<p><img
+  src="https://media1.tenor.com/m/32LEtADcrNoAAAAd/monkey.gif"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>如果你看到我对着电脑屏幕大声说话，你应该知道是为什么了。
-<img src="https://media1.tenor.com/m/NiBD3Jj07AYAAAAd/monkey-laptop.gif" alt=""></p>
+<img
+  src="https://media1.tenor.com/m/NiBD3Jj07AYAAAAd/monkey-laptop.gif"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>不过我不得不说，它的语气、个性，一切都越来越有人情味；你甚至可以定义你希望 AI 的语调和个性是什么样的。这有点不可思议，不是吗？</p>
 <p>作为人类，我们也需要思考，我们在允许 AI 为我们做什么；人类在最终层面上仍然是要负责任的。如果我们过于依赖 AI，我们也会失去解决问题的乐趣。大脑也像一台机器，它需要时不时地运转和锻炼。</p>
 <p>说了这么多，作为真实的人类，在当今这个时代，我们更需要走出去，与其他人接触，感受周围的世界。
@@ -438,6 +486,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

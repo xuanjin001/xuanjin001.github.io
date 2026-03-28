@@ -98,6 +98,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -227,13 +261,41 @@
 <p>现在，我们终于有了 AI！！！！！</p>
 <p>隆重介绍&quot;收据追踪器&quot;！目前还在测试阶段，还有很多地方需要完善，但我对现在这个版本已经相当满意了！</p>
 <p>仪表盘页面：
-<img src="/images/personal_accounting/Dashboard.png" alt="Dashboard"></p>
+<img
+  src="/images/personal_accounting/Dashboard.png"
+  alt="Dashboard"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>点击&quot;添加收据&quot;后，用户会进入上传页面，可以选择&quot;上传文件&quot;、&ldquo;拍照&rdquo;、&ldquo;粘贴文本&quot;或&quot;手动录入&rdquo;。每个功能一目了然。一旦上传完成，我会调用 LLM API，将 AI 从宇宙的某个角落（哈哈）召唤过来，让它帮助处理上传的数据/图片，并将其映射到对应的字段上。
-<img src="/images/personal_accounting/upload-receipt.png" alt="upload-receipt"></p>
+<img
+  src="/images/personal_accounting/upload-receipt.png"
+  alt="upload-receipt"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>保存后，所有内容都会列入交易记录中。
-<img src="/images/personal_accounting/transaction.png" alt="transaction"></p>
+<img
+  src="/images/personal_accounting/transaction.png"
+  alt="transaction"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>这个程序还可以进行数据分析。
-<img src="/images/personal_accounting/analysis.png" alt="analysis"></p>
+<img
+  src="/images/personal_accounting/analysis.png"
+  alt="analysis"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>还有一些需要改进的地方，但这个版本已经很棒了！它未来可以用于预算管理，也可以用于报税，因为每笔交易都已按条目详细记录。</p>
 <p>这个项目我使用了 Gemini 模型。Gemini 不仅能读取图片或文字并将其转换为数据库兼容的数据，还能对数据进行分析处理。</p>
 
@@ -341,6 +403,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

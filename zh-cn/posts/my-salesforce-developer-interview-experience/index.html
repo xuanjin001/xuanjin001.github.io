@@ -101,6 +101,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -253,7 +287,14 @@
 <li>条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定&quot;开放&quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&quot;阶段&quot;字段，因此我将以此作为判断&quot;开放&quot;的依据。案例有&quot;状态&quot;字段，我也将以此作为依据。</li>
 <li>三个对象之间的关系应该是：客户是父对象，案例和商机是子对象：</li>
 </ol>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/e2fb9-08ccb-1xdymnslmcuhgouh2enskgq.png" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e2fb9-08ccb-1xdymnslmcuhgouh2enskgq.png"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>关系图（Schema Builder 截图）</p>
 <p>现在来写代码：</p>
 <pre tabindex="0"><code>// 方法定义
@@ -414,7 +455,14 @@ if(!childrenList.isEmpty()) update(childrenList);
 <a href="https://github.com/xuanjin001/snapchat_interview" 
 	 target="_blank" rel="noopener"
 	>资料</a>。</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/5c588-pexels-photo-401213.jpeg?w=1024" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/5c588-pexels-photo-401213.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>图片来源：Gelgas，来自 
 
 
@@ -529,6 +577,37 @@ if(!childrenList.isEmpty()) update(childrenList);
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

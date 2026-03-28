@@ -137,6 +137,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -261,7 +295,14 @@
 <p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
 </blockquote>
 <p><strong>安全性与数据访问</strong></p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/cbf70-levelofaccess.jpg" alt="levelofaccess"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/cbf70-levelofaccess.jpg"
+  alt="levelofaccess"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>用户尝试通过浏览器登录 → 该用户是否曾从此浏览器或 IP 地址登录过？</p>
 <p>- 如果是，则用户直接登录；如果否，则提示用户激活计算机 → 用户通过所选优先级最高的方式获取验证码 → 用户提交验证码 → 用户登录</p>
 <p>路径：设置 | 安全控件 | 会话管理</p>
@@ -306,7 +347,14 @@
 <ul>
 <li>混合：可访问自己的记录以及其他用户中工作职能所需的记录</li>
 </ul>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/e7848-dataaccessmodels.jpg" alt="dataaccessmodels"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e7848-dataaccessmodels.jpg"
+  alt="dataaccessmodels"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>组织级共享默认值：</p>
 <p><code> </code></p>
 <ul>
@@ -325,7 +373,14 @@
 <li>公开读/写/转移</li>
 </ul>
 <p>角色层级</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/4701c-rolehierarchy.jpg" alt="rolehierarchy"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/4701c-rolehierarchy.jpg"
+  alt="rolehierarchy"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>共享规则</p>
 <p>路径：设置 | 安全控件 | 共享设置</p>
 <p>共享规则在逐个对象的基础上，向指定用户群组授予额外的记录访问权限</p>
@@ -487,7 +542,14 @@
 <ul>
 <li>公共群组可以包含以下任意组合：</li>
 </ul>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/a86f0-groups.jpg" alt="groups"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/a86f0-groups.jpg"
+  alt="groups"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>管理层群组：</p>
 <p><code> </code></p>
 <ul>
@@ -554,7 +616,14 @@
 <li>允许用户为其拥有的每个商机选择默认团队</li>
 </ul>
 <p>设置客户团队和商机团队销售的流程：</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/e8eb1-processsettingupaccountteamsoppteamselling1.jpg" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e8eb1-processsettingupaccountteamsoppteamselling1.jpg"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>路径：</p>
 <p>设置 | 自定义 | 客户 | 客户团队</p>
 <p>设置 | 自定义 | 商机 | 商机团队 | 设置</p>
@@ -595,7 +664,14 @@
 </ul>
 <p>组织级默认值 VS. 角色层级 VS. 共享模型</p>
 <p>如果 OWD 将对象限制为私有或公开只读：组织级默认值 VS. 角色层级 VS. 共享模型</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/f4a6d-org_wide.jpg" alt="org_wide"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/f4a6d-org_wide.jpg"
+  alt="org_wide"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>确定如何为对象设置 OWD</p>
 <p><code> </code></p>
 <ol start="3">
@@ -770,6 +846,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

@@ -212,6 +212,40 @@ IES 第 1.1 节和第 1." />
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -380,7 +414,14 @@ IES 第 1.1 节和第 1." />
 <p>FOA 过程中，浏览者的阅读过程可以分为三个阶段：</p>
 <ul>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-14.50.56.png" alt="Screenshot 2019-01-11 14.50.56.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-14.50.56.png"
+  alt="Screenshot 2019-01-11 14.50.56.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 <li>
 <p>提出问题</p>
@@ -441,7 +482,14 @@ IES 第 1.1 节和第 1." />
 <p>当文档集合较小时，检索效率更高</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-15.04.00.png" alt="Screenshot 2019-01-11 15.04.00.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-15.04.00.png"
+  alt="Screenshot 2019-01-11 15.04.00.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 </ul>
 </li>
@@ -464,7 +512,14 @@ IES 第 1.1 节和第 1." />
 <p>提问者与回答者交换段落内容</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.05.25.png" alt="Screenshot 2019-01-12 16.05.25.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.05.25.png"
+  alt="Screenshot 2019-01-12 16.05.25.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 </ul>
 </li>
@@ -483,7 +538,14 @@ IES 第 1.1 节和第 1." />
 <p>能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.19.35.png" alt="Screenshot 2019-01-12 16.19.35.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.19.35.png"
+  alt="Screenshot 2019-01-12 16.19.35.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 <li>
 <p>&ldquo;搜索引擎&quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型</p>
@@ -533,7 +595,14 @@ IES 第 1.1 节和第 1." />
 </ul>
 <p><strong>信息检索系统</strong></p>
 <p>1.2.1 基本 IR 系统架构</p>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-18.31.07.png" alt="Screenshot 2019-01-12 18.31.07.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-18.31.07.png"
+  alt="Screenshot 2019-01-12 18.31.07.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>相关性排名的基本目标通常以概率排名原则（PRP）来表达，其表述如下：</p>
 <p>如果 IR 系统对每个查询的响应是按相关概率递减顺序对文档集合进行排名，那么系统对用户的整体效果将达到最大化。</p>
 <p>该原则忽略了实践中必须考虑的相关性的重要方面。</p>
@@ -671,6 +740,37 @@ IES 第 1.1 节和第 1." />
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

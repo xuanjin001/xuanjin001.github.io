@@ -137,6 +137,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -338,7 +372,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>这只是一个简单的记录，用于映射商机和审批人队列</p>
 <p>注意这里的&quot;所有者&quot;字段，它将作为审批人使用。在我的流程中，当新的商机记录创建时，审批矩阵记录的所有者字段会自动分配给&quot;空队列&rdquo;（一个没有任何用户的队列）。在实际操作中，你应该优化此流程，自动分配到正确的队列，除非找不到合适的队列。我这里只是偷了个懒。</p>
 <h3 id="审批流程">
@@ -357,7 +398,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-2.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>审批流程</p>
 <p>注意&quot;指定审批人&quot;设置为&quot;相关用户：所有者&quot;</p>
 <p>邮件模板将是一个 VF 邮件模板，你可以在其中查询相关记录</p>
@@ -369,7 +417,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-3.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>邮件模板示例</p>
 <h3 id="流程触发器创建审批矩阵记录">
   流程触发器：创建&quot;审批矩阵&quot;记录
@@ -386,7 +441,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-4.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>我构建的流程截图</p>
 <p>正如我之前所说，你应该优化以下内容：</p>
 <ol>
@@ -409,7 +471,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-5.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>流程截图</p>
 <ul>
 <li>用户触发器：</li>
@@ -430,7 +499,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-6.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>自定义元数据类型设置</p>
 <p>至少在我的场景中，我们只需要在这里映射部门和队列。你可以根据需要做得更复杂。例如，如果用户属于某个特定客户，则应被分配到特定队列，你也可以在这里添加这类逻辑。</p>
 <p>以下是记录示例：</p>
@@ -442,7 +518,14 @@
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-7.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>自定义元数据类型记录示例</p>
 <h3 id="用户触发器">
   用户触发器
@@ -618,7 +701,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-8.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>队列</p>
 <h2 id="见证真相的时刻">
   见证真相的时刻！
@@ -638,7 +728,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-9.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>John Doe</p>
 <p>
 
@@ -648,7 +745,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-10.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>经理复选框</p>
 <p>
 
@@ -658,7 +762,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-11.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>成功分配队列</p>
 <p>创建一个新商机，同时应该会创建一条新的审批矩阵记录</p>
 <p>
@@ -669,7 +780,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-12.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>新商机</p>
 <p>
 
@@ -679,7 +797,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>审批矩阵记录已创建</p>
 <p>现在我将商机阶段更新为&quot;需求分析&quot;</p>
 <p>
@@ -690,7 +815,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-13.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>阶段已更新</p>
 <p>现在如果你导航回审批矩阵记录，你应该看到所有者已相应更新为&quot;销售团队队列&quot;</p>
 <p>
@@ -701,7 +833,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-14.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>审批矩阵已更新</p>
 <p>如果你进入&quot;相关&quot;选项卡，你应该看到一个审批流程已提交给队列（此记录的所有者）</p>
 <p>
@@ -712,7 +851,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-15.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>审批已提交</p>
 <p><strong>成功了！！！！！</strong></p>
 <h2 id="结论">
@@ -832,6 +978,37 @@ delete DeleteGroupMemberRecord;
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

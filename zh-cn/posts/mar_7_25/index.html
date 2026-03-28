@@ -101,6 +101,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -251,7 +285,14 @@
 	 target="_blank" rel="noopener"
 	>&ldquo;Attention is All You Need&rdquo;</a>。这篇论文详细阐述了 Transformer 的概念，以及它为何优于 RNN。它是序列建模与转换的核心，注意力机制的概念使得模型能够对任意距离的序列依赖关系进行建模。这一设计实现了更高程度的并行化，并在大幅减少训练时间的情况下（例如在 8 块 P100 GPU 上仅需 12 小时）达到了最先进的翻译质量。<!-- raw HTML omitted --><!-- raw HTML omitted -->Transformer<!-- raw HTML omitted --><!-- raw HTML omitted --> 代表了序列建模领域的重大变革，突破了顺序计算的限制。不过，训练像 GPT-4 这样的现代大型语言模型需要更长的时间和更强的计算能力。</p>
 <!-- raw HTML omitted -->
-<p><img src="../../images/Transformer-model_figure1.png" alt="architecture"></p>
+<p><img
+  src="../../images/Transformer-model_figure1.png"
+  alt="architecture"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <h2 id="语言是如何被处理的">
   语言是如何被处理的
   <a class="heading-link" href="#%e8%af%ad%e8%a8%80%e6%98%af%e5%a6%82%e4%bd%95%e8%a2%ab%e5%a4%84%e7%90%86%e7%9a%84">
@@ -503,6 +544,37 @@ Mueller, J. P., Massaron, L., &amp; Diamond, J. (2020). Artificial Intelligence 
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

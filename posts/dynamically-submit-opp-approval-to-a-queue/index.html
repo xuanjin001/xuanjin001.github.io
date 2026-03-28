@@ -86,6 +86,40 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -284,7 +318,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>This is just a simple record map opp and approver queue</p>
 <p>Notice the Owner field here, this is the field will be used as approvers. In my process, when a new opp record is created, the owner field on Approval Matrix record is automatically assigned to &ldquo;Empty Queue&rdquo;, this is a queue without any users. When you are doing your process, you should optimize it to auto assign to a correct queue, unless no proper queue can be found. I am just being lazy here.</p>
 <h3 id="approval-process">
@@ -303,7 +344,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-2.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Approval Process</p>
 <p>Notice the &ldquo;Assigned Approver&rdquo; is set to &ldquo;Related User: Owner&rdquo;</p>
 <p>The Email Template will be a VF Email Template where you can query proper records</p>
@@ -315,7 +363,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-3.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Example of Email Template</p>
 <h3 id="flow-trigger-to-create-approval-matrix-record">
   Flow-trigger: to create &ldquo;Approval Matrix&rdquo; record
@@ -332,7 +387,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-4.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Snapshot of the flow I built</p>
 <p>Like what I said before, you should optimize the following:</p>
 <ol>
@@ -355,7 +417,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-5.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Snap of flow</p>
 <ul>
 <li>Trigger on User:</li>
@@ -376,7 +445,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-6.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Setup of CMDT</p>
 <p>All we need, at least in my case, is map the department and queue here. You can make it as complicated as you can. For example, if a user belong to certain account, then they should be put into certain queue. You can put that logic here as well.</p>
 <p>Here is the record:</p>
@@ -388,7 +464,14 @@ Break the Problem Link to heading One of the things I learned from algorithm is 
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-7.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Example record CMDT</p>
 <h3 id="trigger-on-user">
   Trigger on User
@@ -564,7 +647,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-8.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Queue</p>
 <h2 id="moment-of-truth">
   Moment of Truth!
@@ -584,7 +674,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-9.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>John Doe</p>
 <p>
 
@@ -594,7 +691,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-10.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>manager checkbox</p>
 <p>
 
@@ -604,7 +708,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-11.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Successfully assigned queue</p>
 <p>Create a new opp, then a new Approval Matrix record should be created too</p>
 <p>
@@ -615,7 +726,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-12.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>new opp</p>
 <p>
 
@@ -625,7 +743,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Approval Matrix record created</p>
 <p>Now I am going to update Opp stage to &ldquo;Needs Analysis&rdquo;</p>
 <p>
@@ -636,7 +761,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-13.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>stage updated</p>
 <p>Now if you navigate back to the Approval Matrix record, you should see the owner has been updated to Sales Team Queue accordingly</p>
 <p>
@@ -647,7 +779,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-14.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Approval Matrix updated</p>
 <p>If you go to the &ldquo;Related&rdquo; tab, you should see an approval process has been submitted to the queue (owner of this record)</p>
 <p>
@@ -658,7 +797,14 @@ delete DeleteGroupMemberRecord;
 
 <a href="https://xjin2.files.wordpress.com/2021/05/image-15.png" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Approval submitted</p>
 <p><strong>YAY it worked!!!!!</strong></p>
 <h2 id="conclusion">
@@ -778,6 +924,37 @@ delete DeleteGroupMemberRecord;
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

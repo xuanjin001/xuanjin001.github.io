@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/authors/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -54,11 +54,14 @@
                 href="https://xuanjin001.github.io/categories/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <loc>https://xuanjin001.github.io/series/openclaw-sf-data-migration/</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -70,8 +73,47 @@
                 href="https://xuanjin001.github.io/posts/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/tags/salesforce/</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/salesforce/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/salesforce/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/salesforce/</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/salesforce/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/salesforce/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/series/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/tags/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -84,7 +126,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -97,7 +139,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -108,6 +150,9 @@
                 hreflang="en"
                 href="https://xuanjin001.github.io/"
                 />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</loc>
+    <lastmod>2026-03-26T12:25:31-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/about/</loc>
     <lastmod>2026-03-24T00:00:00+00:00</lastmod>
@@ -460,19 +505,6 @@
                 href="https://xuanjin001.github.io/posts/oct_14_2023/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/series/</loc>
-    <lastmod>2023-10-14T22:39:33-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/series/"
-                />
-  </url><url>
     <loc>https://xuanjin001.github.io/series/theme-demo/</loc>
     <lastmod>2023-10-14T22:39:33-07:00</lastmod>
     <xhtml:link
@@ -821,32 +853,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/salesforce/</loc>
-    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/salesforce/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/salesforce/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/salesforce/</loc>
-    <lastmod>2020-04-01T14:41:21-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/salesforce/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/salesforce/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</loc>

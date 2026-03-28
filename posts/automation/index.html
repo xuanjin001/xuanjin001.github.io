@@ -107,6 +107,40 @@ Save time with several out-of-box email templates Email Templates can be set up 
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -640,10 +674,24 @@ Save time with several out-of-box email templates Email Templates can be set up 
 </li>
 </ul>
 <p>Automating Leads:</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/340d2-automationleads.jpg" alt="automationleads"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/340d2-automationleads.jpg"
+  alt="automationleads"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>500 new leads per day</p>
 <p>Automating Cases (5000 new cases per day)</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/8bf25-web_to_case.jpg" alt="web_to_case"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/8bf25-web_to_case.jpg"
+  alt="web_to_case"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Preparing for web-to-lead or web-to-case</p>
 <p>Create Custom Fields &ndash;&gt; Create queues &ndash;&gt; Create Email Templates</p>
 <p>` `</p>
@@ -688,7 +736,14 @@ Save time with several out-of-box email templates Email Templates can be set up 
 <ul>
 <li>Only 1 auto-response rule can be active at a time</li>
 </ul>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/f6b1e-autorules.png" alt="autorules"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/f6b1e-autorules.png"
+  alt="autorules"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Enabling web-to-lead and creating the web form permissions have to be &ldquo;Modify all data&rdquo;:</p>
 <p>Setup | Customize | Self-service | web-to-case</p>
 <p>Testing the Form:</p>
@@ -832,6 +887,37 @@ Save time with several out-of-box email templates Email Templates can be set up 
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

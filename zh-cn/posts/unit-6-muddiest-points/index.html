@@ -80,6 +80,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -204,7 +238,14 @@
 <p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
 </blockquote>
 <p>我对以下概念仍然不太理解：你要如何决定需要添加什么常数？我猜这取决于具体的词语？另外，不同的词语对应的常数也会随之改变，对吗？这是否意味着我们需要逐一计算每个词的概率？我不确定这个过程是如何运作的。</p>
-<p><img src="https://xjin2.files.wordpress.com/2019/02/screenshot-2019-02-23-20.22.49.png" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/02/screenshot-2019-02-23-20.22.49.png"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 
       </div>
 
@@ -310,6 +351,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

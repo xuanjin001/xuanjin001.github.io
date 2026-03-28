@@ -95,6 +95,40 @@ The dictionary also records some staticistics, such as the number of doc which c
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -236,7 +270,14 @@ The dictionary also records some staticistics, such as the number of doc which c
 </li>
 </ol>
 <p>The dictionary also records some staticistics, such as the number of doc which contain each term</p>
-<p>It is assumed that each document has a unique serial number (docID) when it is first time show up, it will be given a number. indexing is a list of normalized tokens for each document, which we can equally think of as list of pairs of term and docID. <img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-13-22.46.58.png" alt="Screenshot 2019-01-13 22.46.58.png"></p>
+<p>It is assumed that each document has a unique serial number (docID) when it is first time show up, it will be given a number. indexing is a list of normalized tokens for each document, which we can equally think of as list of pairs of term and docID. <img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-13-22.46.58.png"
+  alt="Screenshot 2019-01-13 22.46.58.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Exercise 1.1 [⋆]</p>
 <p>Draw the inverted index that would be built for the following document collection. (See Figure 1.3 for an example.)</p>
 <p>Doc 1 new home sales top forecasts</p>
@@ -367,6 +408,37 @@ The dictionary also records some staticistics, such as the number of doc which c
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

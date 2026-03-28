@@ -101,6 +101,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -224,7 +258,14 @@
         <blockquote>
 <p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
 </blockquote>
-<p><img src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3905843.jpeg?w=1024" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3905843.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>图片来源：Polina Tankilevitch，摄于 
 
 
@@ -249,7 +290,14 @@
 一步一个脚印，中国正在不断进步。人们所批评的那些缺陷和问题，都是成长过程中不可避免的阵痛。就像我们每个人成长的过程一样，你能说你从未走过弯路吗？你从那些错误中汲取教训，然后继续前行。我不确定中国会有多少事情发生改变，但改变正在发生，这是好事。</p>
 <p>看到世界各地针对中国及亚裔群体的歧视，我感到痛心疾首。归根结底，无论我们的背景、文化、差异如何，全人类应该团结一致，共同面对危机。</p>
 <p>这个话题我想写很久了。这篇文章可能会引来一些人的批评。如果是那样，请对我宽容一些。谢谢。</p>
-<p><img src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3965196.jpeg?w=1024" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3965196.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>图片来源：Immortal shots，摄于 
 
 
@@ -364,6 +412,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

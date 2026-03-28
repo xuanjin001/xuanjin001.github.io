@@ -92,6 +92,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -226,7 +260,14 @@
 	 target="_blank" rel="noopener"
 	>https://alexnisnevich.github.io/untrusted/</a>) 玩家需要用简单的 VIM 命令在界面中控制角色移动，同时还要修改界面上的 JavaScript 代码来改变地图，最终帮助角色走出迷宫。我个人认为，这是一款极好的 #工具，可以帮助那些不了解 JavaScript 的人入门这门语言；即便是已经掌握 JavaScript 的人，这也是一种提升技能的绝佳方式。</p>
 <p>下图是这款游戏的界面截图：</p>
-<p><img src="https://lh3.googleusercontent.com/ncOT3OiKOeK9ZBdEy07Jaaj8l1_oz20P1dUC-Do0E2j39B61Tu2JMnUENVP0kBAK6YpiC3zcLRk1rq4Y9hEOEUcqD3xRn4aBsaJB2pneCWOu9GzuhE9M3dISK707Mabbks3jo4lB" alt=""></p>
+<p><img
+  src="https://lh3.googleusercontent.com/ncOT3OiKOeK9ZBdEy07Jaaj8l1_oz20P1dUC-Do0E2j39B61Tu2JMnUENVP0kBAK6YpiC3zcLRk1rq4Y9hEOEUcqD3xRn4aBsaJB2pneCWOu9GzuhE9M3dISK707Mabbks3jo4lB"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>我们的项目是一个使用 AngularJS 的工具提示组件，了解 CSS 和 JavaScript 会有很大帮助。然而我当时的 Web 编程经验并不丰富，只懂一些基本的 HTML 框架。上面提到的这款游戏让我很快就入门了 JavaScript。整个过程非常互动——你可以直接修改代码，立刻看到效果。我喜欢它的另一个原因是它是一款<strong>游戏</strong>，这意味着它既有趣又令人上瘾。Untrusted 还是一个开源项目，你可以在 GitHub 上找到源代码，如果愿意也可以自己添加关卡。(
 
 
@@ -350,6 +391,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

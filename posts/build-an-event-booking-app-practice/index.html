@@ -86,6 +86,40 @@ Just like that, so vague, I actually heard this question, somewhat similar one l
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -223,7 +257,14 @@ Just like that, so vague, I actually heard this question, somewhat similar one l
 
 <a href="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg" 
 	 target="_blank" rel="noopener"
-	><img src="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg?w=690" alt=""></a></p>
+	><img
+  src="https://xjin2.files.wordpress.com/2021/03/event-booking-app.jpg?w=690"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
 <p>Once the groundwork is done, we can try to answer the questions listed above:<br>
 - Who: who is this app is for? &ndash;&gt; there could be a lot of audiences, since there are a lot of stakeholders, you can always add based on the above, the stakeholders that&rsquo;s directly related to the event, should just be event organizer and attendees, you may argue that a venue should be considered as well, but at this stage, I just want to keep things simple.<br>
 - What: what is the app about? event booking app &ndash;&gt; rhetorical question here<br>
@@ -337,6 +378,37 @@ Just like that, so vague, I actually heard this question, somewhat similar one l
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

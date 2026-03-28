@@ -80,6 +80,40 @@ Coronavirus has created a lot of chaos in all of our life, and it also showed di
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -200,7 +234,14 @@ Coronavirus has created a lot of chaos in all of our life, and it also showed di
 
       <div class="post-content">
         
-        <p><img src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3905843.jpeg?w=1024" alt=""></p>
+        <p><img
+  src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3905843.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Photo by Polina Tankilevitch on 
 
 
@@ -225,7 +266,14 @@ Coronavirus has created a lot of chaos in all of our life, and it also showed di
 Step by step, China is making progress, all the flaws and problems people are critic about are part of growing pain. Just like each of us, when we were growing up, you would say that you never made a wrong turn once or twice? You learn from those mistakes, then going forward. I am not sure if a lot of things will change in China, but things are definitely changing in China. That’s a good thing.</p>
 <p>It absolutely breaks my heart to see all the discriminations that’s going on around the world against China and Asian descent, in the end, human race shall unite as one and face the crisis regardless our background, our culture, our differences. </p>
 <p>I have been wanting to write something on this topic for a while now. This article may attract some hates from people. If it is, please go easy on me. Thank you. </p>
-<p><img src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3965196.jpeg?w=1024" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2020/04/pexels-photo-3965196.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Photo by Immortal shots on 
 
 
@@ -340,6 +388,37 @@ Step by step, China is making progress, all the flaws and problems people are cr
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

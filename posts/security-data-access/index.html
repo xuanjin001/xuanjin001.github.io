@@ -89,6 +89,40 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -210,7 +244,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
       <div class="post-content">
         
         <p><strong>Security &amp; Data Access</strong></p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/cbf70-levelofaccess.jpg" alt="levelofaccess"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/cbf70-levelofaccess.jpg"
+  alt="levelofaccess"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>User attempts to log in through browser à Has user logged in from this browser or IP address before?</p>
 <p>- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in</p>
 <p>Path: setup | Security controls | Session Management</p>
@@ -255,7 +296,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 <ul>
 <li>Hybrid: records they &amp; records of other users that are necessary for their job function</li>
 </ul>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/e7848-dataaccessmodels.jpg" alt="dataaccessmodels"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e7848-dataaccessmodels.jpg"
+  alt="dataaccessmodels"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Org-wide sharing defaults:</p>
 <p>` `</p>
 <ul>
@@ -274,7 +322,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 <li>Public Read/Write/Transfer</li>
 </ul>
 <p>Role Hierarchy</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/4701c-rolehierarchy.jpg" alt="rolehierarchy"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/4701c-rolehierarchy.jpg"
+  alt="rolehierarchy"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Sharing Rules</p>
 <p>Path: Setup | Security Controls | Sharing Settings</p>
 <p>Sharing rules grant additional records access to defined groups of users on an object-by-object basis</p>
@@ -436,7 +491,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 <ul>
 <li>A public group can comprise any combination of:</li>
 </ul>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/a86f0-groups.jpg" alt="groups"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/a86f0-groups.jpg"
+  alt="groups"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Manager Groups:</p>
 <p>` `</p>
 <ul>
@@ -503,7 +565,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 <li>Allow users to select a default team for each opportunity they own</li>
 </ul>
 <p>Process of setting up Account Teams and Opp Team Selling:</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/e8eb1-processsettingupaccountteamsoppteamselling1.jpg" alt=""></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e8eb1-processsettingupaccountteamsoppteamselling1.jpg"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Path:</p>
 <p>Setup |Customize | Accounts | Account Teams</p>
 <p>Setup | Customize | Opportunity | Opportunity Teams | Settings</p>
@@ -544,7 +613,14 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
 </ul>
 <p>Organization-wide defaults VS. Role Hierarchy VS. Sharing Models</p>
 <p>If OWDs restrict objects to Private or Public Read-Only:Organization-wide defaults VS. Role Hierarchy VS. Sharing Models</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/f4a6d-org_wide.jpg" alt="org_wide"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/f4a6d-org_wide.jpg"
+  alt="org_wide"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Determining How to Set OWD for an Object</p>
 <p>` `</p>
 <ol start="3">
@@ -719,6 +795,37 @@ Enable the SMS method of identity confirmation setting cannot be turned OFF once
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

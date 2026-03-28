@@ -83,6 +83,40 @@ The primary argument advaced is that progress requires that we appreciate the co
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -248,7 +282,14 @@ The primary argument advaced is that progress requires that we appreciate the co
 <p>FOA process of browsing readers can be imagined to involve 3 phases:</p>
 <ul>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-14.50.56.png" alt="Screenshot 2019-01-11 14.50.56.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-14.50.56.png"
+  alt="Screenshot 2019-01-11 14.50.56.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 <li>
 <p>Asking a question</p>
@@ -309,7 +350,14 @@ The primary argument advaced is that progress requires that we appreciate the co
 <p>when it is a very small set, the retrieval part will be more sufficient</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-15.04.00.png" alt="Screenshot 2019-01-11 15.04.00.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-11-15.04.00.png"
+  alt="Screenshot 2019-01-11 15.04.00.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 </ul>
 </li>
@@ -332,7 +380,14 @@ The primary argument advaced is that progress requires that we appreciate the co
 <p>asker and answerer exchange the passage</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.05.25.png" alt="Screenshot 2019-01-12 16.05.25.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.05.25.png"
+  alt="Screenshot 2019-01-12 16.05.25.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 </ul>
 </li>
@@ -351,7 +406,14 @@ The primary argument advaced is that progress requires that we appreciate the co
 <p>computers capable of searching and retrieving from the entire biomedical literature, across an entire nation&rsquo;s judicial ystem, or from all of the major newspaper and magazine articles, have created new markets among doctors, lawyers, journalists, student, &hellip; everyone and the internet</p>
 </li>
 <li>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.19.35.png" alt="Screenshot 2019-01-12 16.19.35.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-16.19.35.png"
+  alt="Screenshot 2019-01-12 16.19.35.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 </li>
 <li>
 <p>search engine, refer to a particular implementation, but to an idealized system most typical of the many different generations and varieties of actual search engines now in use</p>
@@ -401,7 +463,14 @@ The primary argument advaced is that progress requires that we appreciate the co
 </ul>
 <p>Information Retrieval System</p>
 <p>1\.2.1 Basic IR System Architecture</p>
-<p><img src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-18.31.07.png" alt="Screenshot 2019-01-12 18.31.07.png"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2019/01/screenshot-2019-01-12-18.31.07.png"
+  alt="Screenshot 2019-01-12 18.31.07.png"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>The fundamental goal of relevance ranking is frequently expressed in terms of the Probability Ranking principle (PRP), which we phrase as:</p>
 <p>If an IR system&rsquo;s reponse to each query is a ranking of the documents in the collection in order of decreasing probability of relevance, then the overall effectiveness of the system to its users will be maximized.</p>
 <p>It overlooks important aspects of relevance that must be considered in practice</p>
@@ -539,6 +608,37 @@ The primary argument advaced is that progress requires that we appreciate the co
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

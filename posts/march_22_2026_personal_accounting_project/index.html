@@ -77,6 +77,40 @@
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -203,13 +237,41 @@
 <p>Now, finally, we have AI!!!!!</p>
 <p>Introducing &ldquo;Receipt Tracker&rdquo;! This is still in beta, and there are a lot of things I still need to refine, but I am pretty happy with the current version of it!</p>
 <p>Dashboard page:
-<img src="/images/personal_accounting/Dashboard.png" alt="Dashboard"></p>
+<img
+  src="/images/personal_accounting/Dashboard.png"
+  alt="Dashboard"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>When you click on &ldquo;Add receipt&rdquo;, it directs the user to the Dashboard page, where they have the options to &ldquo;Upload File&rdquo;, &ldquo;Camera&rdquo;, &ldquo;Paste Text&rdquo;, or &ldquo;Manual Entry&rdquo;. Each tab/function is pretty obvious. Once anything is uploaded, I use an LLM API to channel the AI somewhere in the universe (lol) and have the LLM help process the uploaded data/image and map it to the columns.
-<img src="/images/personal_accounting/upload-receipt.png" alt="upload-receipt"></p>
+<img
+  src="/images/personal_accounting/upload-receipt.png"
+  alt="upload-receipt"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Once saved, everything will be listed in the transactions.
-<img src="/images/personal_accounting/transaction.png" alt="transaction"></p>
+<img
+  src="/images/personal_accounting/transaction.png"
+  alt="transaction"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>This program can also do data analysis as well.
-<img src="/images/personal_accounting/analysis.png" alt="analysis"></p>
+<img
+  src="/images/personal_accounting/analysis.png"
+  alt="analysis"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>There are still a couple of improvements I need to make, but this version is great! It can help with budgeting later on, and also with taxes, as everything is itemized for each transaction.</p>
 <p>For this project, I used Gemini models. Gemini can not only read the image or text and convert them into database-compatible data, but it can also process the data for analysis purposes.</p>
 
@@ -317,6 +379,37 @@
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>

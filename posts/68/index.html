@@ -113,6 +113,40 @@ Support Information: Business hours, holidays" />
 
 
 
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
 </head>
 
 
@@ -235,7 +269,14 @@ Support Information: Business hours, holidays" />
         
         <p><strong>Getting your org ready for users</strong></p>
 <p>Org. Level:</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/5f0b6-orglevel.jpg" alt="orglevel"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/5f0b6-orglevel.jpg"
+  alt="orglevel"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>So the company profiles is the top security control tool, and UI Setting is the second…</p>
 <p>Company profile: A collection of information about your organization, mostly captured at contractual signup.</p>
 <p>Company info:</p>
@@ -280,7 +321,14 @@ Support Information: Business hours, holidays" />
 </ul>
 <p>Each user has their own personal user record settings</p>
 <p>Multi-Currencies:</p>
-<p><img src="https://xjin2.files.wordpress.com/2021/01/57330-multi-currenties.jpg" alt="multi-currenties"></p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/57330-multi-currenties.jpg"
+  alt="multi-currenties"
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
 <p>Multi-currency allows just one exchange rate per currency by default!</p>
 <p>Inline editing is not available for currency.</p>
 <p>Create list views for frequently performed searches</p>
@@ -694,6 +742,37 @@ Support Information: Business hours, holidays" />
   
 
   
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
 </body>
 
 </html>
