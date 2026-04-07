@@ -494,7 +494,7 @@
 </h2>
 <p><strong>What I think for enterprise:</strong></p>
 <ol>
-<li>This is a POC of course, and if we want to make this to be enterprise ready, we may need to move everything to nemoclaud, which is more secure and for enterprise.</li>
+<li>This is a POC of course, and if we want to make this to be enterprise ready, we may need to move everything to NemoClaw, which is more secure and for enterprise.</li>
 <li>This project is just a test, so there are a lot of details I didn&rsquo;t really bother to fix/refine.</li>
 <li>The connection probably shouldn&rsquo;t be using SOAP anymore, should be using MCP instead.</li>
 <li>Probably should have openclaw connect with SFDX, then openclaw can do even more.</li>
@@ -503,6 +503,7 @@
 <p>This is also mainly set up to do org to org, we can also implement csv to org, what I am not sure yet is if we have multiple sources and the logic is extremely complicated, would agents still be able to get it right? I am pretty sure it will, just need more refinement and detailed guidelines.</p>
 <p><strong>What do I think about this implementation?</strong></p>
 <p>I have something even more ambitious, think about it, if I have openclaw learning everything that&rsquo;s on Salesforce documentation, and have it hooked to SFDX, this agent itself becomes a Salesforce expert, and can interact with other platform as well, let&rsquo;s say NetSuite, and maybe it can even provide solutions on the go.</p>
+<p>This implementation is a test, and I would like to demostrate on what the capabilities are, more importantly, I think we can expand this to all other data migration related projects, the difference is the source and target, and maybe &ldquo;expert&rdquo;.</p>
 <p><strong>Why did I go with this route instead of using Agentforce?</strong></p>
 <p>Agentforce can do things on Salesforce platform, and you need to build apex code, flows, templates, etc., which are all specifically for and within Salesforce. It absolutely is great for people who have been working on Salesforce platform, but it is platform specific. Can you run a Salesforce flow in Azure environment or GCP? No, because Salesforce flows are only built for Salesforce, when you take a step further, there is a whole world out there, using Salesforce knowledge to be able to communicate with the rest of the world, wouldn&rsquo;t that be even better?</p>
 <p>Did I just build something to drive myself out of jobs? Well, maybe lol.</p>
