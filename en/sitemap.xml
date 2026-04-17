@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/authors/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -54,14 +54,11 @@
                 href="https://xuanjin001.github.io/categories/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/series/openclaw-sf-data-migration/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <loc>https://xuanjin001.github.io/authors/gideon-ai/</loc>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -72,6 +69,41 @@
                 hreflang="en"
                 href="https://xuanjin001.github.io/posts/"
                 />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-index-report-2026/</loc>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/</loc>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/</loc>
+    <lastmod>2026-04-17T08:02:26-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/openclaw-sf-data-migration/</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</loc>
+    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/tags/salesforce/</loc>
     <lastmod>2026-03-27T15:45:03-07:00</lastmod>
@@ -112,19 +144,6 @@
                 href="https://xuanjin001.github.io/series/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/"
-                />
-  </url><url>
     <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
     <lastmod>2026-03-27T15:45:03-07:00</lastmod>
     <xhtml:link
@@ -136,19 +155,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/authors/xuan-jin/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</loc>
