@@ -99,6 +99,25 @@
                 href="https://xuanjin001.github.io/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/series/openclaw/</loc>
+    <lastmod>2026-04-02T13:29:19-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/openclaw-personal-ai-assistant/</loc>
+    <lastmod>2026-04-02T13:29:19-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/</loc>
+    <lastmod>2026-04-02T13:29:19-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/series/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/series/openclaw-sf-data-migration/</loc>
     <lastmod>2026-03-27T15:45:03-07:00</lastmod>
   </url><url>
@@ -129,19 +148,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/categories/salesforce/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/series/</loc>
-    <lastmod>2026-03-27T15:45:03-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/series/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/authors/xuan-jin/</loc>
