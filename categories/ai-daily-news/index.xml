@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Daily News on xuanjin</title>
+    <link>https://xuanjin001.github.io/categories/ai-daily-news/</link>
+    <description>Recent content in AI Daily News on xuanjin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Apr 2026 15:30:00 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/categories/ai-daily-news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Rundown — April 21: Claude Opus 4.7, GPT-5.4-Cyber, and the Robotics Leap</title>
+      <link>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</link>
+      <pubDate>Tue, 21 Apr 2026 15:30:00 -0700</pubDate>
+      <guid>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</guid>
+      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;The AI arms race is alive and well. Here&amp;rsquo;s what made headlines today — all sourced, no speculation.&#xA;Claude Opus 4.7: Anthropic Reclaims the Throne Link to heading Anthropic dropped Claude Opus 4.7 and promptly retook the lead as the most powerful generally available LLM — narrowly, but decisively.</description>
+    </item>
+  </channel>
+</rss>

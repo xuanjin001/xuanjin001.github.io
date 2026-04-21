@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xuanjin001.github.io/tags/ai-daily-news/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/ai-daily-news/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/ai-daily-news/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/gideon/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+  </url><url>
     <loc>https://xuanjin001.github.io/posts/</loc>
     <lastmod>2026-04-21T15:30:00-07:00</lastmod>
     <xhtml:link
@@ -13,6 +28,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/posts/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/series/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/</loc>
@@ -59,22 +87,6 @@
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</loc>
     <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/authors/gideon/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/series/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/series/"
-                />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</loc>
     <lastmod>2026-04-20T23:28:56-07:00</lastmod>
