@@ -15,6 +15,19 @@
                 href="https://xuanjin001.github.io/zh-cn/about/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/zh-cn/</loc>
+    <lastmod>2026-03-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/authors/</loc>
     <lastmod>2026-03-23T00:30:49-07:00</lastmod>
     <xhtml:link
@@ -119,43 +132,30 @@
                 href="https://xuanjin001.github.io/zh-cn/posts/req_doc/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/</loc>
-    <lastmod>2026-03-23T00:30:49-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/tags/ai-tech/</loc>
+    <loc>https://xuanjin001.github.io/zh-cn/tags/ai--tech/</loc>
     <lastmod>2026-03-22T18:28:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/tags/ai-tech/"
+                href="https://xuanjin001.github.io/tags/ai--tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
+                href="https://xuanjin001.github.io/zh-cn/tags/ai--tech/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/categories/ai-tech/</loc>
+    <loc>https://xuanjin001.github.io/zh-cn/categories/ai--tech/</loc>
     <lastmod>2026-03-22T18:28:26-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/categories/ai-tech/"
+                href="https://xuanjin001.github.io/categories/ai--tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
+                href="https://xuanjin001.github.io/zh-cn/categories/ai--tech/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/posts/ai_2026/</loc>
@@ -275,30 +275,30 @@
                 href="https://xuanjin001.github.io/zh-cn/posts/ai_11-3-2024/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/tags/career-personal-growth/</loc>
+    <loc>https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/tags/career-personal-growth/"
+                href="https://xuanjin001.github.io/tags/career--personal-growth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/career-personal-growth/"
+                href="https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/categories/career-personal-growth/</loc>
+    <loc>https://xuanjin001.github.io/zh-cn/categories/career--personal-growth/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/categories/career-personal-growth/"
+                href="https://xuanjin001.github.io/categories/career--personal-growth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/career-personal-growth/"
+                href="https://xuanjin001.github.io/zh-cn/categories/career--personal-growth/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/tags/career-growth/</loc>

@@ -2,69 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xuanjin001.github.io/series/ai/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/ai-tech/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/ai-tech/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/ai-tech/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/ai-tech/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-  </url><url>
-    <loc>https://xuanjin001.github.io/authors/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/authors/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/categories/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/authors/gideon/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-  </url><url>
     <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -75,6 +14,54 @@
                 hreflang="en"
                 href="https://xuanjin001.github.io/posts/"
                 />
+  </url><url>
+    <loc>https://xuanjin001.github.io/</loc>
+    <lastmod>2026-04-21T15:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/series/ai/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/ai--tech/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/ai--tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/ai--tech/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/ai--tech/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/ai--tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/ai--tech/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/authors/gideon/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/series/</loc>
     <lastmod>2026-04-21T08:30:00-07:00</lastmod>
@@ -87,32 +74,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://xuanjin001.github.io/series/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/tags/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</loc>
@@ -350,30 +311,30 @@
                 href="https://xuanjin001.github.io/posts/ai_11-3-2024/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/tags/career-personal-growth/</loc>
+    <loc>https://xuanjin001.github.io/tags/career--personal-growth/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/career-personal-growth/"
+                href="https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/tags/career-personal-growth/"
+                href="https://xuanjin001.github.io/tags/career--personal-growth/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/categories/career-personal-growth/</loc>
+    <loc>https://xuanjin001.github.io/categories/career--personal-growth/</loc>
     <lastmod>2024-10-26T02:23:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/career-personal-growth/"
+                href="https://xuanjin001.github.io/zh-cn/categories/career--personal-growth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://xuanjin001.github.io/categories/career-personal-growth/"
+                href="https://xuanjin001.github.io/categories/career--personal-growth/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/tags/career-growth/</loc>
@@ -584,8 +545,37 @@
                 href="https://xuanjin001.github.io/categories/developer/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/authors/</loc>
+    <lastmod>2023-01-05T01:15:52+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/authors/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/autores/autores-de-hugo/</loc>
+    <lastmod>2023-01-05T01:15:52+01:00</lastmod>
+  </url><url>
     <loc>https://xuanjin001.github.io/authors/hugo-authors/</loc>
     <lastmod>2023-01-05T01:15:29+01:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/categories/</loc>
+    <lastmod>2023-01-04T23:21:18+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/"
+                />
   </url><url>
     <loc>https://xuanjin001.github.io/categoria/temas/</loc>
     <lastmod>2023-01-04T23:21:18+01:00</lastmod>
@@ -595,6 +585,19 @@
   </url><url>
     <loc>https://xuanjin001.github.io/tags/shortcodes/_index.pt-br/</loc>
     <lastmod>2023-01-04T11:51:36+01:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/tags/</loc>
+    <lastmod>2023-01-04T11:51:36+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/"
+                />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/uncharted-review/</loc>
     <lastmod>2022-03-20T11:01:26-07:00</lastmod>

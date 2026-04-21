@@ -6,34 +6,28 @@
     <description>Recent content in Salesforce on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Mar 2026 15:45:03 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/salesforce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Mar 2026 15:45:03 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/tags/salesforce/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Openclaw SF Data Pipeline Part II Full Data Migration Process</title>
       <link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</link>
       <pubDate>Fri, 27 Mar 2026 15:45:03 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</guid>
       <description>Well, so I think I have done it, just ran through a full data migration pipeline with openclaw successfully. Kudos to my lovely agent team Data Migration HQ, Data Migration HQ was able to extract, check on data, connect to target, let me know if there is any error, I worked through the errors with this group of agents, then agent team loads everything!! After loading, it is comparing the data!</description>
     </item>
-    
     <item>
       <title>Openclaw SF Data Pipeline Part I Source Data Extraction</title>
       <link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</link>
       <pubDate>Thu, 26 Mar 2026 12:25:31 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</guid>
-      <description>So I have been playing with openclaw a lot, like actually a lot! To the point that when I sleep, I think about what else can I do to make it better.
-If you break down what OpenClaw is, it is basically a Linux environment + LLM, where LLM can do a lot of the things a system admin use to do in terminal, now you need to talk to it and provide more guidelines for the &amp;ldquo;Agent&amp;rdquo; to do it.</description>
+      <description>So I have been playing with openclaw a lot, like actually a lot! To the point that when I sleep, I think about what else can I do to make it better.&#xA;If you break down what OpenClaw is, it is basically a Linux environment + LLM, where LLM can do a lot of the things a system admin use to do in terminal, now you need to talk to it and provide more guidelines for the &amp;ldquo;Agent&amp;rdquo; to do it.</description>
     </item>
-    
     <item>
       <title>My Salesforce Developer Interview Experience</title>
       <link>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</link>
       <pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</guid>
       <description>I was over-joyed when I got the call from that company. I really like their company. That is a really young company. As a young company, they move rapidly, and things are truly always changing. As a workaholic that I am, that kind of environment is my favorite. I love working and I definitely miss working a lot. I am the type of person, even you are not going to pay over time, I would stay there and work late, during that time I reflect on what I could improve, even thinking through what my coworker did that I can learn from or how I can improve from their mistakes, etc.</description>
     </item>
-    
   </channel>
 </rss>

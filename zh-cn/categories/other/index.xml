@@ -6,178 +6,84 @@
     <description>Recent content in Other on 金萱</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/zh-cn/categories/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第十二单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</link>
       <pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-我发现个性化搜索这个话题非常有趣。从用户的角度来看，它毫无疑问地为用户提供了帮助——每个浏览器都能了解并追踪用户的偏好。这也引出了我的问题：每个用户使用搜索的习惯都不同，作为开发者，你要如何在设计和开发工具时将这些差异纳入考量？比如，你怎么知道哪些功能是用户更倾向于使用的？另外，用户画像（user profile）似乎更多是针对某一特定类型的用户，这是否意味着你并没有考虑到其他用户的使用习惯？谢谢。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我发现个性化搜索这个话题非常有趣。从用户的角度来看，它毫无疑问地为用户提供了帮助——每个浏览器都能了解并追踪用户的偏好。这也引出了我的问题：每个用户使用搜索的习惯都不同，作为开发者，你要如何在设计和开发工具时将这些差异纳入考量？比如，你怎么知道哪些功能是用户更倾向于使用的？另外，用户画像（user profile）似乎更多是针对某一特定类型的用户，这是否意味着你并没有考虑到其他用户的使用习惯？谢谢。</description>
     </item>
-    
     <item>
       <title>第九单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</link>
       <pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-在课件中，链接分析（Link Analysis）的定义似乎是：&amp;ldquo;用于网络爬取、排名、计算网页的地理范围、查找镜像主机、计算网页和搜索引擎的统计数据、网页分类&amp;rdquo;。但我对链接分析的工作原理仍不太确定——它是否仅仅通过网络爬取和排名来计算网页的地理范围？我不确定自己的理解是否正确。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;在课件中，链接分析（Link Analysis）的定义似乎是：&amp;ldquo;用于网络爬取、排名、计算网页的地理范围、查找镜像主机、计算网页和搜索引擎的统计数据、网页分类&amp;rdquo;。但我对链接分析的工作原理仍不太确定——它是否仅仅通过网络爬取和排名来计算网页的地理范围？我不确定自己的理解是否正确。</description>
     </item>
-    
     <item>
       <title>第八单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</link>
       <pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-关于引导用户输入更长查询的问题，我知道课上没有深入讲解这个概念，但在进行搜索时，是否需要匹配所有词语？我也不理解颜色变化的作用——颜色变化的目的是为了引导用户输入完整的句子，从而获得更好的搜索结果吗？颜色变化又是如何引导用户输入更多词语的？我不太理解这两者之间的关联。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;关于引导用户输入更长查询的问题，我知道课上没有深入讲解这个概念，但在进行搜索时，是否需要匹配所有词语？我也不理解颜色变化的作用——颜色变化的目的是为了引导用户输入完整的句子，从而获得更好的搜索结果吗？颜色变化又是如何引导用户输入更多词语的？我不太理解这两者之间的关联。</description>
     </item>
-    
     <item>
       <title>第七单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</link>
       <pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-我仍然不确定自己是否理解了归一化 DCG（nDCG）。我知道与固定范围的值相比，归一化处理更为合理。但我认为我对这个概念的理解还不够准确，所以才会感到困惑。能否再解释一遍？谢谢。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我仍然不确定自己是否理解了归一化 DCG（nDCG）。我知道与固定范围的值相比，归一化处理更为合理。但我认为我对这个概念的理解还不够准确，所以才会感到困惑。能否再解释一遍？谢谢。</description>
     </item>
-    
     <item>
       <title>第六单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</link>
       <pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-我对以下概念仍然不太理解：你要如何决定需要添加什么常数？我猜这取决于具体的词语？另外，不同的词语对应的常数也会随之改变，对吗？这是否意味着我们需要逐一计算每个词的概率？我不确定这个过程是如何运作的。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我对以下概念仍然不太理解：你要如何决定需要添加什么常数？我猜这取决于具体的词语？另外，不同的词语对应的常数也会随之改变，对吗？这是否意味着我们需要逐一计算每个词的概率？我不确定这个过程是如何运作的。</description>
     </item>
-    
     <item>
       <title>第五单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</link>
       <pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-语言模型的概念对我来说仍然不太清楚。我的理解是，当用户在文档中进行搜索时，他们会使用类似 SQL 查询的方式在文档集合中进行搜索，从而得到最终结果，对吗？我不明白这里所说的&amp;quot;查询&amp;quot;（query）具体指的是什么？</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;语言模型的概念对我来说仍然不太清楚。我的理解是，当用户在文档中进行搜索时，他们会使用类似 SQL 查询的方式在文档集合中进行搜索，从而得到最终结果，对吗？我不明白这里所说的&amp;quot;查询&amp;quot;（query）具体指的是什么？</description>
     </item>
-    
     <item>
       <title>第四单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</link>
       <pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-我对&amp;quot;距离&amp;quot;这个概念仍然感到困惑。我的理解是，距离用于判断相关性，对吗？我不明白为什么使用角度（angle）会比使用距离（distance）更好。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我对&amp;quot;距离&amp;quot;这个概念仍然感到困惑。我的理解是，距离用于判断相关性，对吗？我不明白为什么使用角度（angle）会比使用距离（distance）更好。</description>
     </item>
-    
     <item>
       <title>第三单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</link>
       <pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-在构建 B 树以提升搜索效率时，我的理解是将索引以树形结构来组织，这样理解正确吗？
-我仍然不太明白为什么需要对索引进行压缩，想了解这背后的原因是什么。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;在构建 B 树以提升搜索效率时，我的理解是将索引以树形结构来组织，这样理解正确吗？&#xA;我仍然不太明白为什么需要对索引进行压缩，想了解这背后的原因是什么。</description>
     </item>
-    
     <item>
       <title>第二单元 最难懂的知识点</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</link>
       <pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-结合阅读材料中提到的算法，我想知道，为了开发一个好的信息检索引擎，我们是否需要将所有这些算法结合起来使用？综合运用这些算法最有效的方式是什么？</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;结合阅读材料中提到的算法，我想知道，为了开发一个好的信息检索引擎，我们是否需要将所有这些算法结合起来使用？综合运用这些算法最有效的方式是什么？</description>
     </item>
-    
     <item>
       <title>第二单元阅读笔记</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</link>
       <pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-IIR 第 1.2 节：构建倒排索引的初步尝试
-主要步骤：
-收集待索引的文档
-对文本进行分词，将每个文档转换为词条（token）列表
-进行语言预处理，生成规范化词条列表，即索引项
-通过创建由词典和倒排列表（postings）组成的倒排索引，对每个词项出现的文档进行索引
-词典还记录一些统计信息，例如包含每个词项的文档数量。
-假设每个文档在首次出现时都被赋予一个唯一的序列号（docID）。索引是每个文档的规范化词条列表，也可以等价地理解为词项与 docID 的配对列表。 练习 1.1 [⋆]
-为以下文档集合绘制倒排索引（参见图 1.3 示例）。
-Doc 1 new home sales top forecasts
-Doc 2 home sales rise in july
-Doc 3 increase in home sales in july
-Doc 4 july new home sales rise
-练习 1.2 [⋆]
-考虑以下文档：
-Doc 1 breakthrough drug for schizophrenia
-Doc 2 new schizophrenia drug
-Doc 3 new approach for treatment of schizophrenia</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;IIR 第 1.2 节：构建倒排索引的初步尝试&#xA;主要步骤：&#xA;收集待索引的文档&#xA;对文本进行分词，将每个文档转换为词条（token）列表&#xA;进行语言预处理，生成规范化词条列表，即索引项&#xA;通过创建由词典和倒排列表（postings）组成的倒排索引，对每个词项出现的文档进行索引&#xA;词典还记录一些统计信息，例如包含每个词项的文档数量。&#xA;假设每个文档在首次出现时都被赋予一个唯一的序列号（docID）。索引是每个文档的规范化词条列表，也可以等价地理解为词项与 docID 的配对列表。 练习 1.1 [⋆]&#xA;为以下文档集合绘制倒排索引（参见图 1.3 示例）。&#xA;Doc 1 new home sales top forecasts&#xA;Doc 2 home sales rise in july&#xA;Doc 3 increase in home sales in july&#xA;Doc 4 july new home sales rise&#xA;练习 1.2 [⋆]&#xA;考虑以下文档：&#xA;Doc 1 breakthrough drug for schizophrenia&#xA;Doc 2 new schizophrenia drug&#xA;Doc 3 new approach for treatment of schizophrenia</description>
     </item>
-    
     <item>
       <title>第一单元阅读笔记</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</link>
       <pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-第一单元阅读内容整理如下。
-FOA 第 1.1 节：Finding Out About（认知活动）
-本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。
-作为人类，语言是我们最主要的信息搜索媒介。
-口头语言——说与听
-如何获得我们想要的东西 书面记录重要事实
-与我们的搜索目标相关
-WWW &amp;ndash;&amp;gt; 信息量过于庞大
-FOA 的核心关注点：
-含义：涉及词语、句子、问题和文档的语义
-理解文档与主题的语义 &amp;ndash;&amp;gt; &amp;ldquo;关于性&amp;rdquo;（aboutness），这一概念在图书馆学传统中最为典型
-良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献
-电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义
-FOA 过程中，浏览者的阅读过程可以分为三个阶段：
-提出问题
-用户会有疑问
-用户的信息需求构成了其认知状态
-查询 &amp;ndash;&amp;gt; 查询语言
-问题往往表述模糊
-将内部认知状态转化为对问题的外部表达
-构建答案
-需要考虑以下几点：
-能否将用户模糊的问题转化为更清晰的表述？
-是否自身知道答案？
-是否能够将答案用语言表达出来？
-能否用用户能够理解的方式表达答案？
-能否为用户提供理解答案所需的背景知识？
-问答：搜索引擎
-每个段落视为一个&amp;quot;文档&amp;quot;
-所有文档的集合 &amp;ndash;&amp;gt; 语料库
-当语料库较大时，检索相关信息较为困难
-当文档集合较小时，检索效率更高
-评估答案
-就像用户排队等待向教授提问
-提问者与回答者之间&amp;quot;闭环&amp;quot;的形成
-用户对所获答案的相关性作出评估
-FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点
-提问者与回答者交换段落内容
-在 IR 传统框架内工作
-IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域
-IR 大量借鉴了语言学领域的成果，尤其是计算语言学
-能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场
-&amp;ldquo;搜索引擎&amp;quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型
-搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配
-IES 第 1.1 节和第 1.</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;第一单元阅读内容整理如下。&#xA;FOA 第 1.1 节：Finding Out About（认知活动）&#xA;本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。&#xA;作为人类，语言是我们最主要的信息搜索媒介。&#xA;口头语言——说与听&#xA;如何获得我们想要的东西 书面记录重要事实&#xA;与我们的搜索目标相关&#xA;WWW &amp;ndash;&amp;gt; 信息量过于庞大&#xA;FOA 的核心关注点：&#xA;含义：涉及词语、句子、问题和文档的语义&#xA;理解文档与主题的语义 &amp;ndash;&amp;gt; &amp;ldquo;关于性&amp;rdquo;（aboutness），这一概念在图书馆学传统中最为典型&#xA;良好的技术解决方案必须以更广泛的语言哲学为基础，同时也可以为其做出贡献&#xA;电子工件——从电子邮件和万维网语料库，到数百万用户的浏览行为，这些都在寻找信息——为语言新理论提供了实证基础，这些理论很可能具有革命性意义&#xA;FOA 过程中，浏览者的阅读过程可以分为三个阶段：&#xA;提出问题&#xA;用户会有疑问&#xA;用户的信息需求构成了其认知状态&#xA;查询 &amp;ndash;&amp;gt; 查询语言&#xA;问题往往表述模糊&#xA;将内部认知状态转化为对问题的外部表达&#xA;构建答案&#xA;需要考虑以下几点：&#xA;能否将用户模糊的问题转化为更清晰的表述？&#xA;是否自身知道答案？&#xA;是否能够将答案用语言表达出来？&#xA;能否用用户能够理解的方式表达答案？&#xA;能否为用户提供理解答案所需的背景知识？&#xA;问答：搜索引擎&#xA;每个段落视为一个&amp;quot;文档&amp;quot;&#xA;所有文档的集合 &amp;ndash;&amp;gt; 语料库&#xA;当语料库较大时，检索相关信息较为困难&#xA;当文档集合较小时，检索效率更高&#xA;评估答案&#xA;就像用户排队等待向教授提问&#xA;提问者与回答者之间&amp;quot;闭环&amp;quot;的形成&#xA;用户对所获答案的相关性作出评估&#xA;FOA 是提问者与回答者之间的对话，并不以搜索引擎第一次返回答案为终点&#xA;提问者与回答者交换段落内容&#xA;在 IR 传统框架内工作&#xA;IR（信息检索）是一个自计算机首次被用于词频统计以来就存在的领域&#xA;IR 大量借鉴了语言学领域的成果，尤其是计算语言学&#xA;能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场&#xA;&amp;ldquo;搜索引擎&amp;quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型&#xA;搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配&#xA;IES 第 1.1 节和第 1.</description>
     </item>
-    
   </channel>
 </rss>
