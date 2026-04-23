@@ -1,47 +1,303 @@
-<!doctype html><html lang=zh-cn><head><title>我的 Salesforce 开发者面试经历 · 金萱
-</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="金萱 / Xuan Jin"><meta name=description content='本文由 Gideon（AI）翻译自英文原版。
-接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐"这种模式，至少这是我对他们公司的感受。
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  我的 Salesforce 开发者面试经历 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
+接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐&quot;这种模式，至少这是我对他们公司的感受。
 话不多说，开始正题。
 那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。
 第一题：SOQL 链接到标题 题目是：&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。
-我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个"方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
-需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定"开放"。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有"阶段"字段，因此我将以此作为判断"开放"的依据。案例有"状态"字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
+我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&quot;方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
+需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定&quot;开放&quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&quot;阶段&quot;字段，因此我将以此作为判断&quot;开放&quot;的依据。案例有&quot;状态&quot;字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
 现在来写代码：
-// 方法定义 public static List<sobject> getAccountId() { list<opportunity> oppList = new list<opportunity>(); list<case> caseList = new list<case>(); list<account> accountList = new list<account>(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用"未关闭"而不是"状态/阶段 = 开放"作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。'><meta name=keywords content="blog,技术,AI,Salesforce,数据工程"><meta name=twitter:card content="summary"><meta name=twitter:title content="我的 Salesforce 开发者面试经历"><meta name=twitter:description content='本文由 Gideon（AI）翻译自英文原版。
-接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐"这种模式，至少这是我对他们公司的感受。
+// 方法定义 public static List&lt;sobject&gt; getAccountId() { list&lt;opportunity&gt; oppList = new list&lt;opportunity&gt;(); list&lt;case&gt; caseList = new list&lt;case&gt;(); list&lt;account&gt; accountList = new list&lt;account&gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&quot;未关闭&quot;而不是&quot;状态/阶段 = 开放&quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="我的 Salesforce 开发者面试经历"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
+接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐&quot;这种模式，至少这是我对他们公司的感受。
 话不多说，开始正题。
 那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。
 第一题：SOQL 链接到标题 题目是：&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。
-我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个"方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
-需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定"开放"。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有"阶段"字段，因此我将以此作为判断"开放"的依据。案例有"状态"字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
+我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&quot;方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
+需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定&quot;开放&quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&quot;阶段&quot;字段，因此我将以此作为判断&quot;开放&quot;的依据。案例有&quot;状态&quot;字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
 现在来写代码：
-// 方法定义 public static List<sobject> getAccountId() { list<opportunity> oppList = new list<opportunity>(); list<case> caseList = new list<case>(); list<account> accountList = new list<account>(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用"未关闭"而不是"状态/阶段 = 开放"作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。'><meta property="og:title" content="我的 Salesforce 开发者面试经历"><meta property="og:description" content='本文由 Gideon（AI）翻译自英文原版。
-接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐"这种模式，至少这是我对他们公司的感受。
+// 方法定义 public static List&lt;sobject&gt; getAccountId() { list&lt;opportunity&gt; oppList = new list&lt;opportunity&gt;(); list&lt;case&gt; caseList = new list&lt;case&gt;(); list&lt;account&gt; accountList = new list&lt;account&gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&quot;未关闭&quot;而不是&quot;状态/阶段 = 开放&quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。"/>
+
+<meta property="og:title" content="我的 Salesforce 开发者面试经历" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
+接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐&quot;这种模式，至少这是我对他们公司的感受。
 话不多说，开始正题。
 那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。
 第一题：SOQL 链接到标题 题目是：&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。
-我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个"方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
-需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定"开放"。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有"阶段"字段，因此我将以此作为判断"开放"的依据。案例有"状态"字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
+我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&quot;方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：
+需要返回客户 ID 条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定&quot;开放&quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&quot;阶段&quot;字段，因此我将以此作为判断&quot;开放&quot;的依据。案例有&quot;状态&quot;字段，我也将以此作为依据。 三个对象之间的关系应该是：客户是父对象，案例和商机是子对象： 关系图（Schema Builder 截图）
 现在来写代码：
-// 方法定义 public static List<sobject> getAccountId() { list<opportunity> oppList = new list<opportunity>(); list<case> caseList = new list<case>(); list<account> accountList = new list<account>(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用"未关闭"而不是"状态/阶段 = 开放"作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。'><meta property="og:type" content="article"><meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2020-04-01T14:41:21-07:00"><meta property="article:modified_time" content="2020-04-01T14:41:21-07:00"><link rel=canonical href=https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o+1At6nM=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><style>.lightbox-img{cursor:zoom-in;transition:opacity .2s ease}.lightbox-img:hover{opacity:.85}.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;cursor:zoom-out;justify-content:center;align-items:center}.lightbox-overlay.active{display:flex}.lightbox-overlay img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 0 30px rgba(0,0,0,.5)}</style></head><body class="preload-transitions colorscheme-auto"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/zh-cn>金萱
-</a><input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/zh-cn/about/>关于我</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/posts/>博客</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/projects/>项目</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/contact/>联系我</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/posts/my-salesforce-developer-interview-experience/>🇺🇸</a></li></ul></section><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/>我的 Salesforce 开发者面试经历</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2020-04-01T14:41:21-07:00>April 1, 2020
-</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-阅读约 2 分钟</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
-<a href=/zh-cn/authors/xuan-jin/>Xuan Jin</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
-<a href=/zh-cn/categories/developer/>Developer</a>
-<span class=separator>•</span>
-<a href=/zh-cn/categories/salesforce/>Salesforce</a>
-<span class=separator>•</span>
-<a href=/zh-cn/categories/interview/>Interview</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag><a href=/zh-cn/tags/developer/>Developer</a>
-</span><span class=separator>•</span>
-<span class=tag><a href=/zh-cn/tags/salesforce/>Salesforce</a>
-</span><span class=separator>•</span>
-<span class=tag><a href=/zh-cn/tags/interview/>Interview</a></span></div></div></header><div class=post-content><blockquote><p><em>本文由 Gideon（AI）翻译自英文原版。</em></p></blockquote><p>接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐"这种模式，至少这是我对他们公司的感受。</p><p>话不多说，开始正题。</p><p>那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。</p><h1 id=第一题soql>第一题：SOQL
-<a class=heading-link href=#%e7%ac%ac%e4%b8%80%e9%a2%98soql><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h1><p>题目是：&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。</p><p>我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个"方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：</p><ol><li>需要返回客户 ID</li><li>条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定"开放"。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有"阶段"字段，因此我将以此作为判断"开放"的依据。案例有"状态"字段，我也将以此作为依据。</li><li>三个对象之间的关系应该是：客户是父对象，案例和商机是子对象：</li></ol><p><img src=https://xjin2.files.wordpress.com/2021/01/e2fb9-08ccb-1xdymnslmcuhgouh2enskgq.png alt class=lightbox-img loading=lazy></p><p>关系图（Schema Builder 截图）</p><p>现在来写代码：</p><pre tabindex=0><code>// 方法定义
+// 方法定义 public static List&lt;sobject&gt; getAccountId() { list&lt;opportunity&gt; oppList = new list&lt;opportunity&gt;(); list&lt;case&gt; caseList = new list&lt;case&gt;(); list&lt;account&gt; accountList = new list&lt;account&gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&quot;未关闭&quot;而不是&quot;状态/阶段 = 开放&quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-04-01T14:41:21-07:00" />
+<meta property="article:modified_time" content="2020-04-01T14:41:21-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/my-salesforce-developer-interview-experience/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/">
+              我的 Salesforce 开发者面试经历
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2020-04-01T14:41:21-07:00">
+                April 1, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 2 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/developer/">Developer</a>
+      <span class="separator">•</span>
+    <a href="/zh-cn/categories/salesforce/">Salesforce</a>
+      <span class="separator">•</span>
+    <a href="/zh-cn/categories/interview/">Interview</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/developer/">Developer</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/zh-cn/tags/salesforce/">Salesforce</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/zh-cn/tags/interview/">Interview</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p>接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐&quot;这种模式，至少这是我对他们公司的感受。</p>
+<p>话不多说，开始正题。</p>
+<p>那次面试很不错。内容如下：面试涵盖了对过往经历的讨论，以及两道题目，一道与 SOQL 相关，第二道是关于触发器的。</p>
+<h1 id="第一题soql">
+  第一题：SOQL
+  <a class="heading-link" href="#%e7%ac%ac%e4%b8%80%e9%a2%98soql">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h1>
+<p>题目是：&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。这明显是一道控制器类型的问题，需要从那个角度去思考，这对我来说还好。</p>
+<p>我们来分析一下这道题。&ldquo;写一个方法，返回那些商机和案例均处于开放状态的客户的 ID 列表&rdquo;。已经过了两天，我可能记不住一字不差的原题，但我知道这和他们问的非常接近。以下是我现在的思路：首先，题目要求的是一个&quot;方法&rdquo;，所以答案中必须包含方法定义；其次，再读一遍题目，我们可以列出几点关键信息：</p>
+<ol>
+<li>需要返回客户 ID</li>
+<li>条件是：&ldquo;商机和案例处于开放状态&rdquo;——这是一个可以向面试官追问的问题，如何判定&quot;开放&quot;。我回头在我的开发者组织里检查了一下，对于商机对象，目前我只有&quot;阶段&quot;字段，因此我将以此作为判断&quot;开放&quot;的依据。案例有&quot;状态&quot;字段，我也将以此作为依据。</li>
+<li>三个对象之间的关系应该是：客户是父对象，案例和商机是子对象：</li>
+</ol>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/e2fb9-08ccb-1xdymnslmcuhgouh2enskgq.png"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
+<p>关系图（Schema Builder 截图）</p>
+<p>现在来写代码：</p>
+<pre tabindex="0"><code>// 方法定义
 
 public static List&lt;sobject&gt; getAccountId() {
 
@@ -62,14 +318,37 @@ accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\
 return accountList;
 
 }
-</code></pre><p>有人指出，应该使用"未关闭"而不是"状态/阶段 = 开放"作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。</p><p>我使用"开放"的原因，主要是因为面试时题目提供了示例条件如下：</p><pre tabindex=0><code>// 条件：
+</code></pre><p>有人指出，应该使用&quot;未关闭&quot;而不是&quot;状态/阶段 = 开放&quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。</p>
+<p>我使用&quot;开放&quot;的原因，主要是因为面试时题目提供了示例条件如下：</p>
+<pre tabindex="0"><code>// 条件：
 
 // Opp_status == &#39;Open&#39;
 
 // Case_status == &#39;Open&#39;
-</code></pre><p>正因题目已经明确说明，所以我在这里只使用了"Open"。</p><p>以上就是我的答案。如果发现任何错误，欢迎指出。</p><h1 id=第二题触发器>第二题：触发器
-<a class=heading-link href=#%e7%ac%ac%e4%ba%8c%e9%a2%98%e8%a7%a6%e5%8f%91%e5%99%a8><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h1><p>触发器：假设有两个对象 Parent__c 和 Child__c，当 Parent__c 上的复选框（Parent_checkbox__c）被勾选时，应自动勾选 Child__c 上的所有复选框（Child_checkbox__c）。</p><p>第一反应应该是问自己：&ldquo;这个问题能用工作流规则和流程生成器解决吗？&ldquo;因为能用点击配置解决的，何必写代码呢。</p><p>写触发器时，我有几个步骤可以帮助我更顺利地完成。以下是我的步骤：</p><ol><li>判断这是更新还是插入？是 before 还是 after？</li><li>弄清楚对象之间的关系，谁是父对象，谁是子对象，以及如何访问数据</li><li>理清背后的逻辑</li></ol><p>现在跟着我的思路走：</p><ol><li>在我们的案例中，父对象的复选框必须先被勾选，子对象的复选框才会被勾选，因此必须是"after"触发器。所以是"after insert, after update&rdquo;</li><li>关系很明确，父是父，子是子。因此至少需要两个列表</li><li>如果 parent_checkbox__c == true，则找到与该父对象关联的所有子记录，然后勾选所有 child_checkbox__c</li></ol><pre tabindex=0><code>trigger Parent\_Checkbox\_trg on Parent\_\_c (after insert, after update) {
+</code></pre><p>正因题目已经明确说明，所以我在这里只使用了&quot;Open&quot;。</p>
+<p>以上就是我的答案。如果发现任何错误，欢迎指出。</p>
+<h1 id="第二题触发器">
+  第二题：触发器
+  <a class="heading-link" href="#%e7%ac%ac%e4%ba%8c%e9%a2%98%e8%a7%a6%e5%8f%91%e5%99%a8">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h1>
+<p>触发器：假设有两个对象 Parent__c 和 Child__c，当 Parent__c 上的复选框（Parent_checkbox__c）被勾选时，应自动勾选 Child__c 上的所有复选框（Child_checkbox__c）。</p>
+<p>第一反应应该是问自己：&ldquo;这个问题能用工作流规则和流程生成器解决吗？&ldquo;因为能用点击配置解决的，何必写代码呢。</p>
+<p>写触发器时，我有几个步骤可以帮助我更顺利地完成。以下是我的步骤：</p>
+<ol>
+<li>判断这是更新还是插入？是 before 还是 after？</li>
+<li>弄清楚对象之间的关系，谁是父对象，谁是子对象，以及如何访问数据</li>
+<li>理清背后的逻辑</li>
+</ol>
+<p>现在跟着我的思路走：</p>
+<ol>
+<li>在我们的案例中，父对象的复选框必须先被勾选，子对象的复选框才会被勾选，因此必须是&quot;after&quot;触发器。所以是&quot;after insert, after update&rdquo;</li>
+<li>关系很明确，父是父，子是子。因此至少需要两个列表</li>
+<li>如果 parent_checkbox__c == true，则找到与该父对象关联的所有子记录，然后勾选所有 child_checkbox__c</li>
+</ol>
+<pre tabindex="0"><code>trigger Parent\_Checkbox\_trg on Parent\_\_c (after insert, after update) {
 
 private list&lt;Id&gt; parentId = new list&lt;Id&gt;();
 
@@ -100,7 +379,8 @@ childrenList.add(c);
 if(!childrenList.isEmpty()) update(childrenList);
 
 }
-</code></pre><p>以上是我对这道题的答案，下面是另一个条件——当父对象复选框取消勾选时的处理：（面试中没有涉及这部分，但以下是我的处理方式）</p><pre tabindex=0><code>trigger Parent\_Checkbox\_trg on Parent\_\_c (after insert, after update) {
+</code></pre><p>以上是我对这道题的答案，下面是另一个条件——当父对象复选框取消勾选时的处理：（面试中没有涉及这部分，但以下是我的处理方式）</p>
+<pre tabindex="0"><code>trigger Parent\_Checkbox\_trg on Parent\_\_c (after insert, after update) {
 
 private list&lt;parent\_\_c&gt; parentList = new list&lt;parent\_\_c&gt;();
 
@@ -149,14 +429,185 @@ childrenList.add(c);
 if(!childrenList.isEmpty()) update(childrenList);
 
 }
-</code></pre><p>如果你发现任何问题或有任何建议，欢迎告诉我，我非常感激！</p><h1 id=面试中的关键要点>面试中的关键要点：
-<a class=heading-link href=#%e9%9d%a2%e8%af%95%e4%b8%ad%e7%9a%84%e5%85%b3%e9%94%ae%e8%a6%81%e7%82%b9><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h1><ol><li>面试时保持冷静，尤其是解题类面试。</li><li>做真实的自己。面试官想了解真实的你，他们在寻找一个可以共事的朋友。</li><li>如果犯了错，没关系。解释你的思路，大声说出你的思考过程。面试官无法读你的心，你需要频繁而高效地沟通。</li><li>最后，也是最重要的一点：沟通。解题时永远不要停止说话。沉默在这里帮不了你，即便你需要一些时间思考，也要解释说明。</li></ol><p>最后，我想用美剧《老友记》中的一句台词来结尾——还记得那集乔伊以为自己能演阿尔·帕西诺的替身，最后却落选的那集吗？在我找工作的过程中，我对此感同身受。请记住，你的大机遇终将到来，就像菲比说的那样：&ldquo;不，我不认为这就是你唯一的机会。我甚至不认为你只有一次机会。我真心相信好事会降临到你身上，我真的相信！你只需要不断想着那一天，某个孩子会跑向他的朋友大喊：&lsquo;我拿到这个角色了！我拿到这个角色了！我要演乔伊·崔比安尼的屁股了！&rsquo;&ldquo;找工作的旅途很艰辛，总是夹杂着无数复杂的情绪，但永远记住：&ldquo;你只需要不断想着那一天，某个孩子会跑向他的朋友大喊：&lsquo;我拿到这个角色了！我拿到这个角色了！我要演乔伊·崔比安尼的屁股了！&rsquo;"（出自第一季第六集，&ldquo;那集关于屁股的&rdquo;）</p><p>祝大家找工作顺利！</p><p>永远记住，&ldquo;你会成长的，只是需要时间&rdquo;。</p><p>后记：以下是我为这次面试备考所用的所有
-<a href=https://github.com/xuanjin001/snapchat_interview target=_blank rel=noopener>资料</a>。</p><p><img src="https://xjin2.files.wordpress.com/2021/01/5c588-pexels-photo-401213.jpeg?w=1024" alt class=lightbox-img loading=lazy></p><p>图片来源：Gelgas，来自
-<a href=https://www.pexels.com/photo/blur-close-up-focus-ground-401213/ target=_blank rel=noopener>Pexels.com</a></p></div><footer><div class=linkedin-actions style="margin:2rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/" target=_blank rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#0077b5;color:#fff;border-radius:4px;text-decoration:none;font-size:.9rem"><i class="fa fa-linkedin-square" aria-hidden=true></i>
-Share on LinkedIn</a></div><script src=/js/linkedin-publish.js></script></footer></article></section></div><footer class=footer><section class=container>©
-2015 -
-2026
-金萱 / Xuan Jin
-·
-技术支持 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js integrity="sha256-DRNb55/Brco1D+hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script><div class=lightbox-overlay id=lightbox-overlay><img id=lightbox-img src alt></div><script>(function(){var e=document.getElementById("lightbox-overlay"),t=document.getElementById("lightbox-img");document.addEventListener("click",function(n){n.target.classList.contains("lightbox-img")&&(t.src=n.target.src,t.alt=n.target.alt,e.classList.add("active"))}),e.addEventListener("click",function(){e.classList.remove("active"),t.src=""}),document.addEventListener("keydown",function(n){n.key==="Escape"&&(e.classList.remove("active"),t.src="")})})()</script></body></html>
+</code></pre><p>如果你发现任何问题或有任何建议，欢迎告诉我，我非常感激！</p>
+<h1 id="面试中的关键要点">
+  面试中的关键要点：
+  <a class="heading-link" href="#%e9%9d%a2%e8%af%95%e4%b8%ad%e7%9a%84%e5%85%b3%e9%94%ae%e8%a6%81%e7%82%b9">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h1>
+<ol>
+<li>面试时保持冷静，尤其是解题类面试。</li>
+<li>做真实的自己。面试官想了解真实的你，他们在寻找一个可以共事的朋友。</li>
+<li>如果犯了错，没关系。解释你的思路，大声说出你的思考过程。面试官无法读你的心，你需要频繁而高效地沟通。</li>
+<li>最后，也是最重要的一点：沟通。解题时永远不要停止说话。沉默在这里帮不了你，即便你需要一些时间思考，也要解释说明。</li>
+</ol>
+<p>最后，我想用美剧《老友记》中的一句台词来结尾——还记得那集乔伊以为自己能演阿尔·帕西诺的替身，最后却落选的那集吗？在我找工作的过程中，我对此感同身受。请记住，你的大机遇终将到来，就像菲比说的那样：&ldquo;不，我不认为这就是你唯一的机会。我甚至不认为你只有一次机会。我真心相信好事会降临到你身上，我真的相信！你只需要不断想着那一天，某个孩子会跑向他的朋友大喊：&lsquo;我拿到这个角色了！我拿到这个角色了！我要演乔伊·崔比安尼的屁股了！&rsquo;&ldquo;找工作的旅途很艰辛，总是夹杂着无数复杂的情绪，但永远记住：&ldquo;你只需要不断想着那一天，某个孩子会跑向他的朋友大喊：&lsquo;我拿到这个角色了！我拿到这个角色了！我要演乔伊·崔比安尼的屁股了！&rsquo;&quot;（出自第一季第六集，&ldquo;那集关于屁股的&rdquo;）</p>
+<p>祝大家找工作顺利！</p>
+<p>永远记住，&ldquo;你会成长的，只是需要时间&rdquo;。</p>
+<p>后记：以下是我为这次面试备考所用的所有
+
+
+
+
+
+<a href="https://github.com/xuanjin001/snapchat_interview" 
+	 target="_blank" rel="noopener"
+	>资料</a>。</p>
+<p><img
+  src="https://xjin2.files.wordpress.com/2021/01/5c588-pexels-photo-401213.jpeg?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</p>
+<p>图片来源：Gelgas，来自 
+
+
+
+
+
+<a href="https://www.pexels.com/photo/blur-close-up-focus-ground-401213/" 
+	 target="_blank" rel="noopener"
+	>Pexels.com</a></p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
+</body>
+
+</html>

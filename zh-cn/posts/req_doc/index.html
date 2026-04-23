@@ -1,66 +1,698 @@
-<!doctype html><html lang=zh-cn><head><title>个人记账应用——产品需求文档 · 金萱
-</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="金萱 / Xuan Jin"><meta name=description content='本文由 Gideon（AI）翻译自英文原版。
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  个人记账应用——产品需求文档 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
 概述与愿景 链接到标题 一款全栈个人财务应用，将繁琐的手动记账转变为快速、智能的工作流程。用户通过拍照、文件上传、粘贴文字或手动录入的方式捕捉收据，AI 模型自动将商家名称、日期、地点以及每一条消费明细提取并整理到一个结构化、可编辑的数据库中。数据也可直接从 Costco 购买历史 API 获取，或通过 CSV 文件导入。最终呈现的是一份始终保持最新的个人消费台账——可搜索、可导出，并通过图表可视化——可在本地网络中的任何设备（包括手机）上访问。
-愿景： 让记账变得足够轻松，让人们真正愿意去做，消除"我待会儿再记"与"结账时没有记录"之间的落差。
+愿景： 让记账变得足够轻松，让人们真正愿意去做，消除&quot;我待会儿再记&quot;与&quot;结账时没有记录&quot;之间的落差。
 问题陈述 链接到标题 手动记账方式存在根本性缺陷：
 纸质收据在被记录之前就已经丢失、褪色或被遗忘 表格录入既慢又容易出错，导致人们逐渐放弃 银行账单导出过于粗略——只显示商家总金额，而非单独的消费条目 现有应用需要订阅、云账号或向第三方共享数据 收据照片堆积在相册中，从未被整理成可用的数据 用户需要一款私有、自托管的工具，以最小的努力将任何收据——无论是实体还是电子版——转化为结构化、可查询的消费数据。
 目标用户 链接到标题 主要用户：
 希望对消费进行逐项管理、而不想订阅 SaaS 产品的个人或家庭 跟踪个人可报销费用的小企业主或自由职业者 需求与功能 链接到标题 收据录入
 通过拖放或文件选择器上传图片文件（JPG、PNG、WEBP、HEIC、GIF） 直接从设备摄像头拍照（移动端友好；需要 HTTPS） 粘贴原始收据文字供 AI 解析 手动录入收据，包含头部字段（商家、日期、地点）和内嵌明细表格 AI 智能解析
 将收据图片或文字发送至可选的 AI 模型：Anthropic Claude、OpenRouter、DeepSeek 或 Gemini（通过环境变量配置） 提取：商家名称、日期、地点、小计、税额、总额，以及所有明细（描述、数量、单价、总价、分类） 鲁棒的 JSON 提取机制，能处理包裹在散文或 Markdown 代码块中的模型响应 max_tokens 设置为 4096，防止大型收据被截断 交易管理
-在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次"保存"操作进行原子提交 将所有交易导出为 CSV 月度视图'><meta name=keywords content="blog,技术,AI,Salesforce,数据工程"><meta name=twitter:card content="summary"><meta name=twitter:title content="个人记账应用——产品需求文档"><meta name=twitter:description content='本文由 Gideon（AI）翻译自英文原版。
+在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次&quot;保存&quot;操作进行原子提交 将所有交易导出为 CSV 月度视图">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="个人记账应用——产品需求文档"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
 概述与愿景 链接到标题 一款全栈个人财务应用，将繁琐的手动记账转变为快速、智能的工作流程。用户通过拍照、文件上传、粘贴文字或手动录入的方式捕捉收据，AI 模型自动将商家名称、日期、地点以及每一条消费明细提取并整理到一个结构化、可编辑的数据库中。数据也可直接从 Costco 购买历史 API 获取，或通过 CSV 文件导入。最终呈现的是一份始终保持最新的个人消费台账——可搜索、可导出，并通过图表可视化——可在本地网络中的任何设备（包括手机）上访问。
-愿景： 让记账变得足够轻松，让人们真正愿意去做，消除"我待会儿再记"与"结账时没有记录"之间的落差。
+愿景： 让记账变得足够轻松，让人们真正愿意去做，消除&quot;我待会儿再记&quot;与&quot;结账时没有记录&quot;之间的落差。
 问题陈述 链接到标题 手动记账方式存在根本性缺陷：
 纸质收据在被记录之前就已经丢失、褪色或被遗忘 表格录入既慢又容易出错，导致人们逐渐放弃 银行账单导出过于粗略——只显示商家总金额，而非单独的消费条目 现有应用需要订阅、云账号或向第三方共享数据 收据照片堆积在相册中，从未被整理成可用的数据 用户需要一款私有、自托管的工具，以最小的努力将任何收据——无论是实体还是电子版——转化为结构化、可查询的消费数据。
 目标用户 链接到标题 主要用户：
 希望对消费进行逐项管理、而不想订阅 SaaS 产品的个人或家庭 跟踪个人可报销费用的小企业主或自由职业者 需求与功能 链接到标题 收据录入
 通过拖放或文件选择器上传图片文件（JPG、PNG、WEBP、HEIC、GIF） 直接从设备摄像头拍照（移动端友好；需要 HTTPS） 粘贴原始收据文字供 AI 解析 手动录入收据，包含头部字段（商家、日期、地点）和内嵌明细表格 AI 智能解析
 将收据图片或文字发送至可选的 AI 模型：Anthropic Claude、OpenRouter、DeepSeek 或 Gemini（通过环境变量配置） 提取：商家名称、日期、地点、小计、税额、总额，以及所有明细（描述、数量、单价、总价、分类） 鲁棒的 JSON 提取机制，能处理包裹在散文或 Markdown 代码块中的模型响应 max_tokens 设置为 4096，防止大型收据被截断 交易管理
-在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次"保存"操作进行原子提交 将所有交易导出为 CSV 月度视图'><meta property="og:title" content="个人记账应用——产品需求文档"><meta property="og:description" content='本文由 Gideon（AI）翻译自英文原版。
+在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次&quot;保存&quot;操作进行原子提交 将所有交易导出为 CSV 月度视图"/>
+
+<meta property="og:title" content="个人记账应用——产品需求文档" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
 概述与愿景 链接到标题 一款全栈个人财务应用，将繁琐的手动记账转变为快速、智能的工作流程。用户通过拍照、文件上传、粘贴文字或手动录入的方式捕捉收据，AI 模型自动将商家名称、日期、地点以及每一条消费明细提取并整理到一个结构化、可编辑的数据库中。数据也可直接从 Costco 购买历史 API 获取，或通过 CSV 文件导入。最终呈现的是一份始终保持最新的个人消费台账——可搜索、可导出，并通过图表可视化——可在本地网络中的任何设备（包括手机）上访问。
-愿景： 让记账变得足够轻松，让人们真正愿意去做，消除"我待会儿再记"与"结账时没有记录"之间的落差。
+愿景： 让记账变得足够轻松，让人们真正愿意去做，消除&quot;我待会儿再记&quot;与&quot;结账时没有记录&quot;之间的落差。
 问题陈述 链接到标题 手动记账方式存在根本性缺陷：
 纸质收据在被记录之前就已经丢失、褪色或被遗忘 表格录入既慢又容易出错，导致人们逐渐放弃 银行账单导出过于粗略——只显示商家总金额，而非单独的消费条目 现有应用需要订阅、云账号或向第三方共享数据 收据照片堆积在相册中，从未被整理成可用的数据 用户需要一款私有、自托管的工具，以最小的努力将任何收据——无论是实体还是电子版——转化为结构化、可查询的消费数据。
 目标用户 链接到标题 主要用户：
 希望对消费进行逐项管理、而不想订阅 SaaS 产品的个人或家庭 跟踪个人可报销费用的小企业主或自由职业者 需求与功能 链接到标题 收据录入
 通过拖放或文件选择器上传图片文件（JPG、PNG、WEBP、HEIC、GIF） 直接从设备摄像头拍照（移动端友好；需要 HTTPS） 粘贴原始收据文字供 AI 解析 手动录入收据，包含头部字段（商家、日期、地点）和内嵌明细表格 AI 智能解析
 将收据图片或文字发送至可选的 AI 模型：Anthropic Claude、OpenRouter、DeepSeek 或 Gemini（通过环境变量配置） 提取：商家名称、日期、地点、小计、税额、总额，以及所有明细（描述、数量、单价、总价、分类） 鲁棒的 JSON 提取机制，能处理包裹在散文或 Markdown 代码块中的模型响应 max_tokens 设置为 4096，防止大型收据被截断 交易管理
-在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次"保存"操作进行原子提交 将所有交易导出为 CSV 月度视图'><meta property="og:type" content="article"><meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/req_doc/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-23T00:30:49-07:00"><meta property="article:modified_time" content="2026-03-23T00:30:49-07:00"><link rel=canonical href=https://xuanjin001.github.io/zh-cn/posts/req_doc/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o+1At6nM=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><style>.lightbox-img{cursor:zoom-in;transition:opacity .2s ease}.lightbox-img:hover{opacity:.85}.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;cursor:zoom-out;justify-content:center;align-items:center}.lightbox-overlay.active{display:flex}.lightbox-overlay img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 0 30px rgba(0,0,0,.5)}</style></head><body class="preload-transitions colorscheme-auto"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/zh-cn>金萱
-</a><input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/zh-cn/about/>关于我</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/posts/>博客</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/projects/>项目</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/contact/>联系我</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/posts/req_doc/>🇺🇸</a></li></ul></section><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://xuanjin001.github.io/zh-cn/posts/req_doc/>个人记账应用——产品需求文档</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2026-03-23T00:30:49-07:00>March 23, 2026
-</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-阅读约 2 分钟</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
-<a href=/zh-cn/authors/xuan-jin/>Xuan Jin</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
-<a href=/zh-cn/categories/projects/>Projects</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag><a href=/zh-cn/tags/projects/>Projects</a></span></div></div></header><div class=post-content><blockquote><p><em>本文由 Gideon（AI）翻译自英文原版。</em></p></blockquote><h3 id=概述与愿景>概述与愿景
-<a class=heading-link href=#%e6%a6%82%e8%bf%b0%e4%b8%8e%e6%84%bf%e6%99%af><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><p>一款全栈个人财务应用，将繁琐的手动记账转变为快速、智能的工作流程。用户通过拍照、文件上传、粘贴文字或手动录入的方式捕捉收据，AI 模型自动将商家名称、日期、地点以及每一条消费明细提取并整理到一个结构化、可编辑的数据库中。数据也可直接从 Costco 购买历史 API 获取，或通过 CSV 文件导入。最终呈现的是一份始终保持最新的个人消费台账——可搜索、可导出，并通过图表可视化——可在本地网络中的任何设备（包括手机）上访问。</p><p><strong>愿景：</strong> 让记账变得足够轻松，让人们真正愿意去做，消除"我待会儿再记"与"结账时没有记录"之间的落差。</p><h3 id=问题陈述>问题陈述
-<a class=heading-link href=#%e9%97%ae%e9%a2%98%e9%99%88%e8%bf%b0><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><p>手动记账方式存在根本性缺陷：</p><ul><li>纸质收据在被记录之前就已经丢失、褪色或被遗忘</li><li>表格录入既慢又容易出错，导致人们逐渐放弃</li><li>银行账单导出过于粗略——只显示商家总金额，而非单独的消费条目</li><li>现有应用需要订阅、云账号或向第三方共享数据</li><li>收据照片堆积在相册中，从未被整理成可用的数据</li></ul><p>用户需要一款私有、自托管的工具，以最小的努力将任何收据——无论是实体还是电子版——转化为结构化、可查询的消费数据。</p><h3 id=目标用户>目标用户
-<a class=heading-link href=#%e7%9b%ae%e6%a0%87%e7%94%a8%e6%88%b7><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><p><strong>主要用户：</strong></p><ul><li>希望对消费进行逐项管理、而不想订阅 SaaS 产品的个人或家庭</li><li>跟踪个人可报销费用的小企业主或自由职业者</li></ul><h3 id=需求与功能>需求与功能
-<a class=heading-link href=#%e9%9c%80%e6%b1%82%e4%b8%8e%e5%8a%9f%e8%83%bd><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><p><strong>收据录入</strong></p><ul><li>通过拖放或文件选择器上传图片文件（JPG、PNG、WEBP、HEIC、GIF）</li><li>直接从设备摄像头拍照（移动端友好；需要 HTTPS）</li><li>粘贴原始收据文字供 AI 解析</li><li>手动录入收据，包含头部字段（商家、日期、地点）和内嵌明细表格</li></ul><p><strong>AI 智能解析</strong></p><ul><li>将收据图片或文字发送至可选的 AI 模型：Anthropic Claude、OpenRouter、DeepSeek 或 Gemini（通过环境变量配置）</li><li>提取：商家名称、日期、地点、小计、税额、总额，以及所有明细（描述、数量、单价、总价、分类）</li><li>鲁棒的 JSON 提取机制，能处理包裹在散文或 Markdown 代码块中的模型响应</li><li>max_tokens 设置为 4096，防止大型收据被截断</li></ul><p><strong>交易管理</strong></p><ul><li>在可搜索、可筛选的表格中查看所有明细</li><li>可对单张收据或全局切换只读/编辑模式</li><li>编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉）</li><li>向已有收据添加新明细</li><li>删除单条明细（立即生效）或批量删除选中行（保存时生效）</li><li>通过弹出框对所有选中行的某一列进行批量更新</li><li>将更改保存至 SQLite 数据库；所有更改按每次"保存"操作进行原子提交</li><li>将所有交易导出为 CSV</li></ul><p><strong>月度视图</strong></p><ul><li>按日历月份对消费进行分组展示</li><li>进度条可视化显示消费额与前期的对比</li><li>月份选择器，可浏览历史记录</li></ul><p><strong>分析</strong></p><ul><li>柱状图：每月消费总额</li><li>饼图：按分类划分的消费占比</li><li>折线图：消费趋势随时间的变化</li><li>商家消费明细表和每日消费明细</li></ul><p><strong>Costco 集成</strong></p><ul><li>输入 Bearer Token、Client ID 和 Client Identifier（从浏览器开发者工具中获取）</li><li>Token 有效期徽章：实时倒计时显示剩余有效时间（Token 15 分钟后过期），状态颜色为绿/橙/红</li><li>获取模式：最近 N 天（7 / 14 / 30 / 60 / 90）或自定义日期范围（起始/截止日期选择器）</li><li>发现步骤：连接 Costco GraphQL API，对一张收据进行采样，列出所有可用字段及实时示例值</li><li>字段映射步骤：用户将每个 Costco 条目字段映射至应用列（描述、单价、总价、数量、分类，或跳过）</li><li>预览步骤：列出所有收据，并标记已导入项（通过 source_id 去重）</li><li>导入步骤：按条形码逐张获取完整收据详情，应用字段映射后保存至数据库</li></ul><p><strong>CSV 导入</strong></p><ul><li>上传任意 CSV 文件</li><li>根据常见列名别名（date、amount、merchant 等）自动检测列映射</li><li>手动映射 UI，附带实时预览行</li><li>导入时，按商家-日期分组创建对应收据及所有匹配明细</li></ul><p><strong>手动录入收据</strong></p><ul><li>&ldquo;添加收据"下的第四个标签页：手动录入</li><li>收据头部：商家（必填）、日期、地点</li><li>内嵌表格：可添加/删除行；列与交易表格一致（日期、描述、数量、单价、总价、分类）</li><li>表格底部自动计算合计金额</li><li>保存后在数据库中创建完整的收据和明细记录</li></ul><p><strong>基础设施</strong></p><ul><li>HTTPS 开发服务器（自签名证书），供本地网络内的摄像头访问使用</li><li>SQLite 数据库，含 receipts 和 line_items 表；source_id 列带有唯一部分索引以实现去重</li><li>四个 AI 提供商均为懒加载初始化，避免 dotenv 加载顺序问题</li><li>前后端通过单个 <code>./start.sh</code> 命令同时启动</li></ul><h3 id=用户故事与验收标准>用户故事与验收标准
-<a class=heading-link href=#%e7%94%a8%e6%88%b7%e6%95%85%e4%ba%8b%e4%b8%8e%e9%aa%8c%e6%94%b6%e6%a0%87%e5%87%86><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><p><strong>故事 1 — 通过摄像头拍照录入收据</strong>
-<em>作为手机用户，我希望拍一张收据照片，使其自动解析成消费明细。</em></p><ul><li>摄像头标签页通过 HTTPS 激活设备后置摄像头</li><li>拍摄的图片发送至 AI；在标准网络连接下，10 秒内解析结果出现在交易审核面板中</li><li>收据上所有可见的明细均显示为可编辑行</li></ul><p><strong>故事 2 — 编辑并保存解析后的明细</strong>
-<em>作为用户，我希望能纠正 AI 解析的错误，并将结果保存至数据库。</em></p><ul><li>点击编辑后，所有字段切换为内联输入框</li><li>修改值后点击保存，将其持久化至 SQLite 并返回只读模式</li><li>在同一收据内意外跳转时，未保存的更改不会丢失</li></ul><p><strong>故事 3 — 批量删除交易</strong>
-<em>作为用户，我希望选中多行并一次性删除。</em></p><ul><li>选中所有行后点击删除，立即从 UI 中移除</li><li>点击保存后从数据库中删除；保存后不再重新出现</li><li>批量删除后取消编辑，原始行将恢复</li></ul><p><strong>故事 4 — 批量更新某列</strong>
-<em>作为用户，我希望一次性为 20 条选中的行设置相同的分类。</em></p><ul><li>点击列标题按钮，打开该列的弹出框</li><li>输入值并确认后，更新所有选中行（或未选中时更新所有可见行）</li><li>更改立即反映在表格中，并在保存时持久化</li></ul><p><strong>故事 5 — 从 Costco 导入</strong>
-<em>作为 Costco 会员，我希望自动导入我的门店购买历史。</em></p><ul><li>输入凭证并点击连接后，5 秒内获取收据并发现可用字段</li><li>Token 有效期徽章实时显示剩余有效时间；15 分钟后变红</li><li>自定义日期范围选择器允许我选择任意起止时间窗口</li><li>已导入的收据被标记；只有新收据可被选择</li><li>导入完成后，所有明细出现在交易视图中</li></ul><p><strong>故事 6 — 手动录入收据</strong>
-<em>作为没有照片的用户，我希望直接手动输入收据内容。</em></p><ul><li>手动录入标签页显示商家/日期/地点的头部表单，以及可编辑的明细表格</li><li>点击&rdquo;+ 添加行"追加一条新的可编辑行；点击 🗑 删除某行</li><li>点击"保存收据"在数据库中创建记录，并在交易视图中显示该收据</li></ul><p><strong>故事 7 — 查看消费分析</strong>
-<em>作为用户，我希望按分类和月份查看我的消费去向。</em></p><ul><li>分析标签页显示由实际数据库数据生成的柱状图、饼图和折线图</li><li>在月度视图中切换月份，将更新所有图表和进度条</li></ul><h3 id=技术栈>技术栈
-<a class=heading-link href=#%e6%8a%80%e6%9c%af%e6%a0%88><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h3><table><thead><tr><th>层级</th><th>技术</th></tr></thead><tbody><tr><td>前端</td><td>React 18 + TypeScript</td></tr><tr><td>构建工具</td><td>Vite + @vitejs/plugin-basic-ssl（HTTPS）</td></tr><tr><td>样式</td><td>由 AI 决定</td></tr><tr><td>图表</td><td>Recharts（柱状图、饼图、折线图）</td></tr><tr><td>HTTP 客户端</td><td>Axios</td></tr><tr><td>文件上传</td><td>react-dropzone</td></tr><tr><td>后端</td><td>Node.js + Express（ES Modules）</td></tr><tr><td>数据库驱动</td><td>暂时轻量，按需选择</td></tr><tr><td>文件处理</td><td>由 AI 决定</td></tr><tr><td>AI — Anthropic</td><td>@anthropic-ai/sdk · Claude claude-opus-4-6（视觉）</td></tr><tr><td>AI — OpenRouter</td><td>OpenAI 兼容 · 多模型，支持视觉</td></tr><tr><td>AI — DeepSeek</td><td>OpenAI 兼容 · 仅文字（不支持视觉）</td></tr><tr><td>AI — Gemini</td><td>OpenAI 兼容 · 支持视觉</td></tr><tr><td>数据库</td><td>SQL 或单一 JSON 文件</td></tr><tr><td>外部 API</td><td>Costco ecom-api.costco.com · GraphQL</td></tr></tbody></table><p><strong>数据库结构：</strong></p><ul><li><code>receipts</code>：id、image_path、merchant、date、location、total、raw_response、source_id、created_at</li><li><code>line_items</code>：id、receipt_id、description、quantity、unit_price、total_price、category、date、merchant、location</li></ul><h2 id=成功标准>成功标准
-<a class=heading-link href=#%e6%88%90%e5%8a%9f%e6%a0%87%e5%87%86><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h2><p><strong>功能性</strong></p><ul><li>在手机上拍摄的收据照片，端到端在 15 秒内生成正确分类的明细</li><li>对任意字段的编辑和保存能够正确持久化至数据库，并在完整页面刷新后仍然有效</li><li>批量删除所有行并保存后，交易表格为空，无残留数据</li><li>Costco 导入正确去重已导入的收据，仅导入新收据</li><li>分析图表无需手动刷新即可反映当前数据库状态</li></ul><p><strong>可靠性</strong></p><ul><li>AI 响应解析成功，即使模型将 JSON 包裹在散文、代码块或说明性文本中（多阶段 extractJSON 函数）</li><li>Token 过期通过倒计时徽章提前告知用户，避免在导入过程中意外出现 401 错误</li><li>所有 API 失败均显示可见的错误提示；不允许静默吞噬错误</li></ul><p><strong>性能</strong></p><ul><li>应用在本地网络连接下 2 秒内加载完成</li><li>针对最多 10,000 条明细，SQLite 查询在 100 毫秒内返回结果</li></ul><p><strong>自托管简便性</strong></p><ul><li>全栈通过单一命令（<code>./start.sh</code>）启动</li><li>无需云账号、无需订阅、无需外部数据库</li><li>可在本地 Wi-Fi 网络上通过 iOS 和 Android 移动浏览器（HTTPS）访问</li></ul><h5 id=claude-code-总结>Claude Code 总结
-<a class=heading-link href=#claude-code-%e6%80%bb%e7%bb%93><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
-<span class=sr-only>链接到标题</span></a></h5><p>个人记账应用是一款自托管、AI 驱动的收据追踪系统，专为那些希望对消费进行逐项精细管理、同时不依赖云服务或付费订阅的个人用户而设计。</p><p>这款应用的核心，是填补银行账单导出和记账应用所留下的空白：它们告诉你在 Costco 花了 359 美元，却不告诉你其中 87 美元是一箱橄榄油。通过结合 AI 视觉解析、直接的 Costco API 集成，以及完全可编辑的交易台账，该应用将每一张收据——无论是拍照、手动输入、粘贴文字还是从零售商 API 获取——都转化为结构化、可查询的数据。</p><p>该系统刻意保持务实：它在 MacBook 或家用服务器上本地运行，可通过同一 Wi-Fi 网络上的任意手机访问，所有数据存储在一个易于备份的 SQLite 文件中。AI 层可在四个提供商之间自由切换，确保用户不被某一个厂商锁定。Costco 集成体现了真实的使用场景——很多家庭会在大型仓储超市进行大量采购，这些消费值得在条目级别加以追踪，而不仅仅是收据总额。</p><p>技术栈采用 React、TypeScript、Node.js、Express 和 SQLite，选择刻意简洁：文档完善、易于理解、便于扩展。UI 优先考虑录入速度和纠错的便捷性——因为目标是让记录消费的过程足够快，让人们能够持之以恒地坚持下去。</p></div><footer><div class=linkedin-actions style="margin:2rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/req_doc/" target=_blank rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#0077b5;color:#fff;border-radius:4px;text-decoration:none;font-size:.9rem"><i class="fa fa-linkedin-square" aria-hidden=true></i>
-Share on LinkedIn</a></div><script src=/js/linkedin-publish.js></script></footer></article></section></div><footer class=footer><section class=container>©
-2015 -
-2026
-金萱 / Xuan Jin
-·
-技术支持 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js integrity="sha256-DRNb55/Brco1D+hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script><div class=lightbox-overlay id=lightbox-overlay><img id=lightbox-img src alt></div><script>(function(){var e=document.getElementById("lightbox-overlay"),t=document.getElementById("lightbox-img");document.addEventListener("click",function(n){n.target.classList.contains("lightbox-img")&&(t.src=n.target.src,t.alt=n.target.alt,e.classList.add("active"))}),e.addEventListener("click",function(){e.classList.remove("active"),t.src=""}),document.addEventListener("keydown",function(n){n.key==="Escape"&&(e.classList.remove("active"),t.src="")})})()</script></body></html>
+在可搜索、可筛选的表格中查看所有明细 可对单张收据或全局切换只读/编辑模式 编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉） 向已有收据添加新明细 删除单条明细（立即生效）或批量删除选中行（保存时生效） 通过弹出框对所有选中行的某一列进行批量更新 将更改保存至 SQLite 数据库；所有更改按每次&quot;保存&quot;操作进行原子提交 将所有交易导出为 CSV 月度视图" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/req_doc/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-03-23T00:30:49-07:00" />
+<meta property="article:modified_time" content="2026-03-23T00:30:49-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/req_doc/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/req_doc/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/req_doc/">
+              个人记账应用——产品需求文档
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-03-23T00:30:49-07:00">
+                March 23, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 2 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/projects/">Projects</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/projects/">Projects</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<h3 id="概述与愿景">
+  概述与愿景
+  <a class="heading-link" href="#%e6%a6%82%e8%bf%b0%e4%b8%8e%e6%84%bf%e6%99%af">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>一款全栈个人财务应用，将繁琐的手动记账转变为快速、智能的工作流程。用户通过拍照、文件上传、粘贴文字或手动录入的方式捕捉收据，AI 模型自动将商家名称、日期、地点以及每一条消费明细提取并整理到一个结构化、可编辑的数据库中。数据也可直接从 Costco 购买历史 API 获取，或通过 CSV 文件导入。最终呈现的是一份始终保持最新的个人消费台账——可搜索、可导出，并通过图表可视化——可在本地网络中的任何设备（包括手机）上访问。</p>
+<p><strong>愿景：</strong> 让记账变得足够轻松，让人们真正愿意去做，消除&quot;我待会儿再记&quot;与&quot;结账时没有记录&quot;之间的落差。</p>
+<h3 id="问题陈述">
+  问题陈述
+  <a class="heading-link" href="#%e9%97%ae%e9%a2%98%e9%99%88%e8%bf%b0">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>手动记账方式存在根本性缺陷：</p>
+<ul>
+<li>纸质收据在被记录之前就已经丢失、褪色或被遗忘</li>
+<li>表格录入既慢又容易出错，导致人们逐渐放弃</li>
+<li>银行账单导出过于粗略——只显示商家总金额，而非单独的消费条目</li>
+<li>现有应用需要订阅、云账号或向第三方共享数据</li>
+<li>收据照片堆积在相册中，从未被整理成可用的数据</li>
+</ul>
+<p>用户需要一款私有、自托管的工具，以最小的努力将任何收据——无论是实体还是电子版——转化为结构化、可查询的消费数据。</p>
+<h3 id="目标用户">
+  目标用户
+  <a class="heading-link" href="#%e7%9b%ae%e6%a0%87%e7%94%a8%e6%88%b7">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p><strong>主要用户：</strong></p>
+<ul>
+<li>希望对消费进行逐项管理、而不想订阅 SaaS 产品的个人或家庭</li>
+<li>跟踪个人可报销费用的小企业主或自由职业者</li>
+</ul>
+<h3 id="需求与功能">
+  需求与功能
+  <a class="heading-link" href="#%e9%9c%80%e6%b1%82%e4%b8%8e%e5%8a%9f%e8%83%bd">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p><strong>收据录入</strong></p>
+<ul>
+<li>通过拖放或文件选择器上传图片文件（JPG、PNG、WEBP、HEIC、GIF）</li>
+<li>直接从设备摄像头拍照（移动端友好；需要 HTTPS）</li>
+<li>粘贴原始收据文字供 AI 解析</li>
+<li>手动录入收据，包含头部字段（商家、日期、地点）和内嵌明细表格</li>
+</ul>
+<p><strong>AI 智能解析</strong></p>
+<ul>
+<li>将收据图片或文字发送至可选的 AI 模型：Anthropic Claude、OpenRouter、DeepSeek 或 Gemini（通过环境变量配置）</li>
+<li>提取：商家名称、日期、地点、小计、税额、总额，以及所有明细（描述、数量、单价、总价、分类）</li>
+<li>鲁棒的 JSON 提取机制，能处理包裹在散文或 Markdown 代码块中的模型响应</li>
+<li>max_tokens 设置为 4096，防止大型收据被截断</li>
+</ul>
+<p><strong>交易管理</strong></p>
+<ul>
+<li>在可搜索、可筛选的表格中查看所有明细</li>
+<li>可对单张收据或全局切换只读/编辑模式</li>
+<li>编辑模式下：内联修改任意字段（文字、数字、日期/时间、分类下拉）</li>
+<li>向已有收据添加新明细</li>
+<li>删除单条明细（立即生效）或批量删除选中行（保存时生效）</li>
+<li>通过弹出框对所有选中行的某一列进行批量更新</li>
+<li>将更改保存至 SQLite 数据库；所有更改按每次&quot;保存&quot;操作进行原子提交</li>
+<li>将所有交易导出为 CSV</li>
+</ul>
+<p><strong>月度视图</strong></p>
+<ul>
+<li>按日历月份对消费进行分组展示</li>
+<li>进度条可视化显示消费额与前期的对比</li>
+<li>月份选择器，可浏览历史记录</li>
+</ul>
+<p><strong>分析</strong></p>
+<ul>
+<li>柱状图：每月消费总额</li>
+<li>饼图：按分类划分的消费占比</li>
+<li>折线图：消费趋势随时间的变化</li>
+<li>商家消费明细表和每日消费明细</li>
+</ul>
+<p><strong>Costco 集成</strong></p>
+<ul>
+<li>输入 Bearer Token、Client ID 和 Client Identifier（从浏览器开发者工具中获取）</li>
+<li>Token 有效期徽章：实时倒计时显示剩余有效时间（Token 15 分钟后过期），状态颜色为绿/橙/红</li>
+<li>获取模式：最近 N 天（7 / 14 / 30 / 60 / 90）或自定义日期范围（起始/截止日期选择器）</li>
+<li>发现步骤：连接 Costco GraphQL API，对一张收据进行采样，列出所有可用字段及实时示例值</li>
+<li>字段映射步骤：用户将每个 Costco 条目字段映射至应用列（描述、单价、总价、数量、分类，或跳过）</li>
+<li>预览步骤：列出所有收据，并标记已导入项（通过 source_id 去重）</li>
+<li>导入步骤：按条形码逐张获取完整收据详情，应用字段映射后保存至数据库</li>
+</ul>
+<p><strong>CSV 导入</strong></p>
+<ul>
+<li>上传任意 CSV 文件</li>
+<li>根据常见列名别名（date、amount、merchant 等）自动检测列映射</li>
+<li>手动映射 UI，附带实时预览行</li>
+<li>导入时，按商家-日期分组创建对应收据及所有匹配明细</li>
+</ul>
+<p><strong>手动录入收据</strong></p>
+<ul>
+<li>&ldquo;添加收据&quot;下的第四个标签页：手动录入</li>
+<li>收据头部：商家（必填）、日期、地点</li>
+<li>内嵌表格：可添加/删除行；列与交易表格一致（日期、描述、数量、单价、总价、分类）</li>
+<li>表格底部自动计算合计金额</li>
+<li>保存后在数据库中创建完整的收据和明细记录</li>
+</ul>
+<p><strong>基础设施</strong></p>
+<ul>
+<li>HTTPS 开发服务器（自签名证书），供本地网络内的摄像头访问使用</li>
+<li>SQLite 数据库，含 receipts 和 line_items 表；source_id 列带有唯一部分索引以实现去重</li>
+<li>四个 AI 提供商均为懒加载初始化，避免 dotenv 加载顺序问题</li>
+<li>前后端通过单个 <code>./start.sh</code> 命令同时启动</li>
+</ul>
+<h3 id="用户故事与验收标准">
+  用户故事与验收标准
+  <a class="heading-link" href="#%e7%94%a8%e6%88%b7%e6%95%85%e4%ba%8b%e4%b8%8e%e9%aa%8c%e6%94%b6%e6%a0%87%e5%87%86">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p><strong>故事 1 — 通过摄像头拍照录入收据</strong>
+<em>作为手机用户，我希望拍一张收据照片，使其自动解析成消费明细。</em></p>
+<ul>
+<li>摄像头标签页通过 HTTPS 激活设备后置摄像头</li>
+<li>拍摄的图片发送至 AI；在标准网络连接下，10 秒内解析结果出现在交易审核面板中</li>
+<li>收据上所有可见的明细均显示为可编辑行</li>
+</ul>
+<p><strong>故事 2 — 编辑并保存解析后的明细</strong>
+<em>作为用户，我希望能纠正 AI 解析的错误，并将结果保存至数据库。</em></p>
+<ul>
+<li>点击编辑后，所有字段切换为内联输入框</li>
+<li>修改值后点击保存，将其持久化至 SQLite 并返回只读模式</li>
+<li>在同一收据内意外跳转时，未保存的更改不会丢失</li>
+</ul>
+<p><strong>故事 3 — 批量删除交易</strong>
+<em>作为用户，我希望选中多行并一次性删除。</em></p>
+<ul>
+<li>选中所有行后点击删除，立即从 UI 中移除</li>
+<li>点击保存后从数据库中删除；保存后不再重新出现</li>
+<li>批量删除后取消编辑，原始行将恢复</li>
+</ul>
+<p><strong>故事 4 — 批量更新某列</strong>
+<em>作为用户，我希望一次性为 20 条选中的行设置相同的分类。</em></p>
+<ul>
+<li>点击列标题按钮，打开该列的弹出框</li>
+<li>输入值并确认后，更新所有选中行（或未选中时更新所有可见行）</li>
+<li>更改立即反映在表格中，并在保存时持久化</li>
+</ul>
+<p><strong>故事 5 — 从 Costco 导入</strong>
+<em>作为 Costco 会员，我希望自动导入我的门店购买历史。</em></p>
+<ul>
+<li>输入凭证并点击连接后，5 秒内获取收据并发现可用字段</li>
+<li>Token 有效期徽章实时显示剩余有效时间；15 分钟后变红</li>
+<li>自定义日期范围选择器允许我选择任意起止时间窗口</li>
+<li>已导入的收据被标记；只有新收据可被选择</li>
+<li>导入完成后，所有明细出现在交易视图中</li>
+</ul>
+<p><strong>故事 6 — 手动录入收据</strong>
+<em>作为没有照片的用户，我希望直接手动输入收据内容。</em></p>
+<ul>
+<li>手动录入标签页显示商家/日期/地点的头部表单，以及可编辑的明细表格</li>
+<li>点击&rdquo;+ 添加行&quot;追加一条新的可编辑行；点击 🗑 删除某行</li>
+<li>点击&quot;保存收据&quot;在数据库中创建记录，并在交易视图中显示该收据</li>
+</ul>
+<p><strong>故事 7 — 查看消费分析</strong>
+<em>作为用户，我希望按分类和月份查看我的消费去向。</em></p>
+<ul>
+<li>分析标签页显示由实际数据库数据生成的柱状图、饼图和折线图</li>
+<li>在月度视图中切换月份，将更新所有图表和进度条</li>
+</ul>
+<h3 id="技术栈">
+  技术栈
+  <a class="heading-link" href="#%e6%8a%80%e6%9c%af%e6%a0%88">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>技术</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前端</td>
+<td>React 18 + TypeScript</td>
+</tr>
+<tr>
+<td>构建工具</td>
+<td>Vite + @vitejs/plugin-basic-ssl（HTTPS）</td>
+</tr>
+<tr>
+<td>样式</td>
+<td>由 AI 决定</td>
+</tr>
+<tr>
+<td>图表</td>
+<td>Recharts（柱状图、饼图、折线图）</td>
+</tr>
+<tr>
+<td>HTTP 客户端</td>
+<td>Axios</td>
+</tr>
+<tr>
+<td>文件上传</td>
+<td>react-dropzone</td>
+</tr>
+<tr>
+<td>后端</td>
+<td>Node.js + Express（ES Modules）</td>
+</tr>
+<tr>
+<td>数据库驱动</td>
+<td>暂时轻量，按需选择</td>
+</tr>
+<tr>
+<td>文件处理</td>
+<td>由 AI 决定</td>
+</tr>
+<tr>
+<td>AI — Anthropic</td>
+<td>@anthropic-ai/sdk · Claude claude-opus-4-6（视觉）</td>
+</tr>
+<tr>
+<td>AI — OpenRouter</td>
+<td>OpenAI 兼容 · 多模型，支持视觉</td>
+</tr>
+<tr>
+<td>AI — DeepSeek</td>
+<td>OpenAI 兼容 · 仅文字（不支持视觉）</td>
+</tr>
+<tr>
+<td>AI — Gemini</td>
+<td>OpenAI 兼容 · 支持视觉</td>
+</tr>
+<tr>
+<td>数据库</td>
+<td>SQL 或单一 JSON 文件</td>
+</tr>
+<tr>
+<td>外部 API</td>
+<td>Costco ecom-api.costco.com · GraphQL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>数据库结构：</strong></p>
+<ul>
+<li><code>receipts</code>：id、image_path、merchant、date、location、total、raw_response、source_id、created_at</li>
+<li><code>line_items</code>：id、receipt_id、description、quantity、unit_price、total_price、category、date、merchant、location</li>
+</ul>
+<h2 id="成功标准">
+  成功标准
+  <a class="heading-link" href="#%e6%88%90%e5%8a%9f%e6%a0%87%e5%87%86">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p><strong>功能性</strong></p>
+<ul>
+<li>在手机上拍摄的收据照片，端到端在 15 秒内生成正确分类的明细</li>
+<li>对任意字段的编辑和保存能够正确持久化至数据库，并在完整页面刷新后仍然有效</li>
+<li>批量删除所有行并保存后，交易表格为空，无残留数据</li>
+<li>Costco 导入正确去重已导入的收据，仅导入新收据</li>
+<li>分析图表无需手动刷新即可反映当前数据库状态</li>
+</ul>
+<p><strong>可靠性</strong></p>
+<ul>
+<li>AI 响应解析成功，即使模型将 JSON 包裹在散文、代码块或说明性文本中（多阶段 extractJSON 函数）</li>
+<li>Token 过期通过倒计时徽章提前告知用户，避免在导入过程中意外出现 401 错误</li>
+<li>所有 API 失败均显示可见的错误提示；不允许静默吞噬错误</li>
+</ul>
+<p><strong>性能</strong></p>
+<ul>
+<li>应用在本地网络连接下 2 秒内加载完成</li>
+<li>针对最多 10,000 条明细，SQLite 查询在 100 毫秒内返回结果</li>
+</ul>
+<p><strong>自托管简便性</strong></p>
+<ul>
+<li>全栈通过单一命令（<code>./start.sh</code>）启动</li>
+<li>无需云账号、无需订阅、无需外部数据库</li>
+<li>可在本地 Wi-Fi 网络上通过 iOS 和 Android 移动浏览器（HTTPS）访问</li>
+</ul>
+<h5 id="claude-code-总结">
+  Claude Code 总结
+  <a class="heading-link" href="#claude-code-%e6%80%bb%e7%bb%93">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h5>
+<p>个人记账应用是一款自托管、AI 驱动的收据追踪系统，专为那些希望对消费进行逐项精细管理、同时不依赖云服务或付费订阅的个人用户而设计。</p>
+<p>这款应用的核心，是填补银行账单导出和记账应用所留下的空白：它们告诉你在 Costco 花了 359 美元，却不告诉你其中 87 美元是一箱橄榄油。通过结合 AI 视觉解析、直接的 Costco API 集成，以及完全可编辑的交易台账，该应用将每一张收据——无论是拍照、手动输入、粘贴文字还是从零售商 API 获取——都转化为结构化、可查询的数据。</p>
+<p>该系统刻意保持务实：它在 MacBook 或家用服务器上本地运行，可通过同一 Wi-Fi 网络上的任意手机访问，所有数据存储在一个易于备份的 SQLite 文件中。AI 层可在四个提供商之间自由切换，确保用户不被某一个厂商锁定。Costco 集成体现了真实的使用场景——很多家庭会在大型仓储超市进行大量采购，这些消费值得在条目级别加以追踪，而不仅仅是收据总额。</p>
+<p>技术栈采用 React、TypeScript、Node.js、Express 和 SQLite，选择刻意简洁：文档完善、易于理解、便于扩展。UI 优先考虑录入速度和纠错的便捷性——因为目标是让记录消费的过程足够快，让人们能够持之以恒地坚持下去。</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/req_doc/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
+</body>
+
+</html>

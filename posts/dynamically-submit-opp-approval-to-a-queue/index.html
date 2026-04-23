@@ -1,41 +1,489 @@
-<!doctype html><html lang=en><head><title>Dynamically Submit Opp Approval to a Queue · xuanjin
-</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Xuan Jin"><meta name=description content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Dynamically Submit Opp Approval to a Queue · xuanjin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Xuan Jin">
+<meta name="description" content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
 The following solution is inspired by this post.
 Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&rsquo;s related to opp owner&rsquo;s department when condition meets.
-Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Dynamically Submit Opp Approval to a Queue"><meta name=twitter:description content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dynamically Submit Opp Approval to a Queue"/>
+<meta name="twitter:description" content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
 The following solution is inspired by this post.
 Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&rsquo;s related to opp owner&rsquo;s department when condition meets.
-Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer."><meta property="og:title" content="Dynamically Submit Opp Approval to a Queue"><meta property="og:description" content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer."/>
+
+<meta property="og:title" content="Dynamically Submit Opp Approval to a Queue" />
+<meta property="og:description" content="I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.
 The following solution is inspired by this post.
 Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&rsquo;s related to opp owner&rsquo;s department when condition meets.
-Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer."><meta property="og:type" content="article"><meta property="og:url" content="https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-05-22T15:36:53-07:00"><meta property="article:modified_time" content="2021-05-22T15:36:53-07:00"><link rel=canonical href=https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o+1At6nM=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><style>.lightbox-img{cursor:zoom-in;transition:opacity .2s ease}.lightbox-img:hover{opacity:.85}.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;cursor:zoom-out;justify-content:center;align-items:center}.lightbox-overlay.active{display:flex}.lightbox-overlay img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 0 30px rgba(0,0,0,.5)}</style></head><body class="preload-transitions colorscheme-auto"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>xuanjin
-</a><input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/about/>About</a></li><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/projects/>Projects</a></li><li class=navigation-item><a class=navigation-link href=/contact/>Contact me</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/zh-cn/posts/dynamically-submit-opp-approval-to-a-queue/>🇨🇳</a></li></ul></section><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/>Dynamically Submit Opp Approval to a Queue</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2021-05-22T15:36:53-07:00>May 22, 2021
-</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-6-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
-<a href=/authors/xuan-jin/>Xuan Jin</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
-<a href=/categories/developer/>Developer</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag><a href=/tags/developer/>Developer</a></span></div></div></header><div class=post-content><p>I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.</p><p>The following solution is inspired by
-<a href="https://automationchampion.com/?s=approval&amp;orderby=relevance&amp;order=DESC" target=_blank rel=noopener>this post</a>.</p><h2 id=use-case>Use Case
-<a class=heading-link href=#use-case><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&rsquo;s related to opp owner&rsquo;s department when condition meets.</p><h2 id=break-the-problem>Break the Problem
-<a class=heading-link href=#break-the-problem><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>One of the things I learned from algorithm is to break down the problem, divide and conquer.</p><p>In our use case, there are 2 main problems:</p><ol><li>Dynamically assign users to a queue</li><li>Dynamically submit the opp to a queue</li></ol><p>Once it is broken down into those 2, it is clear how to resolve it.</p><ol><li>Dynamically assign users to a queue: use a trigger to dynamically assign/remove users</li><li>Dynamically submit the opp to a queue : flow to submit for approval depending on certain situations</li></ol><h2 id=hands-on>Hands-On
-<a class=heading-link href=#hands-on><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>What we need:</p><ul><li>Custom Object: Approval Matrix<ul><li>This is used to map opp record and which queue it should submit to</li><li>Utilize the Owner field on this object as the Approver, this will help us solve 2 problems:<ul><li>Opportunity Queue (This function will come in 2022 release, if I remembered right)</li><li>Lookup to queue custom field doesn&rsquo;t exist</li></ul></li></ul></li><li>Approval process</li><li>Flow-trigger: to create &ldquo;Approval Matrix&rdquo; record when an Opp record is created, and to update &ldquo;Approval Matrix&rdquo; record owner when an Opp is updated (this is probably easier to do in trigger code instead of flow)</li><li>Flow-trigger: to submit for approval when certain conditions meet, in this case, I just made it easy, when Opp Stage = Needs Analysis, then submit for approval</li><li>Custom Metadata Type : I only used this to map the department and the queue name, but you can add in more complicated conditions, for example, if a user belong to certain account, then they should be put into certain queue. You can put that logic here as well.</li><li>Trigger on User: add/remove user to the proper queue (you can also use flow, just for me, it is easier to do trigger here, sometimes, I don&rsquo;t like drag and drop&mldr;.)</li></ul><p><strong>Please also note, I didn&rsquo;t bulkify my flow at all&mldr; you should always do that, I just need a proof of concept here.</strong></p><h3 id=custom-object>Custom Object
-<a class=heading-link href=#custom-object><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p><a href=https://xjin2.files.wordpress.com/2021/05/image-1.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>This is just a simple record map opp and approver queue</p><p>Notice the Owner field here, this is the field will be used as approvers. In my process, when a new opp record is created, the owner field on Approval Matrix record is automatically assigned to &ldquo;Empty Queue&rdquo;, this is a queue without any users. When you are doing your process, you should optimize it to auto assign to a correct queue, unless no proper queue can be found. I am just being lazy here.</p><h3 id=approval-process>Approval Process
-<a class=heading-link href=#approval-process><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Your approval process would be set up like the following</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-2.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Approval Process</p><p>Notice the &ldquo;Assigned Approver&rdquo; is set to &ldquo;Related User: Owner&rdquo;</p><p>The Email Template will be a VF Email Template where you can query proper records</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-3.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Example of Email Template</p><h3 id=flow-trigger-to-create-approval-matrix-record>Flow-trigger: to create &ldquo;Approval Matrix&rdquo; record
-<a class=heading-link href=#flow-trigger-to-create-approval-matrix-record><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p><a href=https://xjin2.files.wordpress.com/2021/05/image-4.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Snapshot of the flow I built</p><p>Like what I said before, you should optimize the following:</p><ol><li>Bulkify</li><li>Set the queue when you create a record too &ndash;> this will improve user experience</li></ol><h3 id=flow-trigger-to-submit-for-approval>Flow-trigger: to submit for approval
-<a class=heading-link href=#flow-trigger-to-submit-for-approval><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>This will submit for an approval when the stage is changed to &ldquo;Needs Analysis&rdquo;</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-5.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Snap of flow</p><ul><li>Trigger on User:</li></ul><h3 id=custom-metadata-type>Custom Metadata Type
-<a class=heading-link href=#custom-metadata-type><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Here is my setup for Custom Metadata</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-6.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Setup of CMDT</p><p>All we need, at least in my case, is map the department and queue here. You can make it as complicated as you can. For example, if a user belong to certain account, then they should be put into certain queue. You can put that logic here as well.</p><p>Here is the record:</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-7.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Example record CMDT</p><h3 id=trigger-on-user>Trigger on User
-<a class=heading-link href=#trigger-on-user><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Add/remove user to the proper queue (you can also use flow, just for me, it is easier to do trigger here, sometimes, I don&rsquo;t like drag and drop&mldr;.)</p><p>Here my code:</p><p>Trigger</p><pre tabindex=0><code>trigger UserTrigger on User (after insert, after update, before insert, before update) {
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-22T15:36:53-07:00" />
+<meta property="article:modified_time" content="2021-05-22T15:36:53-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      xuanjin
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/projects/">Projects</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/contact/">Contact me</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/zh-cn/posts/dynamically-submit-opp-approval-to-a-queue/">🇨🇳</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/">
+              Dynamically Submit Opp Approval to a Queue
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-05-22T15:36:53-07:00">
+                May 22, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/developer/">Developer</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/developer/">Developer</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>I haven&rsquo;t been sleeping for about 36 hours by now, so please bear with me.</p>
+<p>The following solution is inspired by 
+
+
+
+
+
+<a href="https://automationchampion.com/?s=approval&amp;orderby=relevance&amp;order=DESC" 
+	 target="_blank" rel="noopener"
+	>this post</a>.</p>
+<h2 id="use-case">
+  Use Case
+  <a class="heading-link" href="#use-case">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&rsquo;s related to opp owner&rsquo;s department when condition meets.</p>
+<h2 id="break-the-problem">
+  Break the Problem
+  <a class="heading-link" href="#break-the-problem">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>One of the things I learned from algorithm is to break down the problem, divide and conquer.</p>
+<p>In our use case, there are 2 main problems:</p>
+<ol>
+<li>Dynamically assign users to a queue</li>
+<li>Dynamically submit the opp to a queue</li>
+</ol>
+<p>Once it is broken down into those 2, it is clear how to resolve it.</p>
+<ol>
+<li>Dynamically assign users to a queue: use a trigger to dynamically assign/remove users</li>
+<li>Dynamically submit the opp to a queue : flow to submit for approval depending on certain situations</li>
+</ol>
+<h2 id="hands-on">
+  Hands-On
+  <a class="heading-link" href="#hands-on">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>What we need:</p>
+<ul>
+<li>Custom Object: Approval Matrix
+<ul>
+<li>This is used to map opp record and which queue it should submit to</li>
+<li>Utilize the Owner field on this object as the Approver, this will help us solve 2 problems:
+<ul>
+<li>Opportunity Queue (This function will come in 2022 release, if I remembered right)</li>
+<li>Lookup to queue custom field doesn&rsquo;t exist</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Approval process</li>
+<li>Flow-trigger: to create &ldquo;Approval Matrix&rdquo; record when an Opp record is created, and to update &ldquo;Approval Matrix&rdquo; record owner when an Opp is updated (this is probably easier to do in trigger code instead of flow)</li>
+<li>Flow-trigger: to submit for approval when certain conditions meet, in this case, I just made it easy, when Opp Stage = Needs Analysis, then submit for approval</li>
+<li>Custom Metadata Type : I only used this to map the department and the queue name, but you can add in more complicated conditions, for example, if a user belong to certain account, then they should be put into certain queue. You can put that logic here as well.</li>
+<li>Trigger on User: add/remove user to the proper queue (you can also use flow, just for me, it is easier to do trigger here, sometimes, I don&rsquo;t like drag and drop&hellip;.)</li>
+</ul>
+<p><strong>Please also note, I didn&rsquo;t bulkify my flow at all&hellip; you should always do that, I just need a proof of concept here.</strong></p>
+<h3 id="custom-object">
+  Custom Object
+  <a class="heading-link" href="#custom-object">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>This is just a simple record map opp and approver queue</p>
+<p>Notice the Owner field here, this is the field will be used as approvers. In my process, when a new opp record is created, the owner field on Approval Matrix record is automatically assigned to &ldquo;Empty Queue&rdquo;, this is a queue without any users. When you are doing your process, you should optimize it to auto assign to a correct queue, unless no proper queue can be found. I am just being lazy here.</p>
+<h3 id="approval-process">
+  Approval Process
+  <a class="heading-link" href="#approval-process">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Your approval process would be set up like the following</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-2.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-2.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Approval Process</p>
+<p>Notice the &ldquo;Assigned Approver&rdquo; is set to &ldquo;Related User: Owner&rdquo;</p>
+<p>The Email Template will be a VF Email Template where you can query proper records</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-3.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-3.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Example of Email Template</p>
+<h3 id="flow-trigger-to-create-approval-matrix-record">
+  Flow-trigger: to create &ldquo;Approval Matrix&rdquo; record
+  <a class="heading-link" href="#flow-trigger-to-create-approval-matrix-record">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-4.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-4.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Snapshot of the flow I built</p>
+<p>Like what I said before, you should optimize the following:</p>
+<ol>
+<li>Bulkify</li>
+<li>Set the queue when you create a record too &ndash;&gt; this will improve user experience</li>
+</ol>
+<h3 id="flow-trigger-to-submit-for-approval">
+  Flow-trigger: to submit for approval
+  <a class="heading-link" href="#flow-trigger-to-submit-for-approval">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>This will submit for an approval when the stage is changed to &ldquo;Needs Analysis&rdquo;</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-5.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-5.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Snap of flow</p>
+<ul>
+<li>Trigger on User:</li>
+</ul>
+<h3 id="custom-metadata-type">
+  Custom Metadata Type
+  <a class="heading-link" href="#custom-metadata-type">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Here is my setup for Custom Metadata</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-6.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-6.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Setup of CMDT</p>
+<p>All we need, at least in my case, is map the department and queue here. You can make it as complicated as you can. For example, if a user belong to certain account, then they should be put into certain queue. You can put that logic here as well.</p>
+<p>Here is the record:</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-7.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-7.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Example record CMDT</p>
+<h3 id="trigger-on-user">
+  Trigger on User
+  <a class="heading-link" href="#trigger-on-user">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Add/remove user to the proper queue (you can also use flow, just for me, it is easier to do trigger here, sometimes, I don&rsquo;t like drag and drop&hellip;.)</p>
+<p>Here my code:</p>
+<p>Trigger</p>
+<pre tabindex="0"><code>trigger UserTrigger on User (after insert, after update, before insert, before update) {
 
 if(trigger.isBefore &amp;&amp; (trigger.isUpdate || trigger.isInsert) ) {
 
@@ -44,7 +492,8 @@ UserTriggerHandler.addUserToQueue(Trigger.New,Trigger.Old);
 }
 
 }
-</code></pre><p>Handler</p><pre tabindex=0><code>public class UserTriggerHandler {
+</code></pre><p>Handler</p>
+<pre tabindex="0"><code>public class UserTriggerHandler {
 
 public static void addUserToQueue(List&lt;User&gt; TriggerNew, List&lt;User&gt; TriggerOld) {
 
@@ -189,14 +638,323 @@ delete DeleteGroupMemberRecord;
 }
 
 }
-</code></pre><p>Full disclosure on the Queue setup:</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-8.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Queue</p><h2 id=moment-of-truth>Moment of Truth!
-<a class=heading-link href=#moment-of-truth><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>First let&rsquo;s test the user part</p><p>We have this user John Doe here, I added another field called &ldquo;Manager&rdquo; as a checkbox, the reason is, in this use case, there are multiple managers belong to one department. This way, it solves the problem where one user can only have 1 manager, because in this use case, there can be multiple managers. (I know, a little odd)</p><p>On user, you set the department field as how you want, in my case, I am setting it to Sales with the Manager checkbox checked, after you save, you will see this user is assigned to a queue.</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-9.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>John Doe</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-10.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920" alt class=lightbox-img loading=lazy></a></p><p>manager checkbox</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-11.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Successfully assigned queue</p><p>Create a new opp, then a new Approval Matrix record should be created too</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-12.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>new opp</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-1.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Approval Matrix record created</p><p>Now I am going to update Opp stage to &ldquo;Needs Analysis&rdquo;</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-13.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>stage updated</p><p>Now if you navigate back to the Approval Matrix record, you should see the owner has been updated to Sales Team Queue accordingly</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-14.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Approval Matrix updated</p><p>If you go to the &ldquo;Related&rdquo; tab, you should see an approval process has been submitted to the queue (owner of this record)</p><p><a href=https://xjin2.files.wordpress.com/2021/05/image-15.png target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024" alt class=lightbox-img loading=lazy></a></p><p>Approval submitted</p><p><strong>YAY it worked!!!!!</strong></p><h2 id=conclusion>Conclusion
-<a class=heading-link href=#conclusion><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h2><p>The logic here could get really complicated based on your own business process.</p><p>Once break down the problem, things are not clearer and simpler in a way.</p><hr><p>OK. I am officially have been up for 44 hours straight now. I am going to take a nap.</p><p>Please let me know if you have any questions. I am looking for feedbacks as well. Thank you!!</p></div><footer><div class=linkedin-actions style="margin:2rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/" target=_blank rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#0077b5;color:#fff;border-radius:4px;text-decoration:none;font-size:.9rem"><i class="fa fa-linkedin-square" aria-hidden=true></i>
-Share on LinkedIn</a></div><script src=/js/linkedin-publish.js></script></footer></article></section></div><footer class=footer><section class=container>©
-2015 -
-2026
-Xuan Jin
-·
-Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js integrity="sha256-DRNb55/Brco1D+hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script><div class=lightbox-overlay id=lightbox-overlay><img id=lightbox-img src alt></div><script>(function(){var e=document.getElementById("lightbox-overlay"),t=document.getElementById("lightbox-img");document.addEventListener("click",function(n){n.target.classList.contains("lightbox-img")&&(t.src=n.target.src,t.alt=n.target.alt,e.classList.add("active"))}),e.addEventListener("click",function(){e.classList.remove("active"),t.src=""}),document.addEventListener("keydown",function(n){n.key==="Escape"&&(e.classList.remove("active"),t.src="")})})()</script></body></html>
+</code></pre><p>Full disclosure on the Queue setup:</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-8.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-8.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Queue</p>
+<h2 id="moment-of-truth">
+  Moment of Truth!
+  <a class="heading-link" href="#moment-of-truth">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>First let&rsquo;s test the user part</p>
+<p>We have this user John Doe here, I added another field called &ldquo;Manager&rdquo; as a checkbox, the reason is, in this use case, there are multiple managers belong to one department. This way, it solves the problem where one user can only have 1 manager, because in this use case, there can be multiple managers. (I know, a little odd)</p>
+<p>On user, you set the department field as how you want, in my case, I am setting it to Sales with the Manager checkbox checked, after you save, you will see this user is assigned to a queue.</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-9.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-9.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>John Doe</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-10.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-10.png?w=920"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>manager checkbox</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-11.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-11.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Successfully assigned queue</p>
+<p>Create a new opp, then a new Approval Matrix record should be created too</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-12.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-12.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>new opp</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-1.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-1.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Approval Matrix record created</p>
+<p>Now I am going to update Opp stage to &ldquo;Needs Analysis&rdquo;</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-13.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-13.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>stage updated</p>
+<p>Now if you navigate back to the Approval Matrix record, you should see the owner has been updated to Sales Team Queue accordingly</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-14.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-14.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Approval Matrix updated</p>
+<p>If you go to the &ldquo;Related&rdquo; tab, you should see an approval process has been submitted to the queue (owner of this record)</p>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/05/image-15.png" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/05/image-15.png?w=1024"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>Approval submitted</p>
+<p><strong>YAY it worked!!!!!</strong></p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The logic here could get really complicated based on your own business process.</p>
+<p>Once break down the problem, things are not clearer and simpler in a way.</p>
+<hr>
+<p>OK. I am officially have been up for 44 hours straight now. I am going to take a nap.</p>
+<p>Please let me know if you have any questions. I am looking for feedbacks as well. Thank you!!</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     Xuan Jin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
+</body>
+
+</html>

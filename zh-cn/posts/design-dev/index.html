@@ -1,38 +1,471 @@
-<!doctype html><html lang=zh-cn><head><title>设计与开发 · 金萱
-</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="金萱 / Xuan Jin"><meta name=description content='本文由 Gideon（AI）翻译自英文原版。
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  设计与开发 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
 照片来自 Pexels 的 Andrea Piacquadio
 说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：
 解决方案设计 UI 设计 用户体验设计 首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。
-解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有"用户故事"这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
-根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在"设计解决方案"阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
-在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。'><meta name=keywords content="blog,技术,AI,Salesforce,数据工程"><meta name=twitter:card content="summary"><meta name=twitter:title content="设计与开发"><meta name=twitter:description content='本文由 Gideon（AI）翻译自英文原版。
+解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有&quot;用户故事&quot;这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
+根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在&quot;设计解决方案&quot;阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
+在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="设计与开发"/>
+<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
 照片来自 Pexels 的 Andrea Piacquadio
 说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：
 解决方案设计 UI 设计 用户体验设计 首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。
-解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有"用户故事"这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
-根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在"设计解决方案"阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
-在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。'><meta property="og:title" content="设计与开发"><meta property="og:description" content='本文由 Gideon（AI）翻译自英文原版。
+解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有&quot;用户故事&quot;这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
+根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在&quot;设计解决方案&quot;阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
+在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。"/>
+
+<meta property="og:title" content="设计与开发" />
+<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
 照片来自 Pexels 的 Andrea Piacquadio
 说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：
 解决方案设计 UI 设计 用户体验设计 首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。
-解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有"用户故事"这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
-根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在"设计解决方案"阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
-在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。'><meta property="og:type" content="article"><meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/design-dev/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-12-20T00:00:00-08:00"><meta property="article:modified_time" content="2021-12-20T00:00:00-08:00"><link rel=canonical href=https://xuanjin001.github.io/zh-cn/posts/design-dev/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o+1At6nM=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><style>.lightbox-img{cursor:zoom-in;transition:opacity .2s ease}.lightbox-img:hover{opacity:.85}.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;cursor:zoom-out;justify-content:center;align-items:center}.lightbox-overlay.active{display:flex}.lightbox-overlay img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 0 30px rgba(0,0,0,.5)}</style></head><body class="preload-transitions colorscheme-auto"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/zh-cn>金萱
-</a><input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/zh-cn/about/>关于我</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/posts/>博客</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/projects/>项目</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/contact/>联系我</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/posts/design-dev/>🇺🇸</a></li></ul></section><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://xuanjin001.github.io/zh-cn/posts/design-dev/>设计与开发</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2021-12-20T00:00:00-08:00>December 20, 2021
-</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-阅读约 1 分钟</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
-<a href=/zh-cn/authors/xuan-jin/>Xuan Jin</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
-<a href=/zh-cn/categories/developer/>Developer</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag><a href=/zh-cn/tags/developer/>Developer</a></span></div></div></header><div class=post-content><blockquote><p><em>本文由 Gideon（AI）翻译自英文原版。</em></p></blockquote><p><a href=https://xjin2.files.wordpress.com/2021/12/pexels-andrea-piacquadio-3758105.jpeg target=_blank rel=noopener><img src="https://xjin2.files.wordpress.com/2021/12/pexels-andrea-piacquadio-3758105.jpeg?w=961" alt class=lightbox-img loading=lazy></a></p><p>照片来自 <strong><a href="https://www.pexels.com/photo/woman-draw-a-light-bulb-in-white-board-3758105/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" target=_blank rel=noopener>Pexels</a></strong> 的 <strong><a href="https://www.pexels.com/@olly?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" target=_blank rel=noopener>Andrea Piacquadio</a></strong></p><p>说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：</p><ul><li>解决方案设计</li><li>UI 设计</li><li>用户体验设计</li></ul><p>首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。</p><p>解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有"用户故事"这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。</p><p>根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在
-<a href=https://xjin2.wordpress.com/2021/10/24/postman-api/ target=_blank rel=noopener>这里</a>找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在"设计解决方案"阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。</p><p>在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包——
-<a href=https://github.com/salesforce-ux/design-system-starter-kit target=_blank rel=noopener>Design System Starter Kit</a>，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个
-<a href=https://design-system-demo-xuanjin001.herokuapp.com/ target=_blank rel=noopener>示例</a>，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉，
-<a href=https://www.figma.com/community/file/854593583696357016 target=_blank rel=noopener>包在这里</a>。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。</p><p>对于每一个我参与的项目，我都将其当作一个产品来对待，这也是我上面提到的所有方法论背后的逻辑。我认为产品设计和解决方案设计有很多共同之处。作为产品经理，你需要理解终端用户的需求；这就是在 Salesforce 中作为解决方案架构师的需求发现环节。产品可以分阶段发布，同样地，当你作为 Salesforce 的解决方案架构师时，某些交付成果可能无法在第一阶段完成，也许是因为时间线、预算、资源或功能优先级的原因，产品的某些功能需要推迟到后续版本发布。我们不在一个完美的世界里，你不能总是得到你想要的。然后是人——在这两种工作场景中，你都需要懂得如何与不同的人合作，要像水一样，保持灵活。:)</p><p>这就是我迄今为止从工作中学到的东西，这是一个简要总结。还有太多东西等着我去学习！</p><p>学习愉快！</p></div><footer><div class=linkedin-actions style="margin:2rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/design-dev/" target=_blank rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#0077b5;color:#fff;border-radius:4px;text-decoration:none;font-size:.9rem"><i class="fa fa-linkedin-square" aria-hidden=true></i>
-Share on LinkedIn</a></div><script src=/js/linkedin-publish.js></script></footer></article></section></div><footer class=footer><section class=container>©
-2015 -
-2026
-金萱 / Xuan Jin
-·
-技术支持 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js integrity="sha256-DRNb55/Brco1D+hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script><div class=lightbox-overlay id=lightbox-overlay><img id=lightbox-img src alt></div><script>(function(){var e=document.getElementById("lightbox-overlay"),t=document.getElementById("lightbox-img");document.addEventListener("click",function(n){n.target.classList.contains("lightbox-img")&&(t.src=n.target.src,t.alt=n.target.alt,e.classList.add("active"))}),e.addEventListener("click",function(){e.classList.remove("active"),t.src=""}),document.addEventListener("keydown",function(n){n.key==="Escape"&&(e.classList.remove("active"),t.src="")})})()</script></body></html>
+解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有&quot;用户故事&quot;这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。
+根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在 这里找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在&quot;设计解决方案&quot;阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。
+在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包—— Design System Starter Kit，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个 示例，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉， 包在这里。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/design-dev/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-20T00:00:00-08:00" />
+<meta property="article:modified_time" content="2021-12-20T00:00:00-08:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/design-dev/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/posts/design-dev/">🇺🇸</a>
+      </li>
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/design-dev/">
+              设计与开发
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-12-20T00:00:00-08:00">
+                December 20, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 1 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/developer/">Developer</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/developer/">Developer</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <blockquote>
+<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
+</blockquote>
+<p>
+
+
+
+
+
+<a href="https://xjin2.files.wordpress.com/2021/12/pexels-andrea-piacquadio-3758105.jpeg" 
+	 target="_blank" rel="noopener"
+	><img
+  src="https://xjin2.files.wordpress.com/2021/12/pexels-andrea-piacquadio-3758105.jpeg?w=961"
+  alt=""
+  
+  class="lightbox-img"
+  loading="lazy"
+/>
+</a></p>
+<p>照片来自 <strong>
+
+
+
+
+
+<a href="https://www.pexels.com/photo/woman-draw-a-light-bulb-in-white-board-3758105/?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" 
+	 target="_blank" rel="noopener"
+	>Pexels</a></strong> 的 <strong>
+
+
+
+
+
+<a href="https://www.pexels.com/@olly?utm_content=attributionCopyText&amp;utm_medium=referral&amp;utm_source=pexels" 
+	 target="_blank" rel="noopener"
+	>Andrea Piacquadio</a></strong></p>
+<p>说到设计，可以有很多不同的方式来完成。设计的目的是确保你所设计的解决方案能够被用户接受。设计有许多不同的维度，我个人认为主要包含以下几个部分：</p>
+<ul>
+<li>解决方案设计</li>
+<li>UI 设计</li>
+<li>用户体验设计</li>
+</ul>
+<p>首先，你需要了解自己在设计什么、为了什么、为谁而设计。然后基于这些，你才能推进解决方案和设计。我个人认为，设计与解决方案密切相关，解决方案也涉及前端设计——从一些解决方案中可以看出，设计者是先做了后端，再转向前端设计的。在我个人看来，一个好的解决方案应该让前后端协同工作，通过中间件高效地提取数据并呈现给前端。一个出色的数据库设计应该不受前端结构限制，能够按需提取数据。你可能会觉得我说了一堆废话，哈哈，可能心里在想：这博主费了半天劲，说的全是显而易见的东西，没什么干货嘛。LOL。让我重新回到正题。</p>
+<p>解决方案设计有不同的形式，有些人喜欢画流程图，有些人喜欢口头讲述解决方案。我把解决方案设计理解为讲故事——这也是敏捷开发中有&quot;用户故事&quot;这一概念的原因。所有的故事汇聚在一起形成完整的解决方案，而每个故事又足够小，可以由团队成员分别认领并同步推进，从而让整个流程更加高效。在演示阶段，你就是在向观众重新讲述这个完整的故事，呈现解决方案。谈到用户体验，UI 设计是其中的一个组成部分。有很多工具可以帮助可视化最终产品。我很喜欢 Figma，我最开始用的是 Adobe XD，后来了解到 Figma，现在已经爱上了它。Figma 允许团队成员在一定程度上免费协作设计，大家可以直接在设计上提供反馈，甚至可以在具体位置添加评论。Figma 的绘图功能让设计变得更加容易，尤其是在通话中需要即兴画出想法时。这些工具的美妙之处在于你可以让设计具有交互性，这样在向终端用户展示时，他们能更好地理解所有元素是如何整合在一起的。在做个人项目之前，我会在 Figma 中画出这些流程；当然，如果我偷懒的话，也可能直接跳进代码，边开发边修改。不过我也为此付出了代价——有时候所有东西都开发完了，才发现流程不够顺畅，或者整体设计实在不怎么样，结果不是去修改，而是一拖再拖。我知道，这不是什么值得骄傲的事。但我不得不说，那些个人项目帮助我学到了很多不同的工具和各种各样的概念，我真的非常享受这个过程。</p>
+<p>根据开发内容的不同，对于 Web 项目，我喜欢用 HTML 单页面来快速做概念验证，通过快速点击体验来验证各部分是否配合良好，有时我也会只为自己用 Figma。如果是 API 开发，那毫无疑问就是 Postman！你可以在
+
+
+
+
+
+<a href="https://xjin2.wordpress.com/2021/10/24/postman-api/" 
+	 target="_blank" rel="noopener"
+	>这里</a>找到关于 Postman 的文章。在我的 Figma 中，我创建了一些组件，比如按钮、表格组件，这样有其他项目时就可以复用。你只是想快速拼出一个东西。有一点你要避免的是：在设计阶段花费太多时间，否则你会永远停留在&quot;设计解决方案&quot;阶段，设计到最后，也许过了 6 个月，你设计好的很多东西需要改动，那你怎么办？你就陷入了设计的泥潭。有时你也会遇到一些非常注重细节的人，在所有细节确定之前拒绝进入开发阶段；这些人中有些习惯了瀑布式方法，他们想要能看到最终产品是什么样子的。如果是这种情况，那就需要引导他们了解一下方法论；对于这类人，一个很好的用例是快速在 Figma 中展示最终产品的构想。如果你合作的团队可能根本不清楚自己想要什么，那这个迭代循环就会很漫长。当你遇到不知道自己想要什么的人时，一个好方法是列出他们不可或缺的功能清单，从那里开始——这也是一个很好的开启对话的方式，可以鼓励大家畅所欲言。我认为在需求发现阶段，你应该是那个倾听的人，确保你的客户或合作团队是主要发言方。也许在听到他们想要什么的同时，你心里已经有了解决思路，但我不建议在那时候就说出来；1）要根据受众情况按需分享信息，不要让他们产生困惑；2）尽量不要打断对话，总体而言，你希望鼓励他们尽量多讲，以获取更多细节。当然，这只是我个人的观点。</p>
+<p>在 Salesforce 中，至少在早期经典版时代——那是我 2016 年刚开始在 Salesforce 平台工作的时候，也许是我当时还不了解，那时候设计方面做得并不多。现在有了 LWC，Salesforce 引入了一个名为 Lightning Design System 的概念，有点类似于 Bootstrap 设计，归根结底，这只是前端设计，真正的核心还是在中间件，在于你如何传输数据。通过 Lightning Design System，Salesforce（我认为是他们做的）提供了这个包——
+
+
+
+
+
+<a href="https://github.com/salesforce-ux/design-system-starter-kit" 
+	 target="_blank" rel="noopener"
+	>Design System Starter Kit</a>，你可以用它向终端用户进行演示，在开始一个项目之前，如果有人想要一个 Demo，你可以用这个作为示例。它的美妙之处在于你可以创建自己的虚假数据，使数据看起来真实可信，提供逼真的流程体验。我创建了一个
+
+
+
+
+
+<a href="https://design-system-demo-xuanjin001.herokuapp.com/" 
+	 target="_blank" rel="noopener"
+	>示例</a>，整个过程大约花了我 2 个小时，包括所有页面变体。我通过我的 Heroku 应用将其公开，方便他人访问。除了 Starter Kit，Salesforce 还提供了一个很棒的 Figma 包，这样你就不需要自己创建按钮、字段等，可以从细节层面保持外观和感觉，
+
+
+
+
+
+<a href="https://www.figma.com/community/file/854593583696357016" 
+	 target="_blank" rel="noopener"
+	>包在这里</a>。当我在 Figma 中处理 Salesforce 相关内容时，我会使用截图和这个 Salesforce 提供包中的组件，按图层排列它们。这为我节省了大量时间，如果你的团队有专职设计师，他们可以花更多时间以正确的方式使用 Figma。</p>
+<p>对于每一个我参与的项目，我都将其当作一个产品来对待，这也是我上面提到的所有方法论背后的逻辑。我认为产品设计和解决方案设计有很多共同之处。作为产品经理，你需要理解终端用户的需求；这就是在 Salesforce 中作为解决方案架构师的需求发现环节。产品可以分阶段发布，同样地，当你作为 Salesforce 的解决方案架构师时，某些交付成果可能无法在第一阶段完成，也许是因为时间线、预算、资源或功能优先级的原因，产品的某些功能需要推迟到后续版本发布。我们不在一个完美的世界里，你不能总是得到你想要的。然后是人——在这两种工作场景中，你都需要懂得如何与不同的人合作，要像水一样，保持灵活。:)</p>
+<p>这就是我迄今为止从工作中学到的东西，这是一个简要总结。还有太多东西等着我去学习！</p>
+<p>学习愉快！</p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/design-dev/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
+</body>
+
+</html>

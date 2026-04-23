@@ -1,14 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Other on 金萱</title><link>https://xuanjin001.github.io/zh-cn/tags/other/</link><description>Recent content in Other on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/other/index.xml" rel="self" type="application/rss+xml"/><item><title>第十二单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</link><pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-我发现个性化搜索这个话题非常有趣。从用户的角度来看，它毫无疑问地为用户提供了帮助——每个浏览器都能了解并追踪用户的偏好。这也引出了我的问题：每个用户使用搜索的习惯都不同，作为开发者，你要如何在设计和开发工具时将这些差异纳入考量？比如，你怎么知道哪些功能是用户更倾向于使用的？另外，用户画像（user profile）似乎更多是针对某一特定类型的用户，这是否意味着你并没有考虑到其他用户的使用习惯？谢谢。</description></item><item><title>第九单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</link><pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-在课件中，链接分析（Link Analysis）的定义似乎是：&amp;ldquo;用于网络爬取、排名、计算网页的地理范围、查找镜像主机、计算网页和搜索引擎的统计数据、网页分类&amp;rdquo;。但我对链接分析的工作原理仍不太确定——它是否仅仅通过网络爬取和排名来计算网页的地理范围？我不确定自己的理解是否正确。</description></item><item><title>第八单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</link><pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-关于引导用户输入更长查询的问题，我知道课上没有深入讲解这个概念，但在进行搜索时，是否需要匹配所有词语？我也不理解颜色变化的作用——颜色变化的目的是为了引导用户输入完整的句子，从而获得更好的搜索结果吗？颜色变化又是如何引导用户输入更多词语的？我不太理解这两者之间的关联。</description></item><item><title>第七单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</link><pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-我仍然不确定自己是否理解了归一化 DCG（nDCG）。我知道与固定范围的值相比，归一化处理更为合理。但我认为我对这个概念的理解还不够准确，所以才会感到困惑。能否再解释一遍？谢谢。</description></item><item><title>第六单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</link><pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-我对以下概念仍然不太理解：你要如何决定需要添加什么常数？我猜这取决于具体的词语？另外，不同的词语对应的常数也会随之改变，对吗？这是否意味着我们需要逐一计算每个词的概率？我不确定这个过程是如何运作的。</description></item><item><title>第五单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</link><pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-语言模型的概念对我来说仍然不太清楚。我的理解是，当用户在文档中进行搜索时，他们会使用类似 SQL 查询的方式在文档集合中进行搜索，从而得到最终结果，对吗？我不明白这里所说的&amp;quot;查询&amp;quot;（query）具体指的是什么？</description></item><item><title>第四单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</link><pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-我对&amp;quot;距离&amp;quot;这个概念仍然感到困惑。我的理解是，距离用于判断相关性，对吗？我不明白为什么使用角度（angle）会比使用距离（distance）更好。</description></item><item><title>第三单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</link><pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</guid><description>本文由 Gideon（AI）翻译自英文原版。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other on 金萱</title>
+    <link>https://xuanjin001.github.io/zh-cn/tags/other/</link>
+    <description>Recent content in Other on 金萱</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十二单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</link>
+      <pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-12-muddiest-points-/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我发现个性化搜索这个话题非常有趣。从用户的角度来看，它毫无疑问地为用户提供了帮助——每个浏览器都能了解并追踪用户的偏好。这也引出了我的问题：每个用户使用搜索的习惯都不同，作为开发者，你要如何在设计和开发工具时将这些差异纳入考量？比如，你怎么知道哪些功能是用户更倾向于使用的？另外，用户画像（user profile）似乎更多是针对某一特定类型的用户，这是否意味着你并没有考虑到其他用户的使用习惯？谢谢。</description>
+    </item>
+    
+    <item>
+      <title>第九单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</link>
+      <pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-9-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+在课件中，链接分析（Link Analysis）的定义似乎是：&amp;ldquo;用于网络爬取、排名、计算网页的地理范围、查找镜像主机、计算网页和搜索引擎的统计数据、网页分类&amp;rdquo;。但我对链接分析的工作原理仍不太确定——它是否仅仅通过网络爬取和排名来计算网页的地理范围？我不确定自己的理解是否正确。</description>
+    </item>
+    
+    <item>
+      <title>第八单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</link>
+      <pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-8-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+关于引导用户输入更长查询的问题，我知道课上没有深入讲解这个概念，但在进行搜索时，是否需要匹配所有词语？我也不理解颜色变化的作用——颜色变化的目的是为了引导用户输入完整的句子，从而获得更好的搜索结果吗？颜色变化又是如何引导用户输入更多词语的？我不太理解这两者之间的关联。</description>
+    </item>
+    
+    <item>
+      <title>第七单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</link>
+      <pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-7-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我仍然不确定自己是否理解了归一化 DCG（nDCG）。我知道与固定范围的值相比，归一化处理更为合理。但我认为我对这个概念的理解还不够准确，所以才会感到困惑。能否再解释一遍？谢谢。</description>
+    </item>
+    
+    <item>
+      <title>第六单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</link>
+      <pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-6-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我对以下概念仍然不太理解：你要如何决定需要添加什么常数？我猜这取决于具体的词语？另外，不同的词语对应的常数也会随之改变，对吗？这是否意味着我们需要逐一计算每个词的概率？我不确定这个过程是如何运作的。</description>
+    </item>
+    
+    <item>
+      <title>第五单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</link>
+      <pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-5-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+语言模型的概念对我来说仍然不太清楚。我的理解是，当用户在文档中进行搜索时，他们会使用类似 SQL 查询的方式在文档集合中进行搜索，从而得到最终结果，对吗？我不明白这里所说的&amp;quot;查询&amp;quot;（query）具体指的是什么？</description>
+    </item>
+    
+    <item>
+      <title>第四单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</link>
+      <pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-4-muddiest-point/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+我对&amp;quot;距离&amp;quot;这个概念仍然感到困惑。我的理解是，距离用于判断相关性，对吗？我不明白为什么使用角度（angle）会比使用距离（distance）更好。</description>
+    </item>
+    
+    <item>
+      <title>第三单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</link>
+      <pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-point/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
 在构建 B 树以提升搜索效率时，我的理解是将索引以树形结构来组织，这样理解正确吗？
-我仍然不太明白为什么需要对索引进行压缩，想了解这背后的原因是什么。</description></item><item><title>第二单元 最难懂的知识点</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</link><pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-结合阅读材料中提到的算法，我想知道，为了开发一个好的信息检索引擎，我们是否需要将所有这些算法结合起来使用？综合运用这些算法最有效的方式是什么？</description></item><item><title>第二单元阅读笔记</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</link><pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</guid><description>本文由 Gideon（AI）翻译自英文原版。
+我仍然不太明白为什么需要对索引进行压缩，想了解这背后的原因是什么。</description>
+    </item>
+    
+    <item>
+      <title>第二单元 最难懂的知识点</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</link>
+      <pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-3-muddiest-points/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
+结合阅读材料中提到的算法，我想知道，为了开发一个好的信息检索引擎，我们是否需要将所有这些算法结合起来使用？综合运用这些算法最有效的方式是什么？</description>
+    </item>
+    
+    <item>
+      <title>第二单元阅读笔记</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</link>
+      <pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-2-reading/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
 IIR 第 1.2 节：构建倒排索引的初步尝试
 主要步骤：
 收集待索引的文档
@@ -26,7 +122,16 @@ Doc 4 july new home sales rise
 考虑以下文档：
 Doc 1 breakthrough drug for schizophrenia
 Doc 2 new schizophrenia drug
-Doc 3 new approach for treatment of schizophrenia</description></item><item><title>第一单元阅读笔记</title><link>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</link><pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</guid><description>本文由 Gideon（AI）翻译自英文原版。
+Doc 3 new approach for treatment of schizophrenia</description>
+    </item>
+    
+    <item>
+      <title>第一单元阅读笔记</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</link>
+      <pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/unit-1-reading/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。
 第一单元阅读内容整理如下。
 FOA 第 1.1 节：Finding Out About（认知活动）
 本节的核心论点是：进步要求我们充分认识到自己作为学者、语言使用者乃至适应性生物所具备的认知基础。人类已进化出一套广泛的策略，用以从环境中获取有用信息，包括：对正确路径作出初步猜测、运用复杂的特征集判断是否走在正确的方向上，以及不断向前推进。
@@ -71,4 +176,8 @@ IR 大量借鉴了语言学领域的成果，尤其是计算语言学
 能够搜索和检索整个生物医学文献、全国司法体系或所有主要报纸杂志文章的计算机，已经在医生、律师、记者、学生……所有人和互联网之间创造了新的市场
 &amp;ldquo;搜索引擎&amp;quot;并非指某一具体实现，而是指一个理想化的系统，代表了目前实际使用的各代各类搜索引擎的共同模型
 搜索引擎本质上是一种匹配：将用户查询中提到的描述性特征，与共享这些特征的文档进行匹配
-IES 第 1.1 节和第 1.</description></item></channel></rss>
+IES 第 1.1 节和第 1.</description>
+    </item>
+    
+  </channel>
+</rss>

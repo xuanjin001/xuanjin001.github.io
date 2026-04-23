@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>
+  AI 代理：超越聊天机器人的下一步进化 · 金萱
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="金萱 / Xuan Jin">
+<meta name="description" content="什么是 AI 代理，它与传统聊天机器人有何不同，以及它们在 2026 年 3 月的最新发展走向何方。">
+<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="AI 代理：超越聊天机器人的下一步进化"/>
+<meta name="twitter:description" content="什么是 AI 代理，它与传统聊天机器人有何不同，以及它们在 2026 年 3 月的最新发展走向何方。"/>
+
+<meta property="og:title" content="AI 代理：超越聊天机器人的下一步进化" />
+<meta property="og:description" content="什么是 AI 代理，它与传统聊天机器人有何不同，以及它们在 2026 年 3 月的最新发展走向何方。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/ai-agents/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-03-22T14:00:00-07:00" />
+<meta property="article:modified_time" content="2026-03-22T14:00:00-07:00" />
+
+
+
+
+
+<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/ai-agents/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+<style>
+  .lightbox-img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease;
+  }
+  .lightbox-img:hover {
+    opacity: 0.85;
+  }
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    cursor: zoom-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/zh-cn">
+      金萱
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle">
+      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+    </label>
+    <ul class="navigation-list">
+      
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/about/">关于我</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/posts/">博客</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/projects/">项目</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link"
+          href="/zh-cn/contact/">联系我</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      
+      
+      <li class="navigation-item">
+        <a href="/">🇺🇸</a>
+      </li>
+      
+      
+      
+      
+      
+    </ul>
+    
+  </section>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CFF4Q5GTTC');
+  </script>
+</nav>
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/ai-agents/">
+              AI 代理：超越聊天机器人的下一步进化
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2026-03-22T14:00:00-07:00">
+                March 22, 2026
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              阅读约 2 分钟
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/zh-cn/authors/gideon/">Gideon</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/zh-cn/categories/ai-tech/">AI &amp; Tech</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/zh-cn/tags/ai-tech/">AI &amp; Tech</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>如果你一直在关注 AI 领域，你可能已经注意到了话题的转变。不再只是回答问题的聊天机器人。新的热词是<strong>代理</strong>——真正能够代表你<em>做事</em>的 AI。</p>
+<p>截至 2026 年 3 月，代理不再只是理论。它们正在发起支付、管理企业工作流程，甚至在工厂车间工作。让我们来解析正在发生的事情。</p>
+<h2 id="什么是-ai-代理">
+  什么是 AI 代理？
+  <a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-ai-%e4%bb%a3%e7%90%86">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>AI 代理是一个能够接受目标、分解为步骤并执行这些步骤的系统——通常沿途使用工具、API 或其他系统。与等待你下一个提示的传统聊天机器人不同，代理可以提前规划、做出决策并在出错时纠正。</p>
+<p>这么想吧：</p>
+<ul>
+<li><strong>聊天机器人</strong>：你问一个问题，它给你答案。结束。</li>
+<li><strong>代理</strong>：你给它一个目标（&ldquo;帮我预订去东京的航班，下周四 800 美元以下&rdquo;），它去搜索、比较和预订——只在需要时才向你确认。</li>
+</ul>
+<p>关键区别是<strong>自主性</strong>。聊天机器人是被动的。代理是主动的。</p>
+<h2 id="为什么是现在">
+  为什么是现在？
+  <a class="heading-link" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af%e7%8e%b0%e5%9c%a8">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>AI 代理并不是一个全新的概念。研究人员几十年来一直致力于自主系统。但最近有几件事结合在一起，使代理变得实用：</p>
+<ol>
+<li>
+<p><strong>大型语言模型变得足够好。</strong> 像 GPT-4、Claude 和 Gemini 这样的模型现在可以推理多步问题、理解上下文并生成工具可以消费的结构化输出。</p>
+</li>
+<li>
+<p><strong>工具使用成为一等公民。</strong> 现代 LLM 可以调用 API、运行代码、搜索网络并与数据库交互——不仅仅是生成文本。</p>
+</li>
+<li>
+<p><strong>框架成熟。</strong> LangChain、CrewAI、AutoGen 和 Anthropic 自有的 Agent SDK 等工具为开发者提供了连接代理的构建块，而无需从头开始。</p>
+</li>
+<li>
+<p><strong>成本下降——投资转向。</strong> 运行一个完成任务的代理需要 20 个 LLM 调用的想法在两年前成本过高。Token 价格急剧下降。同时，高盛注意到 AI 投资正在大量转向数据中心基础设施，这表明行业在赌规模——不仅仅是更智能的模型，还有运行数百万并行代理的原始计算。</p>
+</li>
+</ol>
+<h2 id="代理实际上能做什么">
+  代理实际上能做什么？
+  <a class="heading-link" href="#%e4%bb%a3%e7%90%86%e5%ae%9e%e9%99%85%e4%b8%8a%e8%83%bd%e5%81%9a%e4%bb%80%e4%b9%88">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>以下是已经在生产中的真实例子——不是原型，是已部署的系统。</p>
+<h3 id="金融交易">
+  金融交易
+  <a class="heading-link" href="#%e9%87%91%e8%9e%8d%e4%ba%a4%e6%98%93">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>这是 2026 年初最引人注目的发展之一。<strong>Visa 正在积极更新其支付基础设施</strong>以处理 AI 代理发起的交易——不是人类。想想这意味着什么：AI 代理代表你谈判购买、选择供应商并完成支付，所有这些都无需你接触结账页面。万事达卡也在朝类似方向移动，推出了专门用于检测欺诈的<strong>基础模型</strong>，在这个买家和卖家都可能是 AI 系统的时代。</p>
+<p>美国财政部也介入了，发布了<strong>面向金融机构的 AI 风险指南</strong>——承认在代理操作的金融系统中需要尚不存在的治理框架。</p>
+<h3 id="软件开发">
+  软件开发
+  <a class="heading-link" href="#%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>像 Claude Code、GitHub Copilot Workspace 和 Devin 这样的代理可以接受错误报告、阅读代码库、写修复、运行测试并打开拉取请求。它们并不完美，但进步很快。你正在阅读的这篇文章就是用 AI 代理的帮助起草的。</p>
+<h3 id="客户服务和企业自动化">
+  客户服务和企业自动化
+  <a class="heading-link" href="#%e5%ae%a2%e6%88%b7%e6%9c%8d%e5%8a%a1%e5%92%8c%e4%bc%81%e4%b8%9a%e8%87%aa%e5%8a%a8%e5%8c%96">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>Salesforce 的 Agentforce 部署 AI 代理，可以端到端解决客户问题——不只是推荐文章，而是实际处理退款、更新账户并在需要时升级。OpenAI 最近推出了 <strong>Frontier</strong>，这是一款直接放入 SaaS 工作流程的 AI 代理产品。宣传很激进：为什么为 10 个 SaaS 席位付费，而代理可以完成其中几个的工作？这是对传统软件即服务模式的直接挑战。</p>
+<p>同时，<strong>NTT DATA 和 NVIDIA 合作将企业 AI 工厂带入生产规模</strong>——为运行大规模组织所需的代理吞吐量构建专用基础设施。</p>
+<h3 id="物理-ai-和机器人">
+  物理 AI 和机器人
+  <a class="heading-link" href="#%e7%89%a9%e7%90%86-ai-%e5%92%8c%e6%9c%ba%e5%99%a8%e4%ba%ba">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>代理不再局限于屏幕。<strong>宝马开始在德国工厂车间部署人形机器人</strong>，欧洲制造业的其他地区正在密切关注。这些不是装配线上的简单机械臂——它们是 AI 驱动的系统，可以适应任务、导航物理环境并与人类工人协作。</p>
+<h3 id="研究和分析">
+  研究和分析
+  <a class="heading-link" href="#%e7%a0%94%e7%a9%b6%e5%92%8c%e5%88%86%e6%9e%90">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>代理可以被赋予一个研究问题，搜索文档和数据库，综合发现并产生结构化报告。过去分析师需要一周才能完成的任务现在代理一个下午就可以完成。金融服务公司如玉山银行正在与 IBM 合作构建<strong>专门针对处理敏感银行数据和分析的代理的 AI 治理框架</strong>。</p>
+<h2 id="代理的架构">
+  代理的架构
+  <a class="heading-link" href="#%e4%bb%a3%e7%90%86%e7%9a%84%e6%9e%b6%e6%9e%84">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>从高层次来看，大多数 AI 代理遵循一个循环：</p>
+<ol>
+<li><strong>观察</strong> — 接受当前状态（用户输入、工具输出、错误消息）</li>
+<li><strong>思考</strong> — 推理下一步该做什么</li>
+<li><strong>行动</strong> — 调用工具、写代码、发消息</li>
+<li><strong>反思</strong> — 评估结果并决定是否继续或调整</li>
+</ol>
+<p>这有时被称为 <strong>ReAct 模式</strong>（Reason + Act）。代理保持循环直到任务完成或确定无法继续。</p>
+<pre tabindex="0"><code>用户目标 → 计划 → 执行步骤 1 → 评估 → 执行步骤 2 → ... → 完成
+</code></pre><p>一些代理添加了记忆（短期和长期）、生成子代理进行并行工作的能力，以及防止失控行为的护栏。</p>
+<h3 id="多代理经济学">
+  多代理经济学
+  <a class="heading-link" href="#%e5%a4%9a%e4%bb%a3%e7%90%86%e7%bb%8f%e6%b5%8e%e5%ad%a6">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h3>
+<p>一个值得关注的新兴领域是<strong>多代理系统</strong>——多个 AI 代理协作处理单个业务流程。最近的分析表明，多代理系统的经济学与单代理设置根本不同。当代理可以委托给其他代理时，你得到专业化、并行性——如果你不小心，还有失控的成本。公司开始像思考微服务架构一样思考代理编排：强大，但复杂。</p>
+<h2 id="挑战和限制">
+  挑战和限制
+  <a class="heading-link" href="#%e6%8c%91%e6%88%98%e5%92%8c%e9%99%90%e5%88%b6">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>代理令人兴奋，但让我们诚实面对它们的不足：</p>
+<ul>
+<li>
+<p><strong>可靠性</strong>：代理可能失控。早期的小误解可能会复合为完全错误的结果。代理越自主，在你出错之前捕获错误就越难。</p>
+</li>
+<li>
+<p><strong>规模化时的安全</strong>：NVIDIA 最近发布了一个专门用于<strong>使企业 AI 代理更安全部署</strong>的工具包。最大 AI 公司之一觉得需要构建专用安全工具这一事实告诉你行业在哪里——足够强大以为人们所用，也足够危险需要护栏。</p>
+</li>
+<li>
+<p><strong>成本</strong>：即使 token 更便宜，一个完成任务的代理做出数十个 LLM 调用会很快累积——尤其是在企业规模上。高盛预测 AI 投资转向数据中心表明基础设施账单只会增加。</p>
+</li>
+<li>
+<p><strong>信任和治理</strong>：授予 AI 代理访问你的电子邮件、日历或银行账户的权限需要我们仍在建立的信任水平。美国财政部的 AI 风险指南是监管机构跟上的迹象，但框架仍处于早期。</p>
+</li>
+<li>
+<p><strong>数据准备就绪</strong>：正如保险行业正在艰难学习的那样，AI 代理只和它们能访问的数据一样好。如果你的组织数据分散、不一致或孤岛化，代理会挣扎——无论背后的模型多么复杂。</p>
+</li>
+<li>
+<p><strong>搜索颠覆问题</strong>：Trustpilot 最近宣布与 AI 公司合作，因为<strong>传统搜索继续下降</strong>。当代理可以直接进入数据源、绕过搜索引擎时，这会改变整个网络的经济学。建立在搜索流量上的企业需要开始考虑代理优先的发现模式。</p>
+</li>
+</ul>
+<h2 id="这是走向何方">
+  这是走向何方？
+  <a class="heading-link" href="#%e8%bf%99%e6%98%af%e8%b5%b0%e5%90%91%e4%bd%95%e6%96%b9">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>这是我未来一两年会看到的：</p>
+<p><strong>会花钱的代理。</strong> Visa 和万事达卡准备其基础设施是一个领先指标。在一年内，AI 代理将常规处理购买决策——从云资源采购到消费者购物。支付行业正在现在就做好准备。</p>
+<p><strong>更专业的代理。</strong> 不要期待一个通用代理，而是期待针对特定领域量身定制的代理——法律研究、财务分析、DevOps、医疗分诊。玉山银行和 IBM 的合作是领域特定代理治理的早期例子。</p>
+<p><strong>代理到代理协作。</strong> 多个代理协作处理一个任务，每个都有自己的专业。一个代理处理数据收集，另一个做分析，第三个写报告。这方面的经济学和编排模式正在确定中。</p>
+<p><strong>规模化物理代理。</strong> 宝马的人形机器人只是个开始。随着机器人硬件成本下降和 AI 控制系统改进，期待代理从屏幕进入仓库、医院和建筑工地。</p>
+<p><strong>更好的护栏。</strong> 随着代理变得更强大，围绕安全、监控和控制的工具将成熟。NVIDIA 的安全工具包、美国财政部的风险指南和 IBM 的治理框架都是将被变成大规模合规和安全行业的早期动作。</p>
+<p><strong>代理作为队友，而不是工具。</strong> 心理模型会转变。不是&quot;我使用了 AI 工具&quot;，而是&quot;我和 AI 队友一起工作&quot;。界面会更像委托而不是提示。</p>
+<h2 id="最后感想">
+  最后感想
+  <a class="heading-link" href="#%e6%9c%80%e5%90%8e%e6%84%9f%e6%83%b3">
+    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
+    <span class="sr-only">链接到标题</span>
+  </a>
+</h2>
+<p>AI 代理代表从前沿甚至一年前的有意义的一步。它们不是魔法——它们是带有规划循环和工具访问的 LLM。但这种组合被证明是非常强大的。</p>
+<p>2026 年 3 月与一年前的不同在于，代理不再是开发者玩具。它们在支付系统中，在工厂车间，在银行治理框架中，并且在金融监管机构的视线中。基础设施正在构建。安全工具正在开发。商业模式正在测试。</p>
+<p>问题不再是&quot;AI 能回答我的问题吗？&ldquo;而是&quot;AI 能做我的任务吗？&ldquo;而且越来越多——无论任务是写代码、处理支付还是组装汽车——答案是肯定的。</p>
+<p>无论你是开发者、商业领袖，还是只是想跟上变化步伐的人——代理值得你关注。它们不会很快取代人类，但它们绝对在改变一个人一天能完成的事情。</p>
+<hr>
+<p><em>这篇文章由 Gideon 撰写。最后更新于 2026 年 3 月 22 日。</em></p>
+
+      </div>
+
+
+      <footer>
+        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/ai-agents/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
+    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    Share on LinkedIn
+  </a>
+
+  
+  
+
+</div>
+
+
+<script src="/js/linkedin-publish.js"></script>
+
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2015 -
+    
+    2026
+     金萱 / Xuan Jin 
+    ·
+    
+    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CFF4Q5GTTC');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="" />
+</div>
+<script>
+  (function () {
+    var overlay = document.getElementById("lightbox-overlay");
+    var overlayImg = document.getElementById("lightbox-img");
+
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("lightbox-img")) {
+        overlayImg.src = e.target.src;
+        overlayImg.alt = e.target.alt;
+        overlay.classList.add("active");
+      }
+    });
+
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("active");
+      overlayImg.src = "";
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("active");
+        overlayImg.src = "";
+      }
+    });
+  })();
+</script>
+</body>
+
+</html>
