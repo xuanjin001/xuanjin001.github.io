@@ -1,523 +1,194 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on xuanjin</title>
-    <link>https://xuanjin001.github.io/posts/</link>
-    <description>Recent content in Posts on xuanjin</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 22 Apr 2026 15:40:00 -0700</lastBuildDate>
-    <atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI Daily News — April 22, 2026</title>
-      <link>https://xuanjin001.github.io/posts/ai-rundown-04-22/</link>
-      <pubDate>Wed, 22 Apr 2026 15:40:00 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai-rundown-04-22/</guid>
-      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;Credo Technology Unveils 224G PAM4 SerDes IP on TSMC N3 — Doubling AI Connectivity Speeds to 1.6 Tb/s Link to heading source&#xA;Credo Technology has launched its 224G PAM4 SerDes IP on TSMC&amp;rsquo;s N3 process — doubling the data rate of its previous 112G generation to 1.</description>
-    </item>
-    <item>
-      <title>AI Rundown — April 21: Claude Opus 4.7, GPT-5.4-Cyber, and the Robotics Leap</title>
-      <link>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</link>
-      <pubDate>Tue, 21 Apr 2026 15:30:00 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</guid>
-      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;The AI arms race is alive and well. Here&amp;rsquo;s what made headlines today — all sourced, no speculation.&#xA;Claude Opus 4.7: Anthropic Reclaims the Throne Link to heading Anthropic dropped Claude Opus 4.7 and promptly retook the lead as the most powerful generally available LLM — narrowly, but decisively.</description>
-    </item>
-    <item>
-      <title>AI Rundown — April Mid-Month Edition</title>
-      <link>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</link>
-      <pubDate>Tue, 21 Apr 2026 08:30:00 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</guid>
-      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;The AI news cycle doesn&amp;rsquo;t stop, and neither do I. Here&amp;rsquo;s what I pulled from the wire today — all facts sourced, no invention.&#xA;The Smart Glasses Race Is Getting Real Link to heading London-based hardware company Nothing is on track to release a pair of smart glasses next year (2027), Bloomberg reported on March 31, 2026, citing anonymous sources.</description>
-    </item>
-    <item>
-      <title>AI &amp; Enterprise - Adoption</title>
-      <link>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</link>
-      <pubDate>Mon, 20 Apr 2026 23:28:56 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</guid>
-      <description>If you haven&amp;rsquo;t read through a couple of agent-related posts, you probably should first read this post.&#xA;For enterprises, what we can learn from OpenClaw or OpenClaw-like tools.&#xA;First off, I think we need to take a look at the AI tools out there:&#xA;Foundation Model Platforms&#xA;Microsoft Copilot + Azure AI Studio — deeply integrated into Microsoft 365, Dynamics, Azure Google Cloud Vertex AI + Gemini — tight Google Workspace integration, strong on multimodal AWS Bedrock — Amazon&amp;rsquo;s managed LLM platform, Claude/Anthropic available here too IBM watsonx — strong in regulated industries (finance, healthcare, government) Business/Productivity AI</description>
-    </item>
-    <item>
-      <title>OpenClaw, How I have been using it, What Enterprise Can Do With It Potentially</title>
-      <link>https://xuanjin001.github.io/posts/openclaw-baiscs/</link>
-      <pubDate>Mon, 20 Apr 2026 17:58:33 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/openclaw-baiscs/</guid>
-      <description>I have been playing with OpenClaw for a while now, I think I started around middle of March maybe. It has been about a month now.&#xA;Everything I have learned about AI has been from using OpenClaw.&#xA;A little bit about me — the way I learn things, all kinds of things, is hands-on. I need to actually work on something to have that &amp;ldquo;thing&amp;rdquo; make sense to me. I know my assistant Gideon has already written something for me on 4/2, which you can find here.</description>
-    </item>
-    <item>
-      <title>Stanford AI Index Report 2026 — Full Summary &amp; What&#39;s Next?</title>
-      <link>https://xuanjin001.github.io/posts/ai-index-report-2026/</link>
-      <pubDate>Fri, 17 Apr 2026 08:02:26 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai-index-report-2026/</guid>
-      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;📘 Stanford HAI AI Index Report 2026 — Full Summary Link to heading 🔷 Introduction &amp;amp; Top Takeaways Link to heading The 2026 edition is the ninth in the series and frames a central tension: AI capability is advancing faster than the governance, evaluation, and institutional systems built around it.</description>
-    </item>
-    <item>
-      <title>OpenClaw — My Personal AI Assistant That Actually Does Stuff</title>
-      <link>https://xuanjin001.github.io/posts/openclaw-personal-ai-assistant/</link>
-      <pubDate>Thu, 02 Apr 2026 13:29:19 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/openclaw-personal-ai-assistant/</guid>
-      <description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.&#xA;What is OpenClaw? Link to heading If you&amp;rsquo;ve used ChatGPT, Claude, or any other AI chatbot, you already know the basics — you type something, it responds. OpenClaw takes that further. Way further.&#xA;OpenClaw is basically a Linux environment paired with an LLM. Think of it as giving an AI agent its own computer to work on.</description>
-    </item>
-    <item>
-      <title>Openclaw SF Data Pipeline Part II Full Data Migration Process</title>
-      <link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</link>
-      <pubDate>Fri, 27 Mar 2026 15:45:03 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</guid>
-      <description>Well, so I think I have done it, just ran through a full data migration pipeline with openclaw successfully. Kudos to my lovely agent team Data Migration HQ, Data Migration HQ was able to extract, check on data, connect to target, let me know if there is any error, I worked through the errors with this group of agents, then agent team loads everything!! After loading, it is comparing the data!</description>
-    </item>
-    <item>
-      <title>Openclaw SF Data Pipeline Part I Source Data Extraction</title>
-      <link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</link>
-      <pubDate>Thu, 26 Mar 2026 12:25:31 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</guid>
-      <description>So I have been playing with openclaw a lot, like actually a lot! To the point that when I sleep, I think about what else can I do to make it better.&#xA;If you break down what OpenClaw is, it is basically a Linux environment + LLM, where LLM can do a lot of the things a system admin use to do in terminal, now you need to talk to it and provide more guidelines for the &amp;ldquo;Agent&amp;rdquo; to do it.</description>
-    </item>
-    <item>
-      <title>Personal Accounting App — Product Requirements Document</title>
-      <link>https://xuanjin001.github.io/posts/req_doc/</link>
-      <pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/req_doc/</guid>
-      <description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description>
-    </item>
-    <item>
-      <title>Still Figuring It Out — My Honest Take on AI in 2026</title>
-      <link>https://xuanjin001.github.io/posts/ai_2026/</link>
-      <pubDate>Sun, 22 Mar 2026 18:28:26 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai_2026/</guid>
-      <description>2026 is really different. Starting with the new year, it is the year of AI. If the past was all about agents and agentic workflows, this year is all about skills for agents and automations.&#xA;People&amp;rsquo;s perspective about AI Link to heading I found people are a bit polarized about AI. Some people love it and fully embrace it, while some people don&amp;rsquo;t think AI can do what they do. There is also another group: they know something about AI and AI agents but still only use AI chatbots.</description>
-    </item>
-    <item>
-      <title>Personal Accounting -- Receipt Tracker</title>
-      <link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link>
-      <pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid>
-      <description>I have been trying to find an app that can record my day-to-day purchases so that I can compare prices between Costco and Target, which can help me evaluate how to spend my money. I tried Mint, but it only has a really generic spending structure. It shows the total amount that you spent at each merchant, and depending on where you are buying things, it will generically tell you how you are spending your money.</description>
-    </item>
-    <item>
-      <title>AI and What&#39;s Next</title>
-      <link>https://xuanjin001.github.io/posts/mar_7_25/</link>
-      <pubDate>Fri, 07 Mar 2025 12:10:32 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/mar_7_25/</guid>
-      <description>AI has been in the spotlight ever since ChatGPT captured everyone&amp;rsquo;s attention. It evolutioned how we use the internet. For a lot of people, it changed how they write, how they approach to their daily work. The technology is there, so what&amp;rsquo;s next? What does the future hold from here?&#xA;As you start reading this, you may be wondering why we are revisiting this topic. People have been talking about AI and what it can do since 2023, and you might not want to hear about it in 2025 again.</description>
-    </item>
-    <item>
-      <title>I have been sick</title>
-      <link>https://xuanjin001.github.io/posts/sick_not_fun/</link>
-      <pubDate>Wed, 13 Nov 2024 12:46:57 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/sick_not_fun/</guid>
-      <description>Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&amp;rsquo;t want to take any leave.&#xA;I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something.</description>
-    </item>
-    <item>
-      <title>Salesforce&#39;s Agentforce: Revolutionizing Business with Autonomous AI Agents</title>
-      <link>https://xuanjin001.github.io/posts/agentforce/</link>
-      <pubDate>Mon, 04 Nov 2024 19:35:30 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/agentforce/</guid>
-      <description>Salesforce&amp;rsquo;s Agentforce: Revolutionizing Business with Autonomous AI Agents Link to heading Salesforce, a leader in customer relationship management (CRM) software, has recently launched Agentforce, a groundbreaking platform designed to deploy autonomous AI agents across various business functions. This article delves into the features, benefits, and potential drawbacks of Agentforce, providing a comprehensive overview of this innovative product.&#xA;What is Agentforce? Link to heading Agentforce is an advanced AI platform that enables businesses to create and manage autonomous agents capable of performing a wide range of tasks.</description>
-    </item>
-    <item>
-      <title>The Rise of Artificial Intelligence: Transforming Our World</title>
-      <link>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</link>
-      <pubDate>Mon, 04 Nov 2024 11:16:22 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</guid>
-      <description>Copilot (This article is created by copilot)&#xA;The Rise of Artificial Intelligence: Transforming Our World Artificial Intelligence (AI) has rapidly evolved from a futuristic concept to an integral part of our daily lives. But what exactly is AI, and how is it reshaping various sectors? What is Artificial Intelligence? Artificial Intelligence refers to the development of computer systems capable of performing tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, and identifying patterns.</description>
-    </item>
-    <item>
-      <title>AI...</title>
-      <link>https://xuanjin001.github.io/posts/ai_11-3-2024/</link>
-      <pubDate>Sun, 03 Nov 2024 16:06:30 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/ai_11-3-2024/</guid>
-      <description>AI has been a &amp;ldquo;hot&amp;rdquo; topic for about 2-3 years, ever since ChatGPT broke the internet lol, everything has been wrapped with AI. From couple years ago, there have been things claimed to be with AI, but they are not lol.&#xA;Is AI actually helping us or is it adding more trouble?&#xA;To answer that question, let&amp;rsquo;s go back and dig into what is AI.&#xA;You probably already hear the word AI have been throwing around a lot with machine learning, they go hand in hand.</description>
-    </item>
-    <item>
-      <title>Project-Lists-By-Far</title>
-      <link>https://xuanjin001.github.io/posts/projects_lists_2025/</link>
-      <pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/projects_lists_2025/</guid>
-      <description>Unlock to view this content.&#xD;# SFDC Project Experience Xuan started working at MondayCall, which is later merged into RSM, since June 2020. As of today, Xuan worked with over 30 clients in total, and that&#39;s also over 30 projects. Xuan is specialized mainly in implementing service cloud, and anything technical related such as data migration, integration, code. The following is a list of projects Xuan worked on in the past, with a short description on what the project is.</description>
-    </item>
-    <item>
-      <title>Resume</title>
-      <link>https://xuanjin001.github.io/posts/resume/</link>
-      <pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/resume/</guid>
-      <description>Summary Link to heading Salesforce Solution Architect with 5+ years of experience delivering end-to-end implementations across Service Cloud, Sales Cloud, Experience Cloud, and Service Cloud Voice. Specialized in complex technical solutions including data migration, system integrations, and custom code development. Track record of leading large-scale projects across 30+ clients, with deep expertise in AWS Connect, omni-channel routing, and cross-platform data architecture.&#xA;Experience Link to heading Salesforce Solution Architect / Technical Lead RSM (formerly MondayCall) — June 2020 – Present</description>
-    </item>
-    <item>
-      <title>Latest Update April 24, 2024</title>
-      <link>https://xuanjin001.github.io/posts/latest-update-apr-24-2024/</link>
-      <pubDate>Wed, 24 Apr 2024 15:31:34 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/latest-update-apr-24-2024/</guid>
-      <description>I have been on this big big big project for over a year now, it is like that&amp;rsquo;s my only life, nothing else, I felt like I was living under a rock for over a year. This project has been a mess from the start. The project had a challenging dynamic from the start, where the direction was heavily driven by the client, and by the time I got onto the project, the foundation had already been set.</description>
-    </item>
-    <item>
-      <title>Install Jupyter With &#39;pipx&#39; </title>
-      <link>https://xuanjin001.github.io/posts/mar_2_24/</link>
-      <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/mar_2_24/</guid>
-      <description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description>
-    </item>
-    <item>
-      <title>Deploy to GitHub Pages</title>
-      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
-      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
-      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.&#xA;I would like to document what I was doing here so that I can refer to here later when I need to deploy again.&#xA;First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
-    </item>
-    <item>
-      <title>My blog post project</title>
-      <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
-      <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
-      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.&#xA;Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
-    </item>
-    <item>
-      <title>Data Migration</title>
-      <link>https://xuanjin001.github.io/posts/data-migration/</link>
-      <pubDate>Mon, 31 Jul 2023 07:24:27 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/data-migration/</guid>
-      <description>What is &amp;ldquo;Data Migration&amp;rdquo;?&#xA;Whenever I talk about data migration, I always think about moving. Think about data migration in a moving situation, what will you do if you are moving into a new place? Moving data is the same way, what you will do is moving the data from one system and put them into another, just like moving. You will pack everything up in your old house and move into the new one.</description>
-    </item>
-    <item>
-      <title>Uncharted Review</title>
-      <link>https://xuanjin001.github.io/posts/uncharted-review/</link>
-      <pubDate>Sun, 20 Mar 2022 11:01:26 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/uncharted-review/</guid>
-      <description>Contains spoiler alert, I think it counts as spoiler alert.&#xA;Uncharted had American writing all over the place in that movie. I watch a lot of movies, and I can tell there are so much the director wants to do, different audience he wants to satisfy. Basically, he showed his interest in trying to make the original gamer happy, however, judging by the comments from the gamers, they are not too happy about what they saw.</description>
-    </item>
-    <item>
-      <title>LeedCode List</title>
-      <link>https://xuanjin001.github.io/posts/leedcode-list/</link>
-      <pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/leedcode-list/</guid>
-      <description>The following are my list of the items that I will be working on. I changed my strategy a little bit. I use to go over the &amp;ldquo;Explore&amp;rdquo; list, and doing the problem on the side. The following is my organized list. When I do couple problems, I will post on this insta account. :) As the whole world is my witness, and please keep pushing me to my own limits.</description>
-    </item>
-    <item>
-      <title>Design &amp; DEV</title>
-      <link>https://xuanjin001.github.io/posts/design-dev/</link>
-      <pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/design-dev/</guid>
-      <description>Photo by Andrea Piacquadio from Pexels&#xA;When it comes to design, there are different ways that can be done. The purpose of design is to make sure the solution you are designing will be acceptable by users. Design has so many different perspectives, I personally think they have the following parts:&#xA;Solution Design UI Design User Experience Design First of all, you do need to understand what you are designing, and what it is for, who it is for.</description>
-    </item>
-    <item>
-      <title>Postman API</title>
-      <link>https://xuanjin001.github.io/posts/postman-api/</link>
-      <pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/postman-api/</guid>
-      <description>What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.&#xA;I am taking the following from Postman&amp;rsquo;s website, they explained it perfectly.&#xA;Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.&#xA;https://www.postman.com/&#xA;I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.</description>
-    </item>
-    <item>
-      <title>Useful SFDC Tools</title>
-      <link>https://xuanjin001.github.io/posts/useful-sfdc-tools/</link>
-      <pubDate>Thu, 29 Jul 2021 22:28:57 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/useful-sfdc-tools/</guid>
-      <description>There are some sites and items that&amp;rsquo;s really helpful on our daily basis while working in SFDC. If you have some tools that you are using, please post that in the comments as well. I will continue update this post if I found more items.&#xA;Websites: https://developer.salesforce.com/&#xA;https://help.salesforce.com&#xA;Trailhead: https://trailhead.salesforce.com/&#xA;Toolkit for SFDC: https://cloudtoolkit.co/&#xA;Click to Create LWC designing tool: https://www.lightningdesignsystem.com/guidelines/builder/click/&#xA;Unofficial SF: https://unofficialsf.com/&#xA;Regex translator: https://regex-generator.olafneumann.org/?sampleText=2020-03-12T13%3A34%3A56.123Z%20INFO%20%20%5Borg.example.Class%5D%3A%20This%20is%20a%20%23simple%20%23logline%20containing%20a%20%27value%27.&amp;amp;flags=i&amp;amp;onlyPatterns=false&amp;amp;matchWholeLine=true&amp;amp;selection=&#xA;Mass Update on mutilple profiles: https://profilepowertools.</description>
-    </item>
-    <item>
-      <title>Dynamically Submit Opp Approval to a Queue</title>
-      <link>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</link>
-      <pubDate>Sat, 22 May 2021 15:36:53 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</guid>
-      <description>I haven&amp;rsquo;t been sleeping for about 36 hours by now, so please bear with me.&#xA;The following solution is inspired by this post.&#xA;Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&amp;rsquo;s related to opp owner&amp;rsquo;s department when condition meets.&#xA;Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer.</description>
-    </item>
-    <item>
-      <title>The Road to Locate Shirls</title>
-      <link>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</link>
-      <pubDate>Sun, 25 Apr 2021 19:29:07 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</guid>
-      <description>Week 4/18 &amp;ndash; 4/24 Starting Point Link to heading I have been sleeping on my couch for about a week now, kinda of lost the sense of what a bed is. Ironically, I was trying to sleep in my bed, I couldn&amp;rsquo;t sleep, kept dreaming about someone cutting someone&amp;rsquo;s head off&amp;hellip;but I don&amp;rsquo;t have nightmares when I sleep on my couch.&#xA;I have always wanted to start with coding on something, but I always got pushed back by myself, I was worried that the idea I had is not good enough, or maybe someone is already doing it and doing it better, or I don&amp;rsquo;t think it is interesting enough.</description>
-    </item>
-    <item>
-      <title>Know me by my name</title>
-      <link>https://xuanjin001.github.io/posts/know-me-by-my-name/</link>
-      <pubDate>Sun, 21 Mar 2021 22:26:56 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/know-me-by-my-name/</guid>
-      <description>Name is interesting, isn&amp;rsquo;t it? In English, each name comes from Greek tale, or Bible or the changing form of it. Name is interesting, some people say Name is just a label, it is just a name. However, I don&amp;rsquo;t agree, name is more than just a label, there is a reason we don&amp;rsquo;t call people NO.123456789, you know, there is a reason why inmates in the prison is only labeled with numbers.</description>
-    </item>
-    <item>
-      <title>The Last Blockbuster</title>
-      <link>https://xuanjin001.github.io/posts/the-last-blockbuster/</link>
-      <pubDate>Mon, 15 Mar 2021 22:39:27 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/the-last-blockbuster/</guid>
-      <description>Photo by Poranimm Athithawatthee on Pexels.com&#xA;I was taking a break after work, the break between my work and my night study, but all of my plans got distracted when I saw &amp;ldquo;The Last Blockbuster&amp;rdquo; on Netflix. I almost burst out into tears. I miss that place so much!&#xA;I was not born in the era of VHS, but I know what that is. My parents&amp;rsquo; wedding ceremony, the whole thing was shot and saved on VHS.</description>
-    </item>
-    <item>
-      <title>Insecurity, Don&#39;t we all have it?</title>
-      <link>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</link>
-      <pubDate>Mon, 15 Mar 2021 01:24:08 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</guid>
-      <description>I am a super insecure person. My look, my personality, the way I move. I feel like the whole world is looking at me all the time, but the fact is no one is actually looking. I love to coop up inside a lot, just so I don&amp;rsquo;t have to worry about what other people think about me. That whole process is just too much work. I don&amp;rsquo;t know, haha.</description>
-    </item>
-    <item>
-      <title>Build an Event Booking App (Practice)</title>
-      <link>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</link>
-      <pubDate>Wed, 10 Mar 2021 21:51:00 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</guid>
-      <description>I heard a question today &amp;mdash;- &amp;ldquo;How would you build an Event Booking App?&amp;rdquo;&#xA;Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.&#xA;- Who: who is this app is for?&#xA;- What: what is the app about?</description>
-    </item>
-    <item>
-      <title>It doesn&#39;t take a lot to hold on. It takes a lot of strength to let go.</title>
-      <link>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</link>
-      <pubDate>Sun, 21 Feb 2021 17:51:33 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</guid>
-      <description>It doesn&amp;rsquo;t take a lot to hold on. It takes a lot of strength to let go. &amp;ndash; J.C. Watts&#xA;I had a trigger point today, I hated it, I saw a guy in Costco, who awfully looks like Grayson, I think that&amp;rsquo;s him, I almost lost control. It is pretty bad. I don&amp;rsquo;t know how to handle feelings like that, it is pretty annoying. The first thing came into my mind was, &amp;ldquo;oh Grayson is till alive, so nothing bad happened to you?</description>
-    </item>
-    <item>
-      <title>Unsolved, Unknown</title>
-      <link>https://xuanjin001.github.io/posts/unsolved-unknown/</link>
-      <pubDate>Sun, 21 Feb 2021 01:24:42 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unsolved-unknown/</guid>
-      <description>There are few things haunts us, the dark at night can cover a lot of things, at the same time, it can also discover a lot of beauty, the beauty of the night light from a city, the terror under those lights. You don&amp;rsquo;t know what&amp;rsquo;s happening there.&#xA;Couple years ago, I met a guy at a train station in Denver, the train was not there yet, we had about 30 minutes to kill.</description>
-    </item>
-    <item>
-      <title>Murder? Murder! Murder? Maybe - Part I</title>
-      <link>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</link>
-      <pubDate>Wed, 27 Jan 2021 00:06:15 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</guid>
-      <description>Photo by Rojan Maguyon on Pexels.com&#xA;Story starts here&amp;hellip; (If you prefer listening, please scroll all the way down)&#xA;The plan was good and simple, he had it all planned out, it was just suppose to be a fake death, so that he doesn&amp;rsquo;t need to live the life he doesn&amp;rsquo;t want, and start over. His best friend would assist him. He would still watch his family from far away and send money to them once in a while to help out, that&amp;rsquo;s all he wanted to do; making everyone in the town thinks he is dead, then life moves on.</description>
-    </item>
-    <item>
-      <title>Community Cloud Cert Resources</title>
-      <link>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</link>
-      <pubDate>Sun, 24 Jan 2021 19:14:32 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</guid>
-      <description>The following are the resources I have, and those are the resources I am using to get ready for this test. Some of the resources are found by me, a lot of the following resources are from my friend Yi. Hats off to her!&#xA;Photo by Julia M Cameron on Pexels.com&#xA;Resources:&#xA;Fast Path: https://trailhead.salesforce.com/en/users/amanj/trailmixes/community-cloud-fast-path Salesforce Cert Community Cloud Consultant Exam Guide: https://trailhead.salesforce.com/help?article=Salesforce-Certified-Community-Cloud-Consultant-Exam-Guide &amp;ndash;&amp;gt; Found by Yi Outline points related: https://trailhead.</description>
-    </item>
-    <item>
-      <title>Administration Essentials for New Admins</title>
-      <link>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</link>
-      <pubDate>Thu, 21 Jan 2021 00:14:15 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</guid>
-      <description>In Salesforce, there are two major roles, one is Admin and the other one is Developer, everyone will tell you that you should learn how to be an Admin first, then learn to be a Developer. I totally agree, with your Admin skills, you will understand the whole picture a lot better; since as an Admin, you are the heart of your Org.&#xA;A lot of people will have some misunderstandings about Admins in Salesforce.</description>
-    </item>
-    <item>
-      <title>English</title>
-      <link>https://xuanjin001.github.io/posts/english/</link>
-      <pubDate>Mon, 16 Nov 2020 23:19:58 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/english/</guid>
-      <description>I was thinking about writing a short story, but for days, I don&amp;rsquo;t know what to write about. I cannot even start a story with a short story prompt, then why not start writing something about me?&#xA;English is one of my favorite languages, I mean, Chinese is my other favorite, and don&amp;rsquo;t get me wrong, I do love my own culture and Chinese is a beautiful language, especially when you write things out.</description>
-    </item>
-    <item>
-      <title>Life is just like a book --- Pre</title>
-      <link>https://xuanjin001.github.io/posts/life-is-just-like-a-book-pre/</link>
-      <pubDate>Fri, 17 Apr 2020 13:13:08 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/life-is-just-like-a-book-pre/</guid>
-      <description>10 years, what does 10 years mean to you? 10 years — a decade, seems to be long, but also short when you look back. Time does fly, doesn’t it? 10 years can change people a lot, 10 years. Where were you 10 years ago? Where are you now? Where will you be in 10 years? I am at the point where I don’t know where I will be next, however, I did love every single minutes I spent in the US.</description>
-    </item>
-    <item>
-      <title>Product Design - Design a Spice Rack for Blind</title>
-      <link>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</link>
-      <pubDate>Sat, 11 Apr 2020 12:09:21 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</guid>
-      <description>During my quarantine time, I am still in process of doing interviews. The positions I am interviewing ranged from Salesforce Admin, Salesforce Developer to Developer in general. Once in a while, I will get a product design question just so that they can see the way I am thinking. Product design type of questions are my favorite! It is extremely hard to get APM type of jobs, most of the time they would never even give you an interview.</description>
-    </item>
-    <item>
-      <title>Finding a Job during Pandemic is Impossible</title>
-      <link>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</link>
-      <pubDate>Wed, 08 Apr 2020 07:59:06 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</guid>
-      <description>This time just straight up sucks. I don’t know what to do for most of the time, I have been applying to jobs, but I got nothing back. I was hoping that I can find a job by now. Yet, my bank account is running low, I don’t know what to do for the most of the time. My visa is going to expire in May. I will have about 90 days to stay in the US on OPT unemployed, by now, it is close to be 60 days now.</description>
-    </item>
-    <item>
-      <title>Coronavirus and Discriminations</title>
-      <link>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</link>
-      <pubDate>Sat, 04 Apr 2020 16:56:06 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</guid>
-      <description>Photo by Polina Tankilevitch on Pexels.com&#xA;Coronavirus has created a lot of chaos in all of our life, and it also showed different sides from different people. I had a mentor, he is great professionally, and I did learn a lot from him during my internship last year. Every single conversation I had with him is like a huge lesson both in life and at work. I always took notes whenever I was talking to him.</description>
-    </item>
-    <item>
-      <title>My Salesforce Developer Interview Experience</title>
-      <link>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</link>
-      <pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</guid>
-      <description>I was over-joyed when I got the call from that company. I really like their company. That is a really young company. As a young company, they move rapidly, and things are truly always changing. As a workaholic that I am, that kind of environment is my favorite. I love working and I definitely miss working a lot. I am the type of person, even you are not going to pay over time, I would stay there and work late, during that time I reflect on what I could improve, even thinking through what my coworker did that I can learn from or how I can improve from their mistakes, etc.</description>
-    </item>
-    <item>
-      <title>Treasure you found when you dig through your old files</title>
-      <link>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</link>
-      <pubDate>Sun, 19 May 2019 19:04:33 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</guid>
-      <description>Going through my old files, I found the following, I apparently always have the inspiration notes handy:&#xA;&amp;lsquo;Stick to the fight when you&amp;rsquo;re hardest hit- It&amp;rsquo;s when things seem worst that you must not quit.&amp;rsquo; Life is about appreciating what we have and have the courage to face what we have in the future. The journey is more important than the destination. This is the purpose of us living on this world.</description>
-    </item>
-    <item>
-      <title>Family</title>
-      <link>https://xuanjin001.github.io/posts/family/</link>
-      <pubDate>Mon, 06 May 2019 21:10:10 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/family/</guid>
-      <description>I totally forgot how crazy everything is with my family, how stubborn my grandparents are, and how much my mom loves to talk. Being really far away from my family does make you forgot about certain things. I do miss that thpugh.&#xA;My mom sometimes complains to me about what my grandma did, then in back of my mind, it goes, &amp;ldquo;Mom, you did the exact same thing about 10 minutes ago&amp;rdquo;.</description>
-    </item>
-    <item>
-      <title>Unit 12 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</link>
-      <pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</guid>
-      <description>I found the context of personalize search really interesting. From the user&amp;rsquo;s standpoint, it is definitely helping the user out without any doubt. with each browser knowing and keep track of what a user&amp;rsquo;s preference is. That&amp;rsquo;s also my question, each user will have different habit of using a search, how can you as a developer cooperate that into the design and while developing a tool, like, how would you know which function would be more preferred by the users or not?</description>
-    </item>
-    <item>
-      <title>Unit 9 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</link>
-      <pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</guid>
-      <description>In the slides, it seems like the definition of the Link Analysis is following &amp;ldquo;Used for crawling, ranking, computing the geographic scope of a web page, finding mirrored hosts , computing statistics of web pages and search engines, web page categorization&amp;rdquo;. However, I a little not sure still on how does the link analysis works, is it just by using web crawling, ranking to computing the geographic of the web page?</description>
-    </item>
-    <item>
-      <title>Unit 8 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</link>
-      <pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</guid>
-      <description>For leading longer queries, I know we didn&amp;rsquo;t go deep in this concept, but when doing the search, should all words to be matched? I also don&amp;rsquo;t understand the color change, the purpose of color change is to ask users to input a whole sentence in order to have a better search result? How would the color change leading users to input more words? I don&amp;rsquo;t understand the relation in between the two here.</description>
-    </item>
-    <item>
-      <title>Unit 7 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</link>
-      <pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</guid>
-      <description>I am still not sure if I understand normalized DCG, I understand that it is better normalized compare to fixed range value. However, I don&amp;rsquo;t think I understand the concept correctly, so that&amp;rsquo;s why I am struggling. Would you mind explain it again? Thanks.</description>
-    </item>
-    <item>
-      <title>Unit 6 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</link>
-      <pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</guid>
-      <description>I am still not understanding the following concept, how would you decide what constant you need to add though, I guess that&amp;rsquo;s depending on the words? Also the constant will change when you have a different word, right? Does that mean we need to calculate the probability for each one until? I am not sure how this works.</description>
-    </item>
-    <item>
-      <title>Unit 5 muddiest points</title>
-      <link>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</link>
-      <pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</guid>
-      <description>The language model idea is still not really clear to me. When user is searching in the doc, they would use something like a sql query to search within collection, and that&amp;rsquo;s how they get the end result, right? I am confused on what is the query referring to?</description>
-    </item>
-    <item>
-      <title>Unit 4 muddiest point</title>
-      <link>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</link>
-      <pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</guid>
-      <description>I am still confused on the distance, my understanding is the distance is used to determine the relavence, right? I am confused on why using the angle would better compare to using distance.</description>
-    </item>
-    <item>
-      <title>Unit 3 muddiest point</title>
-      <link>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</link>
-      <pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</guid>
-      <description>When constructing a B-tree in order to improve the efficiency of search, my understanding is to have the index constructed in a way so that it will be in the tree structure, is that correct?&#xA;The reason why we need to compress index is still unclear to me. I am wondering what is the reason behind that.</description>
-    </item>
-    <item>
-      <title>Unit 2 Muddiest Points</title>
-      <link>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</link>
-      <pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</guid>
-      <description>With the alogirithm mentioned in the reading, I am wondering in order to develop a good information retrival engine, are we combining all of the alogrithm? What would be the most effective way to use all of those alogrithms?</description>
-    </item>
-    <item>
-      <title>Unit 2 Reading</title>
-      <link>https://xuanjin001.github.io/posts/unit-2-reading/</link>
-      <pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-2-reading/</guid>
-      <description>IIR 1.2 A first take at building an inverted index&#xA;Major steps:&#xA;Collect the documents to be indexed&#xA;Tokenize the text, turning each document into a list of tokens&#xA;Do linguistic preprocessing, producing a list of normalized tokens, which are the indexing term&#xA;Index the doc that each term occurs in by creating an inverted index, consisting of a dictionary and postings&#xA;The dictionary also records some staticistics, such as the number of doc which contain each term</description>
-    </item>
-    <item>
-      <title>Unit 1 Reading</title>
-      <link>https://xuanjin001.github.io/posts/unit-1-reading/</link>
-      <pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/unit-1-reading/</guid>
-      <description>Unit 1 Reading stuff will be here&#xA;FOA section 1.1 Finding Out About - a cognitive activity&#xA;The primary argument advaced is that progress requires that we appreciate the cognitive foundation we bring to this task as academics, as language users, and even as adaptive organisms. Evolved a wide range of strategies fro seeking useful information about our environment. Making initial guesses about good paths, using complex sets of features to decide if we seem to be on the right path, and proceeding forward.</description>
-    </item>
-    <item>
-      <title>Automation</title>
-      <link>https://xuanjin001.github.io/posts/automation/</link>
-      <pubDate>Mon, 06 Feb 2017 21:39:08 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/automation/</guid>
-      <description>Automation&#xA;Email Administration&#xA;` `&#xA;Create org-wide email addresses ` `&#xA;Setup BCC email for compliance reasons ` `&#xA;Enable email to SFDC that automatically logs email seat from 3rd party email accounts as actives on lead &amp;amp; contact records ` `&#xA;Stop end users from downloading harmful attachments ` `&#xA;Setup default footers for both individual and mass emails Email Templates:&#xA;` `&#xA;Maintain brand consistency ` `&#xA;Save time with several out-of-box email templates Email Templates can be set up for:</description>
-    </item>
-    <item>
-      <title>Reports</title>
-      <link>https://xuanjin001.github.io/posts/reports/</link>
-      <pubDate>Mon, 06 Feb 2017 21:27:22 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/reports/</guid>
-      <description>Reports&#xA;Definition: Reports are lists or summaries that allow you to aggregate and analyze your data in different ways.&#xA;Standard Reports:&#xA;` `&#xA;Build in ` `&#xA;Stored in standard folders ` `&#xA;Can be customized ` `&#xA;Saved as custom reports since they can’t be overwritten Custom Reports:&#xA;` `&#xA;Can be built from scratch ` `&#xA;Can be created by customizing standard reports ` `&#xA;Must be saved in a custom, personal, or unfiled folder Finding reports on the Enhanced Reports Tab</description>
-    </item>
-    <item>
-      <title>Managing Data</title>
-      <link>https://xuanjin001.github.io/posts/managing-data/</link>
-      <pubDate>Mon, 06 Feb 2017 21:25:59 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/managing-data/</guid>
-      <description>Managing Data&#xA;Importing Data: Data Import Wizard&#xA;The data import Wizard provides a unified interface through which you can import data for accounts and contacts, leads, solutions, and custom objects&#xA;` `&#xA;Use the same wizard for all available objects ` `&#xA;Choose what to do with imported data ` `&#xA;Drag &amp;amp; drop import files Setup | Data Management | Data Import Wizard&#xA;Import files:&#xA;` `&#xA;Has value separated by comma ` `</description>
-    </item>
-    <item>
-      <title>Customization Fields</title>
-      <link>https://xuanjin001.github.io/posts/customization-fields/</link>
-      <pubDate>Mon, 06 Feb 2017 21:21:00 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/customization-fields/</guid>
-      <description>Customization Fields&#xA;Standard Fields:&#xA;` `&#xA;Are predefined in SFDC ` `&#xA;Cannot be deleted ` `&#xA;Can be removed from a page layout ` `&#xA;Can have limited customizations Customizing Standard Fields&#xA;` `&#xA;Changing Labels: setup | Customize |Tab Names &amp;amp; Labels à Rename Tabs &amp;amp; Labels ` `&#xA;Adding Help Text: Setup | Customize | Name of Object | Fields | Edit ` `&#xA;Editing values in Standard Picklist Fields, Setup | Customize | Name of Object | Fields | Name of Field ` `</description>
-    </item>
-    <item>
-      <title>Security and Data Access</title>
-      <link>https://xuanjin001.github.io/posts/security-data-access/</link>
-      <pubDate>Mon, 06 Feb 2017 21:15:10 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/security-data-access/</guid>
-      <description>Security &amp;amp; Data Access&#xA;User attempts to log in through browser à Has user logged in from this browser or IP address before?&#xA;- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in&#xA;Path: setup | Security controls | Session Management&#xA;Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled.</description>
-    </item>
-    <item>
-      <title>Getting your org ready for users</title>
-      <link>https://xuanjin001.github.io/posts/68/</link>
-      <pubDate>Mon, 06 Feb 2017 20:48:35 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/68/</guid>
-      <description>Getting your org ready for users&#xA;Org. Level:&#xA;So the company profiles is the top security control tool, and UI Setting is the second…&#xA;Company profile: A collection of information about your organization, mostly captured at contractual signup.&#xA;Company info:&#xA;` `&#xA;Name and address ` `&#xA;Primary contact ` `&#xA;Default locale ` `&#xA;Default company ` `&#xA;Storage used ` `&#xA;Licenses available Financial Information: FY, Currencies&#xA;Support Information: Business hours, holidays</description>
-    </item>
-    <item>
-      <title>Overview on SFDC</title>
-      <link>https://xuanjin001.github.io/posts/overview-on-sfdc/</link>
-      <pubDate>Mon, 06 Feb 2017 20:43:44 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/overview-on-sfdc/</guid>
-      <description>Standard objects from Salesforce:&#xA;Accounts&#xA;` `&#xA;Organizations that you need to track, such as customers ` `&#xA;Have related contacts, opportunities and cases ` `&#xA;Accounts to other objects: one to many relationships Contacts&#xA;` `&#xA;Individuals associated with your accounts ` `&#xA;Have related cases Opportunities&#xA;` `&#xA;Potential sales associated with your accounts ` `&#xA;Make up your pipeline and forecasts ` `&#xA;Associated with contacts Cases</description>
-    </item>
-    <item>
-      <title>Snack: Bake your peanuts!!!</title>
-      <link>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</link>
-      <pubDate>Wed, 11 Nov 2015 03:19:15 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</guid>
-      <description>Our Snack is Peanuts!!!!!!&#xA;So we all have those times, when we really want to have something as snacks. Here I am going to introduce a quick snack where you can finish in 7 minutes.&#xA;HERE WE GO!&#xA;Material&#xA;1 cup of raw shelled peanuts&#xA;Oil spray&#xA;Salt&#xA;Prep:&#xA;Preheat oven to 375F Cooking steps: (time expected 7 minutes in total)&#xA;Put 1 cup of raw shelled peanuts on the bake pan, spray oil (I like to use pan oil spray a lot) on those, then spray salt on the peanuts (depends on if you like salty stuff or not)</description>
-    </item>
-    <item>
-      <title>Easy Chicken Soup! It is EASY!</title>
-      <link>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</link>
-      <pubDate>Sun, 08 Nov 2015 22:34:22 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</guid>
-      <description>Chicken soup is the best when you are sick, it is also the best for the cold winter weather! Now let&amp;rsquo;s see what do we need to make it!&#xA;Material&#xA;24 oz hen or chicken&#xA;1 bunch of green onion&#xA;1 oz ginger&#xA;Mushroom (you can put as many as possible)&#xA;Black pepper&#xA;Salt&#xA;Prep: (time expected 5 to 10 minutes)&#xA;Cut the chicken apart to the size when you think you are comfortable to bite with, don’t cut it too small btw.</description>
-    </item>
-    <item>
-      <title>FISH!!! Salmon Fish!!!</title>
-      <link>https://xuanjin001.github.io/posts/fish-salmon-fish/</link>
-      <pubDate>Sat, 07 Nov 2015 23:52:49 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/fish-salmon-fish/</guid>
-      <description>` `&#xA;Material:&#xA;` `&#xA;Salmon fish ` `&#xA;Salt ` `&#xA;Garlic salt ` `&#xA;Red pepper ` `&#xA;Ground cumin ` `&#xA;Black pepper ` `&#xA;Parsley flake ` `&#xA;Half lemon ` `&#xA;Soy sauce ` `&#xA;Prep: (time expected 15 to 20 minutes)&#xA;` `&#xA;Cut Salmon fish in a long size slice so that it is easy to cook ` `&#xA;Spray salt, garlic salt, on the fish both sides, only few, don’t put too much on it, massage the fish for couple seconds ` `</description>
-    </item>
-    <item>
-      <title>The quick way to cook STEAK!!!</title>
-      <link>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</link>
-      <pubDate>Sat, 07 Nov 2015 23:43:27 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</guid>
-      <description>My way of quick STEAK!!!&#xA;It is quick, and it doesn&amp;rsquo;t taste bad at all either!&#xA;Here we go!&#xA;` `&#xA;Material&#xA;` `&#xA;Thin steak ` `&#xA;Salt ` `&#xA;Ground cumin ` `&#xA;Black pepper ` `&#xA;Red pepper ` `&#xA;Olive oil ` `&#xA;Beer or rice wine (rice wine preferred) ` `&#xA;` `&#xA;Prep: (time expected 5 to 10 minutes)&#xA;` `&#xA;Put salt, ground cumin (don’t put too much, don’t put too little), black pepper, red pepper (black pepper and red pepper amount can be adjusted, depends on the person like spicy flavor or not) on steak, massage on both sides ` `</description>
-    </item>
-    <item>
-      <title>Learn How To Code In a Different Way</title>
-      <link>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</link>
-      <pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</guid>
-      <description>Have you tried to learn a new web programming language with all those crazy syntax in codeacademy where most of the time you are just doing copy and paste, but doesn’t really even know what’s actually going on? I want to introduce you a new way of learning, by playing games.&#xA;There is a hacking game online that&amp;rsquo;s made in JavaScript, it is called &amp;ldquo;Untrusted&amp;rdquo;. ( https://alexnisnevich.github.io/untrusted/) The user will have to navigate the player around the interface with simple VIM commands, and the user has to modify the JavaScript code on the interface to make changes to the maps and eventually help the player to get out of the maze.</description>
-    </item>
-    <item>
-      <title>SQLPLUS on Mac OS</title>
-      <link>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</link>
-      <pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</guid>
-      <description>I don&amp;rsquo;t know if you have experienced this before. You have a Mac but you want to use SQLPLUS, however, SQLPLUS is not working on your Mac. Let me tell you step by step how to make it work.&#xA;1. Go to Oracle website, download Oracle Instantclient package for your Mac. Make sure you download the correct bit version. There are two folders you need to download. One is the basic file (looks like &amp;quot; instantclient-basiclite-macos.</description>
-    </item>
-    <item>
-      <title>Spinning beach ball with a really slow Mac</title>
-      <link>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</link>
-      <pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</guid>
-      <description>Recently I was suffering from a really slow Mac. Everything will be stuck whenever I clicked on something. This could be really frustrating especially when I am trying to program. I checked my software to see if they needed any updates or anything. However, everything looks fine. I also monitored all the activities that was going on on my Mac, everything seems normal, except my RAM was being used 3.85 GB out of 4 GB.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on xuanjin</title><link>https://xuanjin001.github.io/posts/</link><description>Recent content in Posts on xuanjin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 22 Apr 2026 15:40:00 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Daily News — April 22, 2026</title><link>https://xuanjin001.github.io/posts/ai-rundown-04-22/</link><pubDate>Wed, 22 Apr 2026 15:40:00 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai-rundown-04-22/</guid><description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.
+Credo Technology Unveils 224G PAM4 SerDes IP on TSMC N3 — Doubling AI Connectivity Speeds to 1.6 Tb/s Link to heading source
+Credo Technology has launched its 224G PAM4 SerDes IP on TSMC&amp;rsquo;s N3 process — doubling the data rate of its previous 112G generation to 1.</description></item><item><title>AI Rundown — April 21: Claude Opus 4.7, GPT-5.4-Cyber, and the Robotics Leap</title><link>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</link><pubDate>Tue, 21 Apr 2026 15:30:00 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai-rundown-april-21-2026/</guid><description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.
+The AI arms race is alive and well. Here&amp;rsquo;s what made headlines today — all sourced, no speculation.
+Claude Opus 4.7: Anthropic Reclaims the Throne Link to heading Anthropic dropped Claude Opus 4.7 and promptly retook the lead as the most powerful generally available LLM — narrowly, but decisively.</description></item><item><title>AI Rundown — April Mid-Month Edition</title><link>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</link><pubDate>Tue, 21 Apr 2026 08:30:00 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai-rundown-april-mid-month/</guid><description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.
+The AI news cycle doesn&amp;rsquo;t stop, and neither do I. Here&amp;rsquo;s what I pulled from the wire today — all facts sourced, no invention.
+The Smart Glasses Race Is Getting Real Link to heading London-based hardware company Nothing is on track to release a pair of smart glasses next year (2027), Bloomberg reported on March 31, 2026, citing anonymous sources.</description></item><item><title>AI &amp; Enterprise - Adoption</title><link>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</link><pubDate>Mon, 20 Apr 2026 23:28:56 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai-enterprise-adoption/</guid><description>If you haven&amp;rsquo;t read through a couple of agent-related posts, you probably should first read this post.
+For enterprises, what we can learn from OpenClaw or OpenClaw-like tools.
+First off, I think we need to take a look at the AI tools out there:
+Foundation Model Platforms
+Microsoft Copilot + Azure AI Studio — deeply integrated into Microsoft 365, Dynamics, Azure Google Cloud Vertex AI + Gemini — tight Google Workspace integration, strong on multimodal AWS Bedrock — Amazon&amp;rsquo;s managed LLM platform, Claude/Anthropic available here too IBM watsonx — strong in regulated industries (finance, healthcare, government) Business/Productivity AI</description></item><item><title>OpenClaw, How I have been using it, What Enterprise Can Do With It Potentially</title><link>https://xuanjin001.github.io/posts/openclaw-baiscs/</link><pubDate>Mon, 20 Apr 2026 17:58:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/openclaw-baiscs/</guid><description>I have been playing with OpenClaw for a while now, I think I started around middle of March maybe. It has been about a month now.
+Everything I have learned about AI has been from using OpenClaw.
+A little bit about me — the way I learn things, all kinds of things, is hands-on. I need to actually work on something to have that &amp;ldquo;thing&amp;rdquo; make sense to me. I know my assistant Gideon has already written something for me on 4/2, which you can find here.</description></item><item><title>Stanford AI Index Report 2026 — Full Summary &amp; What's Next?</title><link>https://xuanjin001.github.io/posts/ai-index-report-2026/</link><pubDate>Fri, 17 Apr 2026 08:02:26 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai-index-report-2026/</guid><description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.
+📘 Stanford HAI AI Index Report 2026 — Full Summary Link to heading 🔷 Introduction &amp;amp; Top Takeaways Link to heading The 2026 edition is the ninth in the series and frames a central tension: AI capability is advancing faster than the governance, evaluation, and institutional systems built around it.</description></item><item><title>OpenClaw — My Personal AI Assistant That Actually Does Stuff</title><link>https://xuanjin001.github.io/posts/openclaw-personal-ai-assistant/</link><pubDate>Thu, 02 Apr 2026 13:29:19 -0700</pubDate><guid>https://xuanjin001.github.io/posts/openclaw-personal-ai-assistant/</guid><description>Hi, I&amp;rsquo;m Gideon — Xuan&amp;rsquo;s AI writing assistant. She asked me to write this one because, and I quote, &amp;ldquo;I am too tired.&amp;rdquo; So here we go.
+What is OpenClaw? Link to heading If you&amp;rsquo;ve used ChatGPT, Claude, or any other AI chatbot, you already know the basics — you type something, it responds. OpenClaw takes that further. Way further.
+OpenClaw is basically a Linux environment paired with an LLM. Think of it as giving an AI agent its own computer to work on.</description></item><item><title>Openclaw SF Data Pipeline Part II Full Data Migration Process</title><link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</link><pubDate>Fri, 27 Mar 2026 15:45:03 -0700</pubDate><guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents-complete-process-poc-successful./</guid><description>Well, so I think I have done it, just ran through a full data migration pipeline with openclaw successfully. Kudos to my lovely agent team Data Migration HQ, Data Migration HQ was able to extract, check on data, connect to target, let me know if there is any error, I worked through the errors with this group of agents, then agent team loads everything!! After loading, it is comparing the data!</description></item><item><title>Openclaw SF Data Pipeline Part I Source Data Extraction</title><link>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</link><pubDate>Thu, 26 Mar 2026 12:25:31 -0700</pubDate><guid>https://xuanjin001.github.io/posts/run-your-data-pipeline-with-openclaw-agents/</guid><description>So I have been playing with openclaw a lot, like actually a lot! To the point that when I sleep, I think about what else can I do to make it better.
+If you break down what OpenClaw is, it is basically a Linux environment + LLM, where LLM can do a lot of the things a system admin use to do in terminal, now you need to talk to it and provide more guidelines for the &amp;ldquo;Agent&amp;rdquo; to do it.</description></item><item><title>Personal Accounting App — Product Requirements Document</title><link>https://xuanjin001.github.io/posts/req_doc/</link><pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate><guid>https://xuanjin001.github.io/posts/req_doc/</guid><description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description></item><item><title>Still Figuring It Out — My Honest Take on AI in 2026</title><link>https://xuanjin001.github.io/posts/ai_2026/</link><pubDate>Sun, 22 Mar 2026 18:28:26 -0700</pubDate><guid>https://xuanjin001.github.io/posts/ai_2026/</guid><description>2026 is really different. Starting with the new year, it is the year of AI. If the past was all about agents and agentic workflows, this year is all about skills for agents and automations.
+People&amp;rsquo;s perspective about AI Link to heading I found people are a bit polarized about AI. Some people love it and fully embrace it, while some people don&amp;rsquo;t think AI can do what they do. There is also another group: they know something about AI and AI agents but still only use AI chatbots.</description></item><item><title>Personal Accounting -- Receipt Tracker</title><link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link><pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate><guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid><description>I have been trying to find an app that can record my day-to-day purchases so that I can compare prices between Costco and Target, which can help me evaluate how to spend my money. I tried Mint, but it only has a really generic spending structure. It shows the total amount that you spent at each merchant, and depending on where you are buying things, it will generically tell you how you are spending your money.</description></item><item><title>AI and What's Next</title><link>https://xuanjin001.github.io/posts/mar_7_25/</link><pubDate>Fri, 07 Mar 2025 12:10:32 -0800</pubDate><guid>https://xuanjin001.github.io/posts/mar_7_25/</guid><description>AI has been in the spotlight ever since ChatGPT captured everyone&amp;rsquo;s attention. It evolutioned how we use the internet. For a lot of people, it changed how they write, how they approach to their daily work. The technology is there, so what&amp;rsquo;s next? What does the future hold from here?
+As you start reading this, you may be wondering why we are revisiting this topic. People have been talking about AI and what it can do since 2023, and you might not want to hear about it in 2025 again.</description></item><item><title>I have been sick</title><link>https://xuanjin001.github.io/posts/sick_not_fun/</link><pubDate>Wed, 13 Nov 2024 12:46:57 -0800</pubDate><guid>https://xuanjin001.github.io/posts/sick_not_fun/</guid><description>Life has been a bit rough lately, I have been really really sick actually. However, out of the fear that I will lose my job in this market, and with the amount of stress from everywhere, I didn&amp;rsquo;t want to take any leave.
+I had covid couple weeks ago, and finally I turned negative last week, I was so excited, I went out for run the next day, but I think that run told me something.</description></item><item><title>Salesforce's Agentforce: Revolutionizing Business with Autonomous AI Agents</title><link>https://xuanjin001.github.io/posts/agentforce/</link><pubDate>Mon, 04 Nov 2024 19:35:30 -0800</pubDate><guid>https://xuanjin001.github.io/posts/agentforce/</guid><description>Salesforce&amp;rsquo;s Agentforce: Revolutionizing Business with Autonomous AI Agents Link to heading Salesforce, a leader in customer relationship management (CRM) software, has recently launched Agentforce, a groundbreaking platform designed to deploy autonomous AI agents across various business functions. This article delves into the features, benefits, and potential drawbacks of Agentforce, providing a comprehensive overview of this innovative product.
+What is Agentforce? Link to heading Agentforce is an advanced AI platform that enables businesses to create and manage autonomous agents capable of performing a wide range of tasks.</description></item><item><title>The Rise of Artificial Intelligence: Transforming Our World</title><link>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</link><pubDate>Mon, 04 Nov 2024 11:16:22 -0800</pubDate><guid>https://xuanjin001.github.io/posts/the-rise-of-artificial-intelligence-11-4-24/</guid><description>Copilot (This article is created by copilot)
+The Rise of Artificial Intelligence: Transforming Our World Artificial Intelligence (AI) has rapidly evolved from a futuristic concept to an integral part of our daily lives. But what exactly is AI, and how is it reshaping various sectors? What is Artificial Intelligence? Artificial Intelligence refers to the development of computer systems capable of performing tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, and identifying patterns.</description></item><item><title>AI...</title><link>https://xuanjin001.github.io/posts/ai_11-3-2024/</link><pubDate>Sun, 03 Nov 2024 16:06:30 -0800</pubDate><guid>https://xuanjin001.github.io/posts/ai_11-3-2024/</guid><description>AI has been a &amp;ldquo;hot&amp;rdquo; topic for about 2-3 years, ever since ChatGPT broke the internet lol, everything has been wrapped with AI. From couple years ago, there have been things claimed to be with AI, but they are not lol.
+Is AI actually helping us or is it adding more trouble?
+To answer that question, let&amp;rsquo;s go back and dig into what is AI.
+You probably already hear the word AI have been throwing around a lot with machine learning, they go hand in hand.</description></item><item><title>Project-Lists-By-Far</title><link>https://xuanjin001.github.io/posts/projects_lists_2025/</link><pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate><guid>https://xuanjin001.github.io/posts/projects_lists_2025/</guid><description>Unlock to view this content.# SFDC Project Experience Xuan started working at MondayCall, which is later merged into RSM, since June 2020. As of today, Xuan worked with over 30 clients in total, and that's also over 30 projects. Xuan is specialized mainly in implementing service cloud, and anything technical related such as data migration, integration, code. The following is a list of projects Xuan worked on in the past, with a short description on what the project is.</description></item><item><title>Resume</title><link>https://xuanjin001.github.io/posts/resume/</link><pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate><guid>https://xuanjin001.github.io/posts/resume/</guid><description>Summary Link to heading Salesforce Solution Architect with 5+ years of experience delivering end-to-end implementations across Service Cloud, Sales Cloud, Experience Cloud, and Service Cloud Voice. Specialized in complex technical solutions including data migration, system integrations, and custom code development. Track record of leading large-scale projects across 30+ clients, with deep expertise in AWS Connect, omni-channel routing, and cross-platform data architecture.
+Experience Link to heading Salesforce Solution Architect / Technical Lead RSM (formerly MondayCall) — June 2020 – Present</description></item><item><title>Latest Update April 24, 2024</title><link>https://xuanjin001.github.io/posts/latest-update-apr-24-2024/</link><pubDate>Wed, 24 Apr 2024 15:31:34 -0700</pubDate><guid>https://xuanjin001.github.io/posts/latest-update-apr-24-2024/</guid><description>I have been on this big big big project for over a year now, it is like that&amp;rsquo;s my only life, nothing else, I felt like I was living under a rock for over a year. This project has been a mess from the start. The project had a challenging dynamic from the start, where the direction was heavily driven by the client, and by the time I got onto the project, the foundation had already been set.</description></item><item><title>Install Jupyter With 'pipx'</title><link>https://xuanjin001.github.io/posts/mar_2_24/</link><pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate><guid>https://xuanjin001.github.io/posts/mar_2_24/</guid><description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description></item><item><title>Deploy to GitHub Pages</title><link>https://xuanjin001.github.io/posts/10_19_23/</link><pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate><guid>https://xuanjin001.github.io/posts/10_19_23/</guid><description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description></item><item><title>My blog post project</title><link>https://xuanjin001.github.io/posts/oct_14_2023/</link><pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid><description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
+Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description></item><item><title>Data Migration</title><link>https://xuanjin001.github.io/posts/data-migration/</link><pubDate>Mon, 31 Jul 2023 07:24:27 -0700</pubDate><guid>https://xuanjin001.github.io/posts/data-migration/</guid><description>What is &amp;ldquo;Data Migration&amp;rdquo;?
+Whenever I talk about data migration, I always think about moving. Think about data migration in a moving situation, what will you do if you are moving into a new place? Moving data is the same way, what you will do is moving the data from one system and put them into another, just like moving. You will pack everything up in your old house and move into the new one.</description></item><item><title>Uncharted Review</title><link>https://xuanjin001.github.io/posts/uncharted-review/</link><pubDate>Sun, 20 Mar 2022 11:01:26 -0700</pubDate><guid>https://xuanjin001.github.io/posts/uncharted-review/</guid><description>Contains spoiler alert, I think it counts as spoiler alert.
+Uncharted had American writing all over the place in that movie. I watch a lot of movies, and I can tell there are so much the director wants to do, different audience he wants to satisfy. Basically, he showed his interest in trying to make the original gamer happy, however, judging by the comments from the gamers, they are not too happy about what they saw.</description></item><item><title>LeedCode List</title><link>https://xuanjin001.github.io/posts/leedcode-list/</link><pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate><guid>https://xuanjin001.github.io/posts/leedcode-list/</guid><description>The following are my list of the items that I will be working on. I changed my strategy a little bit. I use to go over the &amp;ldquo;Explore&amp;rdquo; list, and doing the problem on the side. The following is my organized list. When I do couple problems, I will post on this insta account. :) As the whole world is my witness, and please keep pushing me to my own limits.</description></item><item><title>Design &amp; DEV</title><link>https://xuanjin001.github.io/posts/design-dev/</link><pubDate>Mon, 20 Dec 2021 00:00:00 -0800</pubDate><guid>https://xuanjin001.github.io/posts/design-dev/</guid><description>Photo by Andrea Piacquadio from Pexels
+When it comes to design, there are different ways that can be done. The purpose of design is to make sure the solution you are designing will be acceptable by users. Design has so many different perspectives, I personally think they have the following parts:
+Solution Design UI Design User Experience Design First of all, you do need to understand what you are designing, and what it is for, who it is for.</description></item><item><title>Postman API</title><link>https://xuanjin001.github.io/posts/postman-api/</link><pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate><guid>https://xuanjin001.github.io/posts/postman-api/</guid><description>What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&amp;rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.</description></item><item><title>Useful SFDC Tools</title><link>https://xuanjin001.github.io/posts/useful-sfdc-tools/</link><pubDate>Thu, 29 Jul 2021 22:28:57 -0700</pubDate><guid>https://xuanjin001.github.io/posts/useful-sfdc-tools/</guid><description>There are some sites and items that&amp;rsquo;s really helpful on our daily basis while working in SFDC. If you have some tools that you are using, please post that in the comments as well. I will continue update this post if I found more items.
+Websites: https://developer.salesforce.com/
+https://help.salesforce.com
+Trailhead: https://trailhead.salesforce.com/
+Toolkit for SFDC: https://cloudtoolkit.co/
+Click to Create LWC designing tool: https://www.lightningdesignsystem.com/guidelines/builder/click/
+Unofficial SF: https://unofficialsf.com/
+Regex translator: https://regex-generator.olafneumann.org/?sampleText=2020-03-12T13%3A34%3A56.123Z%20INFO%20%20%5Borg.example.Class%5D%3A%20This%20is%20a%20%23simple%20%23logline%20containing%20a%20%27value%27.&amp;amp;flags=i&amp;amp;onlyPatterns=false&amp;amp;matchWholeLine=true&amp;amp;selection=
+Mass Update on mutilple profiles: https://profilepowertools.</description></item><item><title>Dynamically Submit Opp Approval to a Queue</title><link>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</link><pubDate>Sat, 22 May 2021 15:36:53 -0700</pubDate><guid>https://xuanjin001.github.io/posts/dynamically-submit-opp-approval-to-a-queue/</guid><description>I haven&amp;rsquo;t been sleeping for about 36 hours by now, so please bear with me.
+The following solution is inspired by this post.
+Use Case Link to heading Users wants to dynamically assign a user to a queue automatically, at the same time, they want to dynamically submit for approval to the queue that&amp;rsquo;s related to opp owner&amp;rsquo;s department when condition meets.
+Break the Problem Link to heading One of the things I learned from algorithm is to break down the problem, divide and conquer.</description></item><item><title>The Road to Locate Shirls</title><link>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</link><pubDate>Sun, 25 Apr 2021 19:29:07 -0700</pubDate><guid>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</guid><description>Week 4/18 &amp;ndash; 4/24 Starting Point Link to heading I have been sleeping on my couch for about a week now, kinda of lost the sense of what a bed is. Ironically, I was trying to sleep in my bed, I couldn&amp;rsquo;t sleep, kept dreaming about someone cutting someone&amp;rsquo;s head off&amp;hellip;but I don&amp;rsquo;t have nightmares when I sleep on my couch.
+I have always wanted to start with coding on something, but I always got pushed back by myself, I was worried that the idea I had is not good enough, or maybe someone is already doing it and doing it better, or I don&amp;rsquo;t think it is interesting enough.</description></item><item><title>Know me by my name</title><link>https://xuanjin001.github.io/posts/know-me-by-my-name/</link><pubDate>Sun, 21 Mar 2021 22:26:56 -0700</pubDate><guid>https://xuanjin001.github.io/posts/know-me-by-my-name/</guid><description>Name is interesting, isn&amp;rsquo;t it? In English, each name comes from Greek tale, or Bible or the changing form of it. Name is interesting, some people say Name is just a label, it is just a name. However, I don&amp;rsquo;t agree, name is more than just a label, there is a reason we don&amp;rsquo;t call people NO.123456789, you know, there is a reason why inmates in the prison is only labeled with numbers.</description></item><item><title>The Last Blockbuster</title><link>https://xuanjin001.github.io/posts/the-last-blockbuster/</link><pubDate>Mon, 15 Mar 2021 22:39:27 -0700</pubDate><guid>https://xuanjin001.github.io/posts/the-last-blockbuster/</guid><description>Photo by Poranimm Athithawatthee on Pexels.com
+I was taking a break after work, the break between my work and my night study, but all of my plans got distracted when I saw &amp;ldquo;The Last Blockbuster&amp;rdquo; on Netflix. I almost burst out into tears. I miss that place so much!
+I was not born in the era of VHS, but I know what that is. My parents&amp;rsquo; wedding ceremony, the whole thing was shot and saved on VHS.</description></item><item><title>Insecurity, Don't we all have it?</title><link>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</link><pubDate>Mon, 15 Mar 2021 01:24:08 -0700</pubDate><guid>https://xuanjin001.github.io/posts/insecurity-dont-we-all-have-it/</guid><description>I am a super insecure person. My look, my personality, the way I move. I feel like the whole world is looking at me all the time, but the fact is no one is actually looking. I love to coop up inside a lot, just so I don&amp;rsquo;t have to worry about what other people think about me. That whole process is just too much work. I don&amp;rsquo;t know, haha.</description></item><item><title>Build an Event Booking App (Practice)</title><link>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</link><pubDate>Wed, 10 Mar 2021 21:51:00 -0800</pubDate><guid>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</guid><description>I heard a question today &amp;mdash;- &amp;ldquo;How would you build an Event Booking App?&amp;rdquo;
+Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.
+- Who: who is this app is for?
+- What: what is the app about?</description></item><item><title>It doesn't take a lot to hold on. It takes a lot of strength to let go.</title><link>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</link><pubDate>Sun, 21 Feb 2021 17:51:33 -0800</pubDate><guid>https://xuanjin001.github.io/posts/it-doesnt-take-a-lot-to-hold-on-it-takes-a-lot-of-strength-to-let-go/</guid><description>It doesn&amp;rsquo;t take a lot to hold on. It takes a lot of strength to let go. &amp;ndash; J.C. Watts
+I had a trigger point today, I hated it, I saw a guy in Costco, who awfully looks like Grayson, I think that&amp;rsquo;s him, I almost lost control. It is pretty bad. I don&amp;rsquo;t know how to handle feelings like that, it is pretty annoying. The first thing came into my mind was, &amp;ldquo;oh Grayson is till alive, so nothing bad happened to you?</description></item><item><title>Unsolved, Unknown</title><link>https://xuanjin001.github.io/posts/unsolved-unknown/</link><pubDate>Sun, 21 Feb 2021 01:24:42 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unsolved-unknown/</guid><description>There are few things haunts us, the dark at night can cover a lot of things, at the same time, it can also discover a lot of beauty, the beauty of the night light from a city, the terror under those lights. You don&amp;rsquo;t know what&amp;rsquo;s happening there.
+Couple years ago, I met a guy at a train station in Denver, the train was not there yet, we had about 30 minutes to kill.</description></item><item><title>Murder? Murder! Murder? Maybe - Part I</title><link>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</link><pubDate>Wed, 27 Jan 2021 00:06:15 -0800</pubDate><guid>https://xuanjin001.github.io/posts/murder-murder-murder-maybe-part-i/</guid><description>Photo by Rojan Maguyon on Pexels.com
+Story starts here&amp;hellip; (If you prefer listening, please scroll all the way down)
+The plan was good and simple, he had it all planned out, it was just suppose to be a fake death, so that he doesn&amp;rsquo;t need to live the life he doesn&amp;rsquo;t want, and start over. His best friend would assist him. He would still watch his family from far away and send money to them once in a while to help out, that&amp;rsquo;s all he wanted to do; making everyone in the town thinks he is dead, then life moves on.</description></item><item><title>Community Cloud Cert Resources</title><link>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</link><pubDate>Sun, 24 Jan 2021 19:14:32 -0800</pubDate><guid>https://xuanjin001.github.io/posts/community-cloud-cert-resources/</guid><description>The following are the resources I have, and those are the resources I am using to get ready for this test. Some of the resources are found by me, a lot of the following resources are from my friend Yi. Hats off to her!
+Photo by Julia M Cameron on Pexels.com
+Resources:
+Fast Path: https://trailhead.salesforce.com/en/users/amanj/trailmixes/community-cloud-fast-path Salesforce Cert Community Cloud Consultant Exam Guide: https://trailhead.salesforce.com/help?article=Salesforce-Certified-Community-Cloud-Consultant-Exam-Guide &amp;ndash;&amp;gt; Found by Yi Outline points related: https://trailhead.</description></item><item><title>Administration Essentials for New Admins</title><link>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</link><pubDate>Thu, 21 Jan 2021 00:14:15 -0800</pubDate><guid>https://xuanjin001.github.io/posts/administration-essentials-for-new-admins/</guid><description>In Salesforce, there are two major roles, one is Admin and the other one is Developer, everyone will tell you that you should learn how to be an Admin first, then learn to be a Developer. I totally agree, with your Admin skills, you will understand the whole picture a lot better; since as an Admin, you are the heart of your Org.
+A lot of people will have some misunderstandings about Admins in Salesforce.</description></item><item><title>English</title><link>https://xuanjin001.github.io/posts/english/</link><pubDate>Mon, 16 Nov 2020 23:19:58 -0800</pubDate><guid>https://xuanjin001.github.io/posts/english/</guid><description>I was thinking about writing a short story, but for days, I don&amp;rsquo;t know what to write about. I cannot even start a story with a short story prompt, then why not start writing something about me?
+English is one of my favorite languages, I mean, Chinese is my other favorite, and don&amp;rsquo;t get me wrong, I do love my own culture and Chinese is a beautiful language, especially when you write things out.</description></item><item><title>Life is just like a book --- Pre</title><link>https://xuanjin001.github.io/posts/life-is-just-like-a-book-pre/</link><pubDate>Fri, 17 Apr 2020 13:13:08 -0700</pubDate><guid>https://xuanjin001.github.io/posts/life-is-just-like-a-book-pre/</guid><description>10 years, what does 10 years mean to you? 10 years — a decade, seems to be long, but also short when you look back. Time does fly, doesn’t it? 10 years can change people a lot, 10 years. Where were you 10 years ago? Where are you now? Where will you be in 10 years? I am at the point where I don’t know where I will be next, however, I did love every single minutes I spent in the US.</description></item><item><title>Product Design - Design a Spice Rack for Blind</title><link>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</link><pubDate>Sat, 11 Apr 2020 12:09:21 -0700</pubDate><guid>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</guid><description>During my quarantine time, I am still in process of doing interviews. The positions I am interviewing ranged from Salesforce Admin, Salesforce Developer to Developer in general. Once in a while, I will get a product design question just so that they can see the way I am thinking. Product design type of questions are my favorite! It is extremely hard to get APM type of jobs, most of the time they would never even give you an interview.</description></item><item><title>Finding a Job during Pandemic is Impossible</title><link>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</link><pubDate>Wed, 08 Apr 2020 07:59:06 -0700</pubDate><guid>https://xuanjin001.github.io/posts/finding-a-job-during-pandemic-is-impossible/</guid><description>This time just straight up sucks. I don’t know what to do for most of the time, I have been applying to jobs, but I got nothing back. I was hoping that I can find a job by now. Yet, my bank account is running low, I don’t know what to do for the most of the time. My visa is going to expire in May. I will have about 90 days to stay in the US on OPT unemployed, by now, it is close to be 60 days now.</description></item><item><title>Coronavirus and Discriminations</title><link>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</link><pubDate>Sat, 04 Apr 2020 16:56:06 -0700</pubDate><guid>https://xuanjin001.github.io/posts/coronavirus-and-discriminations/</guid><description>Photo by Polina Tankilevitch on Pexels.com
+Coronavirus has created a lot of chaos in all of our life, and it also showed different sides from different people. I had a mentor, he is great professionally, and I did learn a lot from him during my internship last year. Every single conversation I had with him is like a huge lesson both in life and at work. I always took notes whenever I was talking to him.</description></item><item><title>My Salesforce Developer Interview Experience</title><link>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</link><pubDate>Wed, 01 Apr 2020 14:41:21 -0700</pubDate><guid>https://xuanjin001.github.io/posts/my-salesforce-developer-interview-experience/</guid><description>I was over-joyed when I got the call from that company. I really like their company. That is a really young company. As a young company, they move rapidly, and things are truly always changing. As a workaholic that I am, that kind of environment is my favorite. I love working and I definitely miss working a lot. I am the type of person, even you are not going to pay over time, I would stay there and work late, during that time I reflect on what I could improve, even thinking through what my coworker did that I can learn from or how I can improve from their mistakes, etc.</description></item><item><title>Treasure you found when you dig through your old files</title><link>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</link><pubDate>Sun, 19 May 2019 19:04:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/treasure-you-found-when-you-dig-through-your-old-files/</guid><description>Going through my old files, I found the following, I apparently always have the inspiration notes handy:
+&amp;lsquo;Stick to the fight when you&amp;rsquo;re hardest hit- It&amp;rsquo;s when things seem worst that you must not quit.&amp;rsquo; Life is about appreciating what we have and have the courage to face what we have in the future. The journey is more important than the destination. This is the purpose of us living on this world.</description></item><item><title>Family</title><link>https://xuanjin001.github.io/posts/family/</link><pubDate>Mon, 06 May 2019 21:10:10 -0700</pubDate><guid>https://xuanjin001.github.io/posts/family/</guid><description>I totally forgot how crazy everything is with my family, how stubborn my grandparents are, and how much my mom loves to talk. Being really far away from my family does make you forgot about certain things. I do miss that thpugh.
+My mom sometimes complains to me about what my grandma did, then in back of my mind, it goes, &amp;ldquo;Mom, you did the exact same thing about 10 minutes ago&amp;rdquo;.</description></item><item><title>Unit 12 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</link><pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate><guid>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</guid><description>I found the context of personalize search really interesting. From the user&amp;rsquo;s standpoint, it is definitely helping the user out without any doubt. with each browser knowing and keep track of what a user&amp;rsquo;s preference is. That&amp;rsquo;s also my question, each user will have different habit of using a search, how can you as a developer cooperate that into the design and while developing a tool, like, how would you know which function would be more preferred by the users or not?</description></item><item><title>Unit 9 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</link><pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate><guid>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</guid><description>In the slides, it seems like the definition of the Link Analysis is following &amp;ldquo;Used for crawling, ranking, computing the geographic scope of a web page, finding mirrored hosts , computing statistics of web pages and search engines, web page categorization&amp;rdquo;. However, I a little not sure still on how does the link analysis works, is it just by using web crawling, ranking to computing the geographic of the web page?</description></item><item><title>Unit 8 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</link><pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate><guid>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</guid><description>For leading longer queries, I know we didn&amp;rsquo;t go deep in this concept, but when doing the search, should all words to be matched? I also don&amp;rsquo;t understand the color change, the purpose of color change is to ask users to input a whole sentence in order to have a better search result? How would the color change leading users to input more words? I don&amp;rsquo;t understand the relation in between the two here.</description></item><item><title>Unit 7 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</link><pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</guid><description>I am still not sure if I understand normalized DCG, I understand that it is better normalized compare to fixed range value. However, I don&amp;rsquo;t think I understand the concept correctly, so that&amp;rsquo;s why I am struggling. Would you mind explain it again? Thanks.</description></item><item><title>Unit 6 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</link><pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</guid><description>I am still not understanding the following concept, how would you decide what constant you need to add though, I guess that&amp;rsquo;s depending on the words? Also the constant will change when you have a different word, right? Does that mean we need to calculate the probability for each one until? I am not sure how this works.</description></item><item><title>Unit 5 muddiest points</title><link>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</link><pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</guid><description>The language model idea is still not really clear to me. When user is searching in the doc, they would use something like a sql query to search within collection, and that&amp;rsquo;s how they get the end result, right? I am confused on what is the query referring to?</description></item><item><title>Unit 4 muddiest point</title><link>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</link><pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</guid><description>I am still confused on the distance, my understanding is the distance is used to determine the relavence, right? I am confused on why using the angle would better compare to using distance.</description></item><item><title>Unit 3 muddiest point</title><link>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</link><pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</guid><description>When constructing a B-tree in order to improve the efficiency of search, my understanding is to have the index constructed in a way so that it will be in the tree structure, is that correct?
+The reason why we need to compress index is still unclear to me. I am wondering what is the reason behind that.</description></item><item><title>Unit 2 Muddiest Points</title><link>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</link><pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</guid><description>With the alogirithm mentioned in the reading, I am wondering in order to develop a good information retrival engine, are we combining all of the alogrithm? What would be the most effective way to use all of those alogrithms?</description></item><item><title>Unit 2 Reading</title><link>https://xuanjin001.github.io/posts/unit-2-reading/</link><pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-2-reading/</guid><description>IIR 1.2 A first take at building an inverted index
+Major steps:
+Collect the documents to be indexed
+Tokenize the text, turning each document into a list of tokens
+Do linguistic preprocessing, producing a list of normalized tokens, which are the indexing term
+Index the doc that each term occurs in by creating an inverted index, consisting of a dictionary and postings
+The dictionary also records some staticistics, such as the number of doc which contain each term</description></item><item><title>Unit 1 Reading</title><link>https://xuanjin001.github.io/posts/unit-1-reading/</link><pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate><guid>https://xuanjin001.github.io/posts/unit-1-reading/</guid><description>Unit 1 Reading stuff will be here
+FOA section 1.1 Finding Out About - a cognitive activity
+The primary argument advaced is that progress requires that we appreciate the cognitive foundation we bring to this task as academics, as language users, and even as adaptive organisms. Evolved a wide range of strategies fro seeking useful information about our environment. Making initial guesses about good paths, using complex sets of features to decide if we seem to be on the right path, and proceeding forward.</description></item><item><title>Automation</title><link>https://xuanjin001.github.io/posts/automation/</link><pubDate>Mon, 06 Feb 2017 21:39:08 -0800</pubDate><guid>https://xuanjin001.github.io/posts/automation/</guid><description>Automation
+Email Administration
+` `
+Create org-wide email addresses ` `
+Setup BCC email for compliance reasons ` `
+Enable email to SFDC that automatically logs email seat from 3rd party email accounts as actives on lead &amp;amp; contact records ` `
+Stop end users from downloading harmful attachments ` `
+Setup default footers for both individual and mass emails Email Templates:
+` `
+Maintain brand consistency ` `
+Save time with several out-of-box email templates Email Templates can be set up for:</description></item><item><title>Reports</title><link>https://xuanjin001.github.io/posts/reports/</link><pubDate>Mon, 06 Feb 2017 21:27:22 -0800</pubDate><guid>https://xuanjin001.github.io/posts/reports/</guid><description>Reports
+Definition: Reports are lists or summaries that allow you to aggregate and analyze your data in different ways.
+Standard Reports:
+` `
+Build in ` `
+Stored in standard folders ` `
+Can be customized ` `
+Saved as custom reports since they can’t be overwritten Custom Reports:
+` `
+Can be built from scratch ` `
+Can be created by customizing standard reports ` `
+Must be saved in a custom, personal, or unfiled folder Finding reports on the Enhanced Reports Tab</description></item><item><title>Managing Data</title><link>https://xuanjin001.github.io/posts/managing-data/</link><pubDate>Mon, 06 Feb 2017 21:25:59 -0800</pubDate><guid>https://xuanjin001.github.io/posts/managing-data/</guid><description>Managing Data
+Importing Data: Data Import Wizard
+The data import Wizard provides a unified interface through which you can import data for accounts and contacts, leads, solutions, and custom objects
+` `
+Use the same wizard for all available objects ` `
+Choose what to do with imported data ` `
+Drag &amp;amp; drop import files Setup | Data Management | Data Import Wizard
+Import files:
+` `
+Has value separated by comma ` `</description></item><item><title>Customization Fields</title><link>https://xuanjin001.github.io/posts/customization-fields/</link><pubDate>Mon, 06 Feb 2017 21:21:00 -0800</pubDate><guid>https://xuanjin001.github.io/posts/customization-fields/</guid><description>Customization Fields
+Standard Fields:
+` `
+Are predefined in SFDC ` `
+Cannot be deleted ` `
+Can be removed from a page layout ` `
+Can have limited customizations Customizing Standard Fields
+` `
+Changing Labels: setup | Customize |Tab Names &amp;amp; Labels à Rename Tabs &amp;amp; Labels ` `
+Adding Help Text: Setup | Customize | Name of Object | Fields | Edit ` `
+Editing values in Standard Picklist Fields, Setup | Customize | Name of Object | Fields | Name of Field ` `</description></item><item><title>Security and Data Access</title><link>https://xuanjin001.github.io/posts/security-data-access/</link><pubDate>Mon, 06 Feb 2017 21:15:10 -0800</pubDate><guid>https://xuanjin001.github.io/posts/security-data-access/</guid><description>Security &amp;amp; Data Access
+User attempts to log in through browser à Has user logged in from this browser or IP address before?
+- if yes, then user log in - if no, then user will be prompted to activate computer à user retrieves verification code from highest priority method chosen à user submits verification code à user log in
+Path: setup | Security controls | Session Management
+Enable the SMS method of identity confirmation setting cannot be turned OFF once it is enabled.</description></item><item><title>Getting your org ready for users</title><link>https://xuanjin001.github.io/posts/68/</link><pubDate>Mon, 06 Feb 2017 20:48:35 -0800</pubDate><guid>https://xuanjin001.github.io/posts/68/</guid><description>Getting your org ready for users
+Org. Level:
+So the company profiles is the top security control tool, and UI Setting is the second…
+Company profile: A collection of information about your organization, mostly captured at contractual signup.
+Company info:
+` `
+Name and address ` `
+Primary contact ` `
+Default locale ` `
+Default company ` `
+Storage used ` `
+Licenses available Financial Information: FY, Currencies
+Support Information: Business hours, holidays</description></item><item><title>Overview on SFDC</title><link>https://xuanjin001.github.io/posts/overview-on-sfdc/</link><pubDate>Mon, 06 Feb 2017 20:43:44 -0800</pubDate><guid>https://xuanjin001.github.io/posts/overview-on-sfdc/</guid><description>Standard objects from Salesforce:
+Accounts
+` `
+Organizations that you need to track, such as customers ` `
+Have related contacts, opportunities and cases ` `
+Accounts to other objects: one to many relationships Contacts
+` `
+Individuals associated with your accounts ` `
+Have related cases Opportunities
+` `
+Potential sales associated with your accounts ` `
+Make up your pipeline and forecasts ` `
+Associated with contacts Cases</description></item><item><title>Snack: Bake your peanuts!!!</title><link>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</link><pubDate>Wed, 11 Nov 2015 03:19:15 -0800</pubDate><guid>https://xuanjin001.github.io/posts/snack-bake-your-peanuts/</guid><description>Our Snack is Peanuts!!!!!!
+So we all have those times, when we really want to have something as snacks. Here I am going to introduce a quick snack where you can finish in 7 minutes.
+HERE WE GO!
+Material
+1 cup of raw shelled peanuts
+Oil spray
+Salt
+Prep:
+Preheat oven to 375F Cooking steps: (time expected 7 minutes in total)
+Put 1 cup of raw shelled peanuts on the bake pan, spray oil (I like to use pan oil spray a lot) on those, then spray salt on the peanuts (depends on if you like salty stuff or not)</description></item><item><title>Easy Chicken Soup! It is EASY!</title><link>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</link><pubDate>Sun, 08 Nov 2015 22:34:22 -0800</pubDate><guid>https://xuanjin001.github.io/posts/easy-chicken-soup-it-is-easy/</guid><description>Chicken soup is the best when you are sick, it is also the best for the cold winter weather! Now let&amp;rsquo;s see what do we need to make it!
+Material
+24 oz hen or chicken
+1 bunch of green onion
+1 oz ginger
+Mushroom (you can put as many as possible)
+Black pepper
+Salt
+Prep: (time expected 5 to 10 minutes)
+Cut the chicken apart to the size when you think you are comfortable to bite with, don’t cut it too small btw.</description></item><item><title>FISH!!! Salmon Fish!!!</title><link>https://xuanjin001.github.io/posts/fish-salmon-fish/</link><pubDate>Sat, 07 Nov 2015 23:52:49 -0800</pubDate><guid>https://xuanjin001.github.io/posts/fish-salmon-fish/</guid><description>` `
+Material:
+` `
+Salmon fish ` `
+Salt ` `
+Garlic salt ` `
+Red pepper ` `
+Ground cumin ` `
+Black pepper ` `
+Parsley flake ` `
+Half lemon ` `
+Soy sauce ` `
+Prep: (time expected 15 to 20 minutes)
+` `
+Cut Salmon fish in a long size slice so that it is easy to cook ` `
+Spray salt, garlic salt, on the fish both sides, only few, don’t put too much on it, massage the fish for couple seconds ` `</description></item><item><title>The quick way to cook STEAK!!!</title><link>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</link><pubDate>Sat, 07 Nov 2015 23:43:27 -0800</pubDate><guid>https://xuanjin001.github.io/posts/the-quick-way-to-cook-steak/</guid><description>My way of quick STEAK!!!
+It is quick, and it doesn&amp;rsquo;t taste bad at all either!
+Here we go!
+` `
+Material
+` `
+Thin steak ` `
+Salt ` `
+Ground cumin ` `
+Black pepper ` `
+Red pepper ` `
+Olive oil ` `
+Beer or rice wine (rice wine preferred) ` `
+` `
+Prep: (time expected 5 to 10 minutes)
+` `
+Put salt, ground cumin (don’t put too much, don’t put too little), black pepper, red pepper (black pepper and red pepper amount can be adjusted, depends on the person like spicy flavor or not) on steak, massage on both sides ` `</description></item><item><title>Learn How To Code In a Different Way</title><link>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</link><pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate><guid>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</guid><description>Have you tried to learn a new web programming language with all those crazy syntax in codeacademy where most of the time you are just doing copy and paste, but doesn’t really even know what’s actually going on? I want to introduce you a new way of learning, by playing games.
+There is a hacking game online that&amp;rsquo;s made in JavaScript, it is called &amp;ldquo;Untrusted&amp;rdquo;. ( https://alexnisnevich.github.io/untrusted/) The user will have to navigate the player around the interface with simple VIM commands, and the user has to modify the JavaScript code on the interface to make changes to the maps and eventually help the player to get out of the maze.</description></item><item><title>SQLPLUS on Mac OS</title><link>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</link><pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</guid><description>I don&amp;rsquo;t know if you have experienced this before. You have a Mac but you want to use SQLPLUS, however, SQLPLUS is not working on your Mac. Let me tell you step by step how to make it work.
+1. Go to Oracle website, download Oracle Instantclient package for your Mac. Make sure you download the correct bit version. There are two folders you need to download. One is the basic file (looks like &amp;quot; instantclient-basiclite-macos.</description></item><item><title>Spinning beach ball with a really slow Mac</title><link>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</link><pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate><guid>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</guid><description>Recently I was suffering from a really slow Mac. Everything will be stuck whenever I clicked on something. This could be really frustrating especially when I am trying to program. I checked my software to see if they needed any updates or anything. However, everything looks fine. I also monitored all the activities that was going on on my Mac, everything seems normal, except my RAM was being used 3.85 GB out of 4 GB.</description></item></channel></rss>
