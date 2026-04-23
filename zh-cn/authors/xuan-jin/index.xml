@@ -6,26 +6,19 @@
     <description>Recent content in Xuan Jin on 金萱</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 21 Apr 2026 16:20:00 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2026 23:28:56 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>企业 AI 采纳：从实验到生产的路线图</title>
+      <title>AI 与企业 — 落地实践</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</link>
-      <pubDate>Tue, 21 Apr 2026 16:20:00 -0700</pubDate>
+      <pubDate>Mon, 20 Apr 2026 23:28:56 -0700</pubDate>
       
       <guid>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</guid>
-      <description>这是金萱根据斯坦福 HAI AI 指数报告 2026 和个人经验撰写的观点文章。
-企业 AI 采纳：从实验到生产的路线图 链接到标题 今年二月，斯坦福 HAI 发布了年度 AI 指数报告。里面有很多数字，但我更感兴趣的是实际在发生的事情——企业在做什么，不是做什么。
-生成式 AI 采用率在三年内从 0 跃升至 53%。88% 的组织已经在某种程度上采纳了 AI。私营 AI 投资达到2859亿美元。
-但我也看到了另一面：在需要复杂判断的任务上，AI 的生产力收益为负。22 至 25 岁的美国软件开发者就业人数在去年下降了 20%。幻觉率在某些模型上高达 94%。
-这不是&amp;quot;AI 很好&amp;quot;或&amp;quot;AI 很糟&amp;quot;的故事。这是关于企业如何在真实条件下做出决策。
-以下是我从报告中提取的，以及我对企业下一步该怎么做的看法。
-采纳是真实的——但分层很不均衡 链接到标题 采用率数字令人印象深刻，但在实践中存在巨大差异。
-好： 客户服务、法律文档审查、代码生成——这些领域有具体的、可测量的收益。14% 到 26% 的生产力提升已经被记录在多个大型部署中。
-不确定： 需要领域专业知识、多步推理或高风险决策的任务。AI 可以在第一轮做得很好，但&amp;quot;远离人类判断&amp;quot;仍然是危险的。PlanBench 显示，代理在需要规划的任务上仍有约三分之一的失败率。
-糟糕的： 高风险环境——医疗诊断、财务合规、无人监督的自主决策。任何人都说 AI 可以&amp;quot;完全自动化&amp;quot;这些的说法都是危险的。
-为什么这么多组织仍然只是试点 链接到标题 这里有一个我反复看到的模式：企业运行了几个成功的 AI 试点项目，然后就没了下文。
-原因往往是：
-数据质量差。 AI 表现得像你给它的数据。如果数据分散、混乱或不完整，AI 会复制这些问题。 缺乏 MLOps 基础设施。 模型在 Jupyter notebook 中运行良好，但在生产中崩溃。没有版本控制、监控或回滚机制。 责任真空。 谁对 AI 的输出负责？当 AI 犯错时，谁来修复？许多组织在试点期间没有回答这个问题。 集成债务。 现有系统（ERP、CRM、维护软件）不是为了与 AI 接口而构建的。集成工作被低估了。 代理的问题 链接到标题 代理是 2026 年的热门词汇，而且有一定理由——自主 AI 系统来完成多步任务是有说服力的。但在企业环境中部署代理需要谨慎。</description>
+      <description>如果你还没看过几篇关于 AI 代理的文章，建议先读 这篇。
+关于企业，我们可以从 OpenClaw 或类似工具中学到什么。
+首先，我觉得我们需要看看市面上有哪些 AI 工具：
+基础模型平台
+Microsoft Copilot + Azure AI Studio —— 与 Microsoft 365、Dynamics、Azure 深度集成 Google Cloud Vertex AI + Gemini —— 紧密接入 Google Workspace，多模态能力强 AWS Bedrock —— Amazon 的托管 LLM 平台，Claude/Anthropic 也在这里 IBM watsonx —— 在受监管行业（金融、医疗、政府）中表现强劲 业务/生产力 AI
+Salesforce Einstein —— CRM + AI，用于销售、服务、营销预测 ServiceNow AI —— IT 服务自动化、工单路由、工作流优化 Workday AI —— HR 与财务管理 SAP Business AI —— 嵌入 SAP ERP，涵盖供应链、财务、采购 数据与开发</description>
     </item>
     
     <item>

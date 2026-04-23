@@ -145,58 +145,6 @@
                 href="https://xuanjin001.github.io/zh-cn/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/tags/ai-tech/</loc>
-    <lastmod>2026-04-21T16:20:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/tags/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/categories/ai-tech/</loc>
-    <lastmod>2026-04-21T16:20:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/categories/ai-tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/authors/xuan-jin/</loc>
-    <lastmod>2026-04-21T16:20:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/authors/xuan-jin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</loc>
-    <lastmod>2026-04-21T16:20:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/posts/ai-enterprise-adoption/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/"
-                />
-  </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/posts/ai-rundown-april-21-2026/</loc>
     <lastmod>2026-04-21T15:30:00-07:00</lastmod>
     <xhtml:link
@@ -223,6 +171,32 @@
                 href="https://xuanjin001.github.io/zh-cn/series/ai/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/zh-cn/tags/ai-tech/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/tags/ai-tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/tags/ai-tech/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/zh-cn/categories/ai-tech/</loc>
+    <lastmod>2026-04-21T08:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/categories/ai-tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/categories/ai-tech/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/posts/ai-rundown-april-mid-month/</loc>
     <lastmod>2026-04-21T08:30:00-07:00</lastmod>
     <xhtml:link
@@ -236,8 +210,21 @@
                 href="https://xuanjin001.github.io/zh-cn/posts/ai-rundown-april-mid-month/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</loc>
+    <lastmod>2026-04-20T23:28:56-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/posts/ai-enterprise-adoption/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/series/openclaw/</loc>
-    <lastmod>2026-04-20T17:58:33-07:00</lastmod>
+    <lastmod>2026-04-20T23:28:56-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -247,6 +234,19 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://xuanjin001.github.io/zh-cn/series/openclaw/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/zh-cn/authors/xuan-jin/</loc>
+    <lastmod>2026-04-20T23:28:56-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/authors/xuan-jin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/authors/xuan-jin/"
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/zh-cn/posts/openclaw-baiscs/</loc>

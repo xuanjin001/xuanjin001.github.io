@@ -6,7 +6,21 @@
     <description>Recent content in OpenClaw on 金萱</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 20 Apr 2026 17:58:33 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/series/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2026 23:28:56 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/series/openclaw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 与企业 — 落地实践</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</link>
+      <pubDate>Mon, 20 Apr 2026 23:28:56 -0700</pubDate>
+      
+      <guid>https://xuanjin001.github.io/zh-cn/posts/ai-enterprise-adoption/</guid>
+      <description>如果你还没看过几篇关于 AI 代理的文章，建议先读 这篇。
+关于企业，我们可以从 OpenClaw 或类似工具中学到什么。
+首先，我觉得我们需要看看市面上有哪些 AI 工具：
+基础模型平台
+Microsoft Copilot + Azure AI Studio —— 与 Microsoft 365、Dynamics、Azure 深度集成 Google Cloud Vertex AI + Gemini —— 紧密接入 Google Workspace，多模态能力强 AWS Bedrock —— Amazon 的托管 LLM 平台，Claude/Anthropic 也在这里 IBM watsonx —— 在受监管行业（金融、医疗、政府）中表现强劲 业务/生产力 AI
+Salesforce Einstein —— CRM + AI，用于销售、服务、营销预测 ServiceNow AI —— IT 服务自动化、工单路由、工作流优化 Workday AI —— HR 与财务管理 SAP Business AI —— 嵌入 SAP ERP，涵盖供应链、财务、采购 数据与开发</description>
+    </item>
+    
     <item>
       <title>OpenClaw，我是怎么用的，企业能用它做什么</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/openclaw-baiscs/</link>
