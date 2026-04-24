@@ -6,65 +6,49 @@
     <description>Recent content in Projects on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Mar 2026 00:30:49 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2026 00:30:49 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal Accounting App — Product Requirements Document</title>
       <link>https://xuanjin001.github.io/posts/req_doc/</link>
       <pubDate>Mon, 23 Mar 2026 00:30:49 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/req_doc/</guid>
       <description>Overview &amp;amp; Vision Link to heading A full-stack personal finance application that transforms the tedious task of manual expense tracking into a fast, intelligent workflow. Users capture receipts via camera, file upload, text paste, or manual entry, and an AI model automatically extracts the merchant, date, location, and every line item into a structured, editable database. Data can also be pulled directly from Costco&amp;rsquo;s purchase history API or imported via CSV.</description>
     </item>
-    
     <item>
       <title>Personal Accounting -- Receipt Tracker</title>
       <link>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</link>
       <pubDate>Sun, 22 Mar 2026 00:26:17 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/march_22_2026_personal_accounting_project/</guid>
       <description>I have been trying to find an app that can record my day-to-day purchases so that I can compare prices between Costco and Target, which can help me evaluate how to spend my money. I tried Mint, but it only has a really generic spending structure. It shows the total amount that you spent at each merchant, and depending on where you are buying things, it will generically tell you how you are spending your money.</description>
     </item>
-    
     <item>
       <title>My blog post project</title>
       <link>https://xuanjin001.github.io/posts/oct_14_2023/</link>
       <pubDate>Sat, 14 Oct 2023 22:39:33 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/oct_14_2023/</guid>
-      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.
-Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
+      <description>My blog post project Link to heading I have been writing on wordpress for a while now, on and off, I have been on wordpress for about 15 years. I still need to move everything from there to here. However, I am not waiting until I get everything sorted out before I start on something. I am going to get things started instead.&#xA;Wordpress is great, I can focus on the content, however, there are some things I don&amp;rsquo;t like about it.</description>
     </item>
-    
     <item>
       <title>The Road to Locate Shirls</title>
       <link>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</link>
       <pubDate>Sun, 25 Apr 2021 19:29:07 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/the-road-to-locate-shirls/</guid>
-      <description>Week 4/18 &amp;ndash; 4/24 Starting Point Link to heading I have been sleeping on my couch for about a week now, kinda of lost the sense of what a bed is. Ironically, I was trying to sleep in my bed, I couldn&amp;rsquo;t sleep, kept dreaming about someone cutting someone&amp;rsquo;s head off&amp;hellip;but I don&amp;rsquo;t have nightmares when I sleep on my couch.
-I have always wanted to start with coding on something, but I always got pushed back by myself, I was worried that the idea I had is not good enough, or maybe someone is already doing it and doing it better, or I don&amp;rsquo;t think it is interesting enough.</description>
+      <description>Week 4/18 &amp;ndash; 4/24 Starting Point Link to heading I have been sleeping on my couch for about a week now, kinda of lost the sense of what a bed is. Ironically, I was trying to sleep in my bed, I couldn&amp;rsquo;t sleep, kept dreaming about someone cutting someone&amp;rsquo;s head off&amp;hellip;but I don&amp;rsquo;t have nightmares when I sleep on my couch.&#xA;I have always wanted to start with coding on something, but I always got pushed back by myself, I was worried that the idea I had is not good enough, or maybe someone is already doing it and doing it better, or I don&amp;rsquo;t think it is interesting enough.</description>
     </item>
-    
     <item>
       <title>Build an Event Booking App (Practice)</title>
       <link>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</link>
       <pubDate>Wed, 10 Mar 2021 21:51:00 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/build-an-event-booking-app-practice/</guid>
-      <description>I heard a question today &amp;mdash;- &amp;ldquo;How would you build an Event Booking App?&amp;rdquo;
-Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.
-- Who: who is this app is for?
-- What: what is the app about?</description>
+      <description>I heard a question today &amp;mdash;- &amp;ldquo;How would you build an Event Booking App?&amp;rdquo;&#xA;Just like that, so vague, I actually heard this question, somewhat similar one last week as well. So I organized my thought really quick and created a flow chart, this is just a framework, there are so many details and detailed questions we can ask here.&#xA;- Who: who is this app is for?&#xA;- What: what is the app about?</description>
     </item>
-    
     <item>
       <title>Product Design - Design a Spice Rack for Blind</title>
       <link>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</link>
       <pubDate>Sat, 11 Apr 2020 12:09:21 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/product-design-design-a-spice-rack-for-blind/</guid>
       <description>During my quarantine time, I am still in process of doing interviews. The positions I am interviewing ranged from Salesforce Admin, Salesforce Developer to Developer in general. Once in a while, I will get a product design question just so that they can see the way I am thinking. Product design type of questions are my favorite! It is extremely hard to get APM type of jobs, most of the time they would never even give you an interview.</description>
     </item>
-    
   </channel>
 </rss>

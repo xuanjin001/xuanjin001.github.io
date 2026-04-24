@@ -6,114 +6,84 @@
     <description>Recent content in Other on xuanjin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/tags/other/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Apr 2019 16:32:58 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/tags/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unit 12 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</link>
       <pubDate>Sat, 13 Apr 2019 16:32:58 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-12-muddiest-points-/</guid>
       <description>I found the context of personalize search really interesting. From the user&amp;rsquo;s standpoint, it is definitely helping the user out without any doubt. with each browser knowing and keep track of what a user&amp;rsquo;s preference is. That&amp;rsquo;s also my question, each user will have different habit of using a search, how can you as a developer cooperate that into the design and while developing a tool, like, how would you know which function would be more preferred by the users or not?</description>
     </item>
-    
     <item>
       <title>Unit 9 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</link>
       <pubDate>Sat, 30 Mar 2019 17:36:12 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-9-muddiest-points/</guid>
       <description>In the slides, it seems like the definition of the Link Analysis is following &amp;ldquo;Used for crawling, ranking, computing the geographic scope of a web page, finding mirrored hosts , computing statistics of web pages and search engines, web page categorization&amp;rdquo;. However, I a little not sure still on how does the link analysis works, is it just by using web crawling, ranking to computing the geographic of the web page?</description>
     </item>
-    
     <item>
       <title>Unit 8 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</link>
       <pubDate>Fri, 15 Mar 2019 11:34:30 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-8-muddiest-points/</guid>
       <description>For leading longer queries, I know we didn&amp;rsquo;t go deep in this concept, but when doing the search, should all words to be matched? I also don&amp;rsquo;t understand the color change, the purpose of color change is to ask users to input a whole sentence in order to have a better search result? How would the color change leading users to input more words? I don&amp;rsquo;t understand the relation in between the two here.</description>
     </item>
-    
     <item>
       <title>Unit 7 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</link>
       <pubDate>Sat, 02 Mar 2019 10:46:10 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-7-muddiest-points/</guid>
       <description>I am still not sure if I understand normalized DCG, I understand that it is better normalized compare to fixed range value. However, I don&amp;rsquo;t think I understand the concept correctly, so that&amp;rsquo;s why I am struggling. Would you mind explain it again? Thanks.</description>
     </item>
-    
     <item>
       <title>Unit 6 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</link>
       <pubDate>Sat, 23 Feb 2019 17:37:10 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-6-muddiest-points/</guid>
       <description>I am still not understanding the following concept, how would you decide what constant you need to add though, I guess that&amp;rsquo;s depending on the words? Also the constant will change when you have a different word, right? Does that mean we need to calculate the probability for each one until? I am not sure how this works.</description>
     </item>
-    
     <item>
       <title>Unit 5 muddiest points</title>
       <link>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</link>
       <pubDate>Sat, 16 Feb 2019 16:44:34 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-5-muddiest-points/</guid>
       <description>The language model idea is still not really clear to me. When user is searching in the doc, they would use something like a sql query to search within collection, and that&amp;rsquo;s how they get the end result, right? I am confused on what is the query referring to?</description>
     </item>
-    
     <item>
       <title>Unit 4 muddiest point</title>
       <link>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</link>
       <pubDate>Sat, 09 Feb 2019 17:02:51 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-4-muddiest-point/</guid>
       <description>I am still confused on the distance, my understanding is the distance is used to determine the relavence, right? I am confused on why using the angle would better compare to using distance.</description>
     </item>
-    
     <item>
       <title>Unit 3 muddiest point</title>
       <link>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</link>
       <pubDate>Sat, 02 Feb 2019 16:28:14 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-point/</guid>
-      <description>When constructing a B-tree in order to improve the efficiency of search, my understanding is to have the index constructed in a way so that it will be in the tree structure, is that correct?
-The reason why we need to compress index is still unclear to me. I am wondering what is the reason behind that.</description>
+      <description>When constructing a B-tree in order to improve the efficiency of search, my understanding is to have the index constructed in a way so that it will be in the tree structure, is that correct?&#xA;The reason why we need to compress index is still unclear to me. I am wondering what is the reason behind that.</description>
     </item>
-    
     <item>
       <title>Unit 2 Muddiest Points</title>
       <link>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</link>
       <pubDate>Sat, 26 Jan 2019 17:56:52 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-3-muddiest-points/</guid>
       <description>With the alogirithm mentioned in the reading, I am wondering in order to develop a good information retrival engine, are we combining all of the alogrithm? What would be the most effective way to use all of those alogrithms?</description>
     </item>
-    
     <item>
       <title>Unit 2 Reading</title>
       <link>https://xuanjin001.github.io/posts/unit-2-reading/</link>
       <pubDate>Sun, 13 Jan 2019 14:17:59 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-2-reading/</guid>
-      <description>IIR 1.2 A first take at building an inverted index
-Major steps:
-Collect the documents to be indexed
-Tokenize the text, turning each document into a list of tokens
-Do linguistic preprocessing, producing a list of normalized tokens, which are the indexing term
-Index the doc that each term occurs in by creating an inverted index, consisting of a dictionary and postings
-The dictionary also records some staticistics, such as the number of doc which contain each term</description>
+      <description>IIR 1.2 A first take at building an inverted index&#xA;Major steps:&#xA;Collect the documents to be indexed&#xA;Tokenize the text, turning each document into a list of tokens&#xA;Do linguistic preprocessing, producing a list of normalized tokens, which are the indexing term&#xA;Index the doc that each term occurs in by creating an inverted index, consisting of a dictionary and postings&#xA;The dictionary also records some staticistics, such as the number of doc which contain each term</description>
     </item>
-    
     <item>
       <title>Unit 1 Reading</title>
       <link>https://xuanjin001.github.io/posts/unit-1-reading/</link>
       <pubDate>Thu, 10 Jan 2019 08:03:21 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/posts/unit-1-reading/</guid>
-      <description>Unit 1 Reading stuff will be here
-FOA section 1.1 Finding Out About - a cognitive activity
-The primary argument advaced is that progress requires that we appreciate the cognitive foundation we bring to this task as academics, as language users, and even as adaptive organisms. Evolved a wide range of strategies fro seeking useful information about our environment. Making initial guesses about good paths, using complex sets of features to decide if we seem to be on the right path, and proceeding forward.</description>
+      <description>Unit 1 Reading stuff will be here&#xA;FOA section 1.1 Finding Out About - a cognitive activity&#xA;The primary argument advaced is that progress requires that we appreciate the cognitive foundation we bring to this task as academics, as language users, and even as adaptive organisms. Evolved a wide range of strategies fro seeking useful information about our environment. Making initial guesses about good paths, using complex sets of features to decide if we seem to be on the right path, and proceeding forward.</description>
     </item>
-    
   </channel>
 </rss>

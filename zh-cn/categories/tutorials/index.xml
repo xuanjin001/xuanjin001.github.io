@@ -6,172 +6,56 @@
     <description>Recent content in Tutorials on 金萱</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Mar 2024 01:58:35 -0800</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Mar 2024 01:58:35 -0800</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/zh-cn/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用 &#39;pipx&#39; 安装 Jupyter</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/mar_2_24/</link>
       <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/mar_2_24/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-我已经很久没有写代码了，这完全取决于我当时在做什么。自从去年二月参与那个大项目以来，我基本上就没停过。到后来，下班之后我真的不想看任何跟代码或工作相关的东西，甚至连电脑屏幕都不想看。不过我真的很感激这个机会，因为在整个项目过程中，我证明了自己的能力。在这之前，有人曾问过&amp;quot;她准备好了吗&amp;quot;——我现在可以说，我比你们想象的更准备好了，也更有能力。我现在知道，我比自己和别人所认为的更有实力。
-好了，闲话少说，我想先交代一下我目前的状态。我已经脱节到什么程度呢——我甚至不知道 pipx 已经成为新的 pip，Jupyter 的官方文档也还没有更新，更离谱的是，当我试图在工作电脑上通过 brew 安装 pip 时，这个问题就冒出来了。得知现在需要用 pipx 对我来说是个新消息。多亏了 Google，我找到了正确的安装方法。我已经好几年没用 Jupyter 了，但我觉得在我的业余项目中，我会用 Jupyter 来做数据清理。以下是我目前找到的内容。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我已经很久没有写代码了，这完全取决于我当时在做什么。自从去年二月参与那个大项目以来，我基本上就没停过。到后来，下班之后我真的不想看任何跟代码或工作相关的东西，甚至连电脑屏幕都不想看。不过我真的很感激这个机会，因为在整个项目过程中，我证明了自己的能力。在这之前，有人曾问过&amp;quot;她准备好了吗&amp;quot;——我现在可以说，我比你们想象的更准备好了，也更有能力。我现在知道，我比自己和别人所认为的更有实力。&#xA;好了，闲话少说，我想先交代一下我目前的状态。我已经脱节到什么程度呢——我甚至不知道 pipx 已经成为新的 pip，Jupyter 的官方文档也还没有更新，更离谱的是，当我试图在工作电脑上通过 brew 安装 pip 时，这个问题就冒出来了。得知现在需要用 pipx 对我来说是个新消息。多亏了 Google，我找到了正确的安装方法。我已经好几年没用 Jupyter 了，但我觉得在我的业余项目中，我会用 Jupyter 来做数据清理。以下是我目前找到的内容。</description>
     </item>
-    
     <item>
       <title>部署到 GitHub Pages</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/10_19_23/</link>
       <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/10_19_23/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-花了我好一段时间，才终于把网站&amp;quot;上线&amp;quot;——也就是推送到我的 GitHub 仓库。
-我想把整个过程记录下来，以便日后需要再次部署时可以参考。
-首先，我发誓有缓存问题。每次我在本地运行时，效果都如我所预期，但当我把改动推送到 GitHub Pages 后，显示的还是旧版本，这让我抓狂。后来我注意到，有一个叫做 [taxonomies] 的配置项。之前我在尝试各种方式展示项目列表时，把 project = &amp;quot;projects&amp;quot; 加了进去，然后就完全忘了这回事。把那行注释掉之后，部署结果就稳定多了。
-那么，什么是分类法（taxonomy）？
-Hugo 支持用户自定义的内容分组方式，称为分类法（taxonomies）。分类法是内容之间逻辑关系的分类体系。
-更多内容可以参考 这里。
-难怪我一直看到 projects 以文件夹的形式出现——我根本不想要那样，我只是想要一个展示项目列表的页面。这个问题困扰了我很长时间，它一直指向那个蠢文件夹，哈哈，现在终于指向了我想要的页面。
-这整件事告诉我：永远要回头查阅官方文档，答案就在那里。
-要成功部署，你需要从干净的状态开始，始终保持部署文件夹的清洁，然后记得构建 Hugo 项目，将文件推送到生产站点，并在 GitHub 上配置工作流，最后推送所有内容。GitHub 上的工作流会自动完成构建和发布。但每一次，你都需要保持一切干净整洁。
-有时候会遇到各种失败，不断回到代码中排查，同时牢记：必须、必须、必须始终保持&amp;quot;生产&amp;quot;目录的干净。
-我花了大约 6 个小时才解决了这些问题。希望下次能更顺利！
-我想了很久，也做了很长时间，我一直想等到一切完美再发布，但说真的，这有什么意义呢？没有任何产品是完美的，即使是成熟的产品也不完美。如果等待完美，什么都做不成——我猜这就是什么都没完成的原因。现在需要改变这种思维方式了。
-好了。晚安！</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;花了我好一段时间，才终于把网站&amp;quot;上线&amp;quot;——也就是推送到我的 GitHub 仓库。&#xA;我想把整个过程记录下来，以便日后需要再次部署时可以参考。&#xA;首先，我发誓有缓存问题。每次我在本地运行时，效果都如我所预期，但当我把改动推送到 GitHub Pages 后，显示的还是旧版本，这让我抓狂。后来我注意到，有一个叫做 [taxonomies] 的配置项。之前我在尝试各种方式展示项目列表时，把 project = &amp;quot;projects&amp;quot; 加了进去，然后就完全忘了这回事。把那行注释掉之后，部署结果就稳定多了。&#xA;那么，什么是分类法（taxonomy）？&#xA;Hugo 支持用户自定义的内容分组方式，称为分类法（taxonomies）。分类法是内容之间逻辑关系的分类体系。&#xA;更多内容可以参考 这里。&#xA;难怪我一直看到 projects 以文件夹的形式出现——我根本不想要那样，我只是想要一个展示项目列表的页面。这个问题困扰了我很长时间，它一直指向那个蠢文件夹，哈哈，现在终于指向了我想要的页面。&#xA;这整件事告诉我：永远要回头查阅官方文档，答案就在那里。&#xA;要成功部署，你需要从干净的状态开始，始终保持部署文件夹的清洁，然后记得构建 Hugo 项目，将文件推送到生产站点，并在 GitHub 上配置工作流，最后推送所有内容。GitHub 上的工作流会自动完成构建和发布。但每一次，你都需要保持一切干净整洁。&#xA;有时候会遇到各种失败，不断回到代码中排查，同时牢记：必须、必须、必须始终保持&amp;quot;生产&amp;quot;目录的干净。&#xA;我花了大约 6 个小时才解决了这些问题。希望下次能更顺利！&#xA;我想了很久，也做了很长时间，我一直想等到一切完美再发布，但说真的，这有什么意义呢？没有任何产品是完美的，即使是成熟的产品也不完美。如果等待完美，什么都做不成——我猜这就是什么都没完成的原因。现在需要改变这种思维方式了。&#xA;好了。晚安！</description>
     </item>
-    
     <item>
       <title>LeedCode 刷题清单</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/leedcode-list/</link>
       <pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/leedcode-list/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-以下是我计划完成的题目清单。我稍微调整了一下策略，之前是按照&amp;quot;探索&amp;quot;列表来做，现在整理成了下面这个有序清单。每做几道题，我会发布到 这个 ins 账号。:) 全世界都是我的见证，请督促我不断突破自己的极限。希望在这段旅程结束时，我能比刚开始时更进步。
-日期
-编号
-题目名称
-难度
-分类
-备注
-链接
-题解
-计数
-485
-1
-1295
-2
-977
-3
-1089
-4
-88
-5
-27
-6
-26
-7
-1346
-8
-941
-9
-1299
-10
-283
-11
-1/10/2022
-215
-数组中的第K个最大元素
-Medium
-https://leetcode.com/problems/kth-largest-element-in-an-array/
-https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/215-Kth-Largest-Element-in-an-Array.md
-12
-1/10/2022
-264
-丑数 II
-Medium
-https://leetcode.com/problems/ugly-number-ii/
-https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/264-Ugly-Number-II.md
-13
-1/10/2022
-347
-前 K 个高频元素
-Medium
-需要重做，堆还没搞懂
-https://leetcode.com/problems/top-k-frequent-elements/
-https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/347-Top-K-Frequent-Elements.md
-14
-1/10/2022
-451
-根据字符出现频率排序
-Medium
-堆排序
-需要重做</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;以下是我计划完成的题目清单。我稍微调整了一下策略，之前是按照&amp;quot;探索&amp;quot;列表来做，现在整理成了下面这个有序清单。每做几道题，我会发布到 这个 ins 账号。:) 全世界都是我的见证，请督促我不断突破自己的极限。希望在这段旅程结束时，我能比刚开始时更进步。&#xA;日期&#xA;编号&#xA;题目名称&#xA;难度&#xA;分类&#xA;备注&#xA;链接&#xA;题解&#xA;计数&#xA;485&#xA;1&#xA;1295&#xA;2&#xA;977&#xA;3&#xA;1089&#xA;4&#xA;88&#xA;5&#xA;27&#xA;6&#xA;26&#xA;7&#xA;1346&#xA;8&#xA;941&#xA;9&#xA;1299&#xA;10&#xA;283&#xA;11&#xA;1/10/2022&#xA;215&#xA;数组中的第K个最大元素&#xA;Medium&#xA;https://leetcode.com/problems/kth-largest-element-in-an-array/&#xA;https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/215-Kth-Largest-Element-in-an-Array.md&#xA;12&#xA;1/10/2022&#xA;264&#xA;丑数 II&#xA;Medium&#xA;https://leetcode.com/problems/ugly-number-ii/&#xA;https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/264-Ugly-Number-II.md&#xA;13&#xA;1/10/2022&#xA;347&#xA;前 K 个高频元素&#xA;Medium&#xA;需要重做，堆还没搞懂&#xA;https://leetcode.com/problems/top-k-frequent-elements/&#xA;https://github.com/xuanjin001/From-0-to-300/blob/main/Jan-10-2022/347-Top-K-Frequent-Elements.md&#xA;14&#xA;1/10/2022&#xA;451&#xA;根据字符出现频率排序&#xA;Medium&#xA;堆排序&#xA;需要重做</description>
     </item>
-    
     <item>
       <title>Postman API</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/postman-api/</link>
       <pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/postman-api/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-什么是 Postman？ 链接到标题 好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。
-以下内容摘自 Postman 官网，他们解释得非常到位：
-Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。
-https://www.postman.com/
-我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。
-Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。
-我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。
-我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：
-我的数据结构是什么样的？ 数据能否方便地获取？ 数据库的关联关系是否正确建立？ 等等…… Postman 的各个组成部分 链接到标题 Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。
-工作区（Workspaces） 链接到标题 工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。
-集合（Collections） 链接到标题 我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！
-变量（Variables） 链接到标题 你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。
-文档（Documentation） 链接到标题 你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。
-培训 链接到标题 我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子： 30-days-of-postman-for-developers
-Postman 与 Salesforce 链接到标题 你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考 这篇文章。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;什么是 Postman？ 链接到标题 好吧，邮递员（postman）就是把邮件送到你家的那个人。好，这个冷笑话不太好笑。&#xA;以下内容摘自 Postman 官网，他们解释得非常到位：&#xA;Postman 是一个用于构建和使用 API 的平台。Postman 简化了 API 生命周期的每个环节，并优化了协作流程，帮助你更快地创建更好的 API。&#xA;https://www.postman.com/&#xA;我第一次接触 Postman 是在 Intuitive 实习期间。那两个月里我学到了很多，我大部分的工作习惯实际上都是在那段时间养成的，我非常感激那段经历。&#xA;Postman 是测试 API、快速预览数据的绝佳工具，绝对是你的不二之选。Postman 的优势在于，你无需搭建复杂的前后端环境，就可以单独测试你想测试的部分。&#xA;我喜欢解决问题，而 Postman 让你可以专注于手头的问题，而不必担心其他部分。在你专注于 API 的同时，你的同事可以负责前端设计，这样可以让团队更高效地协作。&#xA;我使用 Postman 的主要场景是测试数据库结构，尤其是在设计数据库结构的过程中。我用 Postman 测试以下内容：&#xA;我的数据结构是什么样的？ 数据能否方便地获取？ 数据库的关联关系是否正确建立？ 等等…… Postman 的各个组成部分 链接到标题 Postman 有很多功能模块可以帮助你提升效率。以下只是我个人的使用方式，不代表最佳实践，但这种方式确实让我的工作更轻松了。&#xA;工作区（Workspaces） 链接到标题 工作区可以用来组织你的项目。例如，你有 A、B、C 三个对象；那么可以在每个工作区中添加团队成员，这样协作就变得非常方便。在不同项目之间切换时，你也可以轻松切换到对应的工作区，让一切井井有条。&#xA;集合（Collections） 链接到标题 我把集合理解为文件夹，就像你用文件夹在电脑上整理文件一样，道理相同。你可以在每个集合中添加 API，还可以为每个集合添加备注和文档，这样当其他人接手项目时，能够一目了然地了解情况。你也可以选择分享一个集合，保持有序！&#xA;变量（Variables） 链接到标题 你有没有见过别人分享 Postman 截图时，会用黑色方块遮住某些内容？因为他们不想让你看到用户名、密码或密钥。下次遇到这种情况，你可以建议他们使用变量！变量不仅可以解决这个问题，同时还能提升安全性，还能帮助你保持代码的整洁。变量可以在本地使用，也可以按集合使用，这样你只需修改一次变量值，所有引用该变量的地方都会同步更新！就像编程中使用变量一样，在任何引用它的地方，值都会保持同步。&#xA;文档（Documentation） 链接到标题 你可以在界面中的任何地方添加注释，并在开发过程中随时记录文档。我非常喜欢在与他人协作时使用这个功能，这样他们能更清楚地理解我为什么这样做，以及每个变量的用途。命名应该直观易懂，一目了然。&#xA;培训 链接到标题 我是那种边做边学、只学当下需要的内容的人。不过每个人的学习方式不同。Postman 也提供了大量学习资料，帮助你熟悉这个平台。这里有一个例子： 30-days-of-postman-for-developers&#xA;Postman 与 Salesforce 链接到标题 你也可以将 Salesforce 数据导入 Postman 进行测试。具体的操作步骤，我推荐你参考 这篇文章。Rahul 在文章中对每个步骤都进行了详细说明，手把手地指导你完成配置。</description>
     </item>
-    
     <item>
       <title>用另一种方式学习编程</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/learn-how-to-code-in-a-different-way/</link>
       <pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/learn-how-to-code-in-a-different-way/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-你有没有试过在 Codeacademy 上学习某门新的 Web 编程语言，面对满屏奇怪的语法，大多数时候只是在复制粘贴，却根本不知道程序实际上在做什么？我想向你介绍一种全新的学习方式——通过玩游戏来学编程。
-网上有一款用 JavaScript 制作的黑客游戏，叫做&amp;quot;Untrusted&amp;quot;。( https://alexnisnevich.github.io/untrusted/) 玩家需要用简单的 VIM 命令在界面中控制角色移动，同时还要修改界面上的 JavaScript 代码来改变地图，最终帮助角色走出迷宫。我个人认为，这是一款极好的 #工具，可以帮助那些不了解 JavaScript 的人入门这门语言；即便是已经掌握 JavaScript 的人，这也是一种提升技能的绝佳方式。
-下图是这款游戏的界面截图：
-我们的项目是一个使用 AngularJS 的工具提示组件，了解 CSS 和 JavaScript 会有很大帮助。然而我当时的 Web 编程经验并不丰富，只懂一些基本的 HTML 框架。上面提到的这款游戏让我很快就入门了 JavaScript。整个过程非常互动——你可以直接修改代码，立刻看到效果。我喜欢它的另一个原因是它是一款游戏，这意味着它既有趣又令人上瘾。Untrusted 还是一个开源项目，你可以在 GitHub 上找到源代码，如果愿意也可以自己添加关卡。( https://github.com/AlexNisnevich/untrusted) 我相信这是学生提升编程能力、熟练掌握一门语言的绝佳方式。有机会的话，大家都应该去试试。
-附：另一个学习编程的工具是 Codewars，它会给你布置一些挑战，你需要用自己的方式解决问题。这是精进技能的好方法。Codewars ( http://www.codewars.com/)</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;你有没有试过在 Codeacademy 上学习某门新的 Web 编程语言，面对满屏奇怪的语法，大多数时候只是在复制粘贴，却根本不知道程序实际上在做什么？我想向你介绍一种全新的学习方式——通过玩游戏来学编程。&#xA;网上有一款用 JavaScript 制作的黑客游戏，叫做&amp;quot;Untrusted&amp;quot;。( https://alexnisnevich.github.io/untrusted/) 玩家需要用简单的 VIM 命令在界面中控制角色移动，同时还要修改界面上的 JavaScript 代码来改变地图，最终帮助角色走出迷宫。我个人认为，这是一款极好的 #工具，可以帮助那些不了解 JavaScript 的人入门这门语言；即便是已经掌握 JavaScript 的人，这也是一种提升技能的绝佳方式。&#xA;下图是这款游戏的界面截图：&#xA;我们的项目是一个使用 AngularJS 的工具提示组件，了解 CSS 和 JavaScript 会有很大帮助。然而我当时的 Web 编程经验并不丰富，只懂一些基本的 HTML 框架。上面提到的这款游戏让我很快就入门了 JavaScript。整个过程非常互动——你可以直接修改代码，立刻看到效果。我喜欢它的另一个原因是它是一款游戏，这意味着它既有趣又令人上瘾。Untrusted 还是一个开源项目，你可以在 GitHub 上找到源代码，如果愿意也可以自己添加关卡。( https://github.com/AlexNisnevich/untrusted) 我相信这是学生提升编程能力、熟练掌握一门语言的绝佳方式。有机会的话，大家都应该去试试。&#xA;附：另一个学习编程的工具是 Codewars，它会给你布置一些挑战，你需要用自己的方式解决问题。这是精进技能的好方法。Codewars ( http://www.codewars.com/)</description>
     </item>
-    
     <item>
       <title>在 Mac OS 上使用 SQLPLUS</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/sqlplus-on-mac-os/</link>
       <pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/sqlplus-on-mac-os/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-不知道你有没有遇到过这种情况：你有一台 Mac，但想使用 SQLPLUS，然而 SQLPLUS 在你的 Mac 上根本无法运行。让我来一步步教你如何让它正常工作。
-1. 前往 Oracle 官网，下载适用于你 Mac 的 Oracle Instant Client 安装包。请确保下载了正确的位数版本。你需要下载两个文件夹：一个是基础文件（看起来像&amp;quot;instantclient-basiclite-macos.x32-11.2.0.4.0.zip&amp;quot;），另一个是 SQLPLUS 安装包。
-2. 将两个文件夹内的文件合并到一个文件夹中，我通常把所有内容合并到 Oracle Instant Client 文件夹里。完成之后，其实你还没有完全搞定，Oracle 在这两个文件夹中只提供了基础所需的内容，实际上还缺少两个文件夹。一个叫 network，一个叫 SDK，没有这两个文件夹，Oracle SQLPLUS 根本无法运行。network 文件夹比较容易创建：先创建一个名为 network 的文件夹，在 network 文件夹内再创建一个名为 admin 的文件夹，在 admin 文件夹下创建一个名为&amp;quot;tnsnames.ora&amp;quot;的文件，并在该文件中填入你的服务器信息，格式如下：
-SERVERNAME = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = host_string)(PORT = your own port number)) ) (CONNECT_DATA = (SERVICE_NAME = your own service name) ) )</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;不知道你有没有遇到过这种情况：你有一台 Mac，但想使用 SQLPLUS，然而 SQLPLUS 在你的 Mac 上根本无法运行。让我来一步步教你如何让它正常工作。&#xA;1. 前往 Oracle 官网，下载适用于你 Mac 的 Oracle Instant Client 安装包。请确保下载了正确的位数版本。你需要下载两个文件夹：一个是基础文件（看起来像&amp;quot;instantclient-basiclite-macos.x32-11.2.0.4.0.zip&amp;quot;），另一个是 SQLPLUS 安装包。&#xA;2. 将两个文件夹内的文件合并到一个文件夹中，我通常把所有内容合并到 Oracle Instant Client 文件夹里。完成之后，其实你还没有完全搞定，Oracle 在这两个文件夹中只提供了基础所需的内容，实际上还缺少两个文件夹。一个叫 network，一个叫 SDK，没有这两个文件夹，Oracle SQLPLUS 根本无法运行。network 文件夹比较容易创建：先创建一个名为 network 的文件夹，在 network 文件夹内再创建一个名为 admin 的文件夹，在 admin 文件夹下创建一个名为&amp;quot;tnsnames.ora&amp;quot;的文件，并在该文件中填入你的服务器信息，格式如下：&#xA;SERVERNAME = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = host_string)(PORT = your own port number)) ) (CONNECT_DATA = (SERVICE_NAME = your own service name) ) )</description>
     </item>
-    
     <item>
       <title>Mac 运行极慢时出现的彩色转圈圈</title>
       <link>https://xuanjin001.github.io/zh-cn/posts/spinning-beach-ball-with-a-really-slow-mac/</link>
       <pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate>
-      
       <guid>https://xuanjin001.github.io/zh-cn/posts/spinning-beach-ball-with-a-really-slow-mac/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。
-最近我饱受一台极慢的 Mac 之苦。每次点击什么东西，整个系统就会卡住。这种情况尤其让人沮丧，特别是当我试图编程的时候。我检查了软件，看看是否需要更新什么，但一切看起来都正常。我也监控了 Mac 上运行的所有活动，一切似乎都正常，只是我的内存使用量达到了 4GB 中的 3.85GB。我以为是内存的问题，于是把内存从 4GB 升级到了 10GB。然而，问题依然存在。
-走到这一步，我知道既不是内存的问题，也不太可能是软件的问题。那就只有一种可能了——我的硬盘出故障了。导致这个问题的原因可能是不小心把 Mac 摔在地上，或者在操作系统仍在处理任务时移动了电脑。有时候，重新安装 OS X 系统可以解决这个问题。在我的 Mac 上，重装系统后问题似乎得到了解决。如果你的问题还没有解决，我建议你把硬盘换成 SSD。
-SSD 是固态硬盘的缩写，它比 SATA 硬盘更快、更稳定。SATA 硬盘通过先将所有内容放入临时内存来访问数据，然后在你实际保存数据时，再将文件写入硬盘。如果你在机器仍在处理某些任务时移动或摔落了电脑，就可能发生数据碎片化。一旦 Mac 产生了碎片，硬盘就可能因此出现故障。而 SSD 是直接从驱动器读取数据的，这样数据丢失的概率就小得多。因此，我建议大家如果需要更换硬盘，就将 SATA 硬盘换成 SSD。
-有一个网站可以让你一步一步地查看如何修复所有 Mac 问题，叫做 iFixit。</description>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;最近我饱受一台极慢的 Mac 之苦。每次点击什么东西，整个系统就会卡住。这种情况尤其让人沮丧，特别是当我试图编程的时候。我检查了软件，看看是否需要更新什么，但一切看起来都正常。我也监控了 Mac 上运行的所有活动，一切似乎都正常，只是我的内存使用量达到了 4GB 中的 3.85GB。我以为是内存的问题，于是把内存从 4GB 升级到了 10GB。然而，问题依然存在。&#xA;走到这一步，我知道既不是内存的问题，也不太可能是软件的问题。那就只有一种可能了——我的硬盘出故障了。导致这个问题的原因可能是不小心把 Mac 摔在地上，或者在操作系统仍在处理任务时移动了电脑。有时候，重新安装 OS X 系统可以解决这个问题。在我的 Mac 上，重装系统后问题似乎得到了解决。如果你的问题还没有解决，我建议你把硬盘换成 SSD。&#xA;SSD 是固态硬盘的缩写，它比 SATA 硬盘更快、更稳定。SATA 硬盘通过先将所有内容放入临时内存来访问数据，然后在你实际保存数据时，再将文件写入硬盘。如果你在机器仍在处理某些任务时移动或摔落了电脑，就可能发生数据碎片化。一旦 Mac 产生了碎片，硬盘就可能因此出现故障。而 SSD 是直接从驱动器读取数据的，这样数据丢失的概率就小得多。因此，我建议大家如果需要更换硬盘，就将 SATA 硬盘换成 SSD。&#xA;有一个网站可以让你一步一步地查看如何修复所有 Mac 问题，叫做 iFixit。</description>
     </item>
-    
   </channel>
 </rss>

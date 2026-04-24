@@ -24,8 +24,7 @@
 // 方法定义 public static List&lt;sobject&gt; getAccountId() { list&lt;opportunity&gt; oppList = new list&lt;opportunity&gt;(); list&lt;case&gt; caseList = new list&lt;case&gt;(); list&lt;account&gt; accountList = new list&lt;account&gt;(); //假设以下查询条件已知 oppList = \[Select AccountId from Opportunity where StageName = &#39;Open&#39;\]; caseList = \[Select AccountId from Case where Status = &#39;Open&#39;\]; accountList = \[Select Id from Account where Id in: oppList AND Id in: caseList\]; return accountList; } 有人指出，应该使用&quot;未关闭&quot;而不是&quot;状态/阶段 = 开放&quot;作为条件，因为每个字段都有多个不代表关闭的取值。这确实是一个很好的观点，也是面试时值得向面试官提出的好问题。这不仅体现了你对条件的深入理解，也说明你在考虑所有可能的情况。">
 <meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="我的 Salesforce 开发者面试经历"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="我的 Salesforce 开发者面试经历"/>
 <meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
 接到那家公司的电话时，我欣喜若狂。我非常喜欢他们公司。那是一家非常年轻的公司。作为一家年轻的公司，他们行动迅速，事情总是日新月异。作为一个工作狂，我最喜欢这种环境。我热爱工作，也非常想念工作的状态。我是那种即便没有加班费，也会主动留下来工作到很晚的人——那段时间里，我会反思自己哪里可以改进，甚至思考同事做了什么值得我学习，或者我如何能从他们的错误中汲取经验。这就是我以前工作时的状态。在自学方面，我相当独立自主。我也很欣赏这家公司的文化，他们既轻松有趣，同时每个人都非常拼。&ldquo;努力工作，尽情玩乐&quot;这种模式，至少这是我对他们公司的感受。
 话不多说，开始正题。
@@ -50,6 +49,7 @@
 <meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/my-salesforce-developer-interview-experience/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-04-01T14:41:21-07:00" />
 <meta property="article:modified_time" content="2020-04-01T14:41:21-07:00" />
+
 
 
 
