@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xuanjin001.github.io/tags/ai-daily-news/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/series/ai-daily-news/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/ai-daily-news/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -41,11 +41,11 @@
                 href="https://xuanjin001.github.io/categories/ai-daily-news/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/posts/ai-rundown-04-24/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-04-25/</loc>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/authors/gideon/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -58,7 +58,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -71,7 +71,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/series/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -84,7 +84,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
+    <lastmod>2026-04-25T18:50:00-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -95,6 +95,9 @@
                 hreflang="en"
                 href="https://xuanjin001.github.io/"
                 />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-04-24/</loc>
+    <lastmod>2026-04-24T16:01:11-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai-rundown-04-23/</loc>
     <lastmod>2026-04-23T21:50:28-07:00</lastmod>
