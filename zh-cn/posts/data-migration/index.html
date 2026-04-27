@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-
-<head>
-  <title>
-  数据迁移 · 金萱
-</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="金萱 / Xuan Jin">
-<meta name="description" content="本文由 Gideon（AI）翻译自英文原版。
-什么是&quot;数据迁移&quot;？
+<!doctype html><html lang=zh-cn><head><title>数据迁移 · 金萱
+</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="金萱 / Xuan Jin"><meta name=description content='本文由 Gideon（AI）翻译自英文原版。
+什么是"数据迁移"？
 每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？
 到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。
-在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的&quot;直接迁移&quot;（lift and shift）。
+在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的"直接迁移"（lift and shift）。
 在两个相似但大小不同的系统之间迁移 链接到标题 这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。
 这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。
 有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。
@@ -29,15 +15,11 @@
 我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。
 结语 链接到标题 总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。
 架构愉快！
-关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。">
-<meta name="keywords" content="blog,技术,AI,Salesforce,数据工程">
-
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="数据迁移"/>
-<meta name="twitter:description" content="本文由 Gideon（AI）翻译自英文原版。
-什么是&quot;数据迁移&quot;？
+关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。'><meta name=keywords content="blog,技术,AI,Salesforce,数据工程"><meta name=twitter:card content="summary"><meta name=twitter:title content="数据迁移"><meta name=twitter:description content='本文由 Gideon（AI）翻译自英文原版。
+什么是"数据迁移"？
 每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？
 到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。
-在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的&quot;直接迁移&quot;（lift and shift）。
+在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的"直接迁移"（lift and shift）。
 在两个相似但大小不同的系统之间迁移 链接到标题 这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。
 这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。
 有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。
@@ -49,14 +31,11 @@
 我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。
 结语 链接到标题 总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。
 架构愉快！
-关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。"/>
-
-<meta property="og:title" content="数据迁移" />
-<meta property="og:description" content="本文由 Gideon（AI）翻译自英文原版。
-什么是&quot;数据迁移&quot;？
+关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。'><meta property="og:title" content="数据迁移"><meta property="og:description" content='本文由 Gideon（AI）翻译自英文原版。
+什么是"数据迁移"？
 每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？
 到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。
-在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的&quot;直接迁移&quot;（lift and shift）。
+在两个相似系统之间迁移 链接到标题 在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的"直接迁移"（lift and shift）。
 在两个相似但大小不同的系统之间迁移 链接到标题 这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。
 这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。
 有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。
@@ -68,421 +47,32 @@
 我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。
 结语 链接到标题 总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。
 架构愉快！
-关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/data-migration/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-07-31T07:24:27-07:00" />
-<meta property="article:modified_time" content="2023-07-31T07:24:27-07:00" />
-
-
-
-
-
-
-<link rel="canonical" href="https://xuanjin001.github.io/zh-cn/posts/data-migration/">
-
-
-<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css" integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css" integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o&#43;1At6nM=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-
-
-<style>
-  .lightbox-img {
-    cursor: zoom-in;
-    transition: opacity 0.2s ease;
-  }
-  .lightbox-img:hover {
-    opacity: 0.85;
-  }
-  .lightbox-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 9999;
-    cursor: zoom-out;
-    justify-content: center;
-    align-items: center;
-  }
-  .lightbox-overlay.active {
-    display: flex;
-  }
-  .lightbox-overlay img {
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 4px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  }
-</style>
-
-
-</head>
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/zh-cn">
-      金萱
-    </a>
-    
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle">
-      <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-    </label>
-    <ul class="navigation-list">
-      
-      
-      <li class="navigation-item">
-        <a class="navigation-link"
-          href="/zh-cn/about/">关于我</a>
-      </li>
-      
-      <li class="navigation-item">
-        <a class="navigation-link"
-          href="/zh-cn/posts/">博客</a>
-      </li>
-      
-      <li class="navigation-item">
-        <a class="navigation-link"
-          href="/zh-cn/projects/">项目</a>
-      </li>
-      
-      <li class="navigation-item">
-        <a class="navigation-link"
-          href="/zh-cn/contact/">联系我</a>
-      </li>
-      
-      
-      
-      
-      
-      
-      
-      
-      <li class="navigation-item menu-separator">
-        <span>|</span>
-      </li>
-      
-      
-      <li class="navigation-item">
-        <a href="/posts/data-migration/">🇺🇸</a>
-      </li>
-      
-      
-      
-    </ul>
-    
-  </section>
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-CFF4Q5GTTC');
-  </script>
-</nav>
-
-    <div class="content">
-      
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://xuanjin001.github.io/zh-cn/posts/data-migration/">
-              数据迁移
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2023-07-31T07:24:27-07:00">
-                July 31, 2023
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              阅读约 1 分钟
-            </span>
-          </div>
-          <div class="authors">
-  <i class="fa fa-user" aria-hidden="true"></i>
-    <a href="/zh-cn/authors/xuan-jin/">Xuan Jin</a></div>
-
-          <div class="categories">
-  <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/zh-cn/categories/developer/">Developer</a></div>
-
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <span class="tag">
-      <a href="/zh-cn/tags/developer/">Developer</a>
-    </span></div>
-
-        </div>
-      </header>
-
-      <div class="post-content">
-        
-        <blockquote>
-<p><em>本文由 Gideon（AI）翻译自英文原版。</em></p>
-</blockquote>
-<p>什么是&quot;数据迁移&quot;？</p>
-<p>每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？</p>
-<p>到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。</p>
-<h2 id="在两个相似系统之间迁移">
-  在两个相似系统之间迁移
-  <a class="heading-link" href="#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e7%9b%b8%e4%bc%bc%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的&quot;直接迁移&quot;（lift and shift）。</p>
-<h2 id="在两个相似但大小不同的系统之间迁移">
-  在两个相似但大小不同的系统之间迁移
-  <a class="heading-link" href="#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e7%9b%b8%e4%bc%bc%e4%bd%86%e5%a4%a7%e5%b0%8f%e4%b8%8d%e5%90%8c%e7%9a%84%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。</p>
-<p>这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。</p>
-<p>有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。</p>
-<h2 id="在两个不同系统之间迁移">
-  在两个不同系统之间迁移
-  <a class="heading-link" href="#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e4%b8%8d%e5%90%8c%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>这才是真正棘手的情况。就像你从公寓搬到房子，或者从房子搬到公寓一样，整个平面布局都不一样，你需要重新规划空间，想清楚每样东西该放在哪里。数据迁移也是同样的道理。当你把数据从一个系统迁移到另一个完全不同的系统时，你不仅需要考虑数据本身，还需要考虑功能需求。</p>
-<p>所有这些都指向<strong>业务流程、业务流程、业务流程</strong>——重要的事情说三遍。人们不一定清楚自己想要保留哪些功能，他们会告诉你想要一切跟以前一样，而我也有责任提醒他们：&ldquo;如果我们可以做得更好，为什么不呢？你们的痛点是什么？&ldquo;解决方案可以留到后面再想。我始终相信，关键在于获取需求、理解什么才是真正能帮助他们的，然后我们才能思考解决方案。解决问题的方式有很多，只要你知道问题是什么。:)</p>
-<p>在所有这些复杂情况中，数据是任何系统的核心——数据支撑着你的流程，数据呈现在你的前端网页上，总而言之，没有数据，系统只是一个空壳。这里最关键的是，当数据来自不同系统时，你如何管理它们。在旧系统中，数据支撑着一套不同的业务流程，并因此而存在。在新系统中，我们有一套全新的流程需要支撑，因此数据结构/数据模型当然也需要相应调整。新的数据模型不仅需要能够承载来自旧系统的数据，还需要在新系统中有意义。这绝非易事。你会不断发现自己要处理旧系统中 4 到 5 张需要合并成新系统中 1 张表的情况，或者需要将旧系统的 2 张表合并后再拆分成新系统中 3 张不同的表。这要求你彻底理解旧系统的每一个细节，同时清楚地预见新系统未来的走向。作为数据架构师，你需要让数据愿景与项目的方方面面保持一致。</p>
-<h2 id="在两个不同且存储容量不同的系统之间迁移">
-  在两个不同且存储容量不同的系统之间迁移
-  <a class="heading-link" href="#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e4%b8%8d%e5%90%8c%e4%b8%94%e5%ad%98%e5%82%a8%e5%ae%b9%e9%87%8f%e4%b8%8d%e5%90%8c%e7%9a%84%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>正如前面提到的，在两个不同系统之间迁移已经不容易了，如果再加上不同的存储容量，你就真的需要从杂草中挑出面包和黄油了。我总是对人们说，想想那些你不可或缺的东西。虽然把所有东西都打包带走更省事，但如果你要从三居室的房子搬到公寓，想把所有东西都带过去几乎是不可能的——除非你有一个大储藏室。带上你的必需品！</p>
-<h2 id="总结">
-  总结
-  <a class="heading-link" href="#%e6%80%bb%e7%bb%93">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>数据模型和数据库的全部意义在于帮助你在未来更轻松地检索数据，并以更高效的方式保存数据。根据你在前端如何展示数据，或者你希望如何检索数据，你会相应地决定如何在后端存储数据。换个方式来说，当你看《怦然心动的人生整理魔法》时，你会注意到近藤麻理惠以一种便于检索、清晰可见的方式整理物品。老实说，现在想想，整个系统迁移基本上就是用近藤麻理惠的方法整理你的家。最终，你将拥有一个令你心动的系统！</p>
-<p>我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。</p>
-<h2 id="结语">
-  结语
-  <a class="heading-link" href="#%e7%bb%93%e8%af%ad">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。</p>
-<p>架构愉快！</p>
-<h2 id="关于作者">
-  关于作者
-  <a class="heading-link" href="#%e5%85%b3%e4%ba%8e%e4%bd%9c%e8%80%85">
-    <i class="fa fa-link" aria-hidden="true" title="链接到标题"></i>
-    <span class="sr-only">链接到标题</span>
-  </a>
-</h2>
-<p>我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。</p>
-
-      </div>
-
-
-      <footer>
-        <div class="linkedin-actions" style="margin: 2rem 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-
-  
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/data-migration/"
-     target="_blank"
-     rel="noopener noreferrer"
-     style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.5rem 1rem; background:#0077B5; color:#fff; border-radius:4px; text-decoration:none; font-size:0.9rem;">
-    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    Share on LinkedIn
-  </a>
-
-  
-  
-
-</div>
-
-
-<script src="/js/linkedin-publish.js"></script>
-
-        
-
-
-        
-        
-        
-        
-        
-      </footer>
-    </article>
-
-    
-  </section>
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2015 -
-    
-    2026
-     金萱 / Xuan Jin 
-    ·
-    
-    技术支持 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js" integrity="sha256-DRNb55/Brco1D&#43;hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CFF4Q5GTTC');
-</script>
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-<div class="lightbox-overlay" id="lightbox-overlay">
-  <img id="lightbox-img" src="" alt="" />
-</div>
-<script>
-  (function () {
-    var overlay = document.getElementById("lightbox-overlay");
-    var overlayImg = document.getElementById("lightbox-img");
-
-    document.addEventListener("click", function (e) {
-      if (e.target.classList.contains("lightbox-img")) {
-        overlayImg.src = e.target.src;
-        overlayImg.alt = e.target.alt;
-        overlay.classList.add("active");
-      }
-    });
-
-    overlay.addEventListener("click", function () {
-      overlay.classList.remove("active");
-      overlayImg.src = "";
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") {
-        overlay.classList.remove("active");
-        overlayImg.src = "";
-      }
-    });
-  })();
-</script>
-</body>
-
-</html>
+关于作者 链接到标题 我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。'><meta property="og:type" content="article"><meta property="og:url" content="https://xuanjin001.github.io/zh-cn/posts/data-migration/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-07-31T07:24:27-07:00"><meta property="article:modified_time" content="2023-07-31T07:24:27-07:00"><link rel=canonical href=https://xuanjin001.github.io/zh-cn/posts/data-migration/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.806f7c78646858179668f34a8c88017c9957c6de285c11a72c00ddd838fdcb37.css integrity="sha256-gG98eGRoWBeWaPNKjIgBfJlXxt4oXBGnLADd2Dj9yzc=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.bb4833d1cebdb03017aef90535aac283810ee066ce1f4d4d1e0ea8fb502dea73.css integrity="sha256-u0gz0c69sDAXrvkFNarCg4EO4GbOH01NHg6o+1At6nM=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><style>.lightbox-img{cursor:zoom-in;transition:opacity .2s ease}.lightbox-img:hover{opacity:.85}.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999;cursor:zoom-out;justify-content:center;align-items:center}.lightbox-overlay.active{display:flex}.lightbox-overlay img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:4px;box-shadow:0 0 30px rgba(0,0,0,.5)}</style></head><body class="preload-transitions colorscheme-auto"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/zh-cn>金萱
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/zh-cn/about/>关于我</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/posts/>博客</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/projects/>项目</a></li><li class=navigation-item><a class=navigation-link href=/zh-cn/contact/>联系我</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/posts/data-migration/>🇺🇸</a></li></ul></section><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://xuanjin001.github.io/zh-cn/posts/data-migration/>数据迁移</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2023-07-31T07:24:27-07:00>July 31, 2023
+</time></span><span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+阅读约 1 分钟</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/zh-cn/authors/xuan-jin/>Xuan Jin</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
+<a href=/zh-cn/categories/developer/>Developer</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/zh-cn/tags/developer/>Developer</a></span></div></div></header><div class=post-content><blockquote><p><em>本文由 Gideon（AI）翻译自英文原版。</em></p></blockquote><p>什么是"数据迁移"？</p><p>每当我谈到数据迁移，我总会联想到搬家。用搬家来理解数据迁移——如果你要搬到一个新地方，你会怎么做？数据迁移也是同样的道理：你要做的就是把数据从一个系统转移到另一个系统，就像搬家一样。你把旧房子里的所有东西打包，然后搬到新家。现在麻烦来了：你的旧房子可能比新家小得多，或者你的新地方是一套四居室，而你之前住的是一居室公寓。在这种情况下，我们该怎么办呢？</p><p>到目前为止，我已经做过几次数据迁移了，每一次都有相似之处，但每次又都不一样。数据迁移有几种类型，我喜欢用搬家来比喻向别人解释数据迁移，这里我也会沿用这个比喻。希望这能帮助你更好地理解数据迁移。</p><h2 id=在两个相似系统之间迁移>在两个相似系统之间迁移
+<a class=heading-link href=#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e7%9b%b8%e4%bc%bc%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>在两个相似系统之间迁移数据相当直接，就像从你现在住的公寓楼三楼搬到四楼，户型完全一样，你清楚地知道每样东西该放在哪里，跟之前一样的位置，哈哈。当然这里假设你不想重新布置空间——重新布置应该在把所有东西搬进来之后再做！这就是我们所说的"直接迁移"（lift and shift）。</p><h2 id=在两个相似但大小不同的系统之间迁移>在两个相似但大小不同的系统之间迁移
+<a class=heading-link href=#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e7%9b%b8%e4%bc%bc%e4%bd%86%e5%a4%a7%e5%b0%8f%e4%b8%8d%e5%90%8c%e7%9a%84%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>这仍然是直接迁移，但这种情况下，你无法把旧地方的所有东西都带到新地方，所以你需要处理掉一些东西——要么卖掉旧家具，要么捐给二手店，剩下放不下的东西，你可以考虑存入储存仓库。数据迁移也是如此，你可能会把最相关的、正在使用的数据迁移到新环境中；如果你真的想保留从 1900 年开始的所有数据，那么我们可以把它放入数据仓库，只把支撑性数据保留在新系统中。</p><p>这样做的好处是：1）节省当前系统的存储空间；2）系统中数据量减少，数据检索效率更高；3）数据结构更易于维护。</p><p>有了数据仓库，你仍然可以保存所有数据，可以追溯历史数据并生成报告；如果你有兴趣进行机器学习或训练自己的 AI，那些数据仍然可以使用，而且都集中在一处，更易于访问。</p><h2 id=在两个不同系统之间迁移>在两个不同系统之间迁移
+<a class=heading-link href=#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e4%b8%8d%e5%90%8c%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>这才是真正棘手的情况。就像你从公寓搬到房子，或者从房子搬到公寓一样，整个平面布局都不一样，你需要重新规划空间，想清楚每样东西该放在哪里。数据迁移也是同样的道理。当你把数据从一个系统迁移到另一个完全不同的系统时，你不仅需要考虑数据本身，还需要考虑功能需求。</p><p>所有这些都指向<strong>业务流程、业务流程、业务流程</strong>——重要的事情说三遍。人们不一定清楚自己想要保留哪些功能，他们会告诉你想要一切跟以前一样，而我也有责任提醒他们：&ldquo;如果我们可以做得更好，为什么不呢？你们的痛点是什么？&ldquo;解决方案可以留到后面再想。我始终相信，关键在于获取需求、理解什么才是真正能帮助他们的，然后我们才能思考解决方案。解决问题的方式有很多，只要你知道问题是什么。:)</p><p>在所有这些复杂情况中，数据是任何系统的核心——数据支撑着你的流程，数据呈现在你的前端网页上，总而言之，没有数据，系统只是一个空壳。这里最关键的是，当数据来自不同系统时，你如何管理它们。在旧系统中，数据支撑着一套不同的业务流程，并因此而存在。在新系统中，我们有一套全新的流程需要支撑，因此数据结构/数据模型当然也需要相应调整。新的数据模型不仅需要能够承载来自旧系统的数据，还需要在新系统中有意义。这绝非易事。你会不断发现自己要处理旧系统中 4 到 5 张需要合并成新系统中 1 张表的情况，或者需要将旧系统的 2 张表合并后再拆分成新系统中 3 张不同的表。这要求你彻底理解旧系统的每一个细节，同时清楚地预见新系统未来的走向。作为数据架构师，你需要让数据愿景与项目的方方面面保持一致。</p><h2 id=在两个不同且存储容量不同的系统之间迁移>在两个不同且存储容量不同的系统之间迁移
+<a class=heading-link href=#%e5%9c%a8%e4%b8%a4%e4%b8%aa%e4%b8%8d%e5%90%8c%e4%b8%94%e5%ad%98%e5%82%a8%e5%ae%b9%e9%87%8f%e4%b8%8d%e5%90%8c%e7%9a%84%e7%b3%bb%e7%bb%9f%e4%b9%8b%e9%97%b4%e8%bf%81%e7%a7%bb><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>正如前面提到的，在两个不同系统之间迁移已经不容易了，如果再加上不同的存储容量，你就真的需要从杂草中挑出面包和黄油了。我总是对人们说，想想那些你不可或缺的东西。虽然把所有东西都打包带走更省事，但如果你要从三居室的房子搬到公寓，想把所有东西都带过去几乎是不可能的——除非你有一个大储藏室。带上你的必需品！</p><h2 id=总结>总结
+<a class=heading-link href=#%e6%80%bb%e7%bb%93><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>数据模型和数据库的全部意义在于帮助你在未来更轻松地检索数据，并以更高效的方式保存数据。根据你在前端如何展示数据，或者你希望如何检索数据，你会相应地决定如何在后端存储数据。换个方式来说，当你看《怦然心动的人生整理魔法》时，你会注意到近藤麻理惠以一种便于检索、清晰可见的方式整理物品。老实说，现在想想，整个系统迁移基本上就是用近藤麻理惠的方法整理你的家。最终，你将拥有一个令你心动的系统！</p><p>我喜欢与数据打交道，它带来了各种各样的挑战，但我一如既往地热爱挑战。:) 与数据打交道不仅要求你理解数据本身，更重要的是，你需要具备从数以亿计的数据中挖掘出最重要信息的能力；同时还需要能够将这些数据有意义地呈现给用户。脱离上下文的数据只是无用的信息。</p><h2 id=结语>结语
+<a class=heading-link href=#%e7%bb%93%e8%af%ad><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>总体而言，我认为架构师就像一名产品经理，系统架构师负责设计系统，而系统就是你的产品。因此，作为架构师，我真心认为你需要理解各种角度的问题，你不需要对所有事情了解得面面俱到，但你应该有一个大致的概念。哈哈。</p><p>架构愉快！</p><h2 id=关于作者>关于作者
+<a class=heading-link href=#%e5%85%b3%e4%ba%8e%e4%bd%9c%e8%80%85><i class="fa fa-link" aria-hidden=true title=链接到标题></i>
+<span class=sr-only>链接到标题</span></a></h2><p>我是靳璇，是一名系统架构师，帮助清理和修复各种问题。所有那些修复和帮助他人的经历造就了今天的我。我的超能力是快速学习新事物，既能通过动手实践，也能通过阅读文档来学习。我还运营着一个充满 Salesforce 热情的社群，在那里我回答成员的问题，并鼓励大家互相帮助。</p></div><footer><div class=linkedin-actions style="margin:2rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap"><a href="https://www.linkedin.com/sharing/share-offsite/?url=https://xuanjin001.github.io/zh-cn/posts/data-migration/" target=_blank rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;background:#0077b5;color:#fff;border-radius:4px;text-decoration:none;font-size:.9rem"><i class="fa fa-linkedin-square" aria-hidden=true></i>
+Share on LinkedIn</a></div><script src=/js/linkedin-publish.js></script></footer></article></section></div><footer class=footer><section class=container>©
+2015 -
+2026
+金萱 / Xuan Jin
+·
+技术支持 <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.0d135be79fc1adca350fe8615ecbf2460992ba339b65c4b884ad929745450d80.js integrity="sha256-DRNb55/Brco1D+hhXsvyRgmSujObZcS4hK2Sl0VFDYA="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-CFF4Q5GTTC"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-CFF4Q5GTTC")</script><div class=lightbox-overlay id=lightbox-overlay><img id=lightbox-img src alt></div><script>(function(){var e=document.getElementById("lightbox-overlay"),t=document.getElementById("lightbox-img");document.addEventListener("click",function(n){n.target.classList.contains("lightbox-img")&&(t.src=n.target.src,t.alt=n.target.alt,e.classList.add("active"))}),e.addEventListener("click",function(){e.classList.remove("active"),t.src=""}),document.addEventListener("keydown",function(n){n.key==="Escape"&&(e.classList.remove("active"),t.src="")})})()</script></body></html>
