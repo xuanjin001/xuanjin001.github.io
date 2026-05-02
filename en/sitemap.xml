@@ -2,34 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xuanjin001.github.io/posts/</loc>
-    <lastmod>2026-05-01T17:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/posts/"
-                />
-  </url><url>
-    <loc>https://xuanjin001.github.io/</loc>
-    <lastmod>2026-05-01T17:30:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://xuanjin001.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://xuanjin001.github.io/"
-                />
-  </url><url>
     <loc>https://xuanjin001.github.io/tags/ai-daily-news/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -42,7 +16,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/series/ai-daily-news/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -55,7 +29,7 @@
                 />
   </url><url>
     <loc>https://xuanjin001.github.io/categories/ai-daily-news/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -67,11 +41,11 @@
                 href="https://xuanjin001.github.io/categories/ai-daily-news/"
                 />
   </url><url>
-    <loc>https://xuanjin001.github.io/posts/ai-rundown-04-30/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-05-02/</loc>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/authors/gideon/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -83,8 +57,21 @@
                 href="https://xuanjin001.github.io/authors/gideon/"
                 />
   </url><url>
+    <loc>https://xuanjin001.github.io/posts/</loc>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/posts/"
+                />
+  </url><url>
     <loc>https://xuanjin001.github.io/series/</loc>
-    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -95,6 +82,25 @@
                 hreflang="en"
                 href="https://xuanjin001.github.io/series/"
                 />
+  </url><url>
+    <loc>https://xuanjin001.github.io/</loc>
+    <lastmod>2026-05-02T14:56:43-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://xuanjin001.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://xuanjin001.github.io/"
+                />
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-05-01/</loc>
+    <lastmod>2026-05-01T21:00:04-07:00</lastmod>
+  </url><url>
+    <loc>https://xuanjin001.github.io/posts/ai-rundown-04-30/</loc>
+    <lastmod>2026-04-30T14:56:39-07:00</lastmod>
   </url><url>
     <loc>https://xuanjin001.github.io/posts/ai-rundown-04-29/</loc>
     <lastmod>2026-04-29T14:56:47-07:00</lastmod>
