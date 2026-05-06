@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Career Growth on 金萱</title>
-    <link>https://xuanjin001.github.io/zh-cn/categories/career-growth/</link>
-    <description>Recent content in Career Growth on 金萱</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 26 Oct 2024 02:23:43 -0700</lastBuildDate>
-    <atom:link href="https://xuanjin001.github.io/zh-cn/categories/career-growth/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>简历</title>
-      <link>https://xuanjin001.github.io/zh-cn/posts/resume/</link>
-      <pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/zh-cn/posts/resume/</guid>
-      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;简介 链接到标题 拥有 5 年以上经验的 Salesforce 解决方案架构师，专注于跨 Service Cloud、Sales Cloud、Experience Cloud 和 Service Cloud Voice 的端到端实施交付。擅长复杂技术方案设计，包括数据迁移、系统集成与自定义代码开发。具备带领大规模项目的成功记录，累计服务 30+ 客户，在 AWS Connect、全渠道路由（omni-channel routing）及跨平台数据架构方面拥有深厚专长。&#xA;工作经历 链接到标题 Salesforce 解决方案架构师 / 技术负责人 RSM（前身为 MondayCall）— 2020 年 6 月至今&#xA;担任解决方案架构师及首席开发人员，参与 30+ 个客户项目，涵盖 Service Cloud、Sales Cloud、Experience Cloud 及 Service Cloud Voice 实施 担任技术架构师，主导为期 1.5 年的系统迁移项目，带领 5 人团队将 80GB 数据（84 张表）从 Microsoft Dynamics 365 迁移至 Salesforce，并根据客户业务流程重新设计数据结构 基于 AWS Connect 架构并交付 Service Cloud Voice 实施，包括全渠道路由、自动创建案例、用于来电拦截的自定义 Lambda 函数，以及使用 LWC 实现的 Next Best Action 功能 使用 Apex 为客户设计并实施复杂的 SLA/权利（Entitlement）系统，包含基于记录类型、紧急程度、工作时间及节假日日历的多团队案例升级逻辑 将 5 套独立工单系统（Zendesk、Jira、手工处理）整合至统一的 Salesforce Service Cloud 实例，支持全渠道路由、WhatsApp、聊天机器人及社区集成 执行大规模数据迁移，包括跨 Account、Contact、Case 和 Task 对象的 280 万条记录迁移，以及分三阶段（沙箱、性能测试、生产）配合 MuleSoft 集成的迁移项目 为多个客户构建并上线 Experience Cloud 社区（客户社区及合作伙伴/PRM），包含分层客户体验和含案例管理、线索、MDF 及仪表盘的合作伙伴门户 将 15+ 个 Process Builder 自动化迁移至 Flow，并使用 Invocable Apex 提升性能与可维护性 完成与 Zendesk、Zuora、Jira、Oracle、JitterBit、Braze、Tray.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Career Growth on 金萱</title><link>https://xuanjin001.github.io/zh-cn/categories/career-growth/</link><description>Recent content in Career Growth on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 26 Oct 2024 02:23:43 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/categories/career-growth/index.xml" rel="self" type="application/rss+xml"/><item><title>简历</title><link>https://xuanjin001.github.io/zh-cn/posts/resume/</link><pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/resume/</guid><description>本文由 Gideon（AI）翻译自英文原版。
+简介 链接到标题 拥有 5 年以上经验的 Salesforce 解决方案架构师，专注于跨 Service Cloud、Sales Cloud、Experience Cloud 和 Service Cloud Voice 的端到端实施交付。擅长复杂技术方案设计，包括数据迁移、系统集成与自定义代码开发。具备带领大规模项目的成功记录，累计服务 30+ 客户，在 AWS Connect、全渠道路由（omni-channel routing）及跨平台数据架构方面拥有深厚专长。
+工作经历 链接到标题 Salesforce 解决方案架构师 / 技术负责人 RSM（前身为 MondayCall）— 2020 年 6 月至今
+担任解决方案架构师及首席开发人员，参与 30+ 个客户项目，涵盖 Service Cloud、Sales Cloud、Experience Cloud 及 Service Cloud Voice 实施 担任技术架构师，主导为期 1.5 年的系统迁移项目，带领 5 人团队将 80GB 数据（84 张表）从 Microsoft Dynamics 365 迁移至 Salesforce，并根据客户业务流程重新设计数据结构 基于 AWS Connect 架构并交付 Service Cloud Voice 实施，包括全渠道路由、自动创建案例、用于来电拦截的自定义 Lambda 函数，以及使用 LWC 实现的 Next Best Action 功能 使用 Apex 为客户设计并实施复杂的 SLA/权利（Entitlement）系统，包含基于记录类型、紧急程度、工作时间及节假日日历的多团队案例升级逻辑 将 5 套独立工单系统（Zendesk、Jira、手工处理）整合至统一的 Salesforce Service Cloud 实例，支持全渠道路由、WhatsApp、聊天机器人及社区集成 执行大规模数据迁移，包括跨 Account、Contact、Case 和 Task 对象的 280 万条记录迁移，以及分三阶段（沙箱、性能测试、生产）配合 MuleSoft 集成的迁移项目 为多个客户构建并上线 Experience Cloud 社区（客户社区及合作伙伴/PRM），包含分层客户体验和含案例管理、线索、MDF 及仪表盘的合作伙伴门户 将 15+ 个 Process Builder 自动化迁移至 Flow，并使用 Invocable Apex 提升性能与可维护性 完成与 Zendesk、Zuora、Jira、Oracle、JitterBit、Braze、Tray.</description></item></channel></rss>

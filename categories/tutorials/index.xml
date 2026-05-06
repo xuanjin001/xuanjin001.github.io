@@ -1,61 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tutorials on xuanjin</title>
-    <link>https://xuanjin001.github.io/categories/tutorials/</link>
-    <description>Recent content in Tutorials on xuanjin</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 02 Mar 2024 01:58:35 -0800</lastBuildDate>
-    <atom:link href="https://xuanjin001.github.io/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Jupyter With &#39;pipx&#39; </title>
-      <link>https://xuanjin001.github.io/posts/mar_2_24/</link>
-      <pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/mar_2_24/</guid>
-      <description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description>
-    </item>
-    <item>
-      <title>Deploy to GitHub Pages</title>
-      <link>https://xuanjin001.github.io/posts/10_19_23/</link>
-      <pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/10_19_23/</guid>
-      <description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.&#xA;I would like to document what I was doing here so that I can refer to here later when I need to deploy again.&#xA;First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description>
-    </item>
-    <item>
-      <title>LeedCode List</title>
-      <link>https://xuanjin001.github.io/posts/leedcode-list/</link>
-      <pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate>
-      <guid>https://xuanjin001.github.io/posts/leedcode-list/</guid>
-      <description>The following are my list of the items that I will be working on. I changed my strategy a little bit. I use to go over the &amp;ldquo;Explore&amp;rdquo; list, and doing the problem on the side. The following is my organized list. When I do couple problems, I will post on this insta account. :) As the whole world is my witness, and please keep pushing me to my own limits.</description>
-    </item>
-    <item>
-      <title>Postman API</title>
-      <link>https://xuanjin001.github.io/posts/postman-api/</link>
-      <pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/postman-api/</guid>
-      <description>What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.&#xA;I am taking the following from Postman&amp;rsquo;s website, they explained it perfectly.&#xA;Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.&#xA;https://www.postman.com/&#xA;I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.</description>
-    </item>
-    <item>
-      <title>Learn How To Code In a Different Way</title>
-      <link>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</link>
-      <pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</guid>
-      <description>Have you tried to learn a new web programming language with all those crazy syntax in codeacademy where most of the time you are just doing copy and paste, but doesn’t really even know what’s actually going on? I want to introduce you a new way of learning, by playing games.&#xA;There is a hacking game online that&amp;rsquo;s made in JavaScript, it is called &amp;ldquo;Untrusted&amp;rdquo;. ( https://alexnisnevich.github.io/untrusted/) The user will have to navigate the player around the interface with simple VIM commands, and the user has to modify the JavaScript code on the interface to make changes to the maps and eventually help the player to get out of the maze.</description>
-    </item>
-    <item>
-      <title>SQLPLUS on Mac OS</title>
-      <link>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</link>
-      <pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</guid>
-      <description>I don&amp;rsquo;t know if you have experienced this before. You have a Mac but you want to use SQLPLUS, however, SQLPLUS is not working on your Mac. Let me tell you step by step how to make it work.&#xA;1. Go to Oracle website, download Oracle Instantclient package for your Mac. Make sure you download the correct bit version. There are two folders you need to download. One is the basic file (looks like &amp;quot; instantclient-basiclite-macos.</description>
-    </item>
-    <item>
-      <title>Spinning beach ball with a really slow Mac</title>
-      <link>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</link>
-      <pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate>
-      <guid>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</guid>
-      <description>Recently I was suffering from a really slow Mac. Everything will be stuck whenever I clicked on something. This could be really frustrating especially when I am trying to program. I checked my software to see if they needed any updates or anything. However, everything looks fine. I also monitored all the activities that was going on on my Mac, everything seems normal, except my RAM was being used 3.85 GB out of 4 GB.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on xuanjin</title><link>https://xuanjin001.github.io/categories/tutorials/</link><description>Recent content in Tutorials on xuanjin</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Mar 2024 01:58:35 -0800</lastBuildDate><atom:link href="https://xuanjin001.github.io/categories/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Jupyter With 'pipx'</title><link>https://xuanjin001.github.io/posts/mar_2_24/</link><pubDate>Sat, 02 Mar 2024 01:58:35 -0800</pubDate><guid>https://xuanjin001.github.io/posts/mar_2_24/</guid><description>It has been a while for me to write code now, it really depends on what I am currently doing. Ever since I was on this big project last Feb, I have been going non-stop basically. To the point that I really don&amp;rsquo;t want to look at any code related or any work related things, or even a computer screen after work. I really appreciate this opportunity though, I feel like throughout this project, I proved what I am capable of, before I know someone mentioned that &amp;ldquo;Is she ready?</description></item><item><title>Deploy to GitHub Pages</title><link>https://xuanjin001.github.io/posts/10_19_23/</link><pubDate>Thu, 19 Oct 2023 00:13:37 -0700</pubDate><guid>https://xuanjin001.github.io/posts/10_19_23/</guid><description>It took me a while to finish the deployment to &amp;ldquo;production&amp;rdquo; which is my github repo.
+I would like to document what I was doing here so that I can refer to here later when I need to deploy again.
+First of all, I swear there is a cache issue, every time I tried to run it locally, it is running as how I expected, but when I push the changes out to the github pages, it is still the older version, which has been driving me bananas.</description></item><item><title>LeedCode List</title><link>https://xuanjin001.github.io/posts/leedcode-list/</link><pubDate>Tue, 11 Jan 2022 01:17:17 -0800</pubDate><guid>https://xuanjin001.github.io/posts/leedcode-list/</guid><description>The following are my list of the items that I will be working on. I changed my strategy a little bit. I use to go over the &amp;ldquo;Explore&amp;rdquo; list, and doing the problem on the side. The following is my organized list. When I do couple problems, I will post on this insta account. :) As the whole world is my witness, and please keep pushing me to my own limits.</description></item><item><title>Postman API</title><link>https://xuanjin001.github.io/posts/postman-api/</link><pubDate>Sat, 23 Oct 2021 23:58:44 -0700</pubDate><guid>https://xuanjin001.github.io/posts/postman-api/</guid><description>What is Postman? Link to heading Well, postman is the person who delivers mail to your house. OK. This is a bad joke.
+I am taking the following from Postman&amp;rsquo;s website, they explained it perfectly.
+Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+https://www.postman.com/
+I first got to know about Postman during my internship with Intuitive, I learned a lot during my 2 months there, most of my work habit is actually learned from there.</description></item><item><title>Learn How To Code In a Different Way</title><link>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</link><pubDate>Wed, 28 Oct 2015 07:03:41 -0700</pubDate><guid>https://xuanjin001.github.io/posts/learn-how-to-code-in-a-different-way/</guid><description>Have you tried to learn a new web programming language with all those crazy syntax in codeacademy where most of the time you are just doing copy and paste, but doesn’t really even know what’s actually going on? I want to introduce you a new way of learning, by playing games.
+There is a hacking game online that&amp;rsquo;s made in JavaScript, it is called &amp;ldquo;Untrusted&amp;rdquo;. ( https://alexnisnevich.github.io/untrusted/) The user will have to navigate the player around the interface with simple VIM commands, and the user has to modify the JavaScript code on the interface to make changes to the maps and eventually help the player to get out of the maze.</description></item><item><title>SQLPLUS on Mac OS</title><link>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</link><pubDate>Sat, 13 Sep 2014 22:07:33 -0700</pubDate><guid>https://xuanjin001.github.io/posts/sqlplus-on-mac-os/</guid><description>I don&amp;rsquo;t know if you have experienced this before. You have a Mac but you want to use SQLPLUS, however, SQLPLUS is not working on your Mac. Let me tell you step by step how to make it work.
+1. Go to Oracle website, download Oracle Instantclient package for your Mac. Make sure you download the correct bit version. There are two folders you need to download. One is the basic file (looks like &amp;quot; instantclient-basiclite-macos.</description></item><item><title>Spinning beach ball with a really slow Mac</title><link>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</link><pubDate>Sat, 13 Sep 2014 16:10:36 -0700</pubDate><guid>https://xuanjin001.github.io/posts/spinning-beach-ball-with-a-really-slow-mac/</guid><description>Recently I was suffering from a really slow Mac. Everything will be stuck whenever I clicked on something. This could be really frustrating especially when I am trying to program. I checked my software to see if they needed any updates or anything. However, everything looks fine. I also monitored all the activities that was going on on my Mac, everything seems normal, except my RAM was being used 3.85 GB out of 4 GB.</description></item></channel></rss>
