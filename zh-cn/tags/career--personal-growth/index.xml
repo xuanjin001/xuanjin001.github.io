@@ -1,15 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Career &amp; Personal Growth on 金萱</title><link>https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/</link><description>Recent content in Career &amp; Personal Growth on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 26 Oct 2024 02:23:43 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/index.xml" rel="self" type="application/rss+xml"/><item><title>迄今为止的项目列表</title><link>https://xuanjin001.github.io/zh-cn/posts/projects_lists_2025/</link><pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/projects_lists_2025/</guid><description>&lt;blockquote>
-&lt;p>&lt;em>本文由 Gideon（AI）翻译自英文原版。&lt;/em>&lt;/p>
-&lt;/blockquote></description></item><item><title>最新动态 2024 年 4 月 24 日</title><link>https://xuanjin001.github.io/zh-cn/posts/latest-update-apr-24-2024/</link><pubDate>Wed, 24 Apr 2024 15:31:34 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/latest-update-apr-24-2024/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-我已经在一个超级大型项目上工作了超过一年，感觉那就是我的全部生活，什么都没有，就那一件事。我觉得自己像是在岩石底下蜷缩了一年多。这个项目从一开始就乱成了一锅粥。项目从最初就面临着很有挑战性的动态关系——方向在很大程度上由客户主导，而等我加入的时候，基础已经奠定了。
-这个项目可以用两个词来概括：&amp;ldquo;组织迁移&amp;rdquo;。客户有一套现有的系统，他们想要迁移掉，因为这套系统有些难以管理，而且他们还想增加一些功能，让业务运转得更顺畅；此外，他们还想消除某些依赖关系，因为部分操作只能由特定人员执行，一旦那些人休假，整个流程就陷入停摆。这绝非易事——我们面对的是一个技术债务积累严重的组织，他们的数据库可以追溯到 2000 年代初，也就是说有将近 20 年的数据积累。如果你对此不太了解，想象一下 Windows 系统从 XP 升级到 10 时引发的各种麻烦。关键是，把一个团队从一个系统迁移到另一个系统，从来都不是一件简单的事。
-整个项目历时一年有余，我负责统筹数据方面的工作，我们将大量数据从一个系统迁移到另一个系统，几乎涵盖了所有内容。这是一项既有挑战性、又相对直接的任务，但过程本身非常枯燥。你从一个系统中取出数据，然后放进另一个系统，确保所有数据都能适配新系统的数据结构，同时确保新流程能够正确接收并处理这些数据——这是最难的部分。其实，让我来纠正一下，让客户理解这个部分才是最难的。与客户的工作关系给整个项目增添了额外的复杂度。
-整个项目从一开始就偏离了轨道，计划是逐表推进，同时摸索流程。我在早期就提出了一些顾虑，但在项目快速推进的大背景下，这些顾虑很难及时引起重视。最终酿成了一团乱局。我以前犯过同样的错误——2015 年我在做一个应用开发项目时，我们在没有明确前端界面应该长什么样的情况下就先建好了数据库，换句话说，我们对如何检索数据、或者需要检索什么数据没有清晰的概念，所以在没有搞清楚数据用途之前就构建数据库，完全是本末倒置，最后我们重做了整个项目。而这个项目上，完全是同样的情况重演。
-就我个人而言，从这个项目中收获颇丰。参与如此大型的项目，让我了解了一个大型项目是如何运作的，也了解了一个大型项目绝不该如何运作，以及强有力的领导力对于项目成功有多么关键——需要有人掌舵，能够凝聚团队、信任合适的人，并为各领域的专家创造发挥最佳水平的空间。从这个项目中我还学到了一个视角，那就是我的上司常说的&amp;quot;沟通&amp;quot;。有效的沟通可以提升团队生产力，帮助工作更顺利地推进。我是一个非常直接的人，有什么说什么，但现在我学会了，直接坦率的同时也可以做到尊重他人。这在这个项目上产生了很好的效果。项目初期，如何以让团队能够接受的方式表达顾虑是一大难题，但随着时间推移，我逐渐找到了更有效的方式来传达我的观察，帮助事情朝着更好的方向发展。作为一个内向的人，这确实需要大量的练习。
-我合作了一年多的这位客户行事非常被动，没有完善的计划，走一步看一步。每当问题出现，他们就对着它做出反应；说实话，我们遇到的很多问题，如果客户能配合我们提前做好规划，完全可以在萌芽阶段就化解掉。在这样一个反应迅速而且情绪化的环境里工作，我学会了退一步。很多时候，他们就像把意大利面往墙上一扔，看看能不能粘住——这时候就需要问：你为什么要往墙上扔意大利面？是为了测试面熟了没有吗？如果是，那有其他方法可以做到，你考虑过那些方法吗？如果只是觉得扔着好玩，那我们得帮你找到其他&amp;quot;娱乐&amp;quot;方式。解决问题的方式不止一种，顾问的工作就是把这些解决方案都传达清楚，在发现风险时及时预警——至于客户是否采纳，那就不是我们能控制的了。
-总的来说，在过去这一年里，我成长了很多。我现在是一个更好的领导者，也通过这个项目更清晰地认识到了自己的能力——比我自己所意识到的要强得多。我需要信任自己，相信自己无论如何都能找到出路。任何障碍都是更深入了解自己、提升自我的机会。</description></item><item><title>疫情期间找工作，简直难如登天</title><link>https://xuanjin001.github.io/zh-cn/posts/finding-a-job-during-pandemic-is-impossible/</link><pubDate>Wed, 08 Apr 2020 07:59:06 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/finding-a-job-during-pandemic-is-impossible/</guid><description>本文由 Gideon（AI）翻译自英文原版。
-这段时间真的太糟糕了。
-大多数时候我都不知道该做什么，一直在投简历，却什么回音都没有。我本希望现在已经找到工作了。然而，我的银行账户所剩无几，大多数时候我都不知道该怎么办。我的签证将在五月到期。OPT 失业状态下，我在美国还有大约 90 天的停留时间，到现在已经接近 60 天了。好吧，我还剩一个月。未来会怎样我不知道，但现在的处境和一切正在发生的事情真的让我很焦虑。飞回中国的机票现在大约要 6000 美元，但我的银行账户里不到 3000 美元，连半张回国机票都勉强买得起。我真想问问，我可以只买半张票吗？然后在飞到一半的时候跳下去就好了。
-我想，这个时候我所能做的，就是继续投简历，同时刷 LeetCode 题，做好准备，迎接任何即将到来的挑战。
-以下是我目前制作的播客，希望在这段艰难的时光里，它能让你开心一些。
-搞笑播客</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Career &amp; Personal Growth on 金萱</title>
+    <link>https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/</link>
+    <description>Recent content in Career &amp; Personal Growth on 金萱</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 26 Oct 2024 02:23:43 -0700</lastBuildDate>
+    <atom:link href="https://xuanjin001.github.io/zh-cn/tags/career--personal-growth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>迄今为止的项目列表</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/projects_lists_2025/</link>
+      <pubDate>Sat, 26 Oct 2024 02:23:43 -0700</pubDate>
+      <guid>https://xuanjin001.github.io/zh-cn/posts/projects_lists_2025/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;本文由 Gideon（AI）翻译自英文原版。&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>最新动态 2024 年 4 月 24 日</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/latest-update-apr-24-2024/</link>
+      <pubDate>Wed, 24 Apr 2024 15:31:34 -0700</pubDate>
+      <guid>https://xuanjin001.github.io/zh-cn/posts/latest-update-apr-24-2024/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;我已经在一个超级大型项目上工作了超过一年，感觉那就是我的全部生活，什么都没有，就那一件事。我觉得自己像是在岩石底下蜷缩了一年多。这个项目从一开始就乱成了一锅粥。项目从最初就面临着很有挑战性的动态关系——方向在很大程度上由客户主导，而等我加入的时候，基础已经奠定了。&#xA;这个项目可以用两个词来概括：&amp;ldquo;组织迁移&amp;rdquo;。客户有一套现有的系统，他们想要迁移掉，因为这套系统有些难以管理，而且他们还想增加一些功能，让业务运转得更顺畅；此外，他们还想消除某些依赖关系，因为部分操作只能由特定人员执行，一旦那些人休假，整个流程就陷入停摆。这绝非易事——我们面对的是一个技术债务积累严重的组织，他们的数据库可以追溯到 2000 年代初，也就是说有将近 20 年的数据积累。如果你对此不太了解，想象一下 Windows 系统从 XP 升级到 10 时引发的各种麻烦。关键是，把一个团队从一个系统迁移到另一个系统，从来都不是一件简单的事。&#xA;整个项目历时一年有余，我负责统筹数据方面的工作，我们将大量数据从一个系统迁移到另一个系统，几乎涵盖了所有内容。这是一项既有挑战性、又相对直接的任务，但过程本身非常枯燥。你从一个系统中取出数据，然后放进另一个系统，确保所有数据都能适配新系统的数据结构，同时确保新流程能够正确接收并处理这些数据——这是最难的部分。其实，让我来纠正一下，让客户理解这个部分才是最难的。与客户的工作关系给整个项目增添了额外的复杂度。&#xA;整个项目从一开始就偏离了轨道，计划是逐表推进，同时摸索流程。我在早期就提出了一些顾虑，但在项目快速推进的大背景下，这些顾虑很难及时引起重视。最终酿成了一团乱局。我以前犯过同样的错误——2015 年我在做一个应用开发项目时，我们在没有明确前端界面应该长什么样的情况下就先建好了数据库，换句话说，我们对如何检索数据、或者需要检索什么数据没有清晰的概念，所以在没有搞清楚数据用途之前就构建数据库，完全是本末倒置，最后我们重做了整个项目。而这个项目上，完全是同样的情况重演。&#xA;就我个人而言，从这个项目中收获颇丰。参与如此大型的项目，让我了解了一个大型项目是如何运作的，也了解了一个大型项目绝不该如何运作，以及强有力的领导力对于项目成功有多么关键——需要有人掌舵，能够凝聚团队、信任合适的人，并为各领域的专家创造发挥最佳水平的空间。从这个项目中我还学到了一个视角，那就是我的上司常说的&amp;quot;沟通&amp;quot;。有效的沟通可以提升团队生产力，帮助工作更顺利地推进。我是一个非常直接的人，有什么说什么，但现在我学会了，直接坦率的同时也可以做到尊重他人。这在这个项目上产生了很好的效果。项目初期，如何以让团队能够接受的方式表达顾虑是一大难题，但随着时间推移，我逐渐找到了更有效的方式来传达我的观察，帮助事情朝着更好的方向发展。作为一个内向的人，这确实需要大量的练习。&#xA;我合作了一年多的这位客户行事非常被动，没有完善的计划，走一步看一步。每当问题出现，他们就对着它做出反应；说实话，我们遇到的很多问题，如果客户能配合我们提前做好规划，完全可以在萌芽阶段就化解掉。在这样一个反应迅速而且情绪化的环境里工作，我学会了退一步。很多时候，他们就像把意大利面往墙上一扔，看看能不能粘住——这时候就需要问：你为什么要往墙上扔意大利面？是为了测试面熟了没有吗？如果是，那有其他方法可以做到，你考虑过那些方法吗？如果只是觉得扔着好玩，那我们得帮你找到其他&amp;quot;娱乐&amp;quot;方式。解决问题的方式不止一种，顾问的工作就是把这些解决方案都传达清楚，在发现风险时及时预警——至于客户是否采纳，那就不是我们能控制的了。&#xA;总的来说，在过去这一年里，我成长了很多。我现在是一个更好的领导者，也通过这个项目更清晰地认识到了自己的能力——比我自己所意识到的要强得多。我需要信任自己，相信自己无论如何都能找到出路。任何障碍都是更深入了解自己、提升自我的机会。</description>
+    </item>
+    <item>
+      <title>疫情期间找工作，简直难如登天</title>
+      <link>https://xuanjin001.github.io/zh-cn/posts/finding-a-job-during-pandemic-is-impossible/</link>
+      <pubDate>Wed, 08 Apr 2020 07:59:06 -0700</pubDate>
+      <guid>https://xuanjin001.github.io/zh-cn/posts/finding-a-job-during-pandemic-is-impossible/</guid>
+      <description>本文由 Gideon（AI）翻译自英文原版。&#xA;这段时间真的太糟糕了。&#xA;大多数时候我都不知道该做什么，一直在投简历，却什么回音都没有。我本希望现在已经找到工作了。然而，我的银行账户所剩无几，大多数时候我都不知道该怎么办。我的签证将在五月到期。OPT 失业状态下，我在美国还有大约 90 天的停留时间，到现在已经接近 60 天了。好吧，我还剩一个月。未来会怎样我不知道，但现在的处境和一切正在发生的事情真的让我很焦虑。飞回中国的机票现在大约要 6000 美元，但我的银行账户里不到 3000 美元，连半张回国机票都勉强买得起。我真想问问，我可以只买半张票吗？然后在飞到一半的时候跳下去就好了。&#xA;我想，这个时候我所能做的，就是继续投简历，同时刷 LeetCode 题，做好准备，迎接任何即将到来的挑战。&#xA;以下是我目前制作的播客，希望在这段艰难的时光里，它能让你开心一些。&#xA;搞笑播客</description>
+    </item>
+  </channel>
+</rss>
