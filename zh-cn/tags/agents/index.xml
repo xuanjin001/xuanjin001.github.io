@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>agents on 金萱</title><link>https://xuanjin001.github.io/zh-cn/tags/agents/</link><description>Recent content in agents on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 04 Oct 2026 19:06:40 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/agents/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 已经是一名能自我改进的agent了</title><link>https://xuanjin001.github.io/zh-cn/posts/ai-pilot-that-can-somewhat-improve-itself/</link><pubDate>Sun, 04 Oct 2026 19:06:40 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/ai-pilot-that-can-somewhat-improve-itself/</guid><description>去看巨人队本赛季最后一场比赛的路上，我和旁边的人聊了起来。我不该偷看别人手机，但忍不住瞥了一眼——他正在读一篇叫《747 与编程 AI》的文章。而彼时，我自己正在读一本言情小说。说到湾区的竞争，哈哈。
+上周日我就想把这段经历写下来，那天我坐加州铁路时和旁边的人聊了聊。今天终于抽出时间了。真的很后悔当时没要那位仁兄的名字、邮件或电话——已经遗憾了将近一周了。就叫他&amp;quot;Michael&amp;quot;吧。
+我们聊到各自的工作经历，我提到我在用 OpenClaw 搭建 AI 助手，很多事情都已经交给我的个人 AI 助手 Gideon 来处理了。Michael 就多说了几句 Carl Kolon 那篇文章 《747 与编程 AI》 里的内容。
+Michael 提到文章里的这段话：
+干久了这行，你不再进步。你今天和昨天其实没什么两样。
+Michael 的观点是：AI 本质上不过是在做人类做的事，只是更快。AI 无法想出如何优化一个流程——这还是要靠人来指示。AI 不能自己主动发现问题、解决问题。
+如果是 2026 年 2 月，我会完全同意这个说法。现在是 10 月，我觉得完全说不通了。
+那篇文章写于 2026 年 2 月。而现在，2026 年九十月间，情况已经大不一样了。只要你搭好合适的框架，AI 是可以自我改进的。Gideon 就是一个例子：我在另一篇文章里说过那个待办看板——现在每周 Gideon 会主动过一遍我的待办事项，然后建议哪些它可以接手。这个想法，其实是 Gideon 自己提出来的。
+当然，我也有规则。在 AI 动手之前，必须先写出方案，我来审核。审核过程中，我会检查逻辑、检查它打算用的框架——如果涉及 API，我会看它怎么设计接口。核心是整体架构、设计思路，以及整个逻辑流程。
+我还规定 AI 每次都要写 README，内容需要包括：
+如何搭建环境 我们在做什么 为什么要做这件事 业务场景，整体逻辑 特殊用例 / 边界情况 用什么语言写，为什么选这个语言 程序整体逻辑 总结 构建过程中学到的东西 底线是：我应该能把这份 README 直接交给一个从来没听说过这件事的人，读完之后他能用 8 到 10 句话说清楚我们在做什么。我一直用这个方法来&amp;quot;校对&amp;quot;我的编码方案。</description></item></channel></rss>

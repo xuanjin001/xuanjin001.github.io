@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Productivity on 金萱</title><link>https://xuanjin001.github.io/zh-cn/tags/productivity/</link><description>Recent content in Productivity on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 08 Sep 2026 19:33:55 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/productivity/index.xml" rel="self" type="application/rss+xml"/><item><title>用 AI 折腾了六个月：哪里翻车了，哪里真的开窍了</title><link>https://xuanjin001.github.io/zh-cn/posts/six-months-building-with-ai/</link><pubDate>Tue, 08 Sep 2026 19:33:55 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/six-months-building-with-ai/</guid><description>───
+文章里会经常出现&amp;quot;Gideon&amp;quot;这个名字——那是我 AI 助手的名字。好，开始。
+怎么开始的 链接到标题 三月份，OpenClaw 突然火了起来，YouTube 上到处都是教程。看了几个之后我就起了好奇心——这个 OpenClaw 到底是什么？我这个人不太能光听别人说，必须自己上手才能真正搞懂。于是我在腾讯那边租了台服务器——挺便宜的——然后把 OpenClaw 装上去了。这就是我和 OpenClaw、和 AI 的故事的开端。
+刚开始的时候，我也不太确定两件事：一，我要用这个工具做什么？二，它能帮我做什么？我东搭一个提醒功能，西搭一个追踪器，零零散散的。Linux 系统管理也有点生疏，有些东西需要重新捡起来。好消息是，那没花多长时间。装好、跑起来都挺快的。真正花时间的，是搞清楚这个东西到底能怎么帮我让生活更顺一点。
+最开始，我想让 OpenClaw 连上我的 Garmin 手表，把健康数据拉出来。但我当时根本不懂后端是怎么运作的，也搞不清楚各种 LLM 模型之间的区别。我就直接让 AI &amp;ldquo;跑起来&amp;rdquo;。然后我的 AI Gideon 每次我问健康数据，就去跑一个 Python 脚本。没超过一个星期，我们就撞墙了——&amp;ldquo;API 限额&amp;rdquo;。这才让我意识到，网上那些人说的是对的：不能让 AI 想怎么干就怎么干。
+于是我换回了传统软件开发的思路：动手之前先把文档看一遍，把需要注意的点整理出来，然后再跟 AI 一起搭东西。没多久，Claude 推出了 Plan Mode——这个想法真的很好。在 Claude 动手之前，它会先评估情况、梳理要做的事、找出技术上的盲点。我的编码方式也跟着变了。以前自己写代码，经常直接扎进去，等做到第一个 MVP 差不多了才开始写 README。现在不一样了——开始写代码前，先写 README，先把架构和逻辑理清楚，确认思路没问题了，再让 AI 开始写代码。架构不需要一次性全想好，分步来，把任务拆成用户故事，让 AI 一个一个去实现。
+这是一个很重要的教训。而且你也可以看到，用 Claude 的时候，我也把它的一些思路借鉴到了自己的系统里。
+AI 这东西是什么 链接到标题 第一次装 OpenClaw、翻它的文档，你会看到这几个文件：
+SOUL.md（灵魂） IDENTITY.md（身份） USER.md（用户） AGENTS.md（代理） TOOLS.md（工具） MEMORY.md（记忆） HEARTBEAT.md（心跳） 本质上，它在模拟一个人。你在给这个&amp;quot;东西&amp;quot;定义灵魂、身份、心跳和记忆。然后告诉它你是谁、你需要它做什么——这就是 User 的部分。其余的文件都是帮助系统更好地服务于你。所以说，跟它对话，其实要当作跟另一个人说话。这就引出了下一个话题：提示词工程。
+提示词工程 链接到标题 什么是提示词工程？</description></item></channel></rss>

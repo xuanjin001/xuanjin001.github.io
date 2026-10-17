@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 金萱</title><link>https://xuanjin001.github.io/zh-cn/tags/ai/</link><description>Recent content in AI on 金萱</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 06 Oct 2026 20:12:00 -0700</lastBuildDate><atom:link href="https://xuanjin001.github.io/zh-cn/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>个人 AI 助手：你早就把数据给出去了</title><link>https://xuanjin001.github.io/zh-cn/posts/draft/personal-ai-agents-data-you-already-gave-away/</link><pubDate>Tue, 06 Oct 2026 20:12:00 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/draft/personal-ai-agents-data-you-already-gave-away/</guid><description>你最近应该看到不少个人 AI 助手的广告。我刷 YouTube 的时候一直被推送——Meta 的 Muse 就是其中之一。&amp;ldquo;有什么可以帮你处理的？&amp;ldquo;广告这样问道。&amp;ldquo;你的 Muse，搞定一切。&amp;rdquo;
+对于那些用了类似 Muse 的产品说&amp;quot;好用&amp;quot;的人，我想问一个问题。
+你有没有想过它为什么这么好用？
+因为所有人给出的答案都是：模型。&amp;ldquo;这 AI 真聪明。&amp;ldquo;&amp;ldquo;它就是懂我。&amp;ldquo;这是广告卖给你的故事，也是我们一遍遍复述的故事——因为这样说法讨好机器，让它听起来像个天才，而不是它实际上的样子。
+原因不是 AI。原因是数据。
+大概从 2003 年开始——Facebook 兴起的年代——你就在免费、自愿地喂养它了。你喜欢什么、谈过什么对象、去过哪些地方、点赞过哪些帖子。你跟大学室友的那些破事。你凌晨一点发过的那些现在打死不承认的观点。全部。
+那是关于你自己长达二十年的数据集：你的品味、你的弱点、你的恐惧、对你重要的那些人，以及那些塑造了你现在这个样子的时刻。
+这些数据就放在那里。Facebook 知道。Google 知道。TikTok 当然也知道。
+区别在于，直到最近，你还没有任何方式实时获取属于自己的洞察——没有任何东西能真正理解你生活的质感，然后跟你对话。
+你早就为自己的个人 AI 付过钱了。只是一直没拿到货。
+个人 AI 助手不是魔法。在原始能力上，它们并不比 ChatGPT 或 Claude 聪明。它们的价值在于个性化——被喂了你的日历、你的邮件、你的笔记，也许还有你的位置记录。它们知道你在意什么，因为它们能看到你的行为规律。当你问它们意见时，它们不是在用通用 AI 的方式回答你。它们回答时知道你下午 2 点有董事会，孩子 4:30 有足球训练，你已经三天没睡好觉了。
+这感觉很不一样。感觉 AI 真的站在你这边。
+这也是为什么每一家大科技公司都在争着成为你愿意把数据交给的那一个。
+Meta 的 Muse 全天候运行，跨应用打通，整合了 WhatsApp 和他们的 AI 眼镜——它想住进你的日常生活里。OpenAI 有 dots，每个 dot 有自己的云端电脑，能连接超过 4,000 个 App，面向需要深度生产力和复杂工作流的用户。Google 的 Gemini Spark 全力押注自家生态系统——如果你的生活跑在 Gmail、Maps 和 YouTube 上，那它就是为你造的。微软的 Autopilot（前身是 Scout）瞄准企业用户：想象一下 Teams 和 Outlook 里的多智能体协作，你的 AI 在你下线之后还能继续推进项目好几天。</description></item><item><title>AI 已经是一名能自我改进的agent了</title><link>https://xuanjin001.github.io/zh-cn/posts/ai-pilot-that-can-somewhat-improve-itself/</link><pubDate>Sun, 04 Oct 2026 19:06:40 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/ai-pilot-that-can-somewhat-improve-itself/</guid><description>去看巨人队本赛季最后一场比赛的路上，我和旁边的人聊了起来。我不该偷看别人手机，但忍不住瞥了一眼——他正在读一篇叫《747 与编程 AI》的文章。而彼时，我自己正在读一本言情小说。说到湾区的竞争，哈哈。
+上周日我就想把这段经历写下来，那天我坐加州铁路时和旁边的人聊了聊。今天终于抽出时间了。真的很后悔当时没要那位仁兄的名字、邮件或电话——已经遗憾了将近一周了。就叫他&amp;quot;Michael&amp;quot;吧。
+我们聊到各自的工作经历，我提到我在用 OpenClaw 搭建 AI 助手，很多事情都已经交给我的个人 AI 助手 Gideon 来处理了。Michael 就多说了几句 Carl Kolon 那篇文章 《747 与编程 AI》 里的内容。
+Michael 提到文章里的这段话：
+干久了这行，你不再进步。你今天和昨天其实没什么两样。
+Michael 的观点是：AI 本质上不过是在做人类做的事，只是更快。AI 无法想出如何优化一个流程——这还是要靠人来指示。AI 不能自己主动发现问题、解决问题。
+如果是 2026 年 2 月，我会完全同意这个说法。现在是 10 月，我觉得完全说不通了。
+那篇文章写于 2026 年 2 月。而现在，2026 年九十月间，情况已经大不一样了。只要你搭好合适的框架，AI 是可以自我改进的。Gideon 就是一个例子：我在另一篇文章里说过那个待办看板——现在每周 Gideon 会主动过一遍我的待办事项，然后建议哪些它可以接手。这个想法，其实是 Gideon 自己提出来的。
+当然，我也有规则。在 AI 动手之前，必须先写出方案，我来审核。审核过程中，我会检查逻辑、检查它打算用的框架——如果涉及 API，我会看它怎么设计接口。核心是整体架构、设计思路，以及整个逻辑流程。
+我还规定 AI 每次都要写 README，内容需要包括：
+如何搭建环境 我们在做什么 为什么要做这件事 业务场景，整体逻辑 特殊用例 / 边界情况 用什么语言写，为什么选这个语言 程序整体逻辑 总结 构建过程中学到的东西 底线是：我应该能把这份 README 直接交给一个从来没听说过这件事的人，读完之后他能用 8 到 10 句话说清楚我们在做什么。我一直用这个方法来&amp;quot;校对&amp;quot;我的编码方案。</description></item><item><title>用 AI 折腾了六个月：哪里翻车了，哪里真的开窍了</title><link>https://xuanjin001.github.io/zh-cn/posts/six-months-building-with-ai/</link><pubDate>Tue, 08 Sep 2026 19:33:55 -0700</pubDate><guid>https://xuanjin001.github.io/zh-cn/posts/six-months-building-with-ai/</guid><description>───
+文章里会经常出现&amp;quot;Gideon&amp;quot;这个名字——那是我 AI 助手的名字。好，开始。
+怎么开始的 链接到标题 三月份，OpenClaw 突然火了起来，YouTube 上到处都是教程。看了几个之后我就起了好奇心——这个 OpenClaw 到底是什么？我这个人不太能光听别人说，必须自己上手才能真正搞懂。于是我在腾讯那边租了台服务器——挺便宜的——然后把 OpenClaw 装上去了。这就是我和 OpenClaw、和 AI 的故事的开端。
+刚开始的时候，我也不太确定两件事：一，我要用这个工具做什么？二，它能帮我做什么？我东搭一个提醒功能，西搭一个追踪器，零零散散的。Linux 系统管理也有点生疏，有些东西需要重新捡起来。好消息是，那没花多长时间。装好、跑起来都挺快的。真正花时间的，是搞清楚这个东西到底能怎么帮我让生活更顺一点。
+最开始，我想让 OpenClaw 连上我的 Garmin 手表，把健康数据拉出来。但我当时根本不懂后端是怎么运作的，也搞不清楚各种 LLM 模型之间的区别。我就直接让 AI &amp;ldquo;跑起来&amp;rdquo;。然后我的 AI Gideon 每次我问健康数据，就去跑一个 Python 脚本。没超过一个星期，我们就撞墙了——&amp;ldquo;API 限额&amp;rdquo;。这才让我意识到，网上那些人说的是对的：不能让 AI 想怎么干就怎么干。
+于是我换回了传统软件开发的思路：动手之前先把文档看一遍，把需要注意的点整理出来，然后再跟 AI 一起搭东西。没多久，Claude 推出了 Plan Mode——这个想法真的很好。在 Claude 动手之前，它会先评估情况、梳理要做的事、找出技术上的盲点。我的编码方式也跟着变了。以前自己写代码，经常直接扎进去，等做到第一个 MVP 差不多了才开始写 README。现在不一样了——开始写代码前，先写 README，先把架构和逻辑理清楚，确认思路没问题了，再让 AI 开始写代码。架构不需要一次性全想好，分步来，把任务拆成用户故事，让 AI 一个一个去实现。
+这是一个很重要的教训。而且你也可以看到，用 Claude 的时候，我也把它的一些思路借鉴到了自己的系统里。
+AI 这东西是什么 链接到标题 第一次装 OpenClaw、翻它的文档，你会看到这几个文件：
+SOUL.md（灵魂） IDENTITY.md（身份） USER.md（用户） AGENTS.md（代理） TOOLS.md（工具） MEMORY.md（记忆） HEARTBEAT.md（心跳） 本质上，它在模拟一个人。你在给这个&amp;quot;东西&amp;quot;定义灵魂、身份、心跳和记忆。然后告诉它你是谁、你需要它做什么——这就是 User 的部分。其余的文件都是帮助系统更好地服务于你。所以说，跟它对话，其实要当作跟另一个人说话。这就引出了下一个话题：提示词工程。
+提示词工程 链接到标题 什么是提示词工程？</description></item></channel></rss>
